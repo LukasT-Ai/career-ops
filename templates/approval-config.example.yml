@@ -1,0 +1,60 @@
+# Auto-Apply Approval Configuration
+# Copy to profiles/{name}/approval-config.yml and customize
+#
+# This file controls how the auto-apply mode handles approval gates.
+# It determines whether Claude pauses for confirmation before filling
+# forms and before submitting applications.
+
+approval:
+  # Approval mode:
+  #   manual    - Always pause before filling AND before submitting (safest)
+  #   threshold - Auto-fill if score >= threshold, always pause before submit
+  #   auto      - Auto-fill without pausing, but ALWAYS pause before submit
+  #
+  # NOTE: Regardless of mode, Claude NEVER clicks Submit without explicit
+  # user approval. The mode only controls the form-filling step.
+  mode: manual
+
+  # Score threshold for auto-approval (only used in threshold mode)
+  # Applications with evaluation score >= this value will auto-fill.
+  # Applications below this score will pause for manual review.
+  threshold: 4.5
+
+  # Minimum score to allow applying at all.
+  # Below this score, Claude will recommend against applying.
+  minimum_score: 3.5
+
+  # Require a cover letter PDF before proceeding with application.
+  # If true and no cover letter exists, Claude will stop and offer to generate one.
+  require_cover_letter: true
+
+  # Require a CV PDF before proceeding with application.
+  # If true and no CV PDF exists, Claude will stop and offer to generate one.
+  require_cv_pdf: true
+
+  # Show a summary of all fields before submitting.
+  # When true, Claude presents a review table even in auto mode.
+  notify_before_submit: true
+
+  # Maximum number of applications per session (batch apply safety limit).
+  # Set to 0 for unlimited.
+  max_per_session: 10
+
+  # Per-platform approval overrides.
+  # These override the global mode for specific ATS platforms.
+  # Valid values: manual, threshold, auto
+  # Platforms not listed here use the global mode.
+  platforms:
+    greenhouse: manual
+    lever: manual
+    ashby: manual
+    workday: manual      # Workday is always assisted-manual regardless
+    icims: manual        # iCIMS is always assisted-manual regardless
+
+  # Salary disclosure strategy.
+  # Controls how salary expectation fields are handled:
+  #   range    - Enter the full target range from profile (e.g., "$135K-180K")
+  #   minimum  - Enter only the minimum from profile
+  #   midpoint - Enter the midpoint of the range
+  #   skip     - Leave salary fields blank if possible
+  salary_strategy: range

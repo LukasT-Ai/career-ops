@@ -20,6 +20,9 @@ These files contain your personal data, customizations, and work product. Update
 | `reports/*` | Your evaluation reports |
 | `output/*` | Your generated PDFs |
 | `jds/*` | Your saved job descriptions |
+| `data/apply-log.md` | Application submission log |
+| `profiles/{name}/cover-letters/*` | Generated cover letter PDFs |
+| `profiles/{name}/approval-config.yml` | Auto-apply approval settings |
 
 ## System Layer (safe to auto-update)
 
@@ -52,6 +55,13 @@ These files contain system logic, scripts, templates, and instructions that impr
 | `.claude/skills/*` | Skill definitions |
 | `docs/*` | Documentation |
 | `VERSION` | Current version number |
+| `modes/cover-letter.md` | Cover letter generation mode |
+| `modes/auto-apply.md` | Auto-apply orchestrator mode |
+| `modes/report.md` | Application reporting mode |
+| `templates/cover-letter-template.html` | Cover letter HTML template |
+| `templates/approval-config.example.yml` | Approval config example |
+| `ats-adapters.mjs` | ATS platform adapters |
+| `generate-cover-letter.mjs` | Cover letter PDF generator |
 | `DATA_CONTRACT.md` | This file |
 
 ## The Rule

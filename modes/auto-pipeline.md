@@ -61,7 +61,24 @@ Si el score final es >= 4.5, generar borrador de respuestas para el formulario d
 
 **Idioma**: Siempre en el idioma del JD (EN default). Aplicar `/tech-translate`.
 
-## Paso 5 — Actualizar Tracker
+## Paso 5 — Cover Letter Generation
+- If evaluation score >= 3.5, generate a tailored cover letter
+- Use modes/cover-letter.md workflow
+- Save to output/cl-{name}-{company}-{date}.pdf
+- Copy to profiles/{name}/cover-letters/
+
+## Paso 6 — Auto-Apply Gate
+- Read profiles/{name}/approval-config.yml
+- Detect ATS platform from URL
+- If supported ATS + approval allows:
+  - Prepare application using modes/auto-apply.md
+  - Fill form fields, upload resume + cover letter
+  - STOP at approval gate (manual mode) or submit (auto/threshold)
+- If unsupported ATS:
+  - Show manual apply instructions
+- Log to data/apply-log.md
+
+## Paso 7 — Actualizar Tracker
 Registrar en `data/applications.md` con todas las columnas incluyendo Report y PDF en ✅.
 
 **Si algún paso falla**, continuar con los siguientes y marcar el paso fallido como pendiente en el tracker.

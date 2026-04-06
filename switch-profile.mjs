@@ -67,7 +67,7 @@ function copyDirContents(srcDir, destDir) {
  */
 function saveBack(profileName) {
   const profileDir = path.join(PROFILES_DIR, profileName);
-  const dirs = ['data', 'reports', 'output'];
+  const dirs = ['data', 'reports', 'output', 'cover-letters'];
   let saved = 0;
 
   for (const dir of dirs) {
@@ -126,7 +126,7 @@ function loadProfile(profileName) {
   }
 
   // Directory mappings
-  const dirMappings = ['data', 'reports', 'output'];
+  const dirMappings = ['data', 'reports', 'output', 'cover-letters'];
   for (const dir of dirMappings) {
     loaded += copyDirContents(
       path.join(profileDir, dir),

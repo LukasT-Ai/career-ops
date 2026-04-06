@@ -57,6 +57,9 @@ AI-powered job search automation built on Claude Code: pipeline tracking, offer 
 | `generate-pdf.mjs` | Puppeteer: HTML to PDF |
 | `article-digest.md` | Compact proof points from portfolio (optional) |
 | `interview-prep/story-bank.md` | Accumulated STAR+R stories across evaluations |
+| `data/apply-log.md` | Application submission log |
+| `ats-adapters.mjs` | ATS platform detection & field mapping |
+| `generate-cover-letter.mjs` | Cover letter HTML to PDF |
 | `reports/` | Evaluation reports (format: `{###}-{company-slug}-{YYYY-MM-DD}.md`) |
 
 ## Multi-Profile System
@@ -77,6 +80,8 @@ profiles/
     data/             ← applications.md, pipeline.md, scan-history.tsv
     reports/          ← evaluation reports
     output/           ← generated PDFs
+    cover-letters/    ← generated cover letter PDFs
+    approval-config.yml ← auto-apply approval settings
   paulina/
     (same structure)
   {new-profile}/
@@ -245,6 +250,9 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 | Evaluates portfolio project | `project` |
 | Asks about application status | `tracker` |
 | Fills out application form | `apply` |
+| Wants a cover letter | `cover-letter` |
+| Wants to auto-apply | `auto-apply` |
+| Asks for application report | `report` |
 | Searches for new offers | `scan` |
 | Processes pending URLs | `pipeline` |
 | Batch processes offers | `batch` |
@@ -289,6 +297,21 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 - Report numbering: sequential 3-digit zero-padded, max existing + 1
 - **RULE: After each batch of evaluations, run `node merge-tracker.mjs`** to merge tracker additions and avoid duplications.
 - **RULE: NEVER create new entries in applications.md if company+role already exists.** Update the existing entry.
+
+### Auto-Apply System
+
+The auto-apply system chains: scan → evaluate → cover letter → apply → track.
+
+**Supported ATS platforms:** Greenhouse (full), Lever (full), Ashby (full), Workday (assisted), iCIMS (assisted).
+
+**Approval modes** (configured in `profiles/{name}/approval-config.yml`):
+- `manual` (default): Prepare form, show summary, wait for user confirmation
+- `threshold`: Auto-approve above configured score, manual below
+- `auto`: Submit automatically (requires explicit user opt-in)
+
+**RULE: Default approval mode is ALWAYS manual.** The ethical guidelines in this document require user review before submission. Auto/threshold modes are power-user opt-ins.
+
+**Cover letters** are generated per-application using the adaptive framing from `_profile.md` and proof points from `cv.md`. Output to `profiles/{name}/cover-letters/`.
 
 ### TSV Format for Tracker Additions
 
