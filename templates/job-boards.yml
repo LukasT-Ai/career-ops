@@ -1,0 +1,1259 @@
+# Job Boards Registry — Career-Ops
+# Central reference for all job boards, their automation capabilities, and profile relevance.
+#
+# Automation Tiers:
+#   api        — Has a public/authenticated API. Best for automation.
+#   scrape     — No API but scrape-friendly (static HTML or light JS). BeautifulSoup/Playwright.
+#   assisted   — Heavy JS, aggressive bot detection, or auth walls. Playwright + human fallback.
+#   manual     — No scraping possible. RSS/email alerts or manual browsing only.
+#
+# Profiles: paulina (psychiatry), lamin (telecom/sales), josephina (design/UI)
+# "all" means the board is useful for all three profiles with different keyword filters.
+#
+# Integration: The scanner (modes/scan.md) uses search_queries in each profile's portals.yml
+# with site: filters pointing to these boards. This file is the reference; portals.yml has the queries.
+
+# ============================================================
+# CROSS-CUTTING MEGA BOARDS (all profiles)
+# ============================================================
+
+cross_cutting:
+
+  # --- Tier 1: API-First ---
+  - name: LinkedIn Jobs
+    url: linkedin.com/jobs
+    tier: api
+    api_endpoint: api.linkedin.com/v2/jobs
+    auth: OAuth2 (paid for bulk)
+    rate_limit: 100/min
+    scrape: limited (blocks bots)
+    robots_txt: blocks
+    profiles: all
+    notes: "Largest pool across all 3 categories. Use API or site: search queries. Never direct-scrape."
+    automation: full_with_api
+    manual_needed: "API key requires LinkedIn developer account + approval"
+
+  - name: Indeed
+    url: indeed.com
+    tier: api
+    api_endpoint: api.indeed.com (Publisher API)
+    auth: API key
+    rate_limit: 50/min
+    scrape: yes (careful)
+    robots_txt: blocks
+    profiles: all
+    notes: "Largest aggregator. API preferred. Direct scraping risks IP ban."
+    automation: full_with_api
+    manual_needed: "Publisher API key application required"
+
+  - name: ZipRecruiter
+    url: ziprecruiter.com
+    tier: api
+    api_endpoint: api.ziprecruiter.com
+    auth: API key
+    rate_limit: 45/min
+    scrape: limited
+    profiles: all
+    automation: full_with_api
+    manual_needed: "API key application"
+
+  - name: CareerBuilder
+    url: careerbuilder.com
+    tier: api
+    api_endpoint: public.api.careerbuilder.com
+    auth: API key
+    rate_limit: 60/min
+    scrape: yes
+    profiles: all
+    automation: full_with_api
+
+  # --- Tier 2: Scrape-Friendly ---
+  - name: Monster
+    url: monster.com
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    profiles: all
+    automation: full_scrape
+    notes: "Lower quality listings but decent volume."
+
+  - name: Glassdoor
+    url: glassdoor.com
+    tier: assisted
+    auth: free account
+    rate_limit: 30/min
+    scrape: limited (blocks bots)
+    robots_txt: blocks
+    profiles: all
+    automation: manual_preferred
+    manual_needed: "Aggressive bot detection. Use for salary research, not scraping."
+
+  - name: FlexJobs
+    url: flexjobs.com
+    tier: manual
+    auth: paid subscription
+    rate_limit: 20/min
+    scrape: no
+    profiles: all
+    automation: manual_only
+    manual_needed: "Paid subscription required. Curated remote jobs."
+
+  - name: Remote.co
+    url: remote.co
+    tier: scrape
+    auth: free
+    rate_limit: 25/min
+    scrape: limited
+    profiles: all
+    automation: full_scrape
+    notes: "Remote-only positions."
+
+  - name: We Work Remotely
+    url: weworkremotely.com
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    profiles: [josephina, lamin]
+    automation: full_scrape
+
+  - name: The Muse
+    url: themuse.com
+    tier: api
+    auth: free
+    rate_limit: 50/min
+    scrape: limited
+    profiles: all
+    automation: full_with_api
+
+  # --- Tier 3: Startup / High-Growth ---
+  - name: AngelList (Wellfound)
+    url: angel.co/jobs
+    tier: api
+    api_endpoint: api.angel.co (GraphQL)
+    auth: OAuth2
+    rate_limit: 75/min
+    scrape: limited
+    robots_txt: allows
+    profiles: [lamin, josephina]
+    automation: full_with_api
+
+  - name: Y Combinator Jobs
+    url: ycombinator.com/jobs
+    tier: api
+    auth: free
+    rate_limit: 60/min
+    scrape: limited
+    profiles: [lamin, josephina]
+    automation: full_with_api
+
+  - name: Otta
+    url: otta.com
+    tier: api
+    api_endpoint: GraphQL
+    auth: free account
+    rate_limit: 70/min
+    profiles: all
+    automation: full_with_api
+
+  - name: Built In
+    url: builtin.com
+    tier: scrape
+    auth: free
+    rate_limit: 50/min
+    scrape: yes
+    profiles: [lamin, josephina]
+    automation: full_scrape
+    notes: "City-specific sub-sites (builtinchicago, builtinseattle, etc.)"
+
+  - name: Crunchbase Jobs
+    url: crunchbase.com/jobs
+    tier: api
+    auth: free
+    rate_limit: 55/min
+    profiles: [lamin, josephina]
+    automation: full_with_api
+
+  - name: ProductHunt Jobs
+    url: producthunt.com/jobs
+    tier: api
+    auth: free
+    rate_limit: 65/min
+    robots_txt: allows
+    profiles: [lamin, josephina]
+    automation: full_with_api
+
+  # --- ATS Platforms (used via tracked_companies) ---
+  - name: Greenhouse
+    url: boards.greenhouse.io
+    tier: api
+    api_endpoint: boards-api.greenhouse.io/v1/boards/{slug}/jobs
+    auth: none (public board API)
+    rate_limit: 80/min
+    profiles: all
+    automation: full_with_api
+    notes: "Harvest API for direct company scraping. Best ATS API."
+
+  - name: Lever
+    url: jobs.lever.co
+    tier: api
+    api_endpoint: api.lever.co/v0/postings/{company}
+    auth: none (public postings API)
+    rate_limit: 75/min
+    profiles: all
+    automation: full_with_api
+
+  - name: Ashby
+    url: jobs.ashbyhq.com
+    tier: scrape
+    auth: free
+    rate_limit: 60/min
+    scrape: yes (React SPA, needs Playwright)
+    profiles: all
+    automation: full_scrape
+    notes: "SPA — requires Playwright snapshot, not static scrape."
+
+  - name: Workday
+    url: "[company].wd5.myworkdayjobs.com"
+    tier: assisted
+    auth: free
+    rate_limit: 70/min
+    scrape: limited
+    profiles: all
+    automation: assisted_manual
+    manual_needed: "Complex multi-step forms, session-based auth, varies per company."
+
+  - name: Taleo (Oracle)
+    url: "[company].taleo.net"
+    tier: assisted
+    auth: free
+    rate_limit: 60/min
+    scrape: limited
+    profiles: all
+    automation: assisted_manual
+    manual_needed: "Legacy Oracle ATS. Slow, Java-heavy UI."
+
+  - name: SmartRecruiters
+    url: "[company].smartrecruiters.com"
+    tier: api
+    auth: API key
+    rate_limit: 65/min
+    profiles: all
+    automation: full_with_api
+
+  - name: iCIMS
+    url: "[company].icims.com"
+    tier: assisted
+    auth: free
+    rate_limit: 50/min
+    profiles: all
+    automation: assisted_manual
+    manual_needed: "Session-heavy, multi-page forms."
+
+  - name: BambooHR
+    url: "[company].bamboohr.com/careers"
+    tier: scrape
+    auth: free
+    rate_limit: 55/min
+    profiles: all
+    automation: full_scrape
+
+# ============================================================
+# PSYCHIATRY-SPECIFIC BOARDS (paulina)
+# ============================================================
+
+psychiatry_usa:
+
+  # --- Psychiatry Job Banks ---
+  - name: Psychiatry Job Bank
+    url: psychiatryjobsbank.com
+    tier: scrape
+    auth: optional
+    rate_limit: 50/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: PsychJobs.org
+    url: psychjobs.org
+    tier: scrape
+    auth: free account
+    rate_limit: 30/min
+    scrape: yes (Selenium)
+    automation: full_scrape
+
+  - name: APA Career Central
+    url: careers.apa.org
+    tier: scrape
+    auth: free account
+    rate_limit: 40/min
+    api: limited
+    automation: full_scrape
+
+  - name: SAMHSA Careers
+    url: samhsa.gov/careers
+    tier: scrape
+    auth: none
+    rate_limit: 20/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Mental Health Jobs Board
+    url: mentalhealthjobsboard.com
+    tier: scrape
+    auth: optional
+    rate_limit: 45/min
+    scrape: yes (Selenium)
+    automation: full_scrape
+
+  - name: Consortium for Mental Health
+    url: cmhcjobs.org
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Psych Jobs Weekly
+    url: psychjobsweekly.com
+    tier: manual
+    auth: subscription
+    automation: manual_only
+    notes: "Email-based digest. No scraping. Subscribe and parse emails."
+
+  # --- General Medical Boards ---
+  - name: Doximity Careers
+    url: doximity.com/jobs
+    tier: api
+    auth: free account
+    rate_limit: 100/min
+    scrape: limited
+    automation: full_with_api
+    notes: "Physician-focused. Good psychiatry category filter."
+
+  - name: MDjobs
+    url: mdjobs.com
+    tier: scrape
+    auth: free
+    rate_limit: 50/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: HealthcareJobsite
+    url: healthcarejobsite.com
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Medical Economics Jobs
+    url: medicaleconomics.com/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: NEJM CareerCenter
+    url: nejmcareercenter.org
+    tier: scrape
+    auth: free
+    rate_limit: 25/min
+    scrape: yes
+    automation: full_scrape
+    notes: "High-quality physician listings."
+
+  - name: Health eCareers
+    url: healthecareers.com
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: PracticeLink
+    url: practicelink.com
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Physician recruitment. Good psychiatry coverage."
+
+  - name: PracticeMatch
+    url: practicematch.com
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+
+  # --- Telepsychiatry Platforms ---
+  - name: Talkspace Careers
+    url: talkspace.com/careers
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: BetterHelp Careers
+    url: betterhelp.com/careers
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Ro Careers
+    url: ro.co/careers
+    tier: scrape
+    auth: free
+    rate_limit: 45/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Spring Health Careers
+    url: springhealth.com/careers
+    tier: scrape
+    auth: free
+    rate_limit: 50/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Mindful Care
+    url: mindfulcare.com/careers
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Amwell Careers
+    url: amwell.com/careers
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: MDLive Careers
+    url: mdlive.com/careers
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+
+  # --- Academic/Research ---
+  - name: HigherEd Jobs (Chronicle)
+    url: chronicle.com/jobs
+    tier: api
+    auth: free
+    rate_limit: 75/min
+    scrape: yes
+    automation: full_with_api
+
+  - name: Inside Higher Ed Jobs
+    url: insidehighered.com/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 50/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: AcademicPsychiatry.org
+    url: psychiatry.org/careercenter
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  # --- Government / State ---
+  - name: State of Georgia Jobs
+    url: careers.georgia.gov
+    tier: api
+    auth: free
+    rate_limit: 60/min
+    automation: full_with_api
+
+  - name: State of California Jobs
+    url: jobs.ca.gov
+    tier: api
+    auth: free
+    rate_limit: 70/min
+    automation: full_with_api
+
+  - name: CA DSH (State Hospitals)
+    url: dsh.ca.gov
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: USAJobs (Federal)
+    url: usajobs.gov
+    tier: api
+    api_endpoint: data.usajobs.gov/api
+    auth: API key (free)
+    rate_limit: 100/min
+    automation: full_with_api
+    notes: "VA psychiatry positions, federal mental health roles."
+
+  - name: Emory Careers
+    url: emory.edu/careers
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: UCSF Careers
+    url: ucsf.edu/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+
+psychiatry_germany:
+
+  - name: Ärztestellen (Deutsches Ärzteblatt)
+    url: aerzteblatt.de/aerztestellen
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Premier German physician job board. Run by Bundesärztekammer."
+
+  - name: PraktischArzt
+    url: praktischarzt.de
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+    notes: "German physician job aggregator. Good psych filter."
+
+  - name: Marburger Bund Stellenbörse
+    url: marburger-bund.de/stellenboerse
+    tier: scrape
+    auth: free
+    rate_limit: 25/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Germany's physician union job board."
+
+  - name: Kliniken.de
+    url: kliniken.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Hospital directory with job listings."
+
+  - name: Medi-Jobs
+    url: medi-jobs.de
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Medical-specific German job board."
+
+  - name: Medizinerkarriere
+    url: medizinerkarriere.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Facharztvermittlung
+    url: facharztvermittlung.de
+    tier: scrape
+    auth: free
+    rate_limit: 25/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Specialist physician placement."
+
+  - name: Helios Kliniken Karriere
+    url: helios-gesundheit.de/karriere
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes (Workday-based)
+    automation: assisted_manual
+    notes: "Germany's largest private hospital group."
+
+  - name: Asklepios Karriere
+    url: asklepios.com/karriere
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Major German hospital chain."
+
+  - name: Schön Klinik Karriere
+    url: schoen-klinik.de/karriere
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Known for psychiatry/psychosomatics departments."
+
+  - name: Vivantes Karriere
+    url: vivantes.de/karriere
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Berlin's largest hospital group."
+
+  - name: Charité Karriere
+    url: charite.de/karriere
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Europe's largest university hospital. Top psychiatry dept."
+
+  - name: Universitätsklinikum Heidelberg
+    url: klinikum.uni-heidelberg.de/karriere
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Paulina did research here."
+
+  - name: DGPPN Stellenmarkt
+    url: dgppn.de/die-dgppn/stellenangebote
+    tier: scrape
+    auth: free
+    rate_limit: 20/min
+    scrape: yes
+    automation: full_scrape
+    notes: "German Psychiatric Association. Small but psychiatry-specific."
+
+  - name: Medi-Karriere
+    url: medi-karriere.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Klinikstellen
+    url: klinikstellen.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "~2,000 hospital positions."
+
+  - name: MEDIjobs
+    url: medijobs.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Oberarzt-Stellenangebote
+    url: oberarzt-stellenangebote.de
+    tier: scrape
+    auth: free
+    rate_limit: 20/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Niche: senior physician positions only."
+
+  - name: Medwing
+    url: medwing.com
+    tier: assisted
+    auth: free account
+    rate_limit: 20/min
+    scrape: limited (React SPA)
+    automation: assisted_manual
+    notes: "Medical staffing platform. Requires Playwright."
+
+# ============================================================
+# TELECOM/SALES-SPECIFIC BOARDS (lamin)
+# ============================================================
+
+telecom_usa:
+
+  - name: Telecom Careers
+    url: telecomcareers.com
+    tier: scrape
+    auth: free
+    rate_limit: 50/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Telecom Jobs Bank
+    url: telecomjobsbank.com
+    tier: scrape
+    auth: free
+    rate_limit: 45/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: CTIA Jobs
+    url: ctia.org/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Wireless industry association."
+
+  - name: CompTIA Career Center
+    url: comptia.org/careers
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: MSP Jobs
+    url: mspjobs.com
+    tier: scrape
+    auth: free
+    rate_limit: 45/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: SalesHQ
+    url: saleshq.com
+    tier: scrape
+    auth: free
+    rate_limit: 45/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: RevGenius Jobs
+    url: revgenius.com/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Revenue/sales development community."
+
+  - name: RepVue
+    url: repvue.com
+    tier: scrape
+    auth: free account
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Sales rep reviews + job listings. Glassdoor for sales."
+
+  - name: Bravado
+    url: bravado.co
+    tier: scrape
+    auth: free account
+    rate_limit: 30/min
+    scrape: limited
+    automation: assisted_manual
+    notes: "Sales professional community + jobs."
+
+  - name: Rainmakers
+    url: rainmakers.co
+    tier: assisted
+    auth: free account
+    rate_limit: 25/min
+    scrape: limited
+    automation: assisted_manual
+    notes: "Curated sales talent marketplace."
+
+  # --- Cloud/SaaS Sales ---
+  - name: AWS Jobs
+    url: amazon.jobs
+    tier: assisted
+    auth: free
+    rate_limit: 55/min
+    scrape: limited
+    automation: assisted_manual
+    notes: "Internal ATS. Complex session handling."
+
+  - name: Google Careers
+    url: google.com/careers
+    tier: assisted
+    auth: free
+    rate_limit: 50/min
+    scrape: limited
+    automation: assisted_manual
+
+  - name: Microsoft Careers
+    url: microsoft.com/careers
+    tier: assisted
+    auth: free
+    rate_limit: 55/min
+    scrape: limited
+    automation: assisted_manual
+
+telecom_germany:
+
+  - name: Honeypot
+    url: honeypot.io
+    tier: api
+    auth: free account
+    rate_limit: 50/min
+    automation: full_with_api
+    notes: "Developer/tech job platform. Good for tech sales in DE."
+
+  - name: Berlin Startup Jobs
+    url: berlinstartupjobs.com
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Berlin tech/startup ecosystem. Has sales roles."
+
+  - name: Munich Startup
+    url: munichstartup.de/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Hamburg Startups
+    url: hamburgstartups.net/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Salesjob.de
+    url: salesjob.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "German sales-specific board. ~3,000-5,000 listings."
+
+  - name: Vertriebsmanager.de
+    url: vertriebsmanager.de/stellenangebote
+    tier: scrape
+    auth: free
+    rate_limit: 20/min
+    scrape: yes
+    automation: full_scrape
+    notes: "German sales management roles."
+
+  - name: IT-Jobs.de
+    url: it-jobs.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "~8,000-10,000 IT listings. Good for IT sales/telecom."
+
+  - name: t3n Jobs
+    url: t3n.de/jobs
+    tier: assisted
+    auth: free
+    rate_limit: 20/min
+    scrape: limited (React SPA)
+    automation: assisted_manual
+    notes: "German digital/tech magazine. Requires Playwright."
+
+  - name: Heise Jobs
+    url: heise.de/jobs
+    tier: assisted
+    auth: free
+    rate_limit: 20/min
+    scrape: limited (JS-heavy)
+    automation: assisted_manual
+
+  - name: Golem.de Stellenmarkt
+    url: jobs.golem.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "German IT news job board."
+
+  - name: German Tech Jobs
+    url: germantechjobs.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "English-language German tech job board."
+
+# ============================================================
+# DESIGN/UI-SPECIFIC BOARDS (josephina)
+# ============================================================
+
+design_usa:
+
+  - name: Dribbble Jobs
+    url: dribbble.com/jobs
+    tier: api
+    api_endpoint: api.dribbble.com
+    auth: OAuth2
+    rate_limit: 100/min
+    scrape: limited
+    automation: full_with_api
+    notes: "Premier design job board."
+
+  - name: Behance Jobs
+    url: behance.net/joblist
+    tier: api
+    api_endpoint: api.behance.net
+    auth: Adobe account
+    rate_limit: 80/min
+    scrape: limited
+    automation: full_with_api
+
+  - name: AIGA Design Jobs
+    url: designjobs.aiga.org
+    tier: scrape
+    auth: free account
+    rate_limit: 50/min
+    scrape: yes
+    robots_txt: allows
+    automation: full_scrape
+    notes: "Professional design association. Quality listings."
+
+  - name: Authentic Jobs
+    url: authenticjobs.com
+    tier: api
+    auth: free
+    rate_limit: 70/min
+    scrape: limited
+    robots_txt: allows
+    automation: full_with_api
+
+  - name: Cofolios
+    url: cofolios.com
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Senior design positions."
+
+  - name: The Design Jobs Board
+    url: thedesignjobsboard.com
+    tier: scrape
+    auth: free
+    rate_limit: 45/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Design Observer Jobs
+    url: designobserver.com/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: UX Careers
+    url: uxcareers.com
+    tier: scrape
+    auth: free
+    rate_limit: 45/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: UX Writing Jobs
+    url: uxwritingjobs.com
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: AdPList Jobs
+    url: adplist.org/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: limited
+    automation: assisted_manual
+
+  - name: Job Board Design
+    url: job-board.design
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: Design Systems Repo
+    url: designsystemsrepo.com
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: limited
+    automation: assisted_manual
+    notes: "Not a job board — use to discover companies WITH design systems, then check their careers pages."
+
+  - name: Layers Jobs
+    url: layers.to/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Design portfolio + job board."
+
+  - name: Design Gigs for Good
+    url: designgigsforgood.org
+    tier: scrape
+    auth: free
+    rate_limit: 25/min
+    scrape: yes
+    automation: full_scrape
+    notes: "Impact-focused design roles."
+
+design_germany:
+
+  - name: Designerdock
+    url: designerdock.com
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    automation: full_scrape
+    notes: "German-speaking design recruitment. DE/AT/CH."
+
+  - name: PAGE Online Stellenmarkt
+    url: page-online.de/stellenmarkt
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "German design industry magazine job board."
+
+  - name: Design Made in Germany Jobs
+    url: designmadeingermany.de/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 25/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: UX Jobs Berlin
+    url: uxjobsberlin.com
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+
+  - name: dasauge Jobs
+    url: dasauge.de/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    automation: full_scrape
+    notes: "~1,000-2,000 creative/design listings. Well-structured HTML."
+
+  - name: Kreativjobs.de
+    url: kreativjobs.de
+    tier: scrape
+    auth: free
+    rate_limit: 20/min
+    scrape: yes
+    automation: full_scrape
+    notes: "German creative industry jobs."
+
+  - name: Medienjobs.de
+    url: medienjobs.de
+    tier: scrape
+    auth: free
+    rate_limit: 20/min
+    scrape: yes
+    automation: full_scrape
+    notes: "German media/design jobs."
+
+# ============================================================
+# GERMAN CROSS-CUTTING BOARDS (all profiles, DE market)
+# ============================================================
+
+germany_cross_cutting:
+
+  - name: StepStone
+    url: stepstone.de
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    profiles: all
+    automation: full_scrape
+    notes: "Germany's #1 premium job board. ~75K+ active listings."
+
+  - name: Indeed Germany
+    url: de.indeed.com
+    tier: api
+    auth: API key
+    rate_limit: 50/min
+    profiles: all
+    automation: full_with_api
+
+  - name: XING Jobs
+    url: xing.com/jobs
+    tier: assisted
+    auth: free account
+    rate_limit: 30/min
+    scrape: limited
+    profiles: all
+    automation: assisted_manual
+    notes: "German LinkedIn equivalent. Requires auth for full listings."
+    manual_needed: "Login required. Use site: search queries as workaround."
+
+  - name: LinkedIn Germany
+    url: linkedin.com/jobs (DE filter)
+    tier: api
+    profiles: all
+    automation: full_with_api
+    notes: "Same API as global LinkedIn, filter by Germany location."
+
+  - name: Bundesagentur für Arbeit
+    url: arbeitsagentur.de/jobsuche
+    tier: api
+    api_endpoint: rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs
+    auth: OAuth2 (free)
+    rate_limit: 60/min
+    profiles: all
+    automation: full_with_api
+    notes: "Federal employment agency. Free API. Massive coverage including public sector."
+
+  - name: Kimeta
+    url: kimeta.de
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    profiles: all
+    automation: full_scrape
+    notes: "German job aggregator. Crawls 600K+ sources."
+
+  - name: Stellenanzeigen.de
+    url: stellenanzeigen.de
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    profiles: all
+    automation: full_scrape
+
+  - name: Jobware
+    url: jobware.de
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    profiles: all
+    automation: full_scrape
+
+  - name: Yourfirm
+    url: yourfirm.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    profiles: all
+    automation: full_scrape
+    notes: "Mid-market employers (Mittelstand). No big-corp listings."
+
+  - name: Absolventa
+    url: absolventa.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    profiles: [josephina]
+    automation: full_scrape
+    notes: "Young professionals / career starters."
+
+  - name: Glassdoor Germany
+    url: glassdoor.de
+    tier: assisted
+    auth: free account
+    rate_limit: 30/min
+    profiles: all
+    automation: manual_preferred
+
+  - name: Monster Germany
+    url: monster.de
+    tier: scrape
+    auth: free
+    rate_limit: 40/min
+    scrape: yes
+    profiles: all
+    automation: full_scrape
+
+  - name: Karriere.de (Handelsblatt)
+    url: karriere.de
+    tier: scrape
+    auth: free
+    rate_limit: 30/min
+    scrape: yes
+    profiles: [lamin, josephina]
+    automation: full_scrape
+    notes: "Handelsblatt/WirtschaftsWoche career portal. Business/management roles."
+
+  - name: Startup Jobs Germany (Gründerszene)
+    url: gruenderszene.de/jobs
+    tier: scrape
+    auth: free
+    rate_limit: 35/min
+    scrape: yes
+    profiles: [lamin, josephina]
+    automation: full_scrape
+
+# ============================================================
+# AUTOMATION SUMMARY
+# ============================================================
+#
+# FULL AUTOMATION (API or scrape, no human needed):
+#   USA: LinkedIn API, Indeed API, ZipRecruiter API, CareerBuilder API,
+#        Greenhouse API, Lever API, Dribbble API, Behance API, Otta API,
+#        AngelList API, YC Jobs, Doximity API, USAJobs API,
+#        + all scrape-tier specialty boards
+#   Germany: Bundesagentur API, Indeed DE API, StepStone, Kimeta,
+#            Stellenanzeigen, Ärztestellen, PraktischArzt, Designerdock,
+#            Berlin Startup Jobs, PAGE Online
+#
+# ASSISTED (Playwright + human review for edge cases):
+#   USA: Glassdoor, Workday, iCIMS, Taleo, AWS Jobs, Google, Microsoft
+#   Germany: XING (auth wall), Glassdoor DE, Helios (Workday)
+#
+# MANUAL ONLY (email alerts, RSS, or browse manually):
+#   USA: FlexJobs (paid), Psych Jobs Weekly (subscription)
+#   Germany: None identified — all German boards allow some automation
+#
+# TOTAL BOARDS: 130+
+#   Cross-cutting: 22 (USA) + 14 (Germany) = 36
+#   Psychiatry: 28 (USA) + 20 (Germany) = 48
+#   Telecom/Sales: 13 (USA) + 12 (Germany) = 25
+#   Design/UI: 14 (USA) + 7 (Germany) = 21
+#   (Some boards appear in multiple categories)

@@ -60,6 +60,11 @@ AI-powered job search automation built on Claude Code: pipeline tracking, offer 
 | `data/apply-log.md` | Application submission log |
 | `ats-adapters.mjs` | ATS platform detection & field mapping |
 | `generate-cover-letter.mjs` | Cover letter HTML to PDF |
+| `templates/job-boards.yml` | Central registry of 130+ job boards with automation tiers |
+| `arbeitsagentur-api.mjs` | Bundesagentur für Arbeit API scanner (free, no auth) |
+| `job-dispatcher.mjs` | 3-mode job notification dispatcher with email |
+| `localize-detect.mjs` | Document localization, sponsorship & military detection |
+| `modes/localize.md` | Localization mode instructions (Lebenslauf routing, CL language) |
 | `reports/` | Evaluation reports (format: `{###}-{company-slug}-{YYYY-MM-DD}.md`) |
 
 ## Multi-Profile System
@@ -253,6 +258,8 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 | Wants a cover letter | `cover-letter` |
 | Wants to auto-apply | `auto-apply` |
 | Asks for application report | `report` |
+| Wants job notification sent | `dispatch` (via job-dispatcher.mjs) |
+| Needs document localization | `localize` (via localize-detect.mjs) |
 | Searches for new offers | `scan` |
 | Processes pending URLs | `pipeline` |
 | Batch processes offers | `batch` |
@@ -311,7 +318,63 @@ The auto-apply system chains: scan → evaluate → cover letter → apply → t
 
 **RULE: Default approval mode is ALWAYS manual.** The ethical guidelines in this document require user review before submission. Auto/threshold modes are power-user opt-ins.
 
+### Job Board Integration
+
+`templates/job-boards.yml` catalogs 130+ job boards across 4 automation tiers:
+- **api**: Public/authenticated API (LinkedIn, Indeed, Greenhouse, Lever, Dribbble, USAJobs, Bundesagentur)
+- **scrape**: No API but scrape-friendly (specialty boards, StepStone, Kimeta, PraktischArzt)
+- **assisted**: Heavy JS or bot detection (Workday, XING, Glassdoor). Playwright + human fallback.
+- **manual**: No automation (FlexJobs, Psych Jobs Weekly). RSS/email only.
+
+Each profile's `portals.yml` has `Board —` prefixed search queries for automated discovery via site: filters. German boards are prefixed `Board DE —`. The scanner (modes/scan.md Level 3) executes these queries automatically.
+
+### Job Notification Dispatcher
+
+`job-dispatcher.mjs` sends email notifications to candidates after job evaluation. Uses Gmail SMTP via `Lukas.T@withlukas.com` (nodemailer from Spectrum workspace).
+
+**3-mode routing based on fit score (0-100, mapped from career-ops 0-5 evaluation):**
+
+| career-ops Score | Fit Score | Mode | Action | Email Template |
+|-----------------|-----------|------|--------|----------------|
+| 4.0-5.0 | 80-100 | Auto-Apply | Submit + confirm | `email-auto-applied.html` |
+| 3.0-3.9 | 60-79 | Manual Review | Email + CL PDF attached | `email-manual-review.html` |
+| 2.0-2.9 | 40-59 | Approval | Email asking YES/NO + draft CL | `email-approval-request.html` |
+| <2.0 | <40 | Skip | Log only | None |
+
+**Fit score dimensions (when full data available):** Industry (20), Role (20), Location (15), Company (15), Compensation (15), Benefits (5), Remote (5), Visa (5) = 100 total.
+
+**Reply handling:** Candidate replies APPLIED, SKIP, AUTO, YES, NO, MAYBE LATER. Claude parses replies during session and updates tracker.
+
+**RULE: Auto-apply requires explicit opt-in consent.** By default, `auto_apply_consent: false` in every profile. Jobs scoring 80+ are downgraded to Manual Review (email with cover letter attached, candidate applies manually). To enable auto-apply:
+
+```bash
+node job-dispatcher.mjs --enable-auto-apply --profile={name}         # shows terms
+node job-dispatcher.mjs --enable-auto-apply --profile={name} --confirm  # writes consent
+node job-dispatcher.mjs --disable-auto-apply --profile={name}        # revokes consent
+```
+
+**RULE: Claude must NEVER enable auto-apply consent on behalf of the user.** The user must run the consent command themselves. Even when auto-apply consent is enabled, the `mode` setting in approval-config.yml still controls the form-filling behavior (manual/threshold/auto).
+
 **Cover letters** are generated per-application using the adaptive framing from `_profile.md` and proof points from `cv.md`. Output to `profiles/{name}/cover-letters/`.
+
+### Document Localization & Sponsorship Detection
+
+`localize-detect.mjs` runs a 5-step analysis on every job posting before document generation:
+
+1. **Location detection** — Germany vs USA vs unclear (domain, language, currency, city signals)
+2. **Document format** — Lebenslauf (German) vs Resume (US) vs Both
+3. **Cover letter language** — Bewerbungsschreiben (German) vs Business Letter (English)
+4. **Sponsorship detection** — 4-tier keyword matching (informational only, all candidates are dual citizens)
+5. **Military base detection** — Bundeswehr, NATO, US military civilian positions
+
+**Lebenslauf rules:**
+- Use existing `profiles/{name}/cv-de.md` if it exists (Lamin has one, Paulina does not)
+- If cv-de.md is missing, auto-generate from cv.md
+- **ALWAYS attach the English CV (cv.md) as secondary for German jobs** where the application allows
+
+**Email attachment rule:** If Resume and/or Lebenslauf are auto-generated for a job posting, attach them to the notification email regardless of mode (Auto-Apply, Manual Review, or Approval). The dispatcher accepts `cvPdfPath`, `cvDePdfPath`, `cvEnPdfPath`, and `coverLetterPath`.
+
+**RULE: Run localization BEFORE cover letter generation.** It determines language, format, and page size. See `modes/localize.md` and `auto-pipeline.md` Paso 4.5.
 
 ### TSV Format for Tracker Additions
 

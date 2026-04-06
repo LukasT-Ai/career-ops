@@ -140,6 +140,181 @@ search_queries:
     query: 'site:berlinstartupjobs.com "Design" lead OR director OR "design systems"'
     enabled: true
 
+  # ============================================================
+  # JOB BOARD SITE-SPECIFIC QUERIES — USA Design
+  # ============================================================
+
+  # -- Design-Specific Boards --
+  - name: Board — Dribbble Design Systems
+    query: 'site:dribbble.com/jobs "Design Systems" OR "Design Director" OR "Head of Design"'
+    enabled: true
+
+  - name: Board — Behance Jobs
+    query: 'site:behance.net/joblist "Design Systems" OR "Design Director" OR "Product Designer"'
+    enabled: true
+
+  - name: Board — AIGA Design Jobs
+    query: 'site:designjobs.aiga.org "Design Systems" OR "Design Director" OR "Product Designer"'
+    enabled: true
+
+  - name: Board — Authentic Jobs
+    query: 'site:authenticjobs.com "Design Systems" OR "Design Director" OR "UX" OR "UI"'
+    enabled: true
+
+  - name: Board — Cofolios
+    query: 'site:cofolios.com "Design Systems" OR "Design Director" OR "Principal"'
+    enabled: true
+
+  - name: Board — The Design Jobs Board
+    query: 'site:thedesignjobsboard.com "Design Systems" OR "Design Director" OR "Design Lead"'
+    enabled: true
+
+  - name: Board — Design Observer
+    query: 'site:designobserver.com "Design" director OR lead OR systems'
+    enabled: true
+
+  - name: Board — UX Careers
+    query: 'site:uxcareers.com "Design Systems" OR "Design Director" OR "UX Lead"'
+    enabled: true
+
+  - name: Board — UX Writing Jobs
+    query: 'site:uxwritingjobs.com "Design" OR "UX" lead OR director OR systems'
+    enabled: true
+
+  - name: Board — Job Board Design
+    query: 'site:job-board.design "Design Systems" OR "Design Director" OR "Design Lead"'
+    enabled: true
+
+  - name: Board — Layers Jobs
+    query: 'site:layers.to/jobs "Design Systems" OR "Design Director" OR "Product Designer"'
+    enabled: true
+
+  - name: Board — Design Gigs for Good
+    query: 'site:designgigsforgood.org "Design" director OR lead OR systems'
+    enabled: true
+
+  # -- Mega Boards (design filter) --
+  - name: Board — ZipRecruiter Design
+    query: 'site:ziprecruiter.com "Design Systems" OR "Design Director" OR "Head of Design" remote OR Atlanta'
+    enabled: true
+
+  - name: Board — CareerBuilder Design
+    query: 'site:careerbuilder.com "Design Systems" OR "Design Director" OR "Product Designer"'
+    enabled: true
+
+  - name: Board — Monster Design
+    query: 'site:monster.com "Design Systems" OR "Design Director" OR "UX" lead OR director'
+    enabled: true
+
+  - name: Board — Built In Design
+    query: 'site:builtin.com "Design Systems" OR "Design Director" OR "Head of Design"'
+    enabled: true
+
+  - name: Board — We Work Remotely Design
+    query: 'site:weworkremotely.com "Design" lead OR director OR "design systems" OR "product designer"'
+    enabled: true
+
+  - name: Board — Remote.co Design
+    query: 'site:remote.co "Design" director OR lead OR "design systems"'
+    enabled: true
+
+  # -- Startup/High-Growth --
+  - name: Board — AngelList Design
+    query: 'site:angel.co "Design Systems" OR "Design Director" OR "Head of Design"'
+    enabled: true
+
+  - name: Board — YC Jobs Design
+    query: 'site:ycombinator.com/jobs "Design" OR "Product Designer" OR "Design Systems"'
+    enabled: true
+
+  - name: Board — Otta Design
+    query: 'site:otta.com "Design Systems" OR "Design Director" OR "Product Designer"'
+    enabled: true
+
+  - name: Board — ProductHunt Design
+    query: 'site:producthunt.com/jobs "Design" OR "Product Designer" OR "UX"'
+    enabled: true
+
+  - name: Board — The Muse Design
+    query: 'site:themuse.com "Design Systems" OR "Design Director" OR "UX" lead OR director'
+    enabled: true
+
+  # ============================================================
+  # JOB BOARD SITE-SPECIFIC QUERIES — Germany Design
+  # ============================================================
+
+  - name: Board DE — Designerdock
+    query: 'site:designerdock.com "Design" Lead OR Director OR "Design Systems" OR UX OR UI'
+    enabled: true
+
+  - name: Board DE — PAGE Online
+    query: 'site:page-online.de/stellenmarkt "Design" OR "UX" OR "UI" Lead OR Director'
+    enabled: true
+
+  - name: Board DE — Design Made in Germany
+    query: 'site:designmadeingermany.de/jobs "Design" OR "UX" OR "UI"'
+    enabled: true
+
+  - name: Board DE — UX Jobs Berlin
+    query: 'site:uxjobsberlin.com "Design" OR "UX" OR "UI" lead OR director OR systems'
+    enabled: true
+
+  - name: Board DE — Kimeta Design
+    query: 'site:kimeta.de "UX Designer" OR "UI Designer" OR "Design Lead" OR "Product Designer"'
+    enabled: true
+
+  - name: Board DE — Stellenanzeigen Design
+    query: 'site:stellenanzeigen.de "UX Designer" OR "UI Designer" OR "Design" Lead OR Director'
+    enabled: true
+
+  - name: Board DE — Jobware Design
+    query: 'site:jobware.de "UX Designer" OR "UI Designer" OR "Design Lead"'
+    enabled: true
+
+  - name: Board DE — Monster Design
+    query: 'site:monster.de "UX Designer" OR "UI Designer" OR "Design Lead" OR "Product Designer"'
+    enabled: true
+
+  - name: Board DE — Arbeitsagentur Design
+    query: 'site:arbeitsagentur.de "UX Designer" OR "UI Designer" OR "Design" Lead OR Director'
+    enabled: true
+
+  - name: Board DE — Honeypot Design
+    query: 'site:honeypot.io "Design" OR "UX" OR "UI" OR "Product Designer"'
+    enabled: true
+
+  - name: Board DE — Gründerszene Design
+    query: 'site:gruenderszene.de/jobs "Design" OR "UX" OR "UI" OR "Product Designer"'
+    enabled: true
+
+  - name: Board DE — Yourfirm Design
+    query: 'site:yourfirm.de "UX Designer" OR "UI Designer" OR "Design Lead"'
+    enabled: true
+
+  - name: Board DE — Absolventa Design
+    query: 'site:absolventa.de "UX Designer" OR "UI Designer" OR "Product Designer"'
+    enabled: true
+
+  - name: Board DE — dasauge Jobs
+    query: 'site:dasauge.de "UX" OR "UI" OR "Design" Lead OR Director OR Systems'
+    enabled: true
+
+  - name: Board DE — Kreativjobs
+    query: 'site:kreativjobs.de "UX" OR "UI" OR "Design" Lead OR Director'
+    enabled: true
+
+  - name: Board DE — Medienjobs
+    query: 'site:medienjobs.de "UX" OR "UI" OR "Design" Lead OR Director OR Systems'
+    enabled: true
+
+  - name: Board DE — t3n Design
+    query: 'site:t3n.de/jobs "Design" OR "UX" OR "UI" Lead OR Director OR Systems'
+    enabled: true
+
+  - name: Board DE — German Tech Jobs Design
+    query: 'site:germantechjobs.de "Design" OR "UX" OR "UI" OR "Product Designer"'
+    enabled: true
+
 # ============================================================
 # TRACKED COMPANIES — 100 Design Systems / UI Leadership
 # ============================================================

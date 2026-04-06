@@ -41,10 +41,19 @@ Para empresas con Greenhouse, la API JSON (`boards-api.greenhouse.io/v1/boards/{
 
 Los `search_queries` con `site:` filters cubren portales de forma transversal (todos los Ashby, todos los Greenhouse, etc.). Útil para descubrir empresas NUEVAS que aún no están en `tracked_companies`, pero los resultados pueden estar desfasados.
 
+### Nivel 4 — Bundesagentur für Arbeit API (GERMANY — MANDATORY)
+
+**Always runs for every profile, every scan.** The BA API covers Germany's largest job database (1M+ listings) with a free public API key — no registration needed. All three profiles have search configs built in.
+
+**Execution:** Run `node arbeitsagentur-api.mjs` (reads active profile automatically). Results are written to `data/pipeline.md` and `data/scan-history.tsv` using the same format as other levels.
+
+**This level is NOT optional.** It runs regardless of which profile is active, because all three candidates target Germany.
+
 **Prioridad de ejecución:**
 1. Nivel 1: Playwright → todas las `tracked_companies` con `careers_url`
 2. Nivel 2: API → todas las `tracked_companies` con `api:`
 3. Nivel 3: WebSearch → todos los `search_queries` con `enabled: true`
+4. Nivel 4: BA API → `node arbeitsagentur-api.mjs` (Germany jobs, always runs)
 
 Los niveles son aditivos — se ejecutan todos, los resultados se mezclan y deduplicar.
 
@@ -95,6 +104,10 @@ Los niveles son aditivos — se ejecutan todos, los resultados se mezclan y dedu
 
 9. **Ofertas filtradas por título**: registrar en `scan-history.tsv` con status `skipped_title`
 10. **Ofertas duplicadas**: registrar con status `skipped_dup`
+
+11. **Nivel 4 — BA API (MANDATORY)**: Run `node arbeitsagentur-api.mjs` for the active profile.
+    This step ALWAYS runs at the end of every scan. It handles its own dedup, title filtering,
+    and pipeline/history writing internally. No manual post-processing needed.
 
 ## Extracción de título y empresa de WebSearch results
 

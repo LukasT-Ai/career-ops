@@ -137,6 +137,154 @@ search_queries:
     query: 'site:jobs.lever.co "Account Executive" OR "Sales" telecom OR UCaaS OR SD-WAN'
     enabled: true
 
+  # ============================================================
+  # JOB BOARD SITE-SPECIFIC QUERIES — USA Telecom/Sales
+  # ============================================================
+
+  # -- Telecom-Specific Boards --
+  - name: Board — Telecom Careers
+    query: 'site:telecomcareers.com "Account Executive" OR "Account Manager" OR "Sales"'
+    enabled: true
+
+  - name: Board — Telecom Jobs Bank
+    query: 'site:telecomjobsbank.com "Account Executive" OR "Sales" OR "Account Manager"'
+    enabled: true
+
+  - name: Board — CTIA Jobs
+    query: 'site:ctia.org/jobs "Sales" OR "Account" OR "Business Development"'
+    enabled: true
+
+  - name: Board — CompTIA Careers
+    query: 'site:comptia.org "Sales" OR "Account Manager" OR "Business Development"'
+    enabled: true
+
+  - name: Board — MSP Jobs
+    query: 'site:mspjobs.com "Sales" OR "Account Executive" OR "Account Manager"'
+    enabled: true
+
+  # -- Sales-Specific Boards --
+  - name: Board — SalesHQ
+    query: 'site:saleshq.com "Account Executive" OR "B2B Sales" OR "Enterprise Sales"'
+    enabled: true
+
+  - name: Board — RevGenius
+    query: 'site:revgenius.com "Account Executive" OR "Sales" telecom OR SaaS OR enterprise'
+    enabled: true
+
+  - name: Board — RepVue
+    query: 'site:repvue.com "Account Executive" OR "Sales" telecom OR UCaaS OR SaaS'
+    enabled: true
+
+  - name: Board — Bravado
+    query: 'site:bravado.co "Account Executive" OR "Sales" B2B OR enterprise OR telecom'
+    enabled: true
+
+  # -- Mega Boards (telecom/sales filter) --
+  - name: Board — ZipRecruiter Telecom
+    query: 'site:ziprecruiter.com "Account Executive" telecom OR UCaaS OR "managed services" Atlanta OR Georgia OR remote'
+    enabled: true
+
+  - name: Board — CareerBuilder Telecom
+    query: 'site:careerbuilder.com "Account Executive" OR "Sales" telecom OR UCaaS Atlanta OR Georgia'
+    enabled: true
+
+  - name: Board — Monster Telecom
+    query: 'site:monster.com "Account Executive" OR "Sales" telecom OR UCaaS Atlanta OR remote'
+    enabled: true
+
+  - name: Board — Built In Sales
+    query: 'site:builtin.com "Account Executive" OR "Sales" telecom OR UCaaS OR SaaS'
+    enabled: true
+
+  # -- Startup/High-Growth --
+  - name: Board — AngelList Sales
+    query: 'site:angel.co "Account Executive" OR "Sales" telecom OR UCaaS OR SaaS'
+    enabled: true
+
+  - name: Board — YC Jobs Sales
+    query: 'site:ycombinator.com/jobs "Account Executive" OR "Sales"'
+    enabled: true
+
+  - name: Board — Otta Sales
+    query: 'site:otta.com "Account Executive" OR "Sales" telecom OR UCaaS OR SaaS'
+    enabled: true
+
+  - name: Board — ProductHunt Jobs
+    query: 'site:producthunt.com/jobs "Account Executive" OR "Sales"'
+    enabled: true
+
+  - name: Board — We Work Remotely Sales
+    query: 'site:weworkremotely.com "Account Executive" OR "Sales" OR "Business Development"'
+    enabled: true
+
+  # ============================================================
+  # JOB BOARD SITE-SPECIFIC QUERIES — Germany Telecom/Sales
+  # ============================================================
+
+  - name: Board DE — Kimeta Vertrieb
+    query: 'site:kimeta.de "Account Manager" OR "Vertrieb" OR "Key Account" Telekommunikation OR UCaaS OR IT'
+    enabled: true
+
+  - name: Board DE — Stellenanzeigen Vertrieb
+    query: 'site:stellenanzeigen.de "Account Manager" OR "Vertrieb" Telekommunikation OR UCaaS OR IT-Vertrieb'
+    enabled: true
+
+  - name: Board DE — Jobware Vertrieb
+    query: 'site:jobware.de "Account Manager" OR "Vertrieb" Telekommunikation OR UCaaS'
+    enabled: true
+
+  - name: Board DE — Monster Vertrieb
+    query: 'site:monster.de "Account Manager" OR "Vertrieb" OR "Sales" Telekommunikation OR IT'
+    enabled: true
+
+  - name: Board DE — Arbeitsagentur Vertrieb
+    query: 'site:arbeitsagentur.de "Account Manager" OR "Vertrieb" Telekommunikation OR IT'
+    enabled: true
+
+  - name: Board DE — Honeypot Sales
+    query: 'site:honeypot.io "Sales" OR "Account Executive" OR "Business Development"'
+    enabled: true
+
+  - name: Board DE — Berlin Startup Jobs Sales
+    query: 'site:berlinstartupjobs.com "Sales" OR "Account Executive" OR "Business Development"'
+    enabled: true
+
+  - name: Board DE — Gründerszene Sales
+    query: 'site:gruenderszene.de/jobs "Sales" OR "Account" OR "Vertrieb"'
+    enabled: true
+
+  - name: Board DE — Yourfirm Vertrieb
+    query: 'site:yourfirm.de "Account Manager" OR "Vertrieb" Telekommunikation OR IT'
+    enabled: true
+
+  - name: Board DE — Karriere.de Sales
+    query: 'site:karriere.de "Account Manager" OR "Vertrieb" OR "Sales" Telekommunikation OR IT'
+    enabled: true
+
+  - name: Board DE — Salesjob
+    query: 'site:salesjob.de "Account Manager" OR "Vertrieb" OR "Key Account" Telekommunikation OR IT OR UCaaS'
+    enabled: true
+
+  - name: Board DE — Vertriebsmanager
+    query: 'site:vertriebsmanager.de "Account Manager" OR "Vertrieb" Telekommunikation OR IT'
+    enabled: true
+
+  - name: Board DE — IT-Jobs.de
+    query: 'site:it-jobs.de "Account Manager" OR "Vertrieb" OR "Sales" Telekommunikation OR IT'
+    enabled: true
+
+  - name: Board DE — t3n Jobs
+    query: 'site:t3n.de/jobs "Sales" OR "Account" OR "Vertrieb" OR "Business Development"'
+    enabled: true
+
+  - name: Board DE — Golem Jobs
+    query: 'site:jobs.golem.de "Sales" OR "Account" OR "Vertrieb" Telekommunikation OR IT'
+    enabled: true
+
+  - name: Board DE — German Tech Jobs
+    query: 'site:germantechjobs.de "Sales" OR "Account Executive" OR "Business Development"'
+    enabled: true
+
 # ============================================================
 # TRACKED COMPANIES — 100 Telecom/UCaaS/Managed Services
 # ============================================================

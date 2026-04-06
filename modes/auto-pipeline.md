@@ -61,9 +61,30 @@ Si el score final es >= 4.5, generar borrador de respuestas para el formulario d
 
 **Idioma**: Siempre en el idioma del JD (EN default). Aplicar `/tech-translate`.
 
+## Paso 4.5 — Document Localization (MANDATORY before cover letter)
+
+Run localization analysis to determine document formats, languages, and attachments:
+
+```javascript
+import { analyzeJob } from './localize-detect.mjs';
+const localization = analyzeJob(jobTitle, jobDescription, company, postingUrl, activeProfileName);
+```
+
+**Based on the result:**
+
+1. If `needs_lebenslauf_generation` is true → generate Lebenslauf from cv.md (see `modes/localize.md` Step 2)
+2. Use `cover_letter_language` and `format` to configure the cover letter step below
+3. Use `page_format` ('a4' or 'letter') for PDF generation
+4. If `attach_english_cv` is true → generate English CV PDF alongside German docs
+5. Store the localization result — it feeds into Paso 5, 7 (dispatcher attachments), and the evaluation report
+
+**Lebenslauf priority:** Use existing `profiles/{name}/cv-de.md` if it exists. Only auto-generate if missing. Always attach the English CV as secondary for German jobs where the application allows.
+
 ## Paso 5 — Cover Letter Generation
 - If evaluation score >= 3.5, generate a tailored cover letter
-- Use modes/cover-letter.md workflow
+- **Language and format from Paso 4.5 localization result** (German Bewerbungsschreiben or English business letter)
+- **Page format from localization** (A4 for German, Letter for US)
+- Use modes/cover-letter.md workflow (with language/format overrides from localization)
 - Save to output/cl-{name}-{company}-{date}.pdf
 - Copy to profiles/{name}/cover-letters/
 
@@ -78,7 +99,45 @@ Si el score final es >= 4.5, generar borrador de respuestas para el formulario d
   - Show manual apply instructions
 - Log to data/apply-log.md
 
-## Paso 7 — Actualizar Tracker
+## Paso 7 — Job Dispatcher Notification
+
+After evaluation, route the job through the notification dispatcher based on fit score:
+
+```javascript
+import { dispatch } from './job-dispatcher.mjs';
+
+await dispatch(
+  { title, company, url, location, salary, platform, matchReasons, draftCoverLetter,
+    coverLetterPath, cvPdfPath, cvDePdfPath, cvEnPdfPath },
+  evaluationScore, // 0-5 from oferta mode
+  { dryRun: false }
+);
+```
+
+**Document attachment fields (from Paso 4.5 localization):**
+- `coverLetterPath`: Cover letter PDF (German Bewerbungsschreiben or English business letter)
+- `cvPdfPath`: Primary CV PDF (Lebenslauf for German jobs, Resume for US jobs)
+- `cvDePdfPath`: German Lebenslauf PDF (if auto-generated or exists)
+- `cvEnPdfPath`: English Resume PDF (secondary attachment for German jobs)
+
+**All auto-generated documents are attached to the notification email** regardless of mode.
+
+**Score-to-mode mapping:**
+- 4.0+ (fit 80-100): **Auto-Apply** → submit + send confirmation email to candidate
+- 3.0-3.9 (fit 60-79): **Manual Review** → send email with cover letter PDF attached, candidate applies manually
+- 2.0-2.9 (fit 40-59): **Approval** → send email with draft cover letter inline, wait for YES/NO reply
+- Below 2.0 (fit <40): **Skip** → log only, no notification
+
+**The dispatcher:**
+1. Maps the 0-5 career-ops score to 0-100 fit score
+2. Selects the email template (auto-applied / manual-review / approval-request)
+3. Sends via Gmail SMTP (Lukas.T@withlukas.com)
+4. Attaches cover letter PDF in Manual Review mode
+5. Logs to `data/apply-log.md`
+
+**Email is sent to the candidate's email from `profile.yml`** (candidate.email field).
+
+## Paso 8 — Actualizar Tracker
 Registrar en `data/applications.md` con todas las columnas incluyendo Report y PDF en ✅.
 
 **Si algún paso falla**, continuar con los siguientes y marcar el paso fallido como pendiente en el tracker.

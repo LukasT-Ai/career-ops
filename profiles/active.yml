@@ -5,4 +5,4 @@
 # Available profiles: lamin, paulina, josephina
 # Each profile has its own: profile.yml, _profile.md, cv.md, portals.yml, data/
 
-active: lamin
+active: paulina

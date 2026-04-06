@@ -13,7 +13,11 @@
     "update": "node update-system.mjs apply",
     "rollback": "node update-system.mjs rollback",
     "cover-letter": "node generate-cover-letter.mjs",
-    "report": "echo 'Use /career-ops report mode'"
+    "report": "echo 'Use /career-ops report mode'",
+    "ba-scan": "node arbeitsagentur-api.mjs",
+    "ba-scan:dry": "node arbeitsagentur-api.mjs --dry-run",
+    "dispatch:test": "node job-dispatcher.mjs --test",
+    "dispatch:dry": "node job-dispatcher.mjs --test --dry-run"
   },
   "keywords": ["ai", "job-search", "claude-code", "career", "automation"],
   "author": "Santiago Fernández de Valderrama <hi@santifer.io> (https://santifer.io)",

@@ -6,7 +6,28 @@
 # forms and before submitting applications.
 
 approval:
-  # Approval mode:
+  # ============================================================
+  # AUTO-APPLY CONSENT (OPT-IN REQUIRED)
+  # ============================================================
+  # Auto-apply is DISABLED by default. The system will never auto-submit
+  # applications or send "Application Submitted" emails unless you
+  # explicitly set this to true.
+  #
+  # When false (default):
+  #   - Jobs scoring 80+ are downgraded to Manual Review mode
+  #   - You receive "Action Needed" emails instead of "Application Submitted"
+  #   - No applications are ever submitted without your manual action
+  #
+  # When true:
+  #   - Jobs scoring 80+ trigger auto-apply on supported ATS platforms
+  #   - You receive "Application Submitted" confirmation emails
+  #   - The 'mode' setting below still applies (manual/threshold/auto)
+  #
+  # To enable: set to true, then run the consent command:
+  #   node job-dispatcher.mjs --enable-auto-apply
+  auto_apply_consent: false
+
+  # Approval mode (only active when auto_apply_consent is true):
   #   manual    - Always pause before filling AND before submitting (safest)
   #   threshold - Auto-fill if score >= threshold, always pause before submit
   #   auto      - Auto-fill without pausing, but ALWAYS pause before submit

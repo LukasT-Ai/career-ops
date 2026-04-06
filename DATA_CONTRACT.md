@@ -62,6 +62,14 @@ These files contain system logic, scripts, templates, and instructions that impr
 | `templates/approval-config.example.yml` | Approval config example |
 | `ats-adapters.mjs` | ATS platform adapters |
 | `generate-cover-letter.mjs` | Cover letter PDF generator |
+| `templates/job-boards.yml` | Job boards registry (130+ boards, automation tiers) |
+| `arbeitsagentur-api.mjs` | Bundesagentur für Arbeit API scanner |
+| `job-dispatcher.mjs` | 3-mode notification dispatcher |
+| `templates/email-auto-applied.html` | Auto-apply confirmation email |
+| `templates/email-manual-review.html` | Manual review email with CL attachment |
+| `templates/email-approval-request.html` | Approval request email with draft CL |
+| `localize-detect.mjs` | Document localization & sponsorship detection |
+| `modes/localize.md` | Localization mode instructions |
 | `DATA_CONTRACT.md` | This file |
 
 ## The Rule

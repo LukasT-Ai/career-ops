@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; max-width: 600px; margin: 0 auto; padding: 20px; line-height: 1.6;">
+
+<div style="background: linear-gradient(135deg, #607d8b 0%, #455a64 100%); padding: 20px 24px; border-radius: 8px 8px 0 0;">
+  <h2 style="color: #fff; margin: 0; font-size: 18px;">Should I Apply?</h2>
+  <p style="color: rgba(255,255,255,0.85); margin: 4px 0 0; font-size: 13px;">{{JOB_TITLE}} at {{COMPANY_NAME}}</p>
+</div>
+
+<div style="border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 8px 8px; padding: 24px;">
+
+  <p>Hi {{FIRST_NAME}},</p>
+
+  <p>I found a job that might interest you. Before I prepare an application, I want your approval.</p>
+
+  <table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+    <tr><td style="padding: 6px 0; color: #666; width: 130px;">Position</td><td style="padding: 6px 0; font-weight: 600;">{{JOB_TITLE}}</td></tr>
+    <tr><td style="padding: 6px 0; color: #666;">Company</td><td style="padding: 6px 0; font-weight: 600;">{{COMPANY_NAME}}</td></tr>
+    <tr><td style="padding: 6px 0; color: #666;">Location</td><td style="padding: 6px 0;">{{LOCATION}}</td></tr>
+    <tr><td style="padding: 6px 0; color: #666;">Salary Range</td><td style="padding: 6px 0;">{{SALARY_RANGE}}</td></tr>
+    <tr><td style="padding: 6px 0; color: #666;">Posted</td><td style="padding: 6px 0;">{{POSTED_DATE}}</td></tr>
+    <tr><td style="padding: 6px 0; color: #666;">Fit Score</td><td style="padding: 6px 0;"><span style="background: #607d8b; color: #fff; padding: 2px 8px; border-radius: 4px; font-weight: 600;">{{FIT_SCORE}}/100</span></td></tr>
+  </table>
+
+  <div style="background: #f5f7f8; border-left: 3px solid #607d8b; padding: 12px 16px; margin: 16px 0; border-radius: 0 4px 4px 0;">
+    <p style="margin: 0 0 8px; font-weight: 600; color: #455a64;">Why This Is Interesting</p>
+    {{MATCH_REASONS}}
+  </div>
+
+  <div style="background: #fafafa; border: 1px solid #e0e0e0; padding: 16px; border-radius: 6px; margin: 16px 0;">
+    <p style="margin: 0 0 8px; font-weight: 600; color: #333;">Draft Cover Letter</p>
+    <div style="border-top: 1px solid #e0e0e0; padding-top: 12px; margin-top: 8px; font-size: 13px; color: #444; line-height: 1.7;">
+      {{DRAFT_COVER_LETTER}}
+    </div>
+  </div>
+
+  <p><a href="{{APPLICATION_URL}}" style="color: #6c3fa0; text-decoration: none; font-weight: 600;">View full job posting &rarr;</a></p>
+
+  <div style="background: #fff; border: 2px solid #607d8b; padding: 16px; border-radius: 6px; margin: 16px 0;">
+    <p style="margin: 0 0 12px; font-weight: 600; font-size: 15px;">What should I do?</p>
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="padding: 6px 0;"><strong>Reply YES</strong></td>
+        <td style="padding: 6px 0; color: #666;">Apply now with this cover letter</td>
+      </tr>
+      <tr>
+        <td style="padding: 6px 0;"><strong>Reply YES, MODIFY</strong></td>
+        <td style="padding: 6px 0; color: #666;">Wait for your revised cover letter, then apply</td>
+      </tr>
+      <tr>
+        <td style="padding: 6px 0;"><strong>Reply NO</strong></td>
+        <td style="padding: 6px 0; color: #666;">Skip this job</td>
+      </tr>
+      <tr>
+        <td style="padding: 6px 0;"><strong>Reply MAYBE LATER</strong></td>
+        <td style="padding: 6px 0; color: #666;">Save for review in 1 week</td>
+      </tr>
+    </table>
+  </div>
+
+  <p style="font-size: 13px; color: #999;">If no response within 48 hours, this job will be saved but no action taken.</p>
+
+  <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+  <p style="font-size: 12px; color: #999;">Career-Ops Job Dispatcher &mdash; Sent from Lukas.T@withlukas.com on behalf of your job search pipeline.</p>
+</div>
+
+</body>
+</html>

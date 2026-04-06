@@ -181,6 +181,224 @@ search_queries:
     query: '"international recruitment" OR "internationale Ärzte" hospital OR Klinik psychiatry OR Psychiatrie Germany'
     enabled: true
 
+  # ============================================================
+  # JOB BOARD SITE-SPECIFIC QUERIES — USA Psychiatry
+  # ============================================================
+
+  # -- Psychiatry-Specific Boards --
+  - name: Board — Psychiatry Job Bank
+    query: 'site:psychiatryjobsbank.com "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — PsychJobs.org
+    query: 'site:psychjobs.org "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — APA Careers
+    query: 'site:careers.apa.org "Psychiatrist" OR "Psychiatry" OR "Behavioral Health"'
+    enabled: true
+
+  - name: Board — SAMHSA
+    query: 'site:samhsa.gov "Psychiatrist" OR "Psychiatry" OR "Behavioral Health"'
+    enabled: true
+
+  - name: Board — Mental Health Jobs Board
+    query: 'site:mentalhealthjobsboard.com "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — CMHC Jobs
+    query: 'site:cmhcjobs.org "Psychiatrist" OR "Mental Health" physician'
+    enabled: true
+
+  # -- General Medical Boards --
+  - name: Board — Doximity
+    query: 'site:doximity.com/jobs "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — MDjobs
+    query: 'site:mdjobs.com "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — HealthcareJobsite
+    query: 'site:healthcarejobsite.com "Psychiatrist" OR "Psychiatry" OR "MD"'
+    enabled: true
+
+  - name: Board — NEJM CareerCenter
+    query: 'site:nejmcareercenter.org "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — Health eCareers
+    query: 'site:healthecareers.com "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — PracticeLink
+    query: 'site:practicelink.com "Psychiatrist" OR "Psychiatry" Georgia OR California OR remote'
+    enabled: true
+
+  - name: Board — PracticeMatch
+    query: 'site:practicematch.com "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — Medical Economics
+    query: 'site:medicaleconomics.com "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  # -- Telepsychiatry Platforms --
+  - name: Board — Talkspace
+    query: 'site:talkspace.com/careers "Psychiatrist" OR "Prescriber"'
+    enabled: true
+
+  - name: Board — BetterHelp
+    query: 'site:betterhelp.com/careers "Psychiatrist" OR "Prescriber"'
+    enabled: true
+
+  - name: Board — Spring Health
+    query: 'site:springhealth.com/careers "Psychiatrist" OR "Physician"'
+    enabled: true
+
+  - name: Board — Ro Careers
+    query: 'site:ro.co/careers "Psychiatrist" OR "Physician"'
+    enabled: true
+
+  - name: Board — Amwell
+    query: 'site:amwell.com/careers "Psychiatrist" OR "Physician"'
+    enabled: true
+
+  - name: Board — MDLive
+    query: 'site:mdlive.com/careers "Psychiatrist" OR "Physician"'
+    enabled: true
+
+  - name: Board — Mindful Care
+    query: 'site:mindfulcare.com/careers "Psychiatrist" OR "Psychiatric"'
+    enabled: true
+
+  # -- Academic --
+  - name: Board — Chronicle Higher Ed
+    query: 'site:chronicle.com/jobs "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — Inside Higher Ed
+    query: 'site:insidehighered.com/jobs "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — APA Career Center
+    query: 'site:psychiatry.org "career" OR "jobs" "Psychiatrist"'
+    enabled: true
+
+  # -- Government --
+  - name: Board — GA State Jobs
+    query: 'site:careers.georgia.gov "Psychiatrist" OR "Psychiatry" OR "Behavioral Health"'
+    enabled: true
+
+  - name: Board — CA State Jobs
+    query: 'site:jobs.ca.gov "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  - name: Board — CA DSH
+    query: 'site:dsh.ca.gov "Psychiatrist" OR "Physician"'
+    enabled: true
+
+  - name: Board — USAJobs
+    query: 'site:usajobs.gov "Psychiatrist" OR "Psychiatry"'
+    enabled: true
+
+  # -- Mega Boards (psychiatry filter) --
+  - name: Board — ZipRecruiter Psychiatry
+    query: 'site:ziprecruiter.com "Psychiatrist" Georgia OR California OR remote'
+    enabled: true
+
+  - name: Board — CareerBuilder Psychiatry
+    query: 'site:careerbuilder.com "Psychiatrist" OR "Psychiatry" Georgia OR California'
+    enabled: true
+
+  - name: Board — Monster Psychiatry
+    query: 'site:monster.com "Psychiatrist" Georgia OR California OR remote'
+    enabled: true
+
+  # ============================================================
+  # JOB BOARD SITE-SPECIFIC QUERIES — Germany Psychiatry
+  # ============================================================
+
+  - name: Board DE — Medi-Jobs
+    query: 'site:medi-jobs.de "Psychiatrie" OR "Psychiater" OR "Facharzt"'
+    enabled: true
+
+  - name: Board DE — Medizinerkarriere
+    query: 'site:medizinerkarriere.de "Psychiatrie" OR "Psychiater"'
+    enabled: true
+
+  - name: Board DE — Facharztvermittlung
+    query: 'site:facharztvermittlung.de "Psychiatrie" OR "Psychiater"'
+    enabled: true
+
+  - name: Board DE — Kimeta Psychiatrie
+    query: 'site:kimeta.de "Psychiater" OR "Facharzt Psychiatrie" OR "Oberarzt Psychiatrie"'
+    enabled: true
+
+  - name: Board DE — Stellenanzeigen Psychiatrie
+    query: 'site:stellenanzeigen.de "Psychiater" OR "Facharzt Psychiatrie"'
+    enabled: true
+
+  - name: Board DE — Jobware Psychiatrie
+    query: 'site:jobware.de "Psychiater" OR "Facharzt Psychiatrie"'
+    enabled: true
+
+  - name: Board DE — Monster Psychiatrie
+    query: 'site:monster.de "Psychiater" OR "Facharzt Psychiatrie"'
+    enabled: true
+
+  - name: Board DE — Arbeitsagentur Psychiatrie
+    query: 'site:arbeitsagentur.de "Psychiater" OR "Facharzt Psychiatrie" OR "Oberarzt Psychiatrie"'
+    enabled: true
+
+  - name: Board DE — Helios Karriere
+    query: 'site:helios-gesundheit.de "Psychiatrie" OR "Psychiater" Karriere'
+    enabled: true
+
+  - name: Board DE — Asklepios Karriere
+    query: 'site:asklepios.com "Psychiatrie" OR "Psychiater" Karriere'
+    enabled: true
+
+  - name: Board DE — Schön Klinik
+    query: 'site:schoen-klinik.de "Psychiatrie" OR "Psychosomatik" Karriere'
+    enabled: true
+
+  - name: Board DE — Vivantes
+    query: 'site:vivantes.de "Psychiatrie" OR "Psychiater" Karriere'
+    enabled: true
+
+  - name: Board DE — Charité
+    query: 'site:charite.de "Psychiatrie" OR "Psychiater" Karriere'
+    enabled: true
+
+  - name: Board DE — Uni Heidelberg Klinikum
+    query: 'site:klinikum.uni-heidelberg.de "Psychiatrie" OR "Arzt" Karriere'
+    enabled: true
+
+  - name: Board DE — DGPPN Stellenmarkt
+    query: 'site:dgppn.de "Psychiatrie" OR "Psychiater" OR "Stellenangebote"'
+    enabled: true
+
+  - name: Board DE — Medi-Karriere
+    query: 'site:medi-karriere.de "Psychiatrie" OR "Psychiater" OR "Facharzt"'
+    enabled: true
+
+  - name: Board DE — Klinikstellen
+    query: 'site:klinikstellen.de "Psychiatrie" OR "Psychiater" OR "Oberarzt"'
+    enabled: true
+
+  - name: Board DE — MEDIjobs
+    query: 'site:medijobs.de "Psychiatrie" OR "Psychiater" OR "Facharzt"'
+    enabled: true
+
+  - name: Board DE — Oberarzt-Stellenangebote
+    query: 'site:oberarzt-stellenangebote.de "Psychiatrie"'
+    enabled: true
+
+  - name: Board DE — Medwing
+    query: 'site:medwing.com "Psychiatrie" OR "Psychiater"'
+    enabled: true
+
 # ============================================================
 # TRACKED COMPANIES — 100 Psychiatry Employers
 # ============================================================
