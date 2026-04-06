@@ -49,11 +49,20 @@ Los `search_queries` con `site:` filters cubren portales de forma transversal (t
 
 **This level is NOT optional.** It runs regardless of which profile is active, because all three candidates target Germany.
 
+### Nivel 5 — USAJobs API (USA — MANDATORY)
+
+**Always runs for every profile, every scan.** USAJobs.gov covers all federal government positions across the US. Free registered API key (100 req/min). All three profiles have search configs built in.
+
+**Execution:** Run `node usajobs-api.mjs` (reads active profile automatically). Results include salary ranges and GS grades, written to `data/pipeline.md` and `data/scan-history.tsv`.
+
+**This level is NOT optional.** Federal jobs exist in all three fields (VA psychiatry, federal IT/telecom, USDS/18F design).
+
 **Prioridad de ejecución:**
 1. Nivel 1: Playwright → todas las `tracked_companies` con `careers_url`
 2. Nivel 2: API → todas las `tracked_companies` con `api:`
 3. Nivel 3: WebSearch → todos los `search_queries` con `enabled: true`
 4. Nivel 4: BA API → `node arbeitsagentur-api.mjs` (Germany jobs, always runs)
+5. Nivel 5: USAJobs API → `node usajobs-api.mjs` (US federal jobs, always runs)
 
 Los niveles son aditivos — se ejecutan todos, los resultados se mezclan y deduplicar.
 
@@ -108,6 +117,10 @@ Los niveles son aditivos — se ejecutan todos, los resultados se mezclan y dedu
 11. **Nivel 4 — BA API (MANDATORY)**: Run `node arbeitsagentur-api.mjs` for the active profile.
     This step ALWAYS runs at the end of every scan. It handles its own dedup, title filtering,
     and pipeline/history writing internally. No manual post-processing needed.
+
+12. **Nivel 5 — USAJobs API (MANDATORY)**: Run `node usajobs-api.mjs` for the active profile.
+    This step ALWAYS runs at the end of every scan. Covers all federal government positions
+    (VA, DoD, civilian agencies). Handles its own dedup and pipeline writing.
 
 ## Extracción de título y empresa de WebSearch results
 

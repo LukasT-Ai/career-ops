@@ -64,6 +64,7 @@ These files contain system logic, scripts, templates, and instructions that impr
 | `generate-cover-letter.mjs` | Cover letter PDF generator |
 | `templates/job-boards.yml` | Job boards registry (130+ boards, automation tiers) |
 | `arbeitsagentur-api.mjs` | Bundesagentur für Arbeit API scanner |
+| `usajobs-api.mjs` | USAJobs.gov federal job scanner |
 | `job-dispatcher.mjs` | 3-mode notification dispatcher |
 | `templates/email-auto-applied.html` | Auto-apply confirmation email |
 | `templates/email-manual-review.html` | Manual review email with CL attachment |

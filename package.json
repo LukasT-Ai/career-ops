@@ -16,6 +16,10 @@
     "report": "echo 'Use /career-ops report mode'",
     "ba-scan": "node arbeitsagentur-api.mjs",
     "ba-scan:dry": "node arbeitsagentur-api.mjs --dry-run",
+    "usa-scan": "node usajobs-api.mjs",
+    "usa-scan:dry": "node usajobs-api.mjs --dry-run",
+    "scan-all": "node scan-all.mjs",
+    "scan-all:dry": "node scan-all.mjs --dry-run",
     "dispatch:test": "node job-dispatcher.mjs --test",
     "dispatch:dry": "node job-dispatcher.mjs --test --dry-run"
   },

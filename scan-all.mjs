@@ -1,0 +1,195 @@
+#!/usr/bin/env node
+
+/**
+ * scan-all.mjs — Master Scanner for All Profiles
+ *
+ * Runs all API scanners (BA + USAJobs) across all 3 profiles in sequence.
+ * Designed to be called by cron or manually before batch evaluation.
+ *
+ * Usage:
+ *   node scan-all.mjs                  Run all scanners, all profiles
+ *   node scan-all.mjs --dry-run        Preview without writing
+ *   node scan-all.mjs --profile=lamin  Single profile only
+ *   node scan-all.mjs --limit=50       Max results per query (default 25)
+ *
+ * After scanning, new jobs land in each profile's data/pipeline.md.
+ * Claude then evaluates, generates docs, and dispatches emails.
+ */
+
+import { execFile } from 'child_process';
+import { readFile, copyFile } from 'fs/promises';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+import { promisify } from 'util';
+
+const execFileAsync = promisify(execFile);
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const ALL_PROFILES = ['paulina', 'lamin', 'josephina'];
+
+const SCANNERS = [
+  { name: 'Bundesagentur für Arbeit', script: 'arbeitsagentur-api.mjs' },
+  { name: 'USAJobs.gov', script: 'usajobs-api.mjs' },
+  { name: 'Board Scanner (Greenhouse/Lever APIs + site: queries)', script: 'board-scanner.mjs' },
+];
+
+async function setActiveProfile(profileName) {
+  const activePath = resolve(__dirname, 'profiles/active.yml');
+  const content = `# Active Profile Selector\nactive: ${profileName}\n`;
+  const { writeFile } = await import('fs/promises');
+  await writeFile(activePath, content, 'utf8');
+}
+
+async function syncProfileToRoot(profileName) {
+  const pairs = [
+    [`profiles/${profileName}/cv.md`, 'cv.md'],
+    [`profiles/${profileName}/profile.yml`, 'config/profile.yml'],
+    [`profiles/${profileName}/_profile.md`, 'modes/_profile.md'],
+    [`profiles/${profileName}/portals.yml`, 'portals.yml'],
+    [`profiles/${profileName}/data/applications.md`, 'data/applications.md'],
+    [`profiles/${profileName}/data/pipeline.md`, 'data/pipeline.md'],
+    [`profiles/${profileName}/data/scan-history.tsv`, 'data/scan-history.tsv'],
+  ];
+
+  for (const [src, dst] of pairs) {
+    try {
+      await copyFile(resolve(__dirname, src), resolve(__dirname, dst));
+    } catch { /* file may not exist yet — that's OK */ }
+  }
+}
+
+async function syncRootToProfile(profileName) {
+  const pairs = [
+    ['data/pipeline.md', `profiles/${profileName}/data/pipeline.md`],
+    ['data/scan-history.tsv', `profiles/${profileName}/data/scan-history.tsv`],
+    ['data/applications.md', `profiles/${profileName}/data/applications.md`],
+  ];
+
+  for (const [src, dst] of pairs) {
+    try {
+      await copyFile(resolve(__dirname, src), resolve(__dirname, dst));
+    } catch { /* OK */ }
+  }
+}
+
+async function runScanner(script, profileName, args) {
+  const scriptPath = resolve(__dirname, script);
+  const cmdArgs = [scriptPath, `--profile=${profileName}`, ...args];
+
+  try {
+    const { stdout, stderr } = await execFileAsync('node', cmdArgs, {
+      cwd: __dirname,
+      timeout: 120000, // 2 min per scanner
+    });
+    if (stdout) process.stdout.write(stdout);
+    if (stderr) process.stderr.write(stderr);
+    return true;
+  } catch (err) {
+    console.error(`    ERROR running ${script}: ${err.message}`);
+    if (err.stdout) process.stdout.write(err.stdout);
+    return false;
+  }
+}
+
+async function main() {
+  const args = process.argv.slice(2);
+  const dryRun = args.includes('--dry-run');
+  const limitArg = args.find(a => a.startsWith('--limit='));
+  const profileArg = args.find(a => a.startsWith('--profile='));
+  const extraArgs = [];
+  if (dryRun) extraArgs.push('--dry-run');
+  if (limitArg) extraArgs.push(limitArg);
+
+  const profiles = profileArg
+    ? [profileArg.split('=')[1]]
+    : ALL_PROFILES;
+
+  // Save current active profile to restore later
+  let originalActive = 'paulina';
+  try {
+    const yml = await readFile(resolve(__dirname, 'profiles/active.yml'), 'utf8');
+    originalActive = yml.match(/active:\s*(\w+)/)?.[1] || 'paulina';
+  } catch { /* use default */ }
+
+  const startTime = Date.now();
+  const results = {};
+
+  console.log(`\n  ${'═'.repeat(60)}`);
+  console.log(`  CAREER-OPS MASTER SCAN — ${new Date().toISOString().split('T')[0]}`);
+  console.log(`  ${'═'.repeat(60)}`);
+  console.log(`  Profiles: ${profiles.join(', ')}`);
+  console.log(`  Scanners: ${SCANNERS.map(s => s.name).join(', ')}`);
+  console.log(`  Dry run:  ${dryRun}`);
+  console.log(`  ${'═'.repeat(60)}\n`);
+
+  for (const profile of profiles) {
+    console.log(`\n  ${'─'.repeat(60)}`);
+    console.log(`  PROFILE: ${profile.toUpperCase()}`);
+    console.log(`  ${'─'.repeat(60)}`);
+
+    // Switch to this profile
+    await setActiveProfile(profile);
+    await syncProfileToRoot(profile);
+
+    results[profile] = { scanners: {}, newJobs: 0 };
+
+    // Count pipeline before
+    let beforeCount = 0;
+    try {
+      const pipeline = await readFile(resolve(__dirname, 'data/pipeline.md'), 'utf8');
+      beforeCount = (pipeline.match(/- \[ \]/g) || []).length;
+    } catch { /* no pipeline */ }
+
+    // Run each scanner
+    for (const scanner of SCANNERS) {
+      console.log(`\n  Running: ${scanner.name}...`);
+      const ok = await runScanner(scanner.script, profile, extraArgs);
+      results[profile].scanners[scanner.name] = ok ? 'OK' : 'FAILED';
+    }
+
+    // Count pipeline after
+    let afterCount = 0;
+    try {
+      const pipeline = await readFile(resolve(__dirname, 'data/pipeline.md'), 'utf8');
+      afterCount = (pipeline.match(/- \[ \]/g) || []).length;
+    } catch { /* no pipeline */ }
+
+    results[profile].newJobs = afterCount - beforeCount;
+
+    // Sync results back to profile directory
+    if (!dryRun) {
+      await syncRootToProfile(profile);
+    }
+  }
+
+  // Restore original active profile
+  await setActiveProfile(originalActive);
+  await syncProfileToRoot(originalActive);
+
+  // Final summary
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+
+  console.log(`\n\n  ${'═'.repeat(60)}`);
+  console.log(`  SCAN COMPLETE — ${elapsed}s`);
+  console.log(`  ${'═'.repeat(60)}`);
+
+  let totalNew = 0;
+  for (const [profile, data] of Object.entries(results)) {
+    const scannerStatus = Object.entries(data.scanners)
+      .map(([name, status]) => `${name}: ${status}`)
+      .join(', ');
+    console.log(`  ${profile.padEnd(12)} | +${data.newJobs} new jobs | ${scannerStatus}`);
+    totalNew += data.newJobs;
+  }
+
+  console.log(`  ${'─'.repeat(60)}`);
+  console.log(`  TOTAL NEW: ${totalNew} jobs across ${profiles.length} profiles`);
+  console.log(`  ${'═'.repeat(60)}\n`);
+
+  return totalNew;
+}
+
+main().catch(err => {
+  console.error(`Fatal: ${err.message}`);
+  process.exit(1);
+});

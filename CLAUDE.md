@@ -62,6 +62,7 @@ AI-powered job search automation built on Claude Code: pipeline tracking, offer 
 | `generate-cover-letter.mjs` | Cover letter HTML to PDF |
 | `templates/job-boards.yml` | Central registry of 130+ job boards with automation tiers |
 | `arbeitsagentur-api.mjs` | Bundesagentur für Arbeit API scanner (free, no auth) |
+| `usajobs-api.mjs` | USAJobs.gov federal job scanner (registered API key) |
 | `job-dispatcher.mjs` | 3-mode job notification dispatcher with email |
 | `localize-detect.mjs` | Document localization, sponsorship & military detection |
 | `modes/localize.md` | Localization mode instructions (Lebenslauf routing, CL language) |
