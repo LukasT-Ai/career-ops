@@ -757,6 +757,390 @@ tracked_companies:
     notes: "Medical staffing / locum equivalent for Germany. Can work under Berufserlaubnis while Approbation pending."
     enabled: true
 
+  # =============================================
+  # CATEGORY 13: Digital Mental Health / Telepsych Startups (19)
+  # =============================================
+
+  - name: Talkspace
+    careers_url: https://www.talkspace.com/careers
+    notes: "NYC-based. Therapy + psychiatry platform. Insurance-accepted. Multi-state."
+    enabled: true
+
+  - name: Headspace Health (Ginger)
+    careers_url: https://www.headspace.com/careers
+    notes: "Merged Headspace + Ginger. Coaching, therapy, psychiatry. Employer-sponsored."
+    enabled: true
+
+  - name: NOCD
+    careers_url: https://www.treatmyocd.com/careers
+    notes: "OCD-specialized teletherapy. Psychiatry prescriber roles. Multi-state."
+    enabled: true
+
+  - name: Mindful Care
+    careers_url: https://www.mindfulcare.com/careers
+    notes: "Urgent mental health. Walk-in + virtual psychiatry. East Coast focus."
+    enabled: true
+
+  - name: Monument
+    careers_url: https://www.joinmonument.com/careers
+    notes: "Alcohol treatment platform. Physician prescriber roles. Virtual."
+    enabled: true
+
+  - name: Charlie Health
+    careers_url: https://www.charliehealth.com/careers
+    notes: "Virtual IOP for teens/young adults. Psychiatry roles. Rapidly growing."
+    enabled: true
+
+  - name: Eleanor Health
+    careers_url: https://www.eleanorhealth.com/careers
+    notes: "Substance use + mental health. Value-based care. Multi-state clinics + virtual."
+    enabled: true
+
+  - name: Octave
+    careers_url: https://www.findoctave.com/careers
+    notes: "SF-based. Therapy + psychiatry. In-person (CA, NY) + virtual. Evidence-based."
+    enabled: true
+
+  - name: Brave Health
+    careers_url: https://www.bravehealth.com/careers
+    notes: "Virtual behavioral health for underserved. Medicaid-focused. Psychiatry roles."
+    enabled: true
+
+  - name: Osmind
+    careers_url: https://www.osmind.org/careers
+    notes: "EHR for novel psychiatric treatments (TMS, ketamine, psychedelics). SF-based."
+    enabled: true
+
+  - name: Brightline
+    careers_url: https://www.hellobrightline.com/careers
+    notes: "Pediatric behavioral health. Virtual. Employer-sponsored. Psychiatry roles."
+    enabled: true
+
+  - name: Mindbloom
+    careers_url: https://www.mindbloom.com/careers
+    notes: "Ketamine-assisted therapy platform. Psychiatrist oversight roles. Virtual."
+    enabled: true
+
+  - name: Alto Neuroscience
+    careers_url: https://www.altoneuroscience.com/careers
+    notes: "Precision psychiatry. Brain biomarker-guided treatment. Clinical research roles."
+    enabled: true
+
+  - name: Quartet Health
+    careers_url: https://www.quartethealth.com/careers
+    notes: "Behavioral health integration platform. Connects PCPs to mental health. Tech-enabled."
+    enabled: true
+
+  - name: AbleTo (Optum)
+    careers_url: https://www.ableto.com/careers
+    notes: "Optum-owned. Virtual behavioral health. Structured programs. Large scale."
+    enabled: true
+
+  - name: SonderMind
+    careers_url: https://www.sondermind.com/careers
+    notes: "Denver-based. Therapy + psychiatry marketplace. Insurance-based. Multi-state."
+    enabled: true
+
+  - name: Mindoula Health
+    careers_url: https://www.mindoula.com/careers
+    notes: "Population health for behavioral health. Care management + prescriber roles."
+    enabled: true
+
+  - name: Array Behavioral Care
+    careers_url: https://www.arraybehavioralcare.com/careers
+    notes: "Telepsychiatry for hospitals/health systems. B2B model. Psychiatrist roles."
+    enabled: true
+
+  - name: Bicycle Health
+    careers_url: https://www.bicyclehealth.com/careers
+    notes: "Opioid addiction telehealth (Suboxone). Physician prescriber roles. Virtual."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 14: Georgia Behavioral Health Facilities (12)
+  # =============================================
+
+  - name: Skyland Trail
+    careers_url: https://www.skylandtrail.org/careers
+    notes: "Atlanta GA. Nonprofit residential + day treatment. Mood/anxiety/psychotic disorders. Highly regarded."
+    enabled: true
+
+  - name: Peachford Behavioral Health (UHS)
+    careers_url: https://www.peachfordhospital.com/careers
+    notes: "Atlanta GA. UHS-owned psychiatric hospital. Adult + adolescent. 246 beds."
+    enabled: true
+
+  - name: Ridgeview Institute
+    careers_url: https://www.ridgeviewinstitute.com/careers
+    notes: "Smyrna GA. Psychiatric + addiction treatment. Inpatient + outpatient. Est. 1976."
+    enabled: true
+
+  - name: Summit Ridge Hospital
+    careers_url: https://www.summitridgehospital.net/careers
+    notes: "Lawrenceville GA. Psychiatric hospital. Children, adolescent, adult programs."
+    enabled: true
+
+  - name: Lakeview Behavioral Health
+    careers_url: https://www.lakeviewbehavioralhealth.com/careers
+    notes: "Norcross GA. Inpatient psychiatric. Adult + adolescent. Acadia Healthcare."
+    enabled: true
+
+  - name: Laurel Heights Hospital
+    careers_url: https://www.laurelheightshospital.com/careers
+    notes: "Atlanta GA. Psychiatric hospital. Adult behavioral health services."
+    enabled: true
+
+  - name: Ascend Behavioral Health
+    careers_url: https://www.ascendbh.com/careers
+    notes: "Savannah GA. Behavioral health services. Outpatient + crisis stabilization."
+    enabled: true
+
+  - name: Coastal Harbor Health System
+    careers_url: https://www.coastalharbor.com/careers
+    notes: "Savannah GA. Psychiatric hospital. Adult + adolescent. UHS-affiliated."
+    enabled: true
+
+  - name: Gateway Behavioral Health
+    careers_url: https://www.gatewaybhs.org/careers
+    notes: "Savannah GA. Community behavioral health. Multi-county service area."
+    enabled: true
+
+  - name: Turning Point Care Center
+    careers_url: https://www.turningpointcare.com/careers
+    notes: "Moultrie GA. Behavioral health + addiction. Rural South GA."
+    enabled: true
+
+  - name: Resurgens Behavioral Health
+    careers_url: https://www.resurgensbh.com/careers
+    notes: "Newnan GA. Behavioral health services. South Metro Atlanta area."
+    enabled: true
+
+  - name: Children's Healthcare of Atlanta (CHOA)
+    careers_url: https://www.choa.org/careers
+    notes: "Atlanta GA. Top pediatric system. Child/adolescent psychiatry. Marcus Autism Center."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 15: California Additional Hospitals (9)
+  # =============================================
+
+  - name: USC Keck Medicine
+    careers_url: https://www.keckmedicine.org/careers
+    notes: "Los Angeles CA. USC academic medical center. Psychiatry department."
+    enabled: true
+
+  - name: City of Hope
+    careers_url: https://www.cityofhope.org/careers
+    notes: "Duarte CA. NCI-designated cancer center. Supportive care / psycho-oncology."
+    enabled: true
+
+  - name: Sharp HealthCare
+    careers_url: https://www.sharp.com/careers
+    notes: "San Diego CA. Integrated health system. Sharp Mesa Vista psychiatric hospital."
+    enabled: true
+
+  - name: Rady Children's Hospital
+    careers_url: https://www.rchsd.org/careers
+    notes: "San Diego CA. Major pediatric hospital. Child/adolescent psychiatry."
+    enabled: true
+
+  - name: LA County DMH
+    careers_url: https://dmh.lacounty.gov/careers
+    notes: "Los Angeles CA. Largest county mental health dept in US. Public sector. High demand."
+    enabled: true
+
+  - name: SF Dept of Public Health
+    careers_url: https://www.sf.gov/departments/public-health/careers
+    notes: "San Francisco CA. Behavioral health services. Zuckerberg SF General psych unit."
+    enabled: true
+
+  - name: Alameda Health System
+    careers_url: https://www.alamedahealthsystem.org/careers
+    notes: "Oakland CA. Public health system. John George Psychiatric Hospital."
+    enabled: true
+
+  - name: Telecare Corporation
+    careers_url: https://www.telecarecorp.com/careers
+    notes: "Alameda CA. Community mental health. 100+ programs across CA. Major employer."
+    enabled: true
+
+  - name: Didi Hirsch Mental Health Services
+    careers_url: https://www.didihirsch.org/careers
+    notes: "LA area CA. Major community mental health. Suicide prevention center. Psychiatry roles."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 16: National Outpatient / Group Practice (3)
+  # =============================================
+
+  - name: Thriveworks
+    careers_url: https://www.thriveworks.com/careers
+    notes: "Nationwide outpatient. Therapy + psychiatry. 300+ locations. Insurance-based."
+    enabled: true
+
+  - name: WellPath
+    careers_url: https://www.wellpath.us/careers
+    notes: "Correctional + community healthcare. Largest jail/prison MH provider. Nationwide."
+    enabled: true
+
+  - name: Pathways Healthcare
+    careers_url: https://www.pathways.com/careers
+    notes: "Community-based behavioral health. Intellectual/developmental disabilities. Multi-state."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 17: Addiction / Specialty Treatment (26)
+  # =============================================
+
+  - name: BayMark Health Services
+    careers_url: https://www.baymark.com/careers
+    notes: "Largest OTP (opioid treatment) provider in US/Canada. MAT-focused. Physician roles."
+    enabled: true
+
+  - name: Recovery Centers of America
+    careers_url: https://www.recoverycentersofamerica.com/careers
+    notes: "Inpatient addiction treatment. East Coast. Psychiatrist medical director roles."
+    enabled: true
+
+  - name: BHG (Behavioral Health Group)
+    careers_url: https://www.bhgrecovery.com/careers
+    notes: "Opioid addiction treatment. 80+ treatment centers. MAT. Physician roles."
+    enabled: true
+
+  - name: American Addiction Centers
+    careers_url: https://www.americanaddictioncenters.org/careers
+    notes: "Nationwide addiction treatment. Multiple brands. Inpatient + outpatient. Publicly traded."
+    enabled: true
+
+  - name: Hazelden Betty Ford Foundation
+    careers_url: https://www.hazeldenbettyford.org/careers
+    notes: "Premier addiction treatment. MN, OR, CA, IL, NY, FL. Research + clinical. Prestigious."
+    enabled: true
+
+  - name: Rogers Behavioral Health
+    careers_url: https://www.rogersbh.org/careers
+    notes: "OCD, anxiety, addiction, eating disorders. Residential + PHP. WI-based, multi-state."
+    enabled: true
+
+  - name: Monte Nido
+    careers_url: https://www.montenido.com/careers
+    notes: "Eating disorder treatment. Residential + day treatment. Multi-state."
+    enabled: true
+
+  - name: Newport Healthcare
+    careers_url: https://www.newporthealthcare.com/careers
+    notes: "Adolescent + young adult mental health/substance use. Residential. Multi-state."
+    enabled: true
+
+  - name: Yellowbrick
+    careers_url: https://www.yellowbrickprogram.com/careers
+    notes: "Evanston IL. Young adult (18-30) psychiatric treatment. Residential + outpatient."
+    enabled: true
+
+  - name: Pine Grove Behavioral Health
+    careers_url: https://www.pinegrovetreatment.com/careers
+    notes: "Hattiesburg MS. Addiction, mood, trauma. Residential. Part of Forrest Health."
+    enabled: true
+
+  - name: Sierra Tucson
+    careers_url: https://www.sierratucson.com/careers
+    notes: "Tucson AZ. Co-occurring disorders. Residential. Acadia Healthcare. Integrative approach."
+    enabled: true
+
+  - name: The Meadows
+    careers_url: https://www.themeadows.com/careers
+    notes: "Wickenburg AZ. Trauma, addiction, behavioral health. Residential. Renowned program."
+    enabled: true
+
+  - name: Promises Behavioral Health
+    careers_url: https://www.promises.com/careers
+    notes: "Addiction + mental health. Multiple locations (TX, TN, FL). Residential."
+    enabled: true
+
+  - name: Cliffside Malibu
+    careers_url: https://www.cliffsidemalibu.com/careers
+    notes: "Malibu CA. Luxury addiction/dual-diagnosis treatment. Residential."
+    enabled: true
+
+  - name: Elements Behavioral Health
+    careers_url: https://www.elementsbehavioralhealth.com/careers
+    notes: "Network of addiction/mental health treatment centers. Multi-state residential."
+    enabled: true
+
+  - name: The Renfrew Center
+    careers_url: https://renfrewcenter.com/careers
+    notes: "Eating disorder treatment pioneer. Residential + day. Multi-state (FL, PA, NJ, CA, IL, MA)."
+    enabled: true
+
+  - name: Oliver-Pyatt Centers
+    careers_url: https://www.oliverpyattcenters.com/careers
+    notes: "Miami FL. Eating disorders. Residential + day treatment. Psychiatry oversight roles."
+    enabled: true
+
+  - name: The Center for Discovery
+    careers_url: https://www.centerfordiscovery.com/careers
+    notes: "Eating disorders + dual diagnosis. Residential. Multi-state. Youth + adult."
+    enabled: true
+
+  - name: Castlewood Treatment Center
+    careers_url: https://www.castlewoodtc.com/careers
+    notes: "St. Louis MO area. Eating disorders. Residential + PHP."
+    enabled: true
+
+  - name: Timberline Knolls
+    careers_url: https://www.timberlineknolls.com/careers
+    notes: "Lemont IL. Women/adolescent girls. Eating disorders, addiction, mood. Residential."
+    enabled: true
+
+  - name: Center for Change
+    careers_url: https://www.centerforchange.com/careers
+    notes: "Orem UT. Eating disorders. Residential + outpatient. Women + adolescents."
+    enabled: true
+
+  - name: Origins Recovery Centers
+    careers_url: https://www.originsrecovery.com/careers
+    notes: "TX-based. Addiction treatment. Residential. 12-step integrated approach."
+    enabled: true
+
+  - name: The Ranch Tennessee
+    careers_url: https://www.recoveryranch.com/careers
+    notes: "Nunnelly TN. Addiction + mental health. Residential. Rural therapeutic setting."
+    enabled: true
+
+  - name: Brookhaven Retreat
+    careers_url: https://www.brookhavenretreat.com/careers
+    notes: "Knoxville TN area. Women's mental health + addiction. Residential."
+    enabled: true
+
+  - name: OnSite Workshops
+    careers_url: https://www.onsiteworkshops.com/careers
+    notes: "Nashville TN. Experiential therapy. Intensive workshops. Trauma, relationships."
+    enabled: true
+
+  - name: Starr Commonwealth
+    careers_url: https://www.starr.org/careers
+    notes: "MI/OH. Youth behavioral health. Residential + community-based. Trauma-informed."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 18: German Pharma with Psychiatric Products (3)
+  # =============================================
+
+  - name: Fresenius
+    careers_url: https://www.fresenius.com/careers
+    notes: "Bad Homburg. Medical devices/dialysis. Owns Helios Kliniken. Psychiatric consulting roles."
+    enabled: true
+
+  - name: Bayer
+    careers_url: https://www.bayer.com/en/careers
+    notes: "Leverkusen. Pharma + life sciences. CNS/neuro products. Medical affairs roles."
+    enabled: true
+
+  - name: Merck Group (Merck KGaA)
+    careers_url: https://www.merckgroup.com/en/careers.html
+    notes: "Darmstadt. Pharma/biotech. Neurology pipeline. Medical science liaison roles."
+    enabled: true
+
 # ============================================================
 # GERMANY APPROBATION PATHWAY — Reference
 # ============================================================

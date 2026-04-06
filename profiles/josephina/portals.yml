@@ -685,3 +685,82 @@ tracked_companies:
     careers_url: https://careers.calendly.com
     notes: "Atlanta GA. Scheduling platform. Growing design team. LOCAL."
     enabled: true
+
+  # =============================================
+  # CATEGORY 11: German/DACH Tech — Additional (15)
+  # =============================================
+
+  - name: Siemens
+    careers_url: https://www.siemens.com/careers
+    notes: "Munich, Germany. Major design system needs across industrial IoT and digital products."
+    enabled: true
+
+  - name: BMW Group
+    careers_url: https://www.bmwgroup.jobs
+    notes: "Munich, Germany. UX/UI for connected car, digital services."
+    enabled: true
+
+  - name: Mercedes-Benz
+    careers_url: https://www.mercedes-benz.com/careers
+    notes: "Stuttgart, Germany. MBUX design system, connected car UX."
+    enabled: true
+
+  - name: Adidas
+    careers_url: https://www.adidas-group.com/careers
+    notes: "Herzogenaurach, Germany. Strong digital/e-commerce design team."
+    enabled: true
+
+  - name: HelloFresh
+    careers_url: https://www.hellofresh.com/careers
+    notes: "Berlin, Germany. Product design for app/web ordering platform."
+    enabled: true
+
+  - name: SoundCloud
+    careers_url: https://www.soundcloud.com/jobs
+    notes: "Berlin, Germany. Music platform, design-forward product."
+    enabled: true
+
+  - name: GetYourGuide
+    careers_url: https://www.getyourguide.com/careers
+    notes: "Berlin, Germany. Travel platform, strong product design."
+    enabled: true
+
+  - name: Scalable Capital
+    careers_url: https://www.scalable.capital/careers
+    notes: "Munich, Germany. Fintech, investment app design."
+    enabled: true
+
+  - name: Omio
+    careers_url: https://www.omio.com/jobs
+    notes: "Berlin, Germany. Travel booking platform, good design team."
+    enabled: true
+
+  - name: Scout24
+    careers_url: https://www.scout24.com/careers
+    notes: "Munich, Germany. Digital marketplace (ImmoScout24), product design."
+    enabled: true
+
+  - name: Trivago
+    careers_url: https://company.trivago.com/careers
+    notes: "Duesseldorf, Germany. Travel search, design system."
+    enabled: true
+
+  - name: Sixt
+    careers_url: https://www.sixt.jobs
+    notes: "Pullach/Munich, Germany. Mobility platform, app-focused design."
+    enabled: true
+
+  - name: Otto Group
+    careers_url: https://www.ottogroup.com/careers
+    notes: "Hamburg, Germany. E-commerce, large digital team."
+    enabled: true
+
+  - name: Axel Springer
+    careers_url: https://www.axelspringer.com/careers
+    notes: "Berlin, Germany. Digital media, product design."
+    enabled: true
+
+  - name: Wolt
+    careers_url: https://www.wolt.com/careers
+    notes: "Berlin, Germany. Delivery app, strong design culture (DH family)."
+    enabled: true

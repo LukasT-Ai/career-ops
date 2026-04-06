@@ -674,3 +674,438 @@ tracked_companies:
     careers_url: https://www.semtech.com/company/careers
     notes: "Richmond BC. IoT, cellular routers, enterprise wireless WAN."
     enabled: true
+
+  # =============================================
+  # CATEGORY 9: Legacy Telecom / PBX / VoIP (6)
+  # =============================================
+
+  - name: Avaya
+    careers_url: https://www.avaya.com/en/about-avaya/careers/
+    notes: "Durham NC. Enterprise PBX, UCaaS, contact center, hybrid cloud."
+    enabled: true
+
+  - name: Polycom (Poly / HP)
+    careers_url: https://www.hp.com/us-en/jobs.html
+    notes: "Santa Cruz CA. Video/voice endpoints, now part of HP."
+    enabled: true
+
+  - name: Mitel (ShoreTel)
+    careers_url: https://www.mitel.com/careers
+    notes: "Ottawa ON. Business phone systems, UCaaS, PBX (absorbed ShoreTel)."
+    enabled: true
+
+  - name: Telnyx
+    careers_url: https://telnyx.com/company/careers
+    notes: "Chicago IL. CPaaS, SIP trunking, voice/messaging APIs, private network."
+    enabled: true
+
+  - name: MagicJack VoIP
+    careers_url: https://www.magicjack.com/careers
+    notes: "West Palm Beach FL. Consumer/SMB VoIP provider."
+    enabled: true
+
+  - name: Grasshopper
+    careers_url: https://www.goto.com/careers
+    notes: "Boston MA. Virtual phone for small business, owned by GoTo."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 10: Enterprise SaaS (6)
+  # =============================================
+
+  - name: Slack (Salesforce)
+    careers_url: https://slack.com/careers
+    notes: "San Francisco CA. Business messaging, Slack Connect for enterprise."
+    enabled: true
+
+  - name: Zendesk
+    careers_url: https://www.zendesk.com/jobs/
+    notes: "San Francisco CA. Customer service platform, CX suite."
+    enabled: true
+
+  - name: Salesforce (Comms Cloud)
+    careers_url: https://careers.salesforce.com/
+    notes: "San Francisco CA. CRM, Communications Cloud for telecom verticals."
+    enabled: true
+
+  - name: Oracle Communications
+    careers_url: https://www.oracle.com/careers/
+    notes: "Austin TX. Telecom billing (BRM), network signaling, cloud infra."
+    enabled: true
+
+  - name: ServiceTitan
+    careers_url: https://www.servicetitan.com/careers
+    notes: "Glendale CA. Field service management SaaS, high-growth."
+    enabled: true
+
+  - name: Weave
+    careers_url: https://www.getweave.com/careers/
+    notes: "Lehi UT. SMB communications platform (phone, text, reviews)."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 11: Telecom Infrastructure (12)
+  # =============================================
+
+  - name: Ericsson
+    careers_url: https://www.ericsson.com/en/careers
+    notes: "Stockholm SE (US: Plano TX). 5G RAN, core network, telecom infra."
+    enabled: true
+
+  - name: Nokia
+    careers_url: https://www.nokia.com/careers/
+    notes: "Espoo FI (US: Murray Hill NJ). 5G, optical, IP networking."
+    enabled: true
+
+  - name: Calix
+    careers_url: https://www.calix.com/about-calix/careers.html
+    notes: "San Jose CA. Broadband platforms for service providers."
+    enabled: true
+
+  - name: ADTRAN
+    careers_url: https://www.adtran.com/careers
+    notes: "Huntsville AL. Fiber access, optical networking, subscriber platforms."
+    enabled: true
+
+  - name: Ceragon Networks
+    careers_url: https://www.ceragon.com/company/careers
+    notes: "Tel Aviv IL (US: Paramus NJ). Wireless backhaul, 5G transport."
+    enabled: true
+
+  - name: Infinera
+    careers_url: https://www.infinera.com/careers/
+    notes: "Sunnyvale CA. Optical transport, coherent networking."
+    enabled: true
+
+  - name: CommScope
+    careers_url: https://www.commscope.com/careers/
+    notes: "Hickory NC. Network infrastructure, fiber, wireless, RUCKUS."
+    enabled: true
+
+  - name: Corning
+    careers_url: https://www.corning.com/worldwide/en/careers.html
+    notes: "Corning NY. Optical fiber, cable, connectivity solutions."
+    enabled: true
+
+  - name: Prysmian Group
+    careers_url: https://www.prysmian.com/en/careers
+    notes: "Milan IT (US: Highland Heights KY). Fiber optic cable, energy cables."
+    enabled: true
+
+  - name: Amphenol
+    careers_url: https://www.amphenol.com/careers
+    notes: "Wallingford CT. Connectors, fiber optic, broadband hardware."
+    enabled: true
+
+  - name: TE Connectivity
+    careers_url: https://careers.te.com/
+    notes: "Schaffhausen CH (US: Berwyn PA). Connectors, sensors, networking."
+    enabled: true
+
+  - name: Jabil
+    careers_url: https://www.jabil.com/careers.html
+    notes: "St. Petersburg FL. Contract mfg for telecom equipment, 5G infra."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 12: Distribution / VAR (3)
+  # =============================================
+
+  - name: Arrow Electronics
+    careers_url: https://www.arrow.com/company/careers
+    notes: "Centennial CO. IT distribution, enterprise computing, IoT."
+    enabled: true
+
+  - name: TD SYNNEX (Tech Data)
+    careers_url: https://www.tdsynnex.com/us/en/about-us/careers.html
+    notes: "Clearwater FL. IT distribution, cloud marketplace (fka Tech Data)."
+    enabled: true
+
+  - name: Ingram Micro
+    careers_url: https://corp.ingrammicro.com/careers
+    notes: "Irvine CA. IT distribution, cloud, lifecycle services."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 13: Data Center / Cloud Infra (7)
+  # =============================================
+
+  - name: Digital Realty
+    careers_url: https://www.digitalrealty.com/careers
+    notes: "Austin TX. Data centers, colocation, interconnection (PlatformDIGITAL)."
+    enabled: true
+
+  - name: Equinix
+    careers_url: https://careers.equinix.com/
+    notes: "Redwood City CA. Global data centers, interconnection, bare metal."
+    enabled: true
+
+  - name: CyrusOne
+    careers_url: https://www.cyrusone.com/careers
+    notes: "Dallas TX. Enterprise data centers, hybrid cloud."
+    enabled: true
+
+  - name: CoreWeave
+    careers_url: https://www.coreweave.com/careers
+    notes: "Roseland NJ. GPU cloud for AI/ML workloads, fast-growing."
+    enabled: true
+
+  - name: Lambda Labs
+    careers_url: https://lambdalabs.com/careers
+    notes: "San Francisco CA. GPU cloud, AI infrastructure."
+    enabled: true
+
+  - name: Vast Data
+    careers_url: https://www.vastdata.com/careers
+    notes: "New York NY. Data storage platform, AI-era infrastructure."
+    enabled: true
+
+  - name: Starlink / SpaceX
+    careers_url: https://www.spacex.com/careers/
+    notes: "Hawthorne CA. Satellite internet, enterprise Starlink Business."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 14: Hyperscaler Telecom (3)
+  # =============================================
+
+  - name: Amazon AWS (Telecom)
+    careers_url: https://www.amazon.jobs/
+    notes: "Seattle WA. AWS for Telecom, private 5G, Wavelength edge."
+    enabled: true
+
+  - name: Google Cloud (Telecom)
+    careers_url: https://careers.google.com/
+    notes: "Mountain View CA. Telecom solutions, Anthos for Telecom, network."
+    enabled: true
+
+  - name: Microsoft Azure (Telecom)
+    careers_url: https://careers.microsoft.com/
+    notes: "Redmond WA. Azure for Operators, private 5G, Metaswitch."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 15: Consulting — Telecom Practice (11)
+  # =============================================
+
+  - name: Accenture (Comms & Media)
+    careers_url: https://www.accenture.com/us-en/careers
+    notes: "Dublin IE (US: NYC). Telecom consulting, network transformation."
+    enabled: true
+
+  - name: Deloitte (TMT Practice)
+    careers_url: https://apply.deloitte.com/
+    notes: "London UK (US: NYC). Telecom strategy, M&A, digital transformation."
+    enabled: true
+
+  - name: PwC (TMT Advisory)
+    careers_url: https://www.pwc.com/us/en/careers.html
+    notes: "London UK (US: NYC). Telecom deals, strategy, regulatory."
+    enabled: true
+
+  - name: EY (TMT Consulting)
+    careers_url: https://www.ey.com/en_us/careers
+    notes: "London UK (US: NYC). Telecom consulting, 5G strategy."
+    enabled: true
+
+  - name: Capgemini (Telecom)
+    careers_url: https://www.capgemini.com/careers/
+    notes: "Paris FR (US: NYC). Telecom SI, network services, 5G."
+    enabled: true
+
+  - name: Atos (Telecom)
+    careers_url: https://atos.net/en/careers
+    notes: "Bezons FR. Digital transformation, managed services, telecom."
+    enabled: true
+
+  - name: CGI (Telecom)
+    careers_url: https://www.cgi.com/en/careers
+    notes: "Montreal QC. IT/telecom consulting, managed services."
+    enabled: true
+
+  - name: Fujitsu
+    careers_url: https://www.fujitsu.com/global/about/careers/
+    notes: "Tokyo JP (US: Richardson TX). Network equipment, managed services."
+    enabled: true
+
+  - name: NEC Corporation
+    careers_url: https://www.nec.com/en/global/careers/
+    notes: "Tokyo JP (US: Irving TX). 5G, submarine cables, network infra."
+    enabled: true
+
+  - name: Amdocs
+    careers_url: https://www.amdocs.com/careers
+    notes: "Chesterfield MO. Telecom BSS/OSS, billing, CX for carriers."
+    enabled: true
+
+  - name: NetScout Systems
+    careers_url: https://www.netscout.com/company/careers
+    notes: "Westford MA. Network performance, service assurance, DDoS."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 16: Networking / Security (9)
+  # =============================================
+
+  - name: Juniper Networks
+    careers_url: https://www.juniper.net/us/en/company/careers.html
+    notes: "Sunnyvale CA. Routers, switches, SD-WAN, Mist AI."
+    enabled: true
+
+  - name: Arista Networks
+    careers_url: https://www.arista.com/en/careers
+    notes: "Santa Clara CA. Cloud networking, data center switches."
+    enabled: true
+
+  - name: F5 Networks
+    careers_url: https://www.f5.com/company/careers
+    notes: "Seattle WA. App delivery, load balancing, WAF, NGINX."
+    enabled: true
+
+  - name: Check Point Software
+    careers_url: https://www.checkpoint.com/careers/
+    notes: "Tel Aviv IL (US: San Carlos CA). Network security, firewalls, SASE."
+    enabled: true
+
+  - name: CrowdStrike
+    careers_url: https://www.crowdstrike.com/careers/
+    notes: "Austin TX. Endpoint security, cloud security, threat intel."
+    enabled: true
+
+  - name: SentinelOne
+    careers_url: https://www.sentinelone.com/careers/
+    notes: "Mountain View CA. AI-powered endpoint security, XDR."
+    enabled: true
+
+  - name: Rapid7
+    careers_url: https://www.rapid7.com/careers/
+    notes: "Boston MA. Vulnerability management, SIEM, cloud security."
+    enabled: true
+
+  - name: Okta
+    careers_url: https://www.okta.com/company/careers/
+    notes: "San Francisco CA. Identity/access management, zero trust."
+    enabled: true
+
+  - name: HashiCorp
+    careers_url: https://www.hashicorp.com/careers
+    notes: "San Francisco CA. Infrastructure automation (Terraform, Vault)."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 17: Observability / DevOps (7)
+  # =============================================
+
+  - name: JFrog
+    careers_url: https://jfrog.com/careers/
+    notes: "Sunnyvale CA. DevOps platform, Artifactory, software supply chain."
+    enabled: true
+
+  - name: MongoDB
+    careers_url: https://www.mongodb.com/careers
+    notes: "New York NY. NoSQL database, Atlas cloud, enterprise sales."
+    enabled: true
+
+  - name: Elastic
+    careers_url: https://www.elastic.co/careers/
+    notes: "San Francisco CA. Search, observability, security (ELK stack)."
+    enabled: true
+
+  - name: Datadog
+    careers_url: https://careers.datadoghq.com/
+    notes: "New York NY. Cloud monitoring, APM, log management, security."
+    enabled: true
+
+  - name: New Relic
+    careers_url: https://newrelic.com/careers
+    notes: "San Francisco CA. Observability platform, APM, full-stack monitoring."
+    enabled: true
+
+  - name: Sumo Logic
+    careers_url: https://www.sumologic.com/company/careers/
+    notes: "Redwood City CA. Cloud SIEM, log analytics, observability."
+    enabled: true
+
+  - name: Lacework
+    careers_url: https://www.lacework.com/careers/
+    notes: "Mountain View CA. Cloud security, CNAPP, anomaly detection."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 18: German Employers — Tech/Telecom Sales (15)
+  # =============================================
+
+  - name: Deutsche Telekom
+    careers_url: https://www.telekom.com/careers
+    notes: "Bonn, Germany. Germany's largest telecom, enterprise/B2B sales. PERFECT FIT."
+    enabled: true
+
+  - name: Vodafone Germany
+    careers_url: https://www.vodafone.de/karriere
+    notes: "Düsseldorf, Germany. Major mobile/fixed-line telecom, enterprise sales. PERFECT FIT."
+    enabled: true
+
+  - name: Telefónica Germany (O2)
+    careers_url: https://www.telefonica.de/karriere
+    notes: "Munich, Germany. Mobile telecom, business/enterprise sales. PERFECT FIT."
+    enabled: true
+
+  - name: 1&1 / United Internet
+    careers_url: https://www.united-internet.de/karriere
+    notes: "Montabaur, Germany. Telecom/hosting/cloud, B2B sales. Very relevant."
+    enabled: true
+
+  - name: SAP
+    careers_url: https://www.sap.com/careers
+    notes: "Walldorf, Germany. Enterprise software giant, massive sales org."
+    enabled: true
+
+  - name: Siemens
+    careers_url: https://www.siemens.com/careers
+    notes: "Munich, Germany. Industrial tech, digital industries, enterprise sales."
+    enabled: true
+
+  - name: Bosch
+    careers_url: https://www.bosch.com/careers
+    notes: "Stuttgart, Germany. IoT/connected devices, enterprise sales."
+    enabled: true
+
+  - name: Continental
+    careers_url: https://www.continental.com/careers
+    notes: "Hanover, Germany. Automotive/connected car tech, B2B sales."
+    enabled: true
+
+  - name: Infineon Technologies
+    careers_url: https://www.infineon.com/careers
+    notes: "Munich, Germany. Semiconductors, connectivity products, enterprise sales."
+    enabled: true
+
+  - name: TeamViewer
+    careers_url: https://www.teamviewer.com/careers
+    notes: "Göppingen, Germany. Remote access/software, enterprise SaaS sales."
+    enabled: true
+
+  - name: Software AG
+    careers_url: https://www.softwareag.com/careers
+    notes: "Darmstadt, Germany. Enterprise middleware/IoT platform, sales roles."
+    enabled: true
+
+  - name: Celonis
+    careers_url: https://www.celonis.com/careers
+    notes: "Munich, Germany. Process mining, fast-growing enterprise SaaS sales."
+    enabled: true
+
+  - name: Personio
+    careers_url: https://www.personio.com/careers
+    notes: "Munich, Germany. HR tech SaaS, enterprise sales."
+    enabled: true
+
+  - name: Deutsche Bahn
+    careers_url: https://www.deutschebahn.com/careers
+    notes: "Berlin, Germany. Major IT modernization programs, tech sales."
+    enabled: true
+
+  - name: Scout24
+    careers_url: https://www.scout24.com/careers
+    notes: "Munich, Germany. Digital marketplace platform, sales roles."
+    enabled: true
