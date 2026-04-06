@@ -1,0 +1,687 @@
+# Josephina Kaiser — Portal Scanner Configuration
+# Design Systems / UI Design Leadership
+#
+# Search locations: Atlanta/GA + Germany + Remote
+# To disable a company: set enabled: false
+# To add a company: copy any entry and change name/careers_url
+
+title_filter:
+  positive:
+    # -- Design Leadership --
+    - "Design Director"
+    - "Head of Design"
+    - "VP of Design"
+    - "VP Design"
+    - "VP Product Design"
+    - "Design Manager"
+    - "Design Lead"
+    - "Principal Designer"
+    - "Staff Designer"
+    - "Creative Director"
+    # -- Design Systems --
+    - "Design Systems"
+    - "Design System"
+    - "Design Ops"
+    - "DesignOps"
+    - "Design Technologist"
+    - "Design Engineer"
+    # -- UI/UX --
+    - "UI Designer"
+    - "UX Designer"
+    - "Product Designer"
+    - "Visual Designer"
+    - "Interaction Designer"
+    - "UI/UX"
+    - "Brand Designer"
+    # -- German keywords --
+    - "Design"
+    - "Gestaltung"
+    - "UX"
+    - "UI"
+    - "Produktdesigner"
+    - "Designleitung"
+  negative:
+    - "Intern"
+    - "Junior"
+    - "Graphic Designer"
+    - "Marketing Designer"
+    - "Web Designer"
+    - "Interior Designer"
+    - "Fashion Designer"
+    - "Instructional Designer"
+    - "Game Designer"
+    - "Sound Designer"
+    - "Industrial Designer"
+  seniority_boost:
+    - "Senior"
+    - "Staff"
+    - "Principal"
+    - "Lead"
+    - "Head"
+    - "Director"
+    - "VP"
+    - "Manager"
+
+# ============================================================
+# SEARCH QUERIES — Atlanta/GA + Germany + Remote
+# ============================================================
+
+search_queries:
+
+  # -- Atlanta / Georgia --
+  - name: Atlanta — Design Systems Lead
+    query: '"Design Systems" lead OR manager OR director Atlanta OR Georgia'
+    enabled: true
+
+  - name: Atlanta — Design Director
+    query: '"Design Director" OR "Head of Design" OR "VP of Design" Atlanta OR Georgia'
+    enabled: true
+
+  - name: Atlanta — Product Designer Senior
+    query: '"Senior Product Designer" OR "Staff Designer" OR "Principal Designer" Atlanta OR Georgia'
+    enabled: true
+
+  - name: Atlanta — LinkedIn Design
+    query: 'site:linkedin.com/jobs "Design Systems" OR "Design Director" OR "Head of Design" Atlanta OR Georgia'
+    enabled: true
+
+  # -- Remote --
+  - name: Remote — Design Systems Lead
+    query: '"Design Systems" lead OR manager OR director remote'
+    enabled: true
+
+  - name: Remote — Head of Design
+    query: '"Head of Design" OR "Design Director" OR "VP of Design" remote'
+    enabled: true
+
+  - name: Remote — Principal Designer
+    query: '"Principal Designer" OR "Staff Designer" "design systems" remote'
+    enabled: true
+
+  # -- Job Boards --
+  - name: Greenhouse — Design Systems
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Design Systems" lead OR manager OR director'
+    enabled: true
+
+  - name: Ashby — Design Leadership
+    query: 'site:jobs.ashbyhq.com "Design Director" OR "Head of Design" OR "Design Systems"'
+    enabled: true
+
+  - name: Lever — Design Leadership
+    query: 'site:jobs.lever.co "Design Director" OR "Head of Design" OR "Design Systems"'
+    enabled: true
+
+  - name: Dribbble — Design Systems
+    query: 'site:dribbble.com/jobs "Design Systems" OR "Design Director"'
+    enabled: true
+
+  - name: Built In — Atlanta Design
+    query: 'site:builtin.com "Design" "Atlanta" lead OR director OR manager'
+    enabled: true
+
+  # -- Germany --
+  - name: Germany — Design Lead
+    query: '"Design Lead" OR "Head of Design" OR "Design Director" Germany OR Berlin OR Munich OR Hamburg'
+    enabled: true
+
+  - name: Germany — Design Systems
+    query: '"Design Systems" OR "Design System" Germany OR Berlin OR Munich'
+    enabled: true
+
+  - name: Germany — StepStone Design
+    query: 'site:stepstone.de "UX" OR "UI" OR "Design" Lead OR Director OR Head'
+    enabled: true
+
+  - name: Germany — LinkedIn Design
+    query: 'site:linkedin.com/jobs "Design Director" OR "Head of Design" OR "Design Systems" Germany OR Berlin'
+    enabled: true
+
+  - name: Germany — Berlin Startup Jobs
+    query: 'site:berlinstartupjobs.com "Design" lead OR director OR "design systems"'
+    enabled: true
+
+# ============================================================
+# TRACKED COMPANIES — 100 Design Systems / UI Leadership
+# ============================================================
+
+tracked_companies:
+
+  # =============================================
+  # CATEGORY 1: Big Tech / FAANG+ (15)
+  # =============================================
+
+  - name: Google
+    careers_url: https://careers.google.com
+    notes: "Mountain View CA. Material Design system. Massive UX org."
+    enabled: true
+
+  - name: Apple
+    careers_url: https://jobs.apple.com
+    notes: "Cupertino CA. Human Interface Design team."
+    enabled: true
+
+  - name: Meta
+    careers_url: https://www.metacareers.com
+    notes: "Menlo Park CA. Design systems across FB, IG, WhatsApp."
+    enabled: true
+
+  - name: Microsoft
+    careers_url: https://careers.microsoft.com
+    notes: "Redmond WA. Fluent Design System. Huge design org."
+    enabled: true
+
+  - name: Amazon
+    careers_url: https://www.amazon.jobs
+    notes: "Seattle WA. Multiple design systems across retail, AWS, Alexa."
+    enabled: true
+
+  - name: Netflix
+    careers_url: https://jobs.netflix.com
+    notes: "Los Gatos CA. Hawkins design system. Small elite design team."
+    enabled: true
+
+  - name: Spotify
+    careers_url: https://www.lifeatspotify.com/jobs
+    notes: "Stockholm + NYC + Remote. Encore design system. Strong design culture."
+    enabled: true
+
+  - name: Airbnb
+    careers_url: https://careers.airbnb.com
+    notes: "SF CA. DLS (Design Language System) is industry-famous. Remote-friendly."
+    enabled: true
+
+  - name: Uber
+    careers_url: https://www.uber.com/us/en/careers/
+    notes: "SF CA. Base Web design system. Large product design org."
+    enabled: true
+
+  - name: Salesforce
+    careers_url: https://careers.salesforce.com
+    notes: "SF CA. Lightning Design System (SLDS) — one of the largest enterprise design systems."
+    enabled: true
+
+  - name: Adobe
+    careers_url: https://careers.adobe.com
+    notes: "San Jose CA. Spectrum design system. Makes the tools designers use."
+    enabled: true
+
+  - name: Snap
+    careers_url: https://careers.snap.com
+    notes: "Santa Monica CA. AR/camera-first design challenges."
+    enabled: true
+
+  - name: Pinterest
+    careers_url: https://www.pinterestcareers.com
+    notes: "SF CA. Gestalt design system. Visual-first product."
+    enabled: true
+
+  - name: LinkedIn
+    careers_url: https://careers.linkedin.com
+    notes: "Sunnyvale CA (Microsoft). Art Deco design system."
+    enabled: true
+
+  - name: X (Twitter)
+    careers_url: https://careers.x.com
+    notes: "SF CA. Design org in flux — leadership opportunity."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 2: Design-Led Tech (15)
+  # =============================================
+
+  - name: Figma
+    careers_url: https://www.figma.com/careers/
+    notes: "SF CA. THE design tool. Design systems are their core product. Dream employer."
+    enabled: true
+
+  - name: Notion
+    careers_url: https://www.notion.so/careers
+    notes: "SF CA. Exceptional product design. Minimalism."
+    enabled: true
+
+  - name: Linear
+    careers_url: https://linear.app/careers
+    notes: "Remote-first. Best-in-class UI. Small elite team."
+    enabled: true
+
+  - name: Vercel
+    careers_url: https://vercel.com/careers
+    notes: "Remote-first. Geist design system. Strong design culture."
+    enabled: true
+
+  - name: Stripe
+    careers_url: https://stripe.com/jobs
+    notes: "SF CA. Legendary design quality."
+    enabled: true
+
+  - name: Shopify
+    careers_url: https://www.shopify.com/careers
+    notes: "Ottawa + Remote. Polaris design system. Major design org."
+    enabled: true
+
+  - name: Atlassian
+    careers_url: https://www.atlassian.com/company/careers
+    notes: "Sydney + SF + Remote. Atlassian Design System. Large distributed team."
+    enabled: true
+
+  - name: Canva
+    careers_url: https://www.canva.com/careers/
+    notes: "Sydney + Remote. Design democratization. Huge growth."
+    enabled: true
+
+  - name: Miro
+    careers_url: https://miro.com/careers/
+    notes: "Amsterdam + SF + Remote. Collaboration-first design."
+    enabled: true
+
+  - name: Slack (Salesforce)
+    careers_url: https://slack.com/careers
+    notes: "SF CA. Strong design identity, Salesforce ecosystem."
+    enabled: true
+
+  - name: Dropbox
+    careers_url: https://www.dropbox.com/jobs
+    notes: "SF CA (Virtual First). Remote-friendly."
+    enabled: true
+
+  - name: Asana
+    careers_url: https://asana.com/jobs
+    notes: "SF CA. Thoughtful product design."
+    enabled: true
+
+  - name: Intercom
+    careers_url: https://www.intercom.com/careers
+    notes: "SF + Dublin + London. Pulse design system."
+    enabled: true
+
+  - name: Loom (Atlassian)
+    careers_url: https://www.loom.com/careers
+    notes: "SF CA. Async video design challenges."
+    enabled: true
+
+  - name: Webflow
+    careers_url: https://webflow.com/careers
+    notes: "Remote-first. Visual web design platform. Design IS the product."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 3: Design Tool Companies (7)
+  # =============================================
+
+  - name: Framer
+    careers_url: https://www.framer.com/careers/
+    notes: "Amsterdam NL. Design-to-code. Strong European presence."
+    enabled: true
+
+  - name: Sketch
+    careers_url: https://www.sketch.com/careers/
+    notes: "Remote (EU-based). Pioneered modern UI design tools."
+    enabled: true
+
+  - name: Zeplin
+    careers_url: https://zeplin.io/careers
+    notes: "Remote. Design-developer handoff tool."
+    enabled: true
+
+  - name: Chromatic (Storybook)
+    careers_url: https://www.chromatic.com/careers
+    notes: "Remote. Component-driven dev. Design system infrastructure."
+    enabled: true
+
+  - name: InVision
+    careers_url: https://www.invisionapp.com/careers
+    notes: "Remote. Design collaboration pioneer."
+    enabled: true
+
+  - name: Pitch (fka Abstract)
+    careers_url: https://pitch.com/careers
+    notes: "Berlin DE. Presentation tool. Design version control roots."
+    enabled: true
+
+  - name: UXPin
+    careers_url: https://www.uxpin.com/careers
+    notes: "Remote (Poland HQ). Merge — design with code components."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 4: Enterprise SaaS (12)
+  # =============================================
+
+  - name: ServiceNow
+    careers_url: https://careers.servicenow.com
+    notes: "Santa Clara CA. Now Design System. Enterprise workflow."
+    enabled: true
+
+  - name: Workday
+    careers_url: https://www.workday.com/en-us/company/careers.html
+    notes: "Pleasanton CA. Canvas design system. HR/finance enterprise."
+    enabled: true
+
+  - name: HubSpot
+    careers_url: https://www.hubspot.com/careers
+    notes: "Cambridge MA + Remote. Canvas design system. CRM/marketing."
+    enabled: true
+
+  - name: Zendesk
+    careers_url: https://jobs.zendesk.com
+    notes: "SF CA. Garden design system (open source)."
+    enabled: true
+
+  - name: Twilio
+    careers_url: https://www.twilio.com/company/jobs
+    notes: "SF CA + Remote. Paste design system (open source)."
+    enabled: true
+
+  - name: Datadog
+    careers_url: https://careers.datadoghq.com
+    notes: "NYC NY. Complex data visualization design."
+    enabled: true
+
+  - name: Snowflake
+    careers_url: https://careers.snowflake.com
+    notes: "Bozeman MT + SF. Growing design org."
+    enabled: true
+
+  - name: Pendo
+    careers_url: https://www.pendo.io/careers/
+    notes: "Raleigh NC. Product analytics. Design-forward."
+    enabled: true
+
+  - name: MongoDB
+    careers_url: https://www.mongodb.com/careers
+    notes: "NYC NY. LeafyGreen design system (open source)."
+    enabled: true
+
+  - name: Elastic
+    careers_url: https://www.elastic.co/careers/
+    notes: "Remote (distributed). EUI design system (open source)."
+    enabled: true
+
+  - name: Toast
+    careers_url: https://careers.toasttab.com
+    notes: "Boston MA. Restaurant SaaS. Growing design systems team."
+    enabled: true
+
+  - name: Okta
+    careers_url: https://www.okta.com/company/careers/
+    notes: "SF CA. Odyssey design system. Identity/security."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 5: Fintech (10)
+  # =============================================
+
+  - name: Block (Square)
+    careers_url: https://block.xyz/careers
+    notes: "SF CA. Square + Cash App. Strong design leadership."
+    enabled: true
+
+  - name: Plaid
+    careers_url: https://plaid.com/careers/
+    notes: "SF CA + Remote. Financial data APIs. Clean design."
+    enabled: true
+
+  - name: Robinhood
+    careers_url: https://careers.robinhood.com
+    notes: "Menlo Park CA. Consumer fintech. Design-led."
+    enabled: true
+
+  - name: Chime
+    careers_url: https://www.chime.com/careers/
+    notes: "SF CA. Neobank. Consumer-focused design."
+    enabled: true
+
+  - name: Brex
+    careers_url: https://www.brex.com/careers
+    notes: "SF CA + Remote. Corporate cards. Modern enterprise design."
+    enabled: true
+
+  - name: Wise
+    careers_url: https://www.wise.jobs
+    notes: "London + global. International transfers. Strong design culture."
+    enabled: true
+
+  - name: Revolut
+    careers_url: https://www.revolut.com/careers/
+    notes: "London UK. Super-app fintech. Massive product surface."
+    enabled: true
+
+  - name: N26
+    careers_url: https://n26.com/en/careers
+    notes: "Berlin DE. Mobile bank. German fintech with design focus."
+    enabled: true
+
+  - name: Klarna
+    careers_url: https://www.klarna.com/careers/
+    notes: "Stockholm + Berlin. BNPL. Large design org."
+    enabled: true
+
+  - name: PayPal
+    careers_url: https://careers.pypl.com
+    notes: "San Jose CA. Multiple product lines needing unified design."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 6: Healthcare / Biotech (8)
+  # =============================================
+
+  - name: Oscar Health
+    careers_url: https://www.hioscar.com/careers
+    notes: "NYC NY. Health insurance tech. Design-first healthcare."
+    enabled: true
+
+  - name: Ro
+    careers_url: https://ro.co/careers/
+    notes: "NYC NY. Telehealth + pharmacy. Modern health design."
+    enabled: true
+
+  - name: Hims & Hers
+    careers_url: https://www.forhims.com/careers
+    notes: "SF CA. DTC health/wellness. Strong consumer brand design."
+    enabled: true
+
+  - name: Included Health
+    careers_url: https://includedhealth.com/careers/
+    notes: "SF CA. Healthcare navigation. Growing design team."
+    enabled: true
+
+  - name: Teladoc Health
+    careers_url: https://www.teladochealth.com/careers/
+    notes: "Purchase NY + Remote. Telehealth leader."
+    enabled: true
+
+  - name: Veeva Systems
+    careers_url: https://careers.veeva.com
+    notes: "Pleasanton CA. Life sciences cloud. Enterprise health tech."
+    enabled: true
+
+  - name: Flatiron Health
+    careers_url: https://flatiron.com/careers/
+    notes: "NYC NY. Oncology data platform. Roche subsidiary."
+    enabled: true
+
+  - name: Noom
+    careers_url: https://www.noom.com/careers/
+    notes: "NYC NY. Health/wellness app. Behavior change design."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 7: E-commerce / Consumer (10)
+  # =============================================
+
+  - name: Etsy
+    careers_url: https://careers.etsy.com
+    notes: "Brooklyn NY + Remote. Marketplace. Strong design values."
+    enabled: true
+
+  - name: Wayfair
+    careers_url: https://www.aboutwayfair.com/careers
+    notes: "Boston MA. Home goods e-commerce. Large design org."
+    enabled: true
+
+  - name: Chewy
+    careers_url: https://careers.chewy.com
+    notes: "Plantation FL. Pet e-commerce. Growing design team."
+    enabled: true
+
+  - name: Target
+    careers_url: https://corporate.target.com/careers
+    notes: "Minneapolis MN. Retail tech. Significant digital design team."
+    enabled: true
+
+  - name: Walmart Global Tech
+    careers_url: https://careers.walmart.com
+    notes: "Bentonville AR + Remote. Massive retail tech design systems."
+    enabled: true
+
+  - name: Nike Digital
+    careers_url: https://jobs.nike.com
+    notes: "Beaverton OR. Digital product design. Iconic brand + tech."
+    enabled: true
+
+  - name: IKEA Digital
+    careers_url: https://join.ingka.com
+    notes: "Malmo SE + global. Retail digital transformation."
+    enabled: true
+
+  - name: DoorDash
+    careers_url: https://careers.doordash.com
+    notes: "SF CA. Multi-sided marketplace design."
+    enabled: true
+
+  - name: Instacart
+    careers_url: https://instacart.careers
+    notes: "SF CA + Remote. Multi-platform design systems."
+    enabled: true
+
+  - name: Peloton
+    careers_url: https://www.onepeloton.com/careers
+    notes: "NYC NY. Connected fitness. Hardware + software design."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 8: Design Agencies (7)
+  # =============================================
+
+  - name: IDEO
+    careers_url: https://www.ideo.com/jobs
+    notes: "SF + global. Legendary design consultancy. Human-centered design pioneers."
+    enabled: true
+
+  - name: Frog (Capgemini)
+    careers_url: https://www.frog.co/careers
+    notes: "Global (Munich, NYC). Strategic design consultancy."
+    enabled: true
+
+  - name: Huge (IPG)
+    careers_url: https://www.hugeinc.com/careers
+    notes: "Brooklyn NY + global. Design systems practice."
+    enabled: true
+
+  - name: Pentagram
+    careers_url: https://www.pentagram.com/about
+    notes: "NYC + London + Berlin. Iconic design partnership."
+    enabled: true
+
+  - name: Work & Co
+    careers_url: https://work.co/careers/
+    notes: "Brooklyn NY. Digital product design. High-profile clients."
+    enabled: true
+
+  - name: ustwo
+    careers_url: https://www.ustwo.com/careers/
+    notes: "London + NYC + Malmo. Digital product studio."
+    enabled: true
+
+  - name: Instrument
+    careers_url: https://www.instrument.com/careers
+    notes: "Portland OR. Digital creative agency."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 9: German / DACH Tech (10)
+  # =============================================
+
+  - name: SAP
+    careers_url: https://jobs.sap.com
+    notes: "Walldorf DE. Fiori design system. Largest EU software company."
+    enabled: true
+
+  - name: Zalando
+    careers_url: https://jobs.zalando.com
+    notes: "Berlin DE. Fashion e-commerce. Strong design systems team."
+    enabled: true
+
+  - name: Delivery Hero
+    careers_url: https://careers.deliveryhero.com
+    notes: "Berlin DE. Global food delivery. Multi-brand design systems."
+    enabled: true
+
+  - name: FlixBus (Flix)
+    careers_url: https://www.flixbus.com/careers
+    notes: "Munich DE. Travel/mobility. Growing product design."
+    enabled: true
+
+  - name: TeamViewer
+    careers_url: https://www.teamviewer.com/en/careers/
+    notes: "Goeppingen DE. Remote connectivity. Enterprise design."
+    enabled: true
+
+  - name: Personio
+    careers_url: https://www.personio.com/careers/
+    notes: "Munich DE. HR SaaS. Fast-growing, design-forward."
+    enabled: true
+
+  - name: Celonis
+    careers_url: https://www.celonis.com/careers/
+    notes: "Munich + NYC. Process mining. Enterprise data visualization."
+    enabled: true
+
+  - name: Trade Republic
+    careers_url: https://traderepublic.com/careers
+    notes: "Berlin DE. Neobroker. Consumer fintech design."
+    enabled: true
+
+  - name: Contentful
+    careers_url: https://www.contentful.com/careers/
+    notes: "Berlin DE. Headless CMS. Forma 36 design system (open source)."
+    enabled: true
+
+  - name: SumUp
+    careers_url: https://www.sumup.com/careers/
+    notes: "Berlin + London. Payments. Multi-market consumer design."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 10: Atlanta-Based (6)
+  # =============================================
+
+  - name: The Home Depot
+    careers_url: https://careers.homedepot.com
+    notes: "Atlanta GA. Retail giant. Large digital design teams. LOCAL."
+    enabled: true
+
+  - name: Cox Enterprises
+    careers_url: https://jobs.coxenterprises.com
+    notes: "Atlanta GA. Media + automotive + telecom. LOCAL."
+    enabled: true
+
+  - name: NCR Voyix
+    careers_url: https://www.ncrvoyix.com/careers
+    notes: "Atlanta GA. Payments/commerce tech. LOCAL."
+    enabled: true
+
+  - name: Intuit / Mailchimp
+    careers_url: https://mailchimp.com/jobs/
+    notes: "Atlanta GA (Mailchimp HQ). Strong design heritage + Intuit design system. LOCAL."
+    enabled: true
+
+  - name: Cardlytics
+    careers_url: https://www.cardlytics.com/company/careers/
+    notes: "Atlanta GA. Ad analytics fintech. Data visualization. LOCAL."
+    enabled: true
+
+  - name: Calendly
+    careers_url: https://careers.calendly.com
+    notes: "Atlanta GA. Scheduling platform. Growing design team. LOCAL."
+    enabled: true

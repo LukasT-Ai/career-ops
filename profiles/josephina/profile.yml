@@ -1,0 +1,76 @@
+# Josephina Kaiser -- Career-Ops Profile
+
+candidate:
+  full_name: "Josephina Kaiser"
+  email: ""               # TODO: Fill in
+  phone: "408-510-0916"
+  location: "Atlanta, GA"
+  linkedin: "linkedin.com/in/josephinak"
+  portfolio_url: ""       # TODO: Design portfolio URL
+  github: ""
+  twitter: ""
+
+target_roles:
+  primary:
+    - "Design Systems Lead"
+    - "Head of Design Systems"
+    - "Design Director"
+  archetypes:
+    - name: "Design Systems Lead / Manager"
+      level: "Lead/Manager"
+      fit: "primary"
+    - name: "Head of Design / Design Director"
+      level: "Director/Head"
+      fit: "primary"
+    - name: "Principal / Staff Designer (Design Systems)"
+      level: "Principal/Staff"
+      fit: "primary"
+    - name: "VP of Design / VP of Product Design"
+      level: "VP"
+      fit: "secondary"
+    - name: "Senior UI/UX Designer (Design Systems focus)"
+      level: "Senior"
+      fit: "adjacent"
+
+narrative:
+  headline: ""            # TODO: Fill in from CV/LinkedIn
+  exit_story: ""          # TODO: Fill in
+  superpowers: []         # TODO: Fill in
+  proof_points: []        # TODO: Fill in
+
+compensation:
+  target_range: "$100K-170K"
+  currency: "USD"
+  minimum: "$100K"
+  location_flexibility: "Open to remote, Atlanta on-site/hybrid, Germany on-site/remote"
+
+# ============================================================
+# SEARCH LOCATIONS
+# ============================================================
+search_locations:
+  - name: "Atlanta, GA"
+    region: "US"
+    keywords: ["Atlanta", "Georgia", "GA"]
+    remote_ok: true
+    enabled: true
+
+  - name: "Remote US"
+    region: "US"
+    keywords: ["Remote", "US Remote", "Anywhere"]
+    remote_ok: true
+    enabled: true
+
+  - name: "Germany"
+    region: "DACH"
+    keywords: ["Germany", "Deutschland", "Berlin", "Munich", "Hamburg", "Frankfurt"]
+    remote_ok: true
+    language: "de"
+    enabled: true
+
+  germany_pathway: "German citizen -- NO visa/work permit needed. Can work immediately in Germany/EU."
+
+location:
+  country: "United States"
+  city: "Atlanta"
+  timezone: "EST"
+  visa_status: "US citizen + German citizen (dual nationality)"
