@@ -764,3 +764,367 @@ tracked_companies:
     careers_url: https://www.wolt.com/careers
     notes: "Berlin, Germany. Delivery app, strong design culture (DH family)."
     enabled: true
+
+  # =============================================
+  # CATEGORY 12: Social & Content Platforms (8)
+  # =============================================
+
+  - name: Reddit
+    careers_url: https://www.redditinc.com/careers
+    notes: "San Francisco. Community platform, growing design team."
+    enabled: true
+
+  - name: Discord
+    careers_url: https://discord.com/careers
+    notes: "San Francisco. Gaming/community, strong design culture."
+    enabled: true
+
+  - name: Medium
+    careers_url: https://medium.com/jobs-at-medium
+    notes: "San Francisco. Publishing platform, remote."
+    enabled: true
+
+  - name: Substack
+    careers_url: https://substack.com/careers
+    notes: "San Francisco. Newsletter platform."
+    enabled: true
+
+  - name: Patreon
+    careers_url: https://www.patreon.com/careers
+    notes: "San Francisco. Creator economy, design-forward."
+    enabled: true
+
+  - name: Vimeo
+    careers_url: https://vimeo.com/jobs
+    notes: "New York. Video platform, remote."
+    enabled: true
+
+  - name: Nextdoor
+    careers_url: https://about.nextdoor.com/careers/
+    notes: "San Francisco. Local community platform."
+    enabled: true
+
+  - name: Quora
+    careers_url: https://www.quora.com/careers
+    notes: "Mountain View. Q&A platform, remote."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 13: SaaS & Productivity — Additional (4)
+  # =============================================
+
+  - name: Zoom
+    careers_url: https://careers.zoom.us
+    notes: "San Jose. Video platform, design systems."
+    enabled: true
+
+  - name: Monday.com
+    careers_url: https://monday.com/careers
+    notes: "Tel Aviv/Remote. Work management platform."
+    enabled: true
+
+  - name: Airtable
+    careers_url: https://airtable.com/careers
+    notes: "San Francisco. Database/spreadsheet hybrid."
+    enabled: true
+
+  - name: Zapier
+    careers_url: https://zapier.com/jobs
+    notes: "Remote-first. Automation platform."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 14: E-Commerce — Additional (3)
+  # =============================================
+
+  - name: Poshmark
+    careers_url: https://poshmark.com/careers
+    notes: "Redwood City. Fashion marketplace."
+    enabled: true
+
+  - name: The RealReal
+    careers_url: https://www.therealreal.com/careers
+    notes: "San Francisco. Luxury consignment."
+    enabled: true
+
+  - name: Wish
+    careers_url: https://www.wish.com/careers
+    notes: "San Francisco. E-commerce marketplace."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 15: Enterprise Software — Additional (5)
+  # =============================================
+
+  - name: Oracle
+    careers_url: https://www.oracle.com/careers/
+    notes: "Austin. Enterprise cloud, design systems."
+    enabled: true
+
+  - name: IBM
+    careers_url: https://www.ibm.com/careers
+    notes: "Armonk. Enterprise, Carbon design system."
+    enabled: true
+
+  - name: Cisco
+    careers_url: https://jobs.cisco.com
+    notes: "San Jose, Atlanta. Network, design systems."
+    enabled: true
+
+  - name: Splunk
+    careers_url: https://www.splunk.com/en_us/careers.html
+    notes: "San Francisco. Data platform."
+    enabled: true
+
+  - name: VMware
+    careers_url: https://careers.vmware.com
+    notes: "Palo Alto, Atlanta. Clarity design system."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 16: Fintech — Additional (4)
+  # =============================================
+
+  - name: Coinbase
+    careers_url: https://www.coinbase.com/careers
+    notes: "San Francisco. Crypto, strong design."
+    enabled: true
+
+  - name: Affirm
+    careers_url: https://www.affirm.com/careers
+    notes: "San Francisco. BNPL, design team."
+    enabled: true
+
+  - name: Ramp
+    careers_url: https://ramp.com/careers
+    notes: "New York. Corporate cards, remote."
+    enabled: true
+
+  - name: Mercury
+    careers_url: https://mercury.com/jobs
+    notes: "San Francisco. Banking for startups."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 17: Gaming & Entertainment (10)
+  # =============================================
+
+  - name: Electronic Arts
+    careers_url: https://www.ea.com/careers
+    notes: "Redwood City. Game UI/UX."
+    enabled: true
+
+  - name: Riot Games
+    careers_url: https://www.riotgames.com/en/work-with-us
+    notes: "Los Angeles. Gaming, strong UX."
+    enabled: true
+
+  - name: Unity Technologies
+    careers_url: https://careers.unity.com
+    notes: "San Francisco. Game engine, dev tools."
+    enabled: true
+
+  - name: Roblox
+    careers_url: https://careers.roblox.com
+    notes: "San Mateo. Metaverse, design systems."
+    enabled: true
+
+  - name: Epic Games
+    careers_url: https://www.epicgames.com/site/en-US/careers
+    notes: "Cary NC. Unreal Engine, design."
+    enabled: true
+
+  - name: Niantic
+    careers_url: https://nianticlabs.com/careers
+    notes: "San Francisco. AR gaming."
+    enabled: true
+
+  - name: Activision Blizzard
+    careers_url: https://careers.activisionblizzard.com
+    notes: "Santa Monica. Game UI."
+    enabled: true
+
+  - name: Zynga
+    careers_url: https://www.zynga.com/careers
+    notes: "San Francisco. Mobile games."
+    enabled: true
+
+  - name: Scopely
+    careers_url: https://scopely.com/careers
+    notes: "Culver City. Mobile games."
+    enabled: true
+
+  - name: Twitch
+    careers_url: https://www.twitch.tv/jobs
+    notes: "San Francisco. Streaming, Amazon."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 18: Healthcare & Wellness Tech — Additional (6)
+  # =============================================
+
+  - name: 23andMe
+    careers_url: https://www.23andme.com/careers/
+    notes: "Sunnyvale. Genetics, health design."
+    enabled: true
+
+  - name: One Medical
+    careers_url: https://www.onemedical.com/careers/
+    notes: "San Francisco. Primary care tech."
+    enabled: true
+
+  - name: Headspace
+    careers_url: https://www.headspace.com/join-us
+    notes: "Santa Monica. Meditation app."
+    enabled: true
+
+  - name: Calm
+    careers_url: https://www.calm.com/careers
+    notes: "San Francisco. Wellness app."
+    enabled: true
+
+  - name: Zocdoc
+    careers_url: https://www.zocdoc.com/careers
+    notes: "New York. Healthcare marketplace."
+    enabled: true
+
+  - name: GoodRx
+    careers_url: https://www.goodrx.com/careers
+    notes: "Woodland Hills. Rx pricing, design."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 19: German Corporates — Design Teams (8)
+  # =============================================
+
+  - name: Deutsche Telekom
+    careers_url: https://www.telekom.com/careers
+    notes: "Bonn, Germany. Major telecom, large digital design org."
+    enabled: true
+
+  - name: Volkswagen Group
+    careers_url: https://www.volkswagenag.com/careers
+    notes: "Wolfsburg, Germany. Connected car UX, digital services."
+    enabled: true
+
+  - name: Bosch
+    careers_url: https://www.bosch.com/careers
+    notes: "Stuttgart, Germany. IoT/connected devices, product design."
+    enabled: true
+
+  - name: Allianz
+    careers_url: https://www.allianz.com/careers
+    notes: "Munich, Germany. Insurance tech, digital design."
+    enabled: true
+
+  - name: Deutsche Bank
+    careers_url: https://www.db.com/careers
+    notes: "Frankfurt, Germany. Fintech transformation, design systems."
+    enabled: true
+
+  - name: Lufthansa
+    careers_url: https://www.lufthansagroup.com/careers
+    notes: "Cologne, Germany. Airline digital products, app UX."
+    enabled: true
+
+  - name: Beiersdorf (NIVEA)
+    careers_url: https://www.beiersdorf.com/careers
+    notes: "Hamburg, Germany. Consumer digital, design systems."
+    enabled: true
+
+  - name: Roche Diagnostics
+    careers_url: https://www.roche.com/careers
+    notes: "Munich, Germany. Health tech, product design."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 20: Berlin Startups — Design (8)
+  # =============================================
+
+  - name: Wix
+    careers_url: https://www.wix.com/careers
+    notes: "Berlin, Germany. Website builder, design tools."
+    enabled: true
+
+  - name: ResearchGate
+    careers_url: https://www.researchgate.net/careers
+    notes: "Berlin, Germany. Academic social network."
+    enabled: true
+
+  - name: Eyeo
+    careers_url: https://www.eyeo.com/careers
+    notes: "Cologne, Germany. Ad-blocking tech (Adblock Plus)."
+    enabled: true
+
+  - name: BlaBlaCar
+    careers_url: https://www.blablacar.com/careers
+    notes: "Berlin, Germany. Carpooling platform."
+    enabled: true
+
+  - name: Jimdo
+    careers_url: https://www.jimdo.com/careers
+    notes: "Hamburg, Germany. Website builder, design."
+    enabled: true
+
+  - name: Tier Mobility
+    careers_url: https://www.tier.app/careers
+    notes: "Berlin, Germany. E-scooter platform, app UX."
+    enabled: true
+
+  - name: Forto
+    careers_url: https://www.forto.com/careers
+    notes: "Hamburg, Germany. Logistics tech, product design."
+    enabled: true
+
+  - name: Vimcar
+    careers_url: https://www.vimcar.com/careers
+    notes: "Berlin, Germany. Fleet management UX."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 21: German Finance & Insurance — Design (4)
+  # =============================================
+
+  - name: Commerzbank
+    careers_url: https://www.commerzbank.com/careers
+    notes: "Frankfurt, Germany. Banking digital transformation."
+    enabled: true
+
+  - name: Deutsche Börse
+    careers_url: https://www.deutsche-boerse.com/careers
+    notes: "Frankfurt, Germany. Financial markets, digital design."
+    enabled: true
+
+  - name: Munich Re
+    careers_url: https://www.munichre.com/careers
+    notes: "Munich, Germany. Insurtech, digital products."
+    enabled: true
+
+  - name: Hapag-Lloyd
+    careers_url: https://www.hapag-lloyd.com/careers
+    notes: "Hamburg, Germany. Shipping/logistics, digital products."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 22: Consulting & Agency — Germany Design (4)
+  # =============================================
+
+  - name: McKinsey
+    careers_url: https://www.mckinsey.com/careers
+    notes: "Munich/Berlin, Germany. Design practice, high-end consulting."
+    enabled: true
+
+  - name: Thoughtworks
+    careers_url: https://www.thoughtworks.com/careers
+    notes: "Berlin/Hamburg, Germany. Tech consultancy, design systems."
+    enabled: true
+
+  - name: T-Systems
+    careers_url: https://www.t-systems.com/careers
+    notes: "Munich, Germany. Deutsche Telekom subsidiary, enterprise design."
+    enabled: true
+
+  - name: Huawei Munich R&D
+    careers_url: https://www.huawei.com/careers
+    notes: "Munich, Germany. Consumer device UX."
+    enabled: true
