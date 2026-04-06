@@ -1,0 +1,87 @@
+# Lamin Traore -- Career-Ops Profile
+
+candidate:
+  full_name: "Lamin Traore"
+  email: "pt374t@gmail.com"
+  phone: "404-234-0448"
+  location: "Atlanta, GA 30317"
+  linkedin: "linkedin.com/in/lamintraore"
+  portfolio_url: ""
+  github: ""
+  twitter: ""
+
+target_roles:
+  primary:
+    - "Sales Manager"
+    - "Sales Director"
+    - "Technical Sales Consultant"
+  archetypes:
+    - name: "Sales Manager / Sales Director"
+      level: "Manager/Director"
+      fit: "primary"
+    - name: "Technical Sales Consultant / Solutions Engineer"
+      level: "Senior/Lead"
+      fit: "primary"
+    - name: "Regional VP of Sales"
+      level: "VP"
+      fit: "secondary"
+    - name: "Channel Manager / Partner Manager"
+      level: "Senior/Manager"
+      fit: "secondary"
+    - name: "Account Executive (Enterprise)"
+      level: "Senior"
+      fit: "adjacent"
+
+narrative:
+  headline: "Award-winning telecom sales leader with 15+ years in enterprise connectivity and UC"
+  exit_story: "Built a career from enterprise AE to technical sales SME to sales manager at two of the largest US telecom companies. Now leading a team at Spectrum while seeking the next leadership challenge in telecom, UCaaS, or managed services -- in the US or Germany."
+  superpowers:
+    - "Consultative, solution-based selling across complex technical portfolios (UC, MPLS, SD-WAN, cloud)"
+    - "Building and coaching high-performing sales teams from scratch"
+    - "Bilingual English/German -- can sell and lead in both markets"
+    - "C-suite technical presentations that translate architecture into business value"
+    - "$9.5M managed billing portfolio, AT&T Diamond Club Top 1%"
+  proof_points:
+    - name: "AT&T Diamond Club"
+      hero_metric: "Top 1% national sales performance (2013)"
+    - name: "Spectrum Sales Manager"
+      hero_metric: "Leading team of Enterprise AEs and AMs, multimillion-dollar quota"
+    - name: "UC Subject Matter Expert"
+      hero_metric: "3 years as primary UC SME for Spectrum Enterprise"
+    - name: "Enterprise Portfolio"
+      hero_metric: "$9.5M managed billing across gov, edu, and healthcare accounts"
+
+compensation:
+  target_range: "$135K-180K base"
+  currency: "USD"
+  minimum: "$135K base"
+  location_flexibility: "Atlanta preferred, open to relocation to Germany, remote considered"
+
+# ============================================================
+# SEARCH LOCATIONS
+# ============================================================
+search_locations:
+  - name: "Atlanta, GA"
+    region: "US"
+    keywords: ["Atlanta", "Georgia", "GA"]
+    remote_ok: true
+    enabled: true
+
+  - name: "Germany"
+    region: "DACH"
+    keywords: ["Germany", "Deutschland", "Berlin", "Munich", "Hamburg", "Frankfurt", "Cologne", "Stuttgart", "Dusseldorf"]
+    remote_ok: true
+    language: "de"
+    enabled: true
+
+  # - name: "Remote US"
+  #   region: "US"
+  #   keywords: ["Remote", "US Remote"]
+  #   remote_ok: true
+  #   enabled: true
+
+location:
+  country: "United States"
+  city: "Atlanta"
+  timezone: "EST"
+  visa_status: "US citizen + German citizen (dual nationality)"

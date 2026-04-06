@@ -59,10 +59,73 @@ AI-powered job search automation built on Claude Code: pipeline tracking, offer 
 | `interview-prep/story-bank.md` | Accumulated STAR+R stories across evaluations |
 | `reports/` | Evaluation reports (format: `{###}-{company-slug}-{YYYY-MM-DD}.md`) |
 
+## Multi-Profile System
+
+This fork supports multiple job-search profiles (different people). Each profile has its own CV, config, portals, archetypes, and data.
+
+### Profile Structure
+
+```
+profiles/
+  active.yml          ← which profile is active (edit this to switch)
+  lamin/
+    profile.yml       ← candidate config
+    _profile.md       ← archetypes, framing, negotiation
+    cv.md             ← English CV
+    cv-de.md          ← German CV (if applicable)
+    portals.yml       ← company list + search queries
+    data/             ← applications.md, pipeline.md, scan-history.tsv
+    reports/          ← evaluation reports
+    output/           ← generated PDFs
+  paulina/
+    (same structure)
+  {new-profile}/
+    (same structure)
+```
+
+### Session Startup — Profile Sync (MANDATORY)
+
+**On EVERY session start, BEFORE any other checks, do this:**
+
+1. Read `profiles/active.yml` to get the active profile name
+2. Sync that profile's files to the root locations career-ops expects:
+   - `profiles/{name}/cv.md` → `cv.md`
+   - `profiles/{name}/profile.yml` → `config/profile.yml`
+   - `profiles/{name}/_profile.md` → `modes/_profile.md`
+   - `profiles/{name}/portals.yml` → `portals.yml`
+   - `profiles/{name}/data/applications.md` → `data/applications.md`
+   - `profiles/{name}/data/pipeline.md` → `data/pipeline.md` (if exists)
+   - `profiles/{name}/data/scan-history.tsv` → `data/scan-history.tsv` (if exists)
+3. Create symlink-like behavior for output: after evaluations/scans, copy new files in `data/`, `reports/`, and `output/` back to `profiles/{name}/`
+4. Tell the user: "Active profile: **{name}**" (silently, no confirmation needed)
+
+### Switching Profiles
+
+When the user says "switch to {name}" or "use {name}'s profile":
+1. **Save back** any new files from `data/`, `reports/`, `output/` to the current profile's directory
+2. Update `profiles/active.yml` to the new name
+3. Run the sync (step 2 above) for the new profile
+4. Confirm: "Switched to **{name}**. CV, portals, and tracker loaded."
+
+### Adding a New Profile
+
+When the user says "add a new profile for {name}":
+1. Create `profiles/{name}/` with subdirectories: `data/`, `reports/`, `output/`
+2. Start onboarding (CV, profile.yml, _profile.md, portals.yml) — same flow as First Run
+3. Set as active if the user wants
+
+### Rules
+
+- **NEVER mix profiles.** Always check active.yml before evaluating, scanning, or generating.
+- **ALWAYS save back** to the profile directory after creating reports, PDFs, or tracker entries.
+- Each profile's `data/applications.md` is SEPARATE. Never merge across profiles.
+- The root-level files (`cv.md`, `config/profile.yml`, etc.) are just working copies — the source of truth is in `profiles/{name}/`.
+
 ### First Run — Onboarding (IMPORTANT)
 
 **Before doing ANYTHING else, check if the system is set up.** Run these checks silently every time a session starts:
 
+0. Read `profiles/active.yml` — if it exists, run Multi-Profile Sync (see above). If not, fall through to single-profile onboarding.
 1. Does `cv.md` exist?
 2. Does `config/profile.yml` exist (not just profile.example.yml)?
 3. Does `modes/_profile.md` exist (not just _profile.template.md)?

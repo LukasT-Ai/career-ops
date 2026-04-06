@@ -1,0 +1,676 @@
+# Lamin Traore — Portal Scanner Configuration
+# Telecom / UCaaS / Hosted Voice / Managed Services / Contact Center
+#
+# Search locations: Atlanta/GA + Germany (configurable in profile.yml)
+# To disable a company: set enabled: false
+# To add a company: copy any entry and change name/careers_url
+
+title_filter:
+  positive:
+    # -- Telecom / Sales roles --
+    - "Account Executive"
+    - "Account Manager"
+    - "Sales"
+    - "Business Development"
+    - "Enterprise"
+    - "B2B"
+    - "Channel"
+    - "Partner"
+    - "Solutions"
+    - "Consultant"
+    - "Territory"
+    - "Regional"
+    - "Major Account"
+    - "Named Account"
+    - "Strategic Account"
+    - "Mid-Market"
+    - "SMB"
+    - "Commercial"
+    # -- Telecom-specific --
+    - "Telecom"
+    - "UCaaS"
+    - "CCaaS"
+    - "SD-WAN"
+    - "Managed Services"
+    - "Voice"
+    - "Network"
+    - "Fiber"
+    - "Connectivity"
+    - "Wireless"
+    - "5G"
+    # -- German keywords --
+    - "Vertrieb"
+    - "Kundenberater"
+    - "Außendienst"
+    - "Key Account"
+    - "Geschäftskunden"
+  negative:
+    - "Intern"
+    - "Junior"
+    - "Part-Time"
+    - "Warehouse"
+    - "Retail Store"
+    - "Field Technician"
+    - "Cable Installer"
+    - "Line Technician"
+    - "Customer Service Rep"
+    - "Call Center Agent"
+  seniority_boost:
+    - "Senior"
+    - "Director"
+    - "VP"
+    - "Manager"
+    - "Lead"
+    - "Principal"
+    - "Head"
+
+# ============================================================
+# SEARCH QUERIES — Atlanta/GA + Germany + Remote
+# ============================================================
+
+search_queries:
+
+  # -- Atlanta / Georgia --
+  - name: Atlanta — Telecom Sales
+    query: '"Account Executive" OR "Account Manager" telecom OR UCaaS OR "managed services" Atlanta OR Georgia'
+    enabled: true
+
+  - name: Atlanta — Enterprise Sales
+    query: '"Enterprise Sales" OR "B2B Sales" OR "Business Development" telecom OR connectivity OR fiber Atlanta OR Georgia'
+    enabled: true
+
+  - name: Atlanta — Channel Sales
+    query: '"Channel Manager" OR "Channel Sales" OR "Partner Manager" telecom OR UCaaS OR SD-WAN Atlanta OR Georgia'
+    enabled: true
+
+  - name: Atlanta — Solutions Consultant
+    query: '"Solutions Consultant" OR "Solutions Engineer" OR "Solutions Architect" telecom OR UCaaS Atlanta OR Georgia'
+    enabled: true
+
+  - name: Atlanta — LinkedIn Telecom
+    query: 'site:linkedin.com/jobs "Account Executive" OR "Sales" telecom OR UCaaS OR "hosted voice" Atlanta OR Georgia'
+    enabled: true
+
+  - name: Atlanta — Indeed Telecom
+    query: 'site:indeed.com "Account Executive" OR "Sales" telecom OR UCaaS OR fiber Atlanta GA'
+    enabled: true
+
+  # -- Germany --
+  - name: Germany — Telecom Vertrieb
+    query: '"Account Manager" OR "Vertrieb" OR "Key Account" Telekommunikation OR UCaaS OR "Managed Services" Germany OR Deutschland'
+    enabled: true
+
+  - name: Germany — Enterprise Sales EN
+    query: '"Enterprise Sales" OR "Account Executive" telecom OR UCaaS OR SD-WAN Germany OR Berlin OR Munich OR Frankfurt'
+    enabled: true
+
+  - name: Germany — StepStone Telecom
+    query: 'site:stepstone.de "Account Manager" OR "Vertrieb" OR "Key Account" Telekommunikation OR UCaaS'
+    enabled: true
+
+  - name: Germany — LinkedIn Telecom
+    query: 'site:linkedin.com/jobs "Account Manager" OR "Sales" telecom OR UCaaS Germany OR Deutschland'
+    enabled: true
+
+  # -- Remote / General --
+  - name: Remote — UCaaS Sales
+    query: '"Account Executive" OR "Account Manager" UCaaS OR "hosted voice" OR "cloud communications" remote'
+    enabled: true
+
+  - name: Remote — SD-WAN / SASE Sales
+    query: '"Account Executive" OR "Sales" SD-WAN OR SASE OR "managed network" remote'
+    enabled: true
+
+  - name: Remote — Contact Center Sales
+    query: '"Account Executive" OR "Sales" CCaaS OR "contact center" OR "customer experience" remote'
+    enabled: true
+
+  - name: Greenhouse — Telecom
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Account Executive" OR "Sales" telecom OR UCaaS OR "cloud communications"'
+    enabled: true
+
+  - name: Ashby — Telecom
+    query: 'site:jobs.ashbyhq.com "Account Executive" OR "Sales" telecom OR UCaaS OR "cloud communications"'
+    enabled: true
+
+  - name: Lever — Telecom
+    query: 'site:jobs.lever.co "Account Executive" OR "Sales" telecom OR UCaaS OR SD-WAN'
+    enabled: true
+
+# ============================================================
+# TRACKED COMPANIES — 100 Telecom/UCaaS/Managed Services
+# ============================================================
+
+tracked_companies:
+
+  # =============================================
+  # CATEGORY 1: Major Telecom / Cable / ISPs (18)
+  # =============================================
+
+  - name: AT&T Business
+    careers_url: https://www.att.jobs/
+    notes: "Dallas TX. Enterprise telecom, fiber, wireless, SD-WAN."
+    enabled: true
+
+  - name: Comcast Business
+    careers_url: https://jobs.comcast.com/
+    notes: "Philadelphia PA. Cable, internet, voice, SD-WAN (owns Masergy)."
+    enabled: true
+
+  - name: Verizon Business
+    careers_url: https://www.verizon.com/about/work
+    notes: "New York NY. Enterprise fiber, wireless, SD-WAN, security."
+    enabled: true
+
+  - name: Lumen Technologies
+    careers_url: https://jobs.lumen.com/
+    notes: "Monroe LA. Enterprise fiber, SD-WAN, edge cloud (fka CenturyLink)."
+    enabled: true
+
+  - name: Cox Business
+    careers_url: https://jobs.coxenterprises.com/
+    notes: "Atlanta GA. Cable, fiber, voice, managed services. LOCAL."
+    enabled: true
+
+  - name: Frontier Communications
+    careers_url: https://jobs.frontier.com/
+    notes: "Dallas TX. Fiber-to-the-prem, business internet/voice."
+    enabled: true
+
+  - name: Windstream (Kinetic Business)
+    careers_url: https://www.windstream.com/careers
+    notes: "Little Rock AR. Fiber, SD-WAN, UCaaS, managed services."
+    enabled: true
+
+  - name: Consolidated Communications
+    careers_url: https://www.consolidated.com/careers
+    notes: "Mattoon IL. Regional fiber, business internet/voice."
+    enabled: true
+
+  - name: TDS Telecom
+    careers_url: https://tdstelecom.com/careers.html
+    notes: "Madison WI. Regional telco, fiber, managed services."
+    enabled: true
+
+  - name: Altice USA / Optimum Business
+    careers_url: https://www.alticeusa.com/careers
+    notes: "Long Island City NY. Cable, fiber, business voice/internet."
+    enabled: true
+
+  - name: WOW! Business
+    careers_url: https://www.wowway.com/careers
+    notes: "Denver CO. Regional cable/fiber ISP, business services."
+    enabled: true
+
+  - name: Mediacom Business
+    careers_url: https://www.mediacomcable.com/careers
+    notes: "Chester NY. Regional cable, business internet/voice."
+    enabled: true
+
+  - name: Breezeline
+    careers_url: https://www.breezeline.com/careers
+    notes: "Quincy MA. Regional cable (fka Atlantic Broadband)."
+    enabled: true
+
+  - name: Astound Business
+    careers_url: https://www.astound.com/careers
+    notes: "Princeton NJ. Regional fiber/cable (fka RCN/Grande/Wave)."
+    enabled: true
+
+  - name: Ziply Fiber
+    careers_url: https://ziplyfiber.com/careers
+    notes: "Kirkland WA. Pacific NW fiber provider."
+    enabled: true
+
+  - name: altafiber (Cincinnati Bell)
+    careers_url: https://www.altafiber.com/careers
+    notes: "Cincinnati OH. Regional fiber, IT services, UCaaS."
+    enabled: true
+
+  - name: Granite Telecommunications
+    careers_url: https://www.granitenet.com/careers/
+    notes: "Quincy MA. Multi-location voice/data aggregator, huge enterprise."
+    enabled: true
+
+  - name: Sparklight Business (Cable One)
+    careers_url: https://www.sparklight.com/careers
+    notes: "Phoenix AZ. Regional cable/fiber, business services."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 2: UCaaS / Hosted Voice / CPaaS (20)
+  # =============================================
+
+  - name: RingCentral
+    careers_url: https://www.ringcentral.com/careers.html
+    notes: "Belmont CA. UCaaS market leader, MVP platform."
+    enabled: true
+
+  - name: Zoom Communications
+    careers_url: https://careers.zoom.us/
+    notes: "San Jose CA. Zoom Phone, UCaaS, contact center."
+    enabled: true
+
+  - name: Webex by Cisco
+    careers_url: https://jobs.cisco.com/
+    notes: "San Jose CA. Webex Calling, UCaaS, meetings, devices."
+    enabled: true
+
+  - name: 8x8 Inc.
+    careers_url: https://www.8x8.com/careers
+    notes: "Campbell CA. UCaaS + CCaaS combined platform (XCaaS)."
+    enabled: true
+
+  - name: Vonage (Ericsson)
+    careers_url: https://www.vonage.com/careers/
+    notes: "Holmdel NJ. UCaaS, CPaaS APIs, acquired by Ericsson."
+    enabled: true
+
+  - name: GoTo (formerly LogMeIn)
+    careers_url: https://www.goto.com/careers
+    notes: "Boston MA. GoTo Connect UCaaS, GoTo Meeting."
+    enabled: true
+
+  - name: Nextiva
+    careers_url: https://www.nextiva.com/careers.html
+    notes: "Scottsdale AZ. UCaaS, business phone, CX platform."
+    enabled: true
+
+  - name: Dialpad
+    careers_url: https://www.dialpad.com/careers/
+    notes: "San Ramon CA. AI-powered UCaaS, contact center."
+    enabled: true
+
+  - name: Ooma Inc.
+    careers_url: https://www.ooma.com/careers/
+    notes: "Sunnyvale CA. SMB UCaaS, Ooma Office."
+    enabled: true
+
+  - name: Aircall
+    careers_url: https://aircall.io/careers/
+    notes: "New York NY (Paris origin). Cloud phone for sales/support teams."
+    enabled: true
+
+  - name: Intermedia
+    careers_url: https://www.intermedia.com/careers
+    notes: "Sunnyvale CA. UCaaS, email, SecuriSync, channel-focused."
+    enabled: true
+
+  - name: Broadvoice
+    careers_url: https://www.broadvoice.com/careers/
+    notes: "Los Angeles CA. UCaaS, CCaaS, b-hive platform."
+    enabled: true
+
+  - name: Sangoma Technologies
+    careers_url: https://www.sangoma.com/careers/
+    notes: "Markham ON. UCaaS (Switchvox, StarBlue), PBX, SBC."
+    enabled: true
+
+  - name: Bandwidth Inc.
+    careers_url: https://www.bandwidth.com/careers/
+    notes: "Raleigh NC. CPaaS, voice/messaging APIs, powers other UCaaS."
+    enabled: true
+
+  - name: Sinch
+    careers_url: https://www.sinch.com/careers/
+    notes: "Stockholm SE (US: Atlanta). CPaaS, messaging, voice APIs. ATLANTA OFFICE."
+    enabled: true
+
+  - name: Plivo
+    careers_url: https://www.plivo.com/careers/
+    notes: "Austin TX. CPaaS, SIP trunking, voice/SMS APIs."
+    enabled: true
+
+  - name: Twilio
+    careers_url: https://www.twilio.com/company/jobs
+    notes: "San Francisco CA. CPaaS leader, Flex contact center."
+    enabled: true
+
+  - name: net2phone
+    careers_url: https://www.net2phone.com/careers
+    notes: "Newark NJ. UCaaS, international voice, owned by IDT."
+    enabled: true
+
+  - name: Evolve IP
+    careers_url: https://www.evolveip.net/careers
+    notes: "Wayne PA. UCaaS, DaaS, disaster recovery."
+    enabled: true
+
+  - name: Microsoft (Teams Phone)
+    careers_url: https://careers.microsoft.com/
+    notes: "Redmond WA. Teams Phone/Operator Connect. Atlanta office."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 3: Managed Services / SD-WAN / SASE (15)
+  # =============================================
+
+  - name: Aryaka Networks
+    careers_url: https://www.aryaka.com/company/careers/
+    notes: "San Mateo CA. Managed SD-WAN, SASE, global PoPs."
+    enabled: true
+
+  - name: Cato Networks
+    careers_url: https://www.catonetworks.com/careers/
+    notes: "Tel Aviv / New York. SASE platform, SD-WAN + security converged."
+    enabled: true
+
+  - name: Fortinet
+    careers_url: https://www.fortinet.com/corporate/careers
+    notes: "Sunnyvale CA. Secure SD-WAN (FortiGate), SASE, firewalls."
+    enabled: true
+
+  - name: Palo Alto Networks
+    careers_url: https://jobs.paloaltonetworks.com/
+    notes: "Santa Clara CA. Prisma SASE, SD-WAN, security platform."
+    enabled: true
+
+  - name: Zscaler
+    careers_url: https://www.zscaler.com/careers
+    notes: "San Jose CA. Zero trust SASE, cloud security."
+    enabled: true
+
+  - name: Versa Networks
+    careers_url: https://versa-networks.com/careers/
+    notes: "Santa Clara CA. SASE, SD-WAN, security."
+    enabled: true
+
+  - name: Hughes Network Systems
+    careers_url: https://www.hughes.com/careers
+    notes: "Germantown MD. Managed SD-WAN, satellite, enterprise networking."
+    enabled: true
+
+  - name: Nitel
+    careers_url: https://www.nitel.com/careers
+    notes: "Chicago IL. Managed network, SD-WAN, UCaaS aggregator."
+    enabled: true
+
+  - name: GTT Communications
+    careers_url: https://www.gtt.net/about-us/careers
+    notes: "McLean VA. Managed SD-WAN, cloud networking, global."
+    enabled: true
+
+  - name: TPx Communications
+    careers_url: https://www.tpx.com/careers/
+    notes: "Los Angeles CA. Managed SD-WAN, UCaaS, IT services."
+    enabled: true
+
+  - name: Expedient
+    careers_url: https://www.expedient.com/careers/
+    notes: "Pittsburgh PA. Cloud, managed services, colocation."
+    enabled: true
+
+  - name: Netskope
+    careers_url: https://www.netskope.com/company/careers
+    notes: "Santa Clara CA. SASE, cloud security, zero trust."
+    enabled: true
+
+  - name: Cloudflare
+    careers_url: https://www.cloudflare.com/careers/
+    notes: "San Francisco CA. SASE (Magic WAN), DDoS, edge networking."
+    enabled: true
+
+  - name: Broadcom (VMware VeloCloud)
+    careers_url: https://careers.broadcom.com/
+    notes: "Palo Alto CA. SD-WAN (VeloCloud), VMware networking."
+    enabled: true
+
+  - name: Arelion (fka Telia Carrier)
+    careers_url: https://www.arelion.com/careers
+    notes: "Stockholm / New York. Global backbone, DDoS, enterprise."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 4: Business Internet / Fiber (12)
+  # =============================================
+
+  - name: Cogent Communications
+    careers_url: https://www.cogentco.com/en/careers
+    notes: "Washington DC. Business internet, fiber, transit."
+    enabled: true
+
+  - name: Zayo Group
+    careers_url: https://www.zayo.com/careers/
+    notes: "Boulder CO. Dark fiber, wavelengths, colocation."
+    enabled: true
+
+  - name: Crown Castle
+    careers_url: https://www.crowncastle.com/careers
+    notes: "Houston TX. Fiber, small cells, towers."
+    enabled: true
+
+  - name: Uniti Group
+    careers_url: https://www.uniti.com/careers
+    notes: "Little Rock AR. Fiber infrastructure, leasing."
+    enabled: true
+
+  - name: EarthLink Business
+    careers_url: https://www.earthlink.net/about/careers/
+    notes: "Atlanta GA. Business internet, managed network. LOCAL."
+    enabled: true
+
+  - name: Segra
+    careers_url: https://www.segra.com/careers/
+    notes: "Richmond VA. Regional fiber, enterprise voice/data (fka Lumos)."
+    enabled: true
+
+  - name: FirstLight Fiber
+    careers_url: https://www.firstlight.net/careers/
+    notes: "Albany NY. Northeast fiber, managed services."
+    enabled: true
+
+  - name: Lightpath
+    careers_url: https://www.lightpathfiber.com/careers
+    notes: "Bethpage NY. Metro fiber (NY/NJ/CT), enterprise Ethernet."
+    enabled: true
+
+  - name: Fatbeam
+    careers_url: https://www.fatbeam.com/careers/
+    notes: "Coeur d'Alene ID. Regional fiber, education/gov/enterprise."
+    enabled: true
+
+  - name: Bluepeak
+    careers_url: https://www.mybluepeak.com/careers
+    notes: "Sioux Falls SD. Fiber ISP, expanding regionally."
+    enabled: true
+
+  - name: Lingo Communications
+    careers_url: https://www.lingo.com/careers
+    notes: "Reston VA. Business voice, SIP, PRI."
+    enabled: true
+
+  - name: Liberty Latin America
+    careers_url: https://www.lla.com/careers
+    notes: "Denver CO. Caribbean/LatAm business telecom (C&W Business)."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 5: Channel / Master Agents / TSD (10)
+  # =============================================
+
+  - name: Telarus
+    careers_url: https://www.telarus.com/careers/
+    notes: "Sandy UT. Largest master agent/TSD, UCaaS/SD-WAN/CCaaS."
+    enabled: true
+
+  - name: Avant Communications
+    careers_url: https://www.avant.com/careers/
+    notes: "Chicago IL. Master agent, Pathfinder platform."
+    enabled: true
+
+  - name: Intelisys (ScanSource)
+    careers_url: https://www.intelisys.com/careers/
+    notes: "Petaluma CA. Master agent, owned by ScanSource."
+    enabled: true
+
+  - name: AppSmart
+    careers_url: https://www.appsmart.com/careers
+    notes: "Boca Raton FL. Master agent, marketplace platform."
+    enabled: true
+
+  - name: Sandler Partners
+    careers_url: https://www.sandlerpartners.com/careers
+    notes: "Los Angeles CA. Master agent, cloud/connectivity."
+    enabled: true
+
+  - name: Bridgepointe Technologies
+    careers_url: https://www.bridgepointetechnologies.com/careers
+    notes: "Sacramento CA. Tech advisory, telecom brokerage."
+    enabled: true
+
+  - name: Bluewave Technology Group
+    careers_url: https://www.bluewavetech.com/careers
+    notes: "Marlborough MA. Technology advisory, procurement."
+    enabled: true
+
+  - name: TBI (Technology Business Inc.)
+    careers_url: https://www.tbicom.com/careers
+    notes: "Lisle IL. Master agent, channel distribution."
+    enabled: true
+
+  - name: Corus360
+    careers_url: https://www.corus360.com/careers
+    notes: "Atlanta GA. IT staffing + technology advisory. LOCAL."
+    enabled: true
+
+  - name: MicroCorp
+    careers_url: https://www.microcorp.com/careers
+    notes: "Irving TX. Technology services distributor."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 6: Contact Center / CX (12)
+  # =============================================
+
+  - name: Genesys
+    careers_url: https://www.genesys.com/careers
+    notes: "San Francisco CA. CCaaS leader, Genesys Cloud CX."
+    enabled: true
+
+  - name: Five9
+    careers_url: https://www.five9.com/about/careers
+    notes: "San Ramon CA. Cloud contact center, AI-powered."
+    enabled: true
+
+  - name: NICE CXone
+    careers_url: https://www.nice.com/careers
+    notes: "Hoboken NJ (Israel). CCaaS, workforce management, analytics."
+    enabled: true
+
+  - name: Talkdesk
+    careers_url: https://www.talkdesk.com/careers/
+    notes: "San Francisco CA. AI-first cloud contact center."
+    enabled: true
+
+  - name: Verint
+    careers_url: https://www.verint.com/careers/
+    notes: "Melville NY. CX automation, workforce engagement."
+    enabled: true
+
+  - name: Calabrio
+    careers_url: https://www.calabrio.com/careers/
+    notes: "Minneapolis MN. Workforce optimization, analytics."
+    enabled: true
+
+  - name: LiveVox
+    careers_url: https://www.livevox.com/careers/
+    notes: "San Francisco CA. Cloud contact center, compliance focused."
+    enabled: true
+
+  - name: Alvaria (Aspect + Noble)
+    careers_url: https://www.alvaria.com/careers
+    notes: "Atlanta GA. Enterprise contact center, WFM. LOCAL."
+    enabled: true
+
+  - name: Content Guru
+    careers_url: https://www.contentguru.com/en-us/careers/
+    notes: "Bracknell UK (US expanding). CCaaS, enterprise CX platform."
+    enabled: true
+
+  - name: Sprinklr
+    careers_url: https://www.sprinklr.com/careers/
+    notes: "New York NY. Unified CX, social + contact center."
+    enabled: true
+
+  - name: UJET
+    careers_url: https://www.ujet.cx/careers
+    notes: "San Francisco CA. Mobile-first cloud contact center."
+    enabled: true
+
+  - name: Assembled
+    careers_url: https://www.assembled.com/careers
+    notes: "San Francisco CA. Workforce management for support teams."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 7: IT Services / MSPs (8)
+  # =============================================
+
+  - name: Ritter Communications
+    careers_url: https://www.rittercommunications.com/careers
+    notes: "Jonesboro AR. Regional fiber, managed services, voice."
+    enabled: true
+
+  - name: Logicalis
+    careers_url: https://www.logicalis.com/careers
+    notes: "New York NY. Global MSP, Cisco partner, UCaaS."
+    enabled: true
+
+  - name: NTT Data
+    careers_url: https://careers.nttdata.com/
+    notes: "Plano TX. Global managed services, networking, cloud."
+    enabled: true
+
+  - name: Presidio
+    careers_url: https://www.presidio.com/careers/
+    notes: "New York NY. IT solutions, managed services, networking."
+    enabled: true
+
+  - name: CDW
+    careers_url: https://www.cdw.com/content/cdw/en/careers.html
+    notes: "Vernon Hills IL. IT solutions, UCaaS reseller, managed services."
+    enabled: true
+
+  - name: Insight Enterprises
+    careers_url: https://www.insight.com/en_US/about/careers.html
+    notes: "Chandler AZ. IT solutions, cloud, managed services."
+    enabled: true
+
+  - name: Connection (PC Connection)
+    careers_url: https://www.connection.com/content/about/careers
+    notes: "Merrimack NH. IT solutions, networking, voice."
+    enabled: true
+
+  - name: SHI International
+    careers_url: https://www.shi.com/careers
+    notes: "Somerset NJ. IT solutions, largest minority-owned IT company."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 8: Wireless / Mobile (5)
+  # =============================================
+
+  - name: T-Mobile for Business
+    careers_url: https://www.t-mobile.com/careers
+    notes: "Bellevue WA. Business wireless, 5G, fixed wireless."
+    enabled: true
+
+  - name: US Cellular
+    careers_url: https://www.uscellular.com/careers
+    notes: "Chicago IL. Regional wireless, business solutions."
+    enabled: true
+
+  - name: Geoverse
+    careers_url: https://www.geoverse.io/careers
+    notes: "Boston MA. Private 5G/LTE networks for enterprise."
+    enabled: true
+
+  - name: Cradlepoint (Ericsson)
+    careers_url: https://cradlepoint.com/company/careers/
+    notes: "Boise ID. 5G/LTE wireless WAN, SD-WAN, enterprise routers."
+    enabled: true
+
+  - name: Semtech (Sierra Wireless)
+    careers_url: https://www.semtech.com/company/careers
+    notes: "Richmond BC. IoT, cellular routers, enterprise wireless WAN."
+    enabled: true

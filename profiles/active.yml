@@ -1,0 +1,8 @@
+# Active Profile Selector
+# Change this to switch between profiles.
+# The system reads this file to determine which profile to load.
+#
+# Available profiles: lamin, paulina
+# Each profile has its own: profile.yml, _profile.md, cv.md, portals.yml, data/
+
+active: lamin

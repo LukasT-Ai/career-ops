@@ -1,0 +1,108 @@
+# Paulina Kaiser, MD -- Career-Ops Profile
+
+candidate:
+  full_name: "Paulina Kaiser, MD"
+  email: "paulinakaiser@gmail.com"
+  phone: "408-515-2102"
+  location: "Atlanta, GA"
+  linkedin: "linkedin.com/in/paulina-kaiser-51a48419"
+  portfolio_url: "https://paulinakaiser.com"
+  github: ""
+  twitter: ""
+
+target_roles:
+  primary:
+    - "Staff Psychiatrist"
+    - "Attending Psychiatrist"
+    - "Outpatient Psychiatrist"
+  archetypes:
+    - name: "Staff / Attending Psychiatrist"
+      level: "Attending"
+      fit: "primary"
+    - name: "Emergency / C-L Psychiatrist"
+      level: "Attending"
+      fit: "primary"
+    - name: "Medical Director (Behavioral Health)"
+      level: "Director"
+      fit: "secondary"
+    - name: "Telepsychiatrist"
+      level: "Attending"
+      fit: "primary"
+    - name: "Academic Psychiatrist (Research/Teaching)"
+      level: "Assistant Professor"
+      fit: "secondary"
+    - name: "Facharzt/Assistenzarzt Psychiatrie (Germany)"
+      level: "Facharzt"
+      fit: "primary"
+
+narrative:
+  headline: "Board-eligible psychiatrist with expertise in emergency, C-L, outpatient, and psychotherapy"
+  exit_story: "Trained at Emory (Chief Resident), now running private practice + Grady emergency psych + community outpatient. Seeking new opportunities that leverage full clinical range -- from acute crisis to long-term psychotherapy. Open to Germany with existing Heidelberg research ties."
+  superpowers:
+    - "Full-spectrum psychiatry: emergency, C-L, inpatient, outpatient, private practice"
+    - "Integrated psychotherapy + psychopharmacology (psychoanalytic training)"
+    - "Underserved populations expertise (Grady, Dekalb CSB, Skid Row clinics)"
+    - "Trilingual: German (fluent), French (conversational), Spanish (intermediate medical)"
+    - "Research background: catatonia, pediatric psychopharm, schizophrenia prodrome"
+  proof_points:
+    - name: "Chief Resident"
+      hero_metric: "Outpatient Psychiatry Chief Resident at Emory, Resident Recognition Award"
+    - name: "Private Practice Owner"
+      hero_metric: "Built and operate Paulina Kaiser, MD LLC since July 2023"
+    - name: "Emergency Psychiatry"
+      hero_metric: "Grady Memorial Hospital -- acute crisis, suicidality, psychosis, substance emergencies"
+    - name: "Research"
+      hero_metric: "5 research positions, APA poster presentations, manuscript in preparation"
+    - name: "Heidelberg Connection"
+      hero_metric: "Perinatal psychiatry research at University of Heidelberg (2011)"
+    - name: "Underserved Care"
+      hero_metric: "Dekalb CSB (serious mental illness) + Skid Row clinics + VA hospital"
+
+compensation:
+  target_range: "$250K-350K"
+  currency: "USD"
+  minimum: "$250K"
+  notes: "Psychiatrist market is extremely competitive for employers. CA DSH pays $300K+. Hospital systems $280K-400K. Telepsychiatry $250K-320K."
+  location_flexibility: "Open to remote anywhere. Atlanta: remote or on-site. Germany: remote or on-site (would relocate). California: remote ONLY."
+
+# ============================================================
+# SEARCH LOCATIONS
+# ============================================================
+search_locations:
+  - name: "Atlanta, GA"
+    region: "US"
+    keywords: ["Atlanta", "Georgia", "GA", "Decatur", "DeKalb"]
+    remote_ok: true
+    enabled: true
+
+  - name: "California"
+    region: "US"
+    keywords: ["California", "Los Angeles", "San Francisco", "San Diego", "Bay Area", "Sacramento"]
+    remote_ok: true
+    enabled: true
+
+  - name: "Germany"
+    region: "DACH"
+    keywords: ["Germany", "Deutschland", "Berlin", "Munich", "Hamburg", "Frankfurt", "Heidelberg", "Freiburg", "Cologne"]
+    remote_ok: false
+    language: "de"
+    enabled: true
+
+  - name: "Remote / Telepsychiatry (Anywhere)"
+    region: "US"
+    keywords: ["Remote", "Telehealth", "Telepsychiatry", "Virtual", "Work from Home"]
+    remote_ok: true
+    notes: "Open to remote from anywhere in the US"
+    enabled: true
+
+location:
+  country: "United States"
+  city: "Atlanta"
+  timezone: "EST"
+  visa_status: "US citizen + German citizen (dual nationality)"
+  licenses:
+    - state: "Georgia"
+      status: "Active"
+    - state: "California"
+      status: "Active"
+  germany_pathway: "German citizen -- NO visa/work permit needed. Approbation still required to practice medicine. Fluent German (B2+ likely C1). Prior Heidelberg research. Berufserlaubnis as fast-track entry strategy."

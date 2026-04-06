@@ -15,10 +15,11 @@ batch/tracker-additions/*.tsv
 jds/*
 !jds/.gitkeep
 
-# User config and customization (never auto-updated)
+# User config and customization (root working copies — never auto-updated)
+# Source of truth is in profiles/{name}/ which IS tracked
 config/profile.yml
-portals.yml
-modes/_profile.md
+/portals.yml
+/modes/_profile.md
 .update-dismissed
 .update-lock
 

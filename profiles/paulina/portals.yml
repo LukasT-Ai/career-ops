@@ -1,0 +1,806 @@
+# Paulina Kaiser — Portal Scanner Configuration
+# Psychiatry: GA, CA, and Germany (Approbation/sponsorship pathway)
+#
+# Licensed in: Georgia (GA) and California (CA)
+# Germany: Requires Approbation or Berufserlaubnis (temporary license)
+# Search locations configurable in profile.yml
+#
+# To disable a company: set enabled: false
+# To add a company: copy any entry and change name/careers_url
+
+title_filter:
+  positive:
+    # -- Psychiatry roles (English) --
+    - "Psychiatrist"
+    - "Psychiatry"
+    - "Behavioral Health"
+    - "Mental Health"
+    - "Psychiatric"
+    - "Psychopharmacology"
+    - "Physician"
+    - "MD"
+    - "Attending"
+    - "Medical Director"
+    - "Chief Medical Officer"
+    - "Telepsychiatry"
+    - "Addiction"
+    - "Substance Abuse"
+    - "PTSD"
+    - "Forensic"
+    - "Consultation-Liaison"
+    - "Geriatric Psychiatry"
+    - "Child Psychiatry"
+    - "Prescriber"
+    # -- German keywords --
+    - "Psychiater"
+    - "Facharzt"
+    - "Fachärztin"
+    - "Psychiatrie"
+    - "Psychotherapie"
+    - "Psychosomatik"
+    - "Oberarzt"
+    - "Oberärztin"
+    - "Assistenzarzt"
+    - "Assistenzärztin"
+    - "Chefarzt"
+    - "Chefärztin"
+    - "Stationsarzt"
+    - "Arzt"
+    - "Ärztin"
+    - "Klinik"
+    - "Neurologie"
+  negative:
+    - "Nurse Practitioner"
+    - "NP"
+    - "PA-C"
+    - "Physician Assistant"
+    - "LPC"
+    - "LCSW"
+    - "Therapist"
+    - "Counselor"
+    - "Psychologist"
+    - "Social Worker"
+    - "Medical Assistant"
+    - "Technician"
+    - "CNA"
+    - "RN"
+    - "Registered Nurse"
+    - "Krankenpfleger"
+    - "Pflegekraft"
+  seniority_boost:
+    - "Medical Director"
+    - "Chief"
+    - "Director"
+    - "Lead"
+    - "Senior"
+    - "Attending"
+    - "Chefarzt"
+    - "Oberarzt"
+    - "Leitend"
+
+# ============================================================
+# SEARCH QUERIES — GA, CA, Germany + Telepsychiatry
+# ============================================================
+
+search_queries:
+
+  # -- Georgia --
+  - name: GA — Psychiatrist
+    query: '"Psychiatrist" OR "Psychiatry" Atlanta OR Georgia -"nurse practitioner" -NP -PA'
+    enabled: true
+
+  - name: GA — Behavioral Health Physician
+    query: '"Behavioral Health" physician OR "Medical Director" Atlanta OR Georgia'
+    enabled: true
+
+  - name: GA — LinkedIn Psychiatry
+    query: 'site:linkedin.com/jobs "Psychiatrist" OR "Psychiatry" Georgia OR Atlanta'
+    enabled: true
+
+  - name: GA — Indeed Psychiatry
+    query: 'site:indeed.com "Psychiatrist" Georgia OR Atlanta'
+    enabled: true
+
+  - name: GA — PracticeLink
+    query: 'site:practicelink.com "Psychiatrist" Georgia'
+    enabled: true
+
+  # -- California --
+  - name: CA — Psychiatrist
+    query: '"Psychiatrist" OR "Psychiatry" California OR "Los Angeles" OR "San Francisco" OR "San Diego" -NP -PA'
+    enabled: true
+
+  - name: CA — Telepsychiatry
+    query: '"Telepsychiatry" OR "Remote Psychiatrist" California'
+    enabled: true
+
+  - name: CA — LinkedIn Psychiatry
+    query: 'site:linkedin.com/jobs "Psychiatrist" California OR "Los Angeles" OR "Bay Area"'
+    enabled: true
+
+  - name: CA — State Hospitals
+    query: 'site:dsh.ca.gov "Psychiatrist" OR "Physician"'
+    enabled: true
+
+  # -- Remote / Telepsychiatry --
+  - name: Remote — Telepsychiatrist
+    query: '"Telepsychiatrist" OR "Remote Psychiatrist" OR "Virtual Psychiatrist"'
+    enabled: true
+
+  - name: Remote — Psychiatry Platform
+    query: '"Psychiatrist" telehealth OR telepsychiatry OR virtual "remote" -NP -PA'
+    enabled: true
+
+  # -- Germany: Psychiatry --
+  - name: DE — Facharzt Psychiatrie
+    query: '"Facharzt" OR "Fachärztin" "Psychiatrie" OR "Psychiatrie und Psychotherapie"'
+    enabled: true
+
+  - name: DE — Oberarzt Psychiatrie
+    query: '"Oberarzt" OR "Oberärztin" "Psychiatrie" Germany OR Deutschland'
+    enabled: true
+
+  - name: DE — Assistenzarzt Psychiatrie
+    query: '"Assistenzarzt" OR "Assistenzärztin" "Psychiatrie" Germany OR Deutschland'
+    enabled: true
+
+  - name: DE — Ärztestellen Psychiatrie
+    query: 'site:aerzteblatt.de "Psychiatrie" OR "Psychiater" OR "Facharzt"'
+    enabled: true
+
+  - name: DE — PraktischArzt Psychiatrie
+    query: 'site:praktischarzt.de "Psychiatrie" OR "Psychiater"'
+    enabled: true
+
+  - name: DE — Marburger Bund
+    query: 'site:marburger-bund.de "Psychiatrie" OR "Facharzt"'
+    enabled: true
+
+  - name: DE — StepStone Psychiatrie
+    query: 'site:stepstone.de "Psychiater" OR "Facharzt Psychiatrie" OR "Oberarzt Psychiatrie"'
+    enabled: true
+
+  - name: DE — Indeed Psychiatrie
+    query: 'site:de.indeed.com "Psychiater" OR "Facharzt Psychiatrie"'
+    enabled: true
+
+  - name: DE — Kliniken.de
+    query: 'site:kliniken.de "Psychiatrie" "Arzt" OR "Facharzt" OR "Oberarzt"'
+    enabled: true
+
+  - name: DE — Approbation/Sponsorship
+    query: '"international doctor" OR "ausländische Ärzte" OR "Approbation" psychiatry OR Psychiatrie Germany'
+    enabled: true
+
+  # -- Germany: Sponsorship-Specific --
+  - name: DE — Berufserlaubnis Psychiatrie
+    query: '"Berufserlaubnis" "Psychiatrie" OR "Psychiater" OR "international"'
+    enabled: true
+
+  - name: DE — International Recruitment Hospitals
+    query: '"international recruitment" OR "internationale Ärzte" hospital OR Klinik psychiatry OR Psychiatrie Germany'
+    enabled: true
+
+# ============================================================
+# TRACKED COMPANIES — 100 Psychiatry Employers
+# ============================================================
+
+tracked_companies:
+
+  # =============================================
+  # CATEGORY 1: Major Hospital Systems in GA (12)
+  # =============================================
+
+  - name: Emory Healthcare
+    careers_url: https://www.emoryhealthcare.org/careers
+    notes: "Atlanta GA. Largest academic health system in GA. Emory psychiatry dept. Research + clinical."
+    enabled: true
+
+  - name: Piedmont Healthcare
+    careers_url: https://www.piedmont.org/careers
+    notes: "GA statewide. 25+ hospitals. Growing behavioral health services."
+    enabled: true
+
+  - name: Grady Health System
+    careers_url: https://www.gradyhealth.org/careers
+    notes: "Atlanta GA. Major public hospital. Significant psych/behavioral health unit. Emory/Morehouse partner."
+    enabled: true
+
+  - name: WellStar Health System
+    careers_url: https://www.wellstar.org/careers
+    notes: "Metro Atlanta GA. 11+ hospitals. Behavioral health services."
+    enabled: true
+
+  - name: Northside Hospital
+    careers_url: https://www.northside.com/careers
+    notes: "Atlanta GA. Multiple campuses (Atlanta, Forsyth, Cherokee, Gwinnett, Duluth)."
+    enabled: true
+
+  - name: Augusta University Health
+    careers_url: https://www.augustahealth.org/careers
+    notes: "Augusta GA. Academic medical center. MCG psychiatry department."
+    enabled: true
+
+  - name: Memorial Health (HCA Healthcare)
+    careers_url: https://careers.hcahealthcare.com
+    notes: "Savannah GA. Part of HCA. Behavioral health services in coastal GA."
+    enabled: true
+
+  - name: Northeast Georgia Health System
+    careers_url: https://www.nghs.com/careers
+    notes: "Gainesville GA. Laurelwood Mental Health unit. Growing behavioral health."
+    enabled: true
+
+  - name: Atrium Health Navicent (Advocate Health)
+    careers_url: https://www.navicenthealth.org/careers
+    notes: "Macon GA. Central GA's largest health system. Behavioral health services."
+    enabled: true
+
+  - name: Phoebe Putney Health System
+    careers_url: https://www.phoebehealth.com/careers
+    notes: "Albany GA. Southwest GA's major health system."
+    enabled: true
+
+  - name: Tanner Health System
+    careers_url: https://www.tanner.org/careers
+    notes: "Carrollton GA. West GA. Willowbrooke behavioral health campus."
+    enabled: true
+
+  - name: Georgia DBHDD (State Psychiatric)
+    careers_url: https://dbhdd.georgia.gov/careers
+    notes: "State-run psychiatric hospitals. Facilities in Atlanta, Savannah, Augusta, Columbus, Thomasville."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 2: Major Hospital Systems in CA (14)
+  # =============================================
+
+  - name: Kaiser Permanente
+    careers_url: https://www.kaiserpermanentejobs.org
+    notes: "CA statewide. Largest HMO in US. Major psychiatry employer. Competitive pay + benefits."
+    enabled: true
+
+  - name: Sutter Health
+    careers_url: https://www.sutterhealth.org/careers
+    notes: "Northern CA. 24+ hospitals. Strong behavioral health. Sacramento, Bay Area."
+    enabled: true
+
+  - name: UCLA Health
+    careers_url: https://www.uclahealth.org/careers
+    notes: "Los Angeles CA. Top-ranked. UCLA Semel Institute for Neuroscience. Research + clinical."
+    enabled: true
+
+  - name: Stanford Health Care
+    careers_url: https://stanfordhealthcare.org/careers
+    notes: "Palo Alto CA. Elite academic center. Stanford Dept of Psychiatry."
+    enabled: true
+
+  - name: UCSF Health
+    careers_url: https://careers.ucsf.edu
+    notes: "San Francisco CA. Top-ranked. UCSF Weill Institute for Neurosciences."
+    enabled: true
+
+  - name: Cedars-Sinai Medical Center
+    careers_url: https://www.cedars-sinai.org/careers
+    notes: "Los Angeles CA. Premier hospital. Dept of Psychiatry and Behavioral Neurosciences."
+    enabled: true
+
+  - name: Providence (CA)
+    careers_url: https://www.providence.org/careers
+    notes: "CA multi-site. Large system with significant CA presence."
+    enabled: true
+
+  - name: CommonSpirit Health (Dignity Health)
+    careers_url: https://www.commonspirit.careers
+    notes: "CA statewide. Major presence. Multiple hospitals."
+    enabled: true
+
+  - name: John Muir Health
+    careers_url: https://www.johnmuirhealth.com/careers
+    notes: "East Bay CA (Walnut Creek, Concord). Psychiatric services."
+    enabled: true
+
+  - name: UC Davis Health
+    careers_url: https://health.ucdavis.edu/careers
+    notes: "Sacramento CA. Academic medical center. Psychiatry department."
+    enabled: true
+
+  - name: UC San Diego Health
+    careers_url: https://health.ucsd.edu/careers
+    notes: "San Diego CA. Academic center. Strong psychiatry research."
+    enabled: true
+
+  - name: Loma Linda University Health
+    careers_url: https://careers.llu.edu
+    notes: "Inland Empire CA. Behavioral Medicine Center. Faith-based."
+    enabled: true
+
+  - name: Adventist Health
+    careers_url: https://www.adventisthealth.org/careers
+    notes: "CA multi-site. Faith-based system with behavioral health."
+    enabled: true
+
+  - name: Scripps Health
+    careers_url: https://www.scripps.org/careers
+    notes: "San Diego CA. Multiple hospitals. Psychiatric consultation."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 3: Telepsychiatry / Virtual (12)
+  # =============================================
+
+  - name: Talkiatry
+    careers_url: https://www.talkiatry.com/careers
+    notes: "Psychiatrist-led. In-network. W-2 model. Med management. Active GA + CA."
+    enabled: true
+
+  - name: Cerebral
+    careers_url: https://www.cerebral.com/careers
+    notes: "Online mental health. Prescribing + therapy. Multi-state. Verify current status."
+    enabled: true
+
+  - name: Done (Done ADHD)
+    careers_url: https://www.donefirst.com/careers
+    notes: "ADHD-focused telehealth. Multi-state prescribing platform."
+    enabled: true
+
+  - name: Brightside Health
+    careers_url: https://www.brightsidehealth.com/careers
+    notes: "Depression/anxiety focus. Psychiatry + therapy. Insurance-based."
+    enabled: true
+
+  - name: Lyra Health
+    careers_url: https://www.lyrahealth.com/careers
+    notes: "Employer-sponsored mental health. High-quality network. Evidence-based."
+    enabled: true
+
+  - name: Spring Health
+    careers_url: https://www.springhealth.com/careers
+    notes: "Employer-sponsored EAP alternative. AI-driven matching. Psychiatry + therapy."
+    enabled: true
+
+  - name: Rula (fka Path Mental Health)
+    careers_url: https://www.rula.com/careers
+    notes: "Prescriber marketplace. In-network. Fast credentialing. Active GA + CA."
+    enabled: true
+
+  - name: Two Chairs
+    careers_url: https://www.twochairs.com/careers
+    notes: "CA-based (SF, LA). Therapy + psychiatry. In-person and virtual. Premium."
+    enabled: true
+
+  - name: Included Health
+    careers_url: https://www.includedhealth.com/careers
+    notes: "Virtual primary + behavioral health (fka Grand Rounds + Doctor On Demand)."
+    enabled: true
+
+  - name: Teladoc / BetterHelp
+    careers_url: https://www.teladochealth.com/careers
+    notes: "Largest telehealth company. Psychiatry arm. Multi-state."
+    enabled: true
+
+  - name: MDLive (Evernorth/Cigna)
+    careers_url: https://www.mdlive.com/careers
+    notes: "Cigna-owned telehealth. Behavioral health prescribers. Multi-state."
+    enabled: true
+
+  - name: Wheel
+    careers_url: https://www.wheel.com/careers
+    notes: "White-label telehealth platform. Clinicians work through various health companies."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 4: National Behavioral Health (8)
+  # =============================================
+
+  - name: LifeStance Health
+    careers_url: https://www.lifestance.com/careers
+    notes: "Largest outpatient MH company in US. 5,000+ clinicians. GA + CA locations. Hybrid. Publicly traded (LFST)."
+    enabled: true
+
+  - name: Acadia Healthcare
+    careers_url: https://www.acadiahealthcare.com/careers
+    notes: "Largest standalone behavioral health company. Inpatient + residential. GA facilities. Nashville-based."
+    enabled: true
+
+  - name: Universal Health Services (UHS)
+    careers_url: https://www.uhsinc.com/careers
+    notes: "Major behavioral health operator. Peachford Hospital (Atlanta), Del Amo (CA)."
+    enabled: true
+
+  - name: Mindpath Health
+    careers_url: https://www.mindpath.com/careers
+    notes: "Southeast + CA. Outpatient psychiatry + therapy. Growing rapidly."
+    enabled: true
+
+  - name: Summit BHC
+    careers_url: https://www.summitbhc.com/careers
+    notes: "Inpatient behavioral health. Multiple facilities. Addiction + psych."
+    enabled: true
+
+  - name: Refresh Mental Health
+    careers_url: https://www.refreshmentalhealth.com/careers
+    notes: "Multi-brand outpatient MH platform. Growing through acquisitions."
+    enabled: true
+
+  - name: Pathlight (Eating Recovery Center)
+    careers_url: https://www.pathlightbh.com/careers
+    notes: "Mood, anxiety, eating disorders. Residential + outpatient. Multi-state."
+    enabled: true
+
+  - name: Nystrom & Associates
+    careers_url: https://www.nystromcounseling.com/careers
+    notes: "Large multi-state mental health practice. Psychiatry + therapy."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 5: VA / Government (9)
+  # =============================================
+
+  - name: VA Atlanta (Cleland VAMC)
+    careers_url: https://www.va.gov/careers-employment/
+    scan_method: websearch
+    scan_query: 'site:usajobs.gov "Psychiatrist" "Atlanta" OR "Decatur" VA'
+    notes: "Decatur GA. Major VA facility. Federal benefits. Search USAJobs.gov."
+    enabled: true
+
+  - name: VA Augusta (Charlie Norwood VAMC)
+    careers_url: https://www.va.gov/careers-employment/
+    scan_method: websearch
+    scan_query: 'site:usajobs.gov "Psychiatrist" "Augusta" VA Georgia'
+    notes: "Augusta GA. Two campuses."
+    enabled: true
+
+  - name: VA Dublin (Carl Vinson VAMC)
+    careers_url: https://www.va.gov/careers-employment/
+    scan_method: websearch
+    scan_query: 'site:usajobs.gov "Psychiatrist" "Dublin" VA Georgia'
+    notes: "Dublin GA. Rural VA. Often has openings due to location."
+    enabled: true
+
+  - name: VA Greater Los Angeles
+    careers_url: https://www.va.gov/careers-employment/
+    scan_method: websearch
+    scan_query: 'site:usajobs.gov "Psychiatrist" "Los Angeles" VA'
+    notes: "Largest VA system in US. West LA. Major psychiatry employer."
+    enabled: true
+
+  - name: VA Palo Alto
+    careers_url: https://www.va.gov/careers-employment/
+    scan_method: websearch
+    scan_query: 'site:usajobs.gov "Psychiatrist" "Palo Alto" VA'
+    notes: "Palo Alto CA. Stanford affiliation. PTSD research."
+    enabled: true
+
+  - name: VA San Francisco
+    careers_url: https://www.va.gov/careers-employment/
+    scan_method: websearch
+    scan_query: 'site:usajobs.gov "Psychiatrist" "San Francisco" VA'
+    notes: "SF. UCSF affiliation. Research opportunities."
+    enabled: true
+
+  - name: VA San Diego
+    careers_url: https://www.va.gov/careers-employment/
+    scan_method: websearch
+    scan_query: 'site:usajobs.gov "Psychiatrist" "San Diego" VA'
+    notes: "San Diego CA. UCSD affiliation."
+    enabled: true
+
+  - name: Georgia Dept of Corrections
+    careers_url: https://gdc.ga.gov/careers
+    notes: "Correctional psychiatry. State facilities. High demand, underserved."
+    enabled: true
+
+  - name: California Dept of State Hospitals (DSH)
+    careers_url: https://www.dsh.ca.gov/Jobs
+    notes: "5 state hospitals (Atascadero, Coalinga, Metropolitan, Napa, Patton). Forensic psych. $300K+ salaries."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 6: Locum Tenens / Staffing (6)
+  # =============================================
+
+  - name: Weatherby Healthcare (CHG)
+    careers_url: https://www.weatherbyhealthcare.com
+    notes: "Top locum tenens. Psychiatry is high-demand specialty. Nationwide."
+    enabled: true
+
+  - name: CompHealth (CHG)
+    careers_url: https://www.comphealth.com
+    notes: "Locum + permanent placement. Strong psych division."
+    enabled: true
+
+  - name: AMN Healthcare / Merritt Hawkins
+    careers_url: https://www.amnhealthcare.com
+    notes: "Largest healthcare staffing. Psychiatry is #1 most recruited specialty."
+    enabled: true
+
+  - name: Jackson & Coker
+    careers_url: https://www.jacksoncoker.com
+    notes: "Alpharetta GA-based. Physician search. Strong southeast placements. LOCAL."
+    enabled: true
+
+  - name: Aya Healthcare
+    careers_url: https://www.ayahealthcare.com
+    notes: "Large healthcare staffing. Locum tenens division. San Diego-based."
+    enabled: true
+
+  - name: Vista Staffing Solutions
+    careers_url: https://www.vistastaff.com
+    notes: "Physician staffing. Psychiatry locum placements."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 7: Private Practice Platforms (5)
+  # =============================================
+
+  - name: Headway
+    careers_url: https://www.headway.co/for-providers
+    notes: "Insurance credentialing + billing. Clinical autonomy. Active GA + CA. Low barrier."
+    enabled: true
+
+  - name: Alma
+    careers_url: https://www.helloalma.com/for-providers
+    notes: "Insurance support + community. Growing prescriber network."
+    enabled: true
+
+  - name: Grow Therapy
+    careers_url: https://www.growtherapy.com/for-providers
+    notes: "Insurance credentialing platform. Free to join."
+    enabled: true
+
+  - name: SimplePractice (Monarch)
+    careers_url: https://www.simplepractice.com
+    notes: "EHR + practice management. Monarch directory for patient acquisition."
+    enabled: true
+
+  - name: Psychology Today Directory
+    careers_url: https://www.psychologytoday.com/us/therapists
+    notes: "Largest provider directory. Profile listing for patient acquisition. Key for private practice."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 8: German University Hospitals (16)
+  # =============================================
+  # Unikliniken are MOST LIKELY to sponsor Approbation/Berufserlaubnis.
+  # They have international recruitment offices and experience with foreign-trained doctors.
+
+  - name: "Charit\xE9 \u2014 Universit\xE4tsmedizin Berlin"
+    careers_url: https://www.charite.de/karriere
+    notes: "Berlin. LARGEST university hospital in Europe. Strong international recruitment. High sponsorship likelihood."
+    enabled: true
+
+  - name: "LMU Klinikum M\xFCnchen"
+    careers_url: https://www.lmu-klinikum.de/karriere
+    notes: "Munich, Bavaria. Top psychiatry dept. Bavaria has stricter Approbation process."
+    enabled: true
+
+  - name: "Klinikum rechts der Isar (TU M\xFCnchen)"
+    careers_url: https://www.mri.tum.de/karriere
+    notes: "Munich, Bavaria. TU Munich hospital. Strong psychiatry research."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum Hamburg-Eppendorf (UKE)"
+    careers_url: https://www.uke.de/karriere
+    notes: "Hamburg. Leading psychiatry center. Hamburg is relatively accessible for international doctors."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum Heidelberg"
+    careers_url: https://www.klinikum.uni-heidelberg.de/karriere
+    notes: "Heidelberg, Baden-W\xFCrttemberg. Renowned psychiatry dept. Research + clinical."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum Freiburg"
+    careers_url: https://www.uniklinik-freiburg.de/karriere
+    notes: "Freiburg, Baden-W\xFCrttemberg. Strong psychiatry."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum Frankfurt"
+    careers_url: https://www.kgu.de/karriere
+    notes: "Frankfurt am Main, Hessen. Psychiatrie, Psychosomatik und Psychotherapie."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum D\xFCsseldorf (UKD)"
+    careers_url: https://www.uniklinik-duesseldorf.de/karriere
+    notes: "D\xFCsseldorf, NRW. LVR-Klinikum affiliation for psychiatry."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum K\xF6ln"
+    careers_url: https://www.uk-koeln.de/karriere
+    notes: "Cologne, NRW. Department of Psychiatry and Psychotherapy."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum T\xFCbingen"
+    careers_url: https://www.medizin.uni-tuebingen.de/karriere
+    notes: "T\xFCbingen, Baden-W\xFCrttemberg. Strong neuroscience/psychiatry research."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum Bonn (UKB)"
+    careers_url: https://www.ukbonn.de/karriere
+    notes: "Bonn, NRW. Psychiatry research focus."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum Dresden"
+    careers_url: https://www.uniklinikum-dresden.de/karriere
+    notes: "Dresden, Saxony. EASTERN GERMANY = more accessible for intl doctors, higher demand."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum Leipzig"
+    careers_url: https://www.uniklinik-leipzig.de/karriere
+    notes: "Leipzig, Saxony. EASTERN GERMANY. Similar accessibility advantages."
+    enabled: true
+
+  - name: "Universit\xE4tsmedizin G\xF6ttingen"
+    careers_url: https://www.umg.eu/karriere
+    notes: "G\xF6ttingen, Lower Saxony. Psychiatry department."
+    enabled: true
+
+  - name: "Universit\xE4tsklinikum Erlangen"
+    careers_url: https://www.uk-erlangen.de/karriere
+    notes: "Erlangen, Bavaria. Part of FAU. Psychiatry department."
+    enabled: true
+
+  - name: "Universit\xE4tsmedizin Mainz"
+    careers_url: https://www.unimedizin-mainz.de/karriere
+    notes: "Mainz, Rhineland-Palatinate. Psychiatry department."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 9: German Hospital Chains (8)
+  # =============================================
+  # Large chains often have international recruitment programs
+  # and assist with Approbation paperwork.
+
+  - name: Helios Kliniken (Fresenius)
+    careers_url: https://www.helios-gesundheit.de/karriere
+    notes: "LARGEST private chain in Europe. 86+ hospitals. Known to hire international doctors. Assists with Approbation."
+    enabled: true
+
+  - name: Asklepios Kliniken
+    careers_url: https://www.asklepios.com/karriere
+    notes: "2nd-largest private chain. Strong in Hamburg + nationwide. International recruitment program."
+    enabled: true
+
+  - name: Vivantes
+    careers_url: https://www.vivantes.de/karriere
+    notes: "Berlin's largest municipal hospital group. 9 hospitals. Multiple psych depts. Berlin = accessible."
+    enabled: true
+
+  - name: Sana Kliniken
+    careers_url: https://www.sana.de/karriere
+    notes: "3rd-largest private chain. 44+ hospitals. Psych services at various locations."
+    enabled: true
+
+  - name: "Sch\xF6n Klinik"
+    careers_url: https://www.schoenklinik.de/karriere
+    notes: "Specialized in psychosomatic medicine, psychiatry. Premium facilities. Good working conditions."
+    enabled: true
+
+  - name: AMEOS Gruppe
+    careers_url: https://www.ameos.eu/karriere
+    notes: "Northern/Eastern Germany psychiatric hospitals. Significant psych focus. Often has openings."
+    enabled: true
+
+  - name: "Rh\xF6n-Klinikum AG"
+    careers_url: https://www.rhoen-klinikum-ag.com/karriere
+    notes: "Bad Neustadt, Gie\xDFen, Marburg. Some psychiatric services."
+    enabled: true
+
+  - name: MEDIAN Kliniken
+    careers_url: https://www.median-kliniken.de/karriere
+    notes: "Largest private rehab provider in Germany. Psychosomatic + psychiatric rehab. Many locations."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 10: German Psychiatric Clinics (5)
+  # =============================================
+  # Public psychiatric hospitals (Fachkliniken) are major
+  # employers for psychiatrists in Germany.
+
+  - name: LVR-Kliniken (Rhineland)
+    careers_url: https://www.lvr.de/de/nav_main/karriere
+    notes: "NRW public psychiatric hospitals. D\xFCsseldorf, K\xF6ln, Essen, Bonn. Major employer."
+    enabled: true
+
+  - name: LWL-Kliniken (Westphalia)
+    careers_url: https://www.lwl.org/de/karriere
+    notes: "NRW public psychiatric hospitals. Dortmund, M\xFCnster."
+    enabled: true
+
+  - name: Bezirkskliniken (Bavaria)
+    careers_url: https://www.bezirkskliniken-mfr.de/karriere
+    notes: "Bavarian district hospitals. Each Bezirk has own system. Erlangen, Ansbach, Augsburg."
+    enabled: true
+
+  - name: Vitos Kliniken (Hessen)
+    careers_url: https://www.vitos.de/karriere
+    notes: "Hessen public psychiatric clinics. Kassel, Gie\xDFen, Herborn. Large employer."
+    enabled: true
+
+  - name: "ZfP S\xFCdw\xFCrttemberg"
+    careers_url: https://www.zfp-zentrum.de/karriere
+    notes: "Baden-W\xFCrttemberg public psych centers. Ravensburg, Bad Schussenried."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 11: German Digital Mental Health (3)
+  # =============================================
+
+  - name: HelloBetter
+    careers_url: https://www.hellobetter.de/karriere
+    notes: "Berlin. DiGA-certified digital therapy. Evidence-based. Prescriber roles possible."
+    enabled: true
+
+  - name: Selfapy
+    careers_url: https://www.selfapy.com/karriere
+    notes: "Berlin. Online CBT courses. DiGA. May have psychiatrist consultant roles."
+    enabled: true
+
+  - name: "MindDoc (Sch\xF6n Klinik)"
+    careers_url: https://www.minddoc.de
+    notes: "Digital therapy by Sch\xF6n Klinik. App-based. Clinical oversight roles."
+    enabled: true
+
+  # =============================================
+  # CATEGORY 12: German Medical Recruitment (2)
+  # =============================================
+  # These agencies specialize in placing international
+  # doctors in Germany and supporting the Approbation process.
+
+  - name: Approbatio
+    careers_url: https://www.approbatio.de
+    notes: "SPECIALIST for international doctors in Germany. Full-service: Approbation support, language, job placement. KEY RESOURCE."
+    enabled: true
+
+  - name: Doctari (Doctari Group)
+    careers_url: https://www.doctari.de
+    notes: "Medical staffing / locum equivalent for Germany. Can work under Berufserlaubnis while Approbation pending."
+    enabled: true
+
+# ============================================================
+# GERMANY APPROBATION PATHWAY — Reference
+# ============================================================
+# This section is documentation, not scanner config.
+# It helps the evaluation system understand Paulina's Germany pathway.
+#
+# PATHWAY: Berufserlaubnis (temp license) → Work + Prepare → Kenntnisprüfung → Full Approbation
+#
+# REQUIREMENTS FOR APPROBATION:
+#   1. Medical degree recognition (US MD evaluated vs German Staatsexamen)
+#   2. Kenntnisprüfung (oral-practical exam, ~60 min)
+#   3. German B2 general + C1 Fachsprachprüfung (medical German)
+#   4. Certificate of Good Standing from GA + CA boards
+#   5. Clean criminal record
+#   6. Apply to Approbationsbehörde of target Bundesland
+#   Timeline: 6-18 months | Cost: EUR 500-1,500
+#
+# BERUFSERLAUBNIS (FASTER ENTRY):
+#   - Valid up to 2 years (renewable in some states)
+#   - Restricted to specific employer + Bundesland
+#   - Requires job offer from German hospital
+#   - Language: B2 German (some states accept B1 initially)
+#   - Can practice under supervision while preparing for Kenntnisprüfung
+#   - RECOMMENDED STRATEGY: Get hired → Berufserlaubnis → Work → Kenntnisprüfung → Approbation
+#
+# MOST ACCESSIBLE BUNDESLÄNDER (ranked):
+#   Tier 1 (highest demand, fastest processing):
+#     Brandenburg, Sachsen (Dresden/Leipzig), Sachsen-Anhalt,
+#     Mecklenburg-Vorpommern, Thüringen, Schleswig-Holstein
+#   Tier 2 (good opportunities):
+#     NRW, Niedersachsen, Hessen, Hamburg
+#   Tier 3 (competitive/stricter):
+#     Bayern, Baden-Württemberg, Berlin
+#
+# NOTE: Psychiatry is a Mangelfach (shortage specialty) across ALL of Germany.
+#       This significantly improves prospects everywhere.
+#
+# KEY GERMAN MEDICAL JOB BOARDS:
+#   - aerzteblatt.de/aerztestellen (official, most comprehensive)
+#   - praktischarzt.de (modern, popular)
+#   - marburger-bund.de/stellenboerse (physicians' union)
+#   - stepstone.de (general, strong medical)
+#   - approbatio.de (international doctor specialist)
+#   - doctari.de (locum/staffing)
+#   - medwing.com (healthcare staffing)
+#   - kliniken.de/stellenmarkt (hospital-focused)
+#   - de.indeed.com (search "Psychiater" or "Facharzt Psychiatrie")
