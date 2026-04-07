@@ -1137,8 +1137,12 @@ approval:
       if (i < queue.length - 1) await sleep(delayMs);
     }
 
-    // Save remaining failures back to queue
-    await saveRetryQueue(stillFailed);
+    // Save remaining failures back to queue (dry-run preserves the full queue)
+    if (dryRun) {
+      console.log(`\n  (Dry run — queue unchanged)`);
+    } else {
+      await saveRetryQueue(stillFailed);
+    }
     transport.close();
 
     console.log(`\n  Results: ${succeeded.length} sent, ${stillFailed.length} still queued`);
