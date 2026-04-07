@@ -25,12 +25,15 @@ import { promisify } from 'util';
 const execFileAsync = promisify(execFile);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const ALL_PROFILES = ['paulina', 'lamin', 'josephina'];
+// Active scanning profiles — Josephina paused until resume is ready
+const ALL_PROFILES = ['paulina', 'lamin'];
+const PAUSED_PROFILES = ['josephina'];
 
+// Scanners ordered: FREE first (unlimited), then PAID (budget-capped)
 const SCANNERS = [
-  { name: 'Bundesagentur für Arbeit', script: 'arbeitsagentur-api.mjs' },
-  { name: 'USAJobs.gov', script: 'usajobs-api.mjs' },
-  { name: 'Board Scanner (Greenhouse/Lever APIs + site: queries)', script: 'board-scanner.mjs' },
+  { name: 'Bundesagentur für Arbeit', script: 'arbeitsagentur-api.mjs', cost: 'FREE' },
+  { name: 'USAJobs.gov', script: 'usajobs-api.mjs', cost: 'FREE' },
+  { name: 'Board Scanner (Brave API + Bing + ATS APIs)', script: 'board-scanner.mjs', cost: 'PAID ($5/1000 Brave queries, budget-capped)' },
 ];
 
 async function setActiveProfile(profileName) {
@@ -79,7 +82,7 @@ async function runScanner(script, profileName, args) {
   try {
     const { stdout, stderr } = await execFileAsync('node', cmdArgs, {
       cwd: __dirname,
-      timeout: 120000, // 2 min per scanner
+      timeout: 600000, // 10 min per scanner (board scanner does web searches)
     });
     if (stdout) process.stdout.write(stdout);
     if (stderr) process.stderr.write(stderr);
@@ -117,8 +120,9 @@ async function main() {
   console.log(`\n  ${'═'.repeat(60)}`);
   console.log(`  CAREER-OPS MASTER SCAN — ${new Date().toISOString().split('T')[0]}`);
   console.log(`  ${'═'.repeat(60)}`);
-  console.log(`  Profiles: ${profiles.join(', ')}`);
-  console.log(`  Scanners: ${SCANNERS.map(s => s.name).join(', ')}`);
+  console.log(`  Profiles: ${profiles.join(', ')}${PAUSED_PROFILES.length ? ` (paused: ${PAUSED_PROFILES.join(', ')})` : ''}`);
+  console.log(`  Scanners:`);
+  for (const s of SCANNERS) console.log(`    ${s.cost.padEnd(8)} ${s.name}`);
   console.log(`  Dry run:  ${dryRun}`);
   console.log(`  ${'═'.repeat(60)}\n`);
 

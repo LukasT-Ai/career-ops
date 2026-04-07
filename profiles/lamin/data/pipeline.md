@@ -2,6 +2,8 @@
 
 ## Pendientes
 
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15086-43950679-25-S&angebotsart=1 | Bechtle AG | Inside Sales Financial Services (w/m/d) — Neckarsulm
+
 - [ ] https://www.usajobs.gov:443/job/863167000 | Food Safety and Inspection Service | IT Specialist (Enterprise Architecture) — Location Negotiable After Selection | $106,437-$138,370 Per Year | GS-13/13
 - [ ] https://www.usajobs.gov:443/job/862835400 | Joint Activities | Telecommunications Manager (Spectrum Management) — Fort Bragg, North Carolina | $131,342-$170,750 Per Year | GS-14/14
 - [ ] https://www.usajobs.gov:443/job/863720300 | United States Fleet Forces Command | TELECOMMUNICATIONS SPECIALIST — Souda Bay, Greece | $102,415-$133,142 Per Year | GG-12/12

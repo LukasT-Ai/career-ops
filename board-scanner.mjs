@@ -4,14 +4,13 @@
  * board-scanner.mjs — Web Search Board Scanner
  *
  * Executes all site: search queries from the active profile's portals.yml
- * using Google search (via fetch). Covers LinkedIn, Monster, StepStone,
- * Indeed, all German boards, specialty boards, and everything else
- * that has a site: query configured.
+ * using multi-engine web search (Playwright Bing → Brave API → DuckDuckGo).
  *
  * Also hits Greenhouse and Lever public JSON APIs for tracked companies.
  *
  * Usage:
  *   node board-scanner.mjs [--profile=name] [--dry-run] [--boards-only] [--apis-only]
+ *                          [--engine=brave|playwright|ddg] [--limit=N]
  *
  * Designed to run AFTER arbeitsagentur-api.mjs and usajobs-api.mjs in scan-all.mjs.
  */
@@ -22,8 +21,21 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const RATE_LIMIT_MS = 2000; // 2s between web searches to avoid rate limits
-const ATS_RATE_LIMIT_MS = 500; // 500ms between ATS API calls
+const ATS_RATE_LIMIT_MS = 500;       // 500ms between ATS API calls
+const BRAVE_RATE_LIMIT_MS = 1100;    // 1.1s between Brave API calls (1/sec limit)
+const PLAYWRIGHT_RATE_LIMIT_MS = 3000; // 3s between Playwright searches
+const DDG_RATE_LIMIT_MS = 2000;      // 2s between DuckDuckGo searches
+
+// Brave Search API ($5/1000 requests, 1 req/sec)
+const BRAVE_API_KEY = 'BSAHO9OA7tbZnxEesEgayDPt0JUAT0E';
+const BRAVE_ENDPOINT = 'https://api.search.brave.com/res/v1/web/search';
+const BRAVE_MONTHLY_BUDGET_TOTAL = 10000; // $50/month ÷ $5/1000 = 10,000 queries max
+// Per-profile budget split (50/50 between active profiles)
+const BRAVE_PROFILE_BUDGETS = {
+  paulina: 5000,    // $25/month
+  lamin: 5000,      // $25/month
+  josephina: 0,     // paused — no resume yet
+};
 
 // ============================================================
 // Portals.yml Parser
@@ -110,12 +122,203 @@ function extractLeverSlug(url) {
 }
 
 // ============================================================
-// Web Search via DuckDuckGo HTML (no API key, no CAPTCHA)
+// Engine 1: Brave Search API
 // ============================================================
 
-async function webSearch(query) {
-  // DuckDuckGo HTML search — no JS, no CAPTCHA, no consent wall.
-  // More reliable than Google for automated scraping.
+let braveQueryCount = 0;
+
+/**
+ * Load/save Brave API monthly usage counter — PER PROFILE.
+ * Stored in data/brave-usage.json:
+ * { month: "2026-04", profiles: { paulina: 123, lamin: 456 }, total: 579 }
+ * Resets automatically on new month.
+ */
+async function loadBraveUsage() {
+  const usagePath = resolve(__dirname, 'data/brave-usage.json');
+  const currentMonth = new Date().toISOString().slice(0, 7);
+  try {
+    const raw = await readFile(usagePath, 'utf8');
+    const data = JSON.parse(raw);
+    if (data.month === currentMonth) return data;
+    return { month: currentMonth, profiles: {}, total: 0 };
+  } catch { return { month: currentMonth, profiles: {}, total: 0 }; }
+}
+
+async function saveBraveUsage(data) {
+  const usagePath = resolve(__dirname, 'data/brave-usage.json');
+  await writeFile(usagePath, JSON.stringify(data, null, 2), 'utf8');
+}
+
+let _braveUsage = null; // loaded lazily
+let _currentProfile = null; // set during main()
+
+async function braveSearch(query, limit = 20) {
+  // Lazy-load usage data
+  if (!_braveUsage) _braveUsage = await loadBraveUsage();
+
+  const profileCount = _braveUsage.profiles[_currentProfile] || 0;
+  const profileBudget = BRAVE_PROFILE_BUDGETS[_currentProfile] ?? 0;
+
+  // Per-profile budget cap
+  if (profileBudget === 0) {
+    return { results: [], error: `Profile "${_currentProfile}" has no Brave budget (paused)` };
+  }
+  if (profileCount >= profileBudget) {
+    return { results: [], error: `Profile "${_currentProfile}" budget cap reached (${profileCount}/${profileBudget} queries, $${(profileCount * 0.005).toFixed(2)}/$${(profileBudget * 0.005).toFixed(2)})` };
+  }
+  // Total budget cap
+  if (_braveUsage.total >= BRAVE_MONTHLY_BUDGET_TOTAL) {
+    return { results: [], error: `Total monthly budget cap reached (${_braveUsage.total}/${BRAVE_MONTHLY_BUDGET_TOTAL} queries, $${(_braveUsage.total * 0.005).toFixed(2)}/$50)` };
+  }
+
+  const count = Math.min(limit, 20);
+  const url = `${BRAVE_ENDPOINT}?q=${encodeURIComponent(query)}&count=${count}`;
+
+  try {
+    const res = await fetch(url, {
+      headers: {
+        'Accept': 'application/json',
+        'Accept-Encoding': 'gzip',
+        'X-Subscription-Token': BRAVE_API_KEY,
+      },
+    });
+
+    if (!res.ok) {
+      const status = res.status;
+      const text = await res.text().catch(() => '');
+      return { results: [], error: `HTTP ${status}: ${text.slice(0, 100)}` };
+    }
+
+    braveQueryCount++;
+    _braveUsage.profiles[_currentProfile] = (profileCount + 1);
+    _braveUsage.total++;
+    await saveBraveUsage(_braveUsage);
+
+    const data = await res.json();
+    const webResults = data.web?.results || [];
+    const results = webResults.map(r => r.url).filter(Boolean);
+    return { results, error: null };
+  } catch (err) {
+    return { results: [], error: err.message };
+  }
+}
+
+// ============================================================
+// Engine 2: Playwright Bing Search (Google CAPTCHAs headless)
+// ============================================================
+
+let _browser = null;
+let _page = null;
+
+async function launchPlaywrightBrowser() {
+  if (_browser) return;
+  try {
+    const { chromium } = await import('playwright');
+    _browser = await chromium.launch({ headless: true });
+    const context = await _browser.newContext({
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+      locale: 'en-US',
+    });
+    _page = await context.newPage();
+
+    // Navigate to Bing and handle cookie consent
+    await _page.goto('https://www.bing.com', { waitUntil: 'domcontentloaded', timeout: 15000 });
+    await sleep(1500);
+    try {
+      const acceptBtn = await _page.$('#bnp_btn_accept');
+      if (acceptBtn) {
+        await acceptBtn.click();
+        await sleep(1000);
+      }
+    } catch { /* no consent banner — proceed */ }
+  } catch (err) {
+    _browser = null;
+    _page = null;
+    throw new Error(`Playwright launch failed: ${err.message}`);
+  }
+}
+
+async function closePlaywrightBrowser() {
+  if (_browser) {
+    try { await _browser.close(); } catch { /* ignore */ }
+    _browser = null;
+    _page = null;
+  }
+}
+
+/**
+ * Decode Bing redirect URLs (bing.com/ck/a?...u=a1{base64}...)
+ * Returns the real destination URL.
+ */
+function decodeBingUrl(bingUrl) {
+  try {
+    const u = new URL(bingUrl);
+    const uParam = u.searchParams.get('u');
+    if (uParam && uParam.startsWith('a1')) {
+      return Buffer.from(uParam.slice(2), 'base64').toString('utf8');
+    }
+  } catch { /* not a Bing redirect URL */ }
+  return bingUrl;
+}
+
+async function playwrightBingSearch(query, limit = 20) {
+  try {
+    if (!_page) await launchPlaywrightBrowser();
+
+    // Use the search box (direct URL navigation triggers bot detection)
+    const searchBox = await _page.$('#sb_form_q');
+    if (searchBox) {
+      // Clear existing text and type the new query
+      await _page.fill('#sb_form_q', '');
+      await _page.fill('#sb_form_q', query);
+      await _page.press('#sb_form_q', 'Enter');
+    } else {
+      // Fallback: navigate to Bing home and try again
+      await _page.goto('https://www.bing.com', { waitUntil: 'domcontentloaded', timeout: 10000 });
+      await sleep(1000);
+      await _page.fill('#sb_form_q', query);
+      await _page.press('#sb_form_q', 'Enter');
+    }
+
+    // Wait for results to render
+    await _page.waitForSelector('#b_results li.b_algo', { timeout: 8000 }).catch(() => {});
+
+    // Extract organic search results from Bing
+    const rawResults = await _page.evaluate(() => {
+      const items = [];
+      document.querySelectorAll('#b_results li.b_algo').forEach(li => {
+        const a = li.querySelector('h2 a');
+        if (a && a.href) {
+          items.push({
+            href: a.href,
+            title: a.textContent || '',
+          });
+        }
+      });
+      return items;
+    });
+
+    // Decode Bing redirect URLs to real destinations
+    const results = rawResults
+      .map(r => decodeBingUrl(r.href))
+      .filter(url =>
+        url.startsWith('http') &&
+        !url.includes('bing.com') &&
+        !url.includes('microsoft.com') &&
+        !url.includes('msn.com')
+      );
+
+    return { results: [...new Set(results)], error: null };
+  } catch (err) {
+    return { results: [], error: err.message };
+  }
+}
+
+// ============================================================
+// Engine 3: DuckDuckGo HTML Fallback
+// ============================================================
+
+async function duckDuckGoSearch(query) {
   const searchUrl = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`;
 
   try {
@@ -132,8 +335,6 @@ async function webSearch(query) {
     }
 
     const html = await res.text();
-
-    // DuckDuckGo HTML results use class="result__url" or href in result__a
     const results = [];
 
     // Pattern 1: uddg= parameter in result links
@@ -158,21 +359,63 @@ async function webSearch(query) {
       else results.push('https://' + url);
     }
 
-    // Extract titles from result__a text
-    const titleRegex = /class="result__a"[^>]*>([^<]+)</g;
-    const titles = [];
-    while ((urlMatch = titleRegex.exec(html)) !== null) {
-      titles.push(urlMatch[1].trim());
-    }
-
     const unique = [...new Set(results)];
-    return { results: unique, titles, error: null };
+    return { results: unique, error: null };
   } catch (err) {
-    return { results: [], titles: [], error: err.message };
+    return { results: [], error: err.message };
   }
 }
 
+// ============================================================
+// Multi-Engine Web Search (Brave → Playwright → DuckDuckGo)
+// ============================================================
+
+async function webSearch(query, forceEngine = null, limit = 20) {
+  // If a specific engine is forced, use only that one
+  if (forceEngine === 'playwright') {
+    return await playwrightBingSearch(query, limit);
+  }
+  if (forceEngine === 'ddg') {
+    return await duckDuckGoSearch(query);
+  }
+  if (forceEngine === 'brave') {
+    return await braveSearch(query, limit);
+  }
+
+  // Default cascade: Brave API (fastest, paid) → Playwright Bing (free fallback) → DuckDuckGo
+  const braveResult = await braveSearch(query, limit);
+  if (braveResult.results.length > 0 && !braveResult.error) return braveResult;
+
+  // Fallback to Playwright Bing
+  if (braveResult.error) {
+    console.log(`    Brave failed (${braveResult.error}), trying Bing...`);
+  } else {
+    console.log(`    Brave returned 0 results, trying Bing...`);
+  }
+  const bingResult = await playwrightBingSearch(query, limit);
+  if (bingResult.results.length > 0 && !bingResult.error) return bingResult;
+
+  // Last resort: DuckDuckGo
+  if (bingResult.error) {
+    console.log(`    Bing failed (${bingResult.error}), trying DuckDuckGo...`);
+  } else {
+    console.log(`    Bing returned 0 results, trying DuckDuckGo...`);
+  }
+  return await duckDuckGoSearch(query);
+}
+
+// Rate limit delay based on which engine was used or forced
+function getRateLimitMs(forceEngine) {
+  if (forceEngine === 'playwright') return PLAYWRIGHT_RATE_LIMIT_MS;
+  if (forceEngine === 'ddg') return DDG_RATE_LIMIT_MS;
+  // Default/brave — fastest since it's a paid API
+  return BRAVE_RATE_LIMIT_MS;
+}
+
+// ============================================================
 // Extract title and company from URL patterns
+// ============================================================
+
 function parseJobUrl(url) {
   let title = '';
   let company = '';
@@ -203,11 +446,13 @@ function parseJobUrl(url) {
   }
   // Generic: try to get something useful from the URL path
   else {
-    const pathParts = new URL(url).pathname.split('/').filter(Boolean);
-    if (pathParts.length > 0) {
-      title = pathParts[pathParts.length - 1].replace(/[-_]/g, ' ');
-    }
-    company = new URL(url).hostname.replace('www.', '').split('.')[0];
+    try {
+      const pathParts = new URL(url).pathname.split('/').filter(Boolean);
+      if (pathParts.length > 0) {
+        title = pathParts[pathParts.length - 1].replace(/[-_]/g, ' ');
+      }
+      company = new URL(url).hostname.replace('www.', '').split('.')[0];
+    } catch { /* malformed URL */ }
   }
 
   return { title, company };
@@ -312,6 +557,16 @@ async function main() {
   const boardsOnly = args.includes('--boards-only');
   const apisOnly = args.includes('--apis-only');
   const profileArg = args.find(a => a.startsWith('--profile='));
+  const engineArg = args.find(a => a.startsWith('--engine='));
+  const limitArg = args.find(a => a.startsWith('--limit='));
+
+  const forceEngine = engineArg ? engineArg.split('=')[1] : null;
+  const resultLimit = limitArg ? parseInt(limitArg.split('=')[1], 10) : 20;
+
+  if (forceEngine && !['brave', 'playwright', 'ddg'].includes(forceEngine)) {
+    console.error(`  Invalid engine: ${forceEngine}. Use brave, playwright, or ddg.`);
+    process.exit(1);
+  }
 
   let profileName;
   if (profileArg) {
@@ -322,6 +577,9 @@ async function main() {
       profileName = yml.match(/active:\s*(\w+)/)?.[1] || 'paulina';
     } catch { profileName = 'paulina'; }
   }
+
+  // Set current profile for Brave budget tracking
+  _currentProfile = profileName;
 
   // Load portals.yml
   const portalsPath = resolve(__dirname, `profiles/${profileName}/portals.yml`);
@@ -334,6 +592,8 @@ async function main() {
   console.log(`  Search queries: ${queries.length}`);
   console.log(`  Tracked companies: ${companies.length}`);
   console.log(`  Title filter: ${titleFilter.positive.length} positive, ${titleFilter.negative.length} negative`);
+  console.log(`  Search engine: ${forceEngine || 'auto (brave → bing → ddg)'}`);
+  console.log(`  Results limit: ${resultLimit}`);
   console.log(`  Dry run: ${dryRun}\n`);
 
   const existingUrls = await loadExistingUrls();
@@ -412,15 +672,31 @@ async function main() {
   if (!apisOnly) {
     console.log(`\n  ── Web Search Queries (${queries.length} queries) ──`);
 
+    // Pre-launch Playwright for Bing search (auto mode or playwright-forced)
+    // In auto mode, Playwright is the fallback; pre-launching saves time if Brave fails
+    if (!forceEngine || forceEngine === 'playwright') {
+      try {
+        console.log(`  Pre-launching Playwright browser (Bing fallback)...`);
+        await launchPlaywrightBrowser();
+      } catch (err) {
+        console.error(`  Playwright unavailable: ${err.message}`);
+        if (forceEngine === 'playwright') {
+          console.error(`  Cannot continue with --engine=playwright.`);
+          process.exit(1);
+        }
+        console.error(`  Will use Brave API only.`);
+      }
+    }
+
     for (let i = 0; i < queries.length; i++) {
       const q = queries[i];
       console.log(`  [${i + 1}/${queries.length}] ${q.name}...`);
 
-      const { results, error } = await webSearch(q.query);
+      const { results, error } = await webSearch(q.query, forceEngine, resultLimit);
 
       if (error) {
         console.log(`    ERROR: ${error}`);
-        await sleep(RATE_LIMIT_MS);
+        await sleep(getRateLimitMs(forceEngine));
         continue;
       }
 
@@ -445,8 +721,11 @@ async function main() {
       totalSearched++;
       if (added > 0) console.log(`    +${added} new results`);
 
-      await sleep(RATE_LIMIT_MS);
+      await sleep(getRateLimitMs(forceEngine));
     }
+
+    // Clean up Playwright browser if it was launched
+    await closePlaywrightBrowser();
   }
 
   // ── Summary ──
@@ -455,6 +734,10 @@ async function main() {
   console.log(`  ${'━'.repeat(50)}`);
   console.log(`  ATS API listings:   ${totalAtsJobs}`);
   console.log(`  Web searches run:   ${totalSearched}`);
+  const usage = _braveUsage || await loadBraveUsage();
+  const profileUsed = usage.profiles[profileName] || 0;
+  const profileBudget = BRAVE_PROFILE_BUDGETS[profileName] ?? 0;
+  console.log(`  Brave API calls:    ${braveQueryCount} this session | ${profileName}: ${profileUsed}/${profileBudget} ($${(profileUsed * 0.005).toFixed(2)}/$${(profileBudget * 0.005).toFixed(2)}) | total: ${usage.total}/${BRAVE_MONTHLY_BUDGET_TOTAL} ($${(usage.total * 0.005).toFixed(2)}/$50)`);
   console.log(`  Title-filtered:     ${allSkipped.filter(s => s.reason === 'skipped_title').length}`);
   console.log(`  NEW to pipeline:    ${allJobs.length}`);
 

@@ -22,11 +22,12 @@
  * Typically called by Claude after evaluation, not manually.
  */
 
-import { readFile, writeFile, appendFile } from 'fs/promises';
+import { readFile, writeFile, appendFile, mkdir, stat } from 'fs/promises';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
 import { existsSync } from 'fs';
+import { execFile } from 'child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -223,6 +224,7 @@ async function sendNotification(mode, job, profile, fitScore, options = {}) {
     POSTED_DATE: job.postedDate || 'Recent',
     MATCH_REASONS: buildMatchReasons(job),
     DRAFT_COVER_LETTER: job.draftCoverLetter || '<p><em>Cover letter will be generated upon approval.</em></p>',
+    ATTACHMENTS_SECTION: buildAttachmentsSection(job),
   };
 
   const html = fillTemplate(templateHtml, vars);
@@ -357,6 +359,250 @@ async function loadActiveProfile() {
 }
 
 // ============================================================
+// CV PDF Generation
+// ============================================================
+
+const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
+
+/**
+ * Convert markdown CV to simple, clean HTML suitable for PDF generation.
+ * Does not use the fancy cv-template.html (which requires per-section
+ * template variables filled by Claude). Instead produces a clean,
+ * professional HTML doc with the same fonts and color scheme.
+ */
+function markdownCvToHtml(md, profileName) {
+  // Basic markdown → HTML conversion for CV structure
+  let html = md;
+
+  // Escape HTML entities first (but preserve markdown syntax)
+  html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  // Bold: **text**
+  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+
+  // H1: # Title (name)
+  html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
+  // H2: ## Section
+  html = html.replace(/^## (.+)$/gm, '<div class="section-title">$1</div>');
+  // H3: ### Job Title | Company | Location | Date
+  html = html.replace(/^### (.+)$/gm, '<div class="job-header-line">$1</div>');
+
+  // List items: - text
+  // Group consecutive list items into <ul> blocks
+  const lines = html.split('\n');
+  const processed = [];
+  let inList = false;
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith('- ')) {
+      if (!inList) { processed.push('<ul>'); inList = true; }
+      processed.push(`<li>${trimmed.slice(2)}</li>`);
+    } else {
+      if (inList) { processed.push('</ul>'); inList = false; }
+      if (trimmed === '') {
+        processed.push('');
+      } else {
+        processed.push(line);
+      }
+    }
+  }
+  if (inList) processed.push('</ul>');
+  html = processed.join('\n');
+
+  // Wrap plain text paragraphs (lines not already wrapped in HTML)
+  html = html.replace(/^(?!<[a-z/])(.+)$/gm, (_, text) => {
+    const t = text.trim();
+    if (!t || t.startsWith('<')) return text;
+    return `<p>${t}</p>`;
+  });
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>${profileName} CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000; font-style: normal; font-display: swap;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px; line-height: 1.55; color: #1a1a2e;
+    background: #fff; padding: 0; margin: 0;
+  }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px; font-weight: 700; color: #1a1a2e;
+    letter-spacing: -0.02em; margin-bottom: 4px;
+    border-bottom: 2px solid; border-image: linear-gradient(to right, hsl(187,74%,32%), hsl(270,70%,45%)) 1;
+    padding-bottom: 8px;
+  }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.05em; color: hsl(187,74%,32%);
+    border-bottom: 1px solid #e5e5e5; padding-bottom: 3px;
+    margin: 14px 0 8px;
+  }
+  .job-header-line {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px; font-weight: 600; color: hsl(270,70%,45%);
+    margin: 10px 0 4px;
+  }
+  p { margin: 4px 0; font-size: 11px; color: #333; }
+  ul { padding-left: 16px; margin: 4px 0; }
+  li { font-size: 10.5px; line-height: 1.5; color: #333; margin-bottom: 2px; }
+  li strong { font-weight: 600; }
+  strong { font-weight: 600; }
+</style>
+</head>
+<body>
+${html}
+</body>
+</html>`;
+}
+
+/**
+ * Run a command and return a promise.
+ */
+function runCommand(cmd, args) {
+  return new Promise((resolve, reject) => {
+    execFile(cmd, args, { timeout: 60000 }, (err, stdout, stderr) => {
+      if (err) reject(new Error(`${err.message}\n${stderr}`));
+      else resolve(stdout);
+    });
+  });
+}
+
+/**
+ * Ensure a CV PDF exists for the given profile. Idempotent:
+ * if the PDF exists and is less than 7 days old, skip regeneration.
+ *
+ * @param {string} profileName - e.g. 'lamin', 'paulina'
+ * @returns {{ cvPdfPath: string|null, cvDePdfPath: string|null }}
+ */
+async function ensureProfilePdfs(profileName) {
+  const profileDir = resolve(__dirname, 'profiles', profileName);
+  const outputDir = resolve(profileDir, 'output');
+  const result = { cvPdfPath: null, cvDePdfPath: null };
+
+  // Ensure output directory exists
+  await mkdir(outputDir, { recursive: true });
+
+  // --- English CV ---
+  const cvMdPath = resolve(profileDir, 'cv.md');
+  const cvPdfPath = resolve(outputDir, `cv-${profileName}.pdf`);
+
+  if (existsSync(cvMdPath)) {
+    const needsRegen = await needsRegeneration(cvPdfPath);
+    if (needsRegen) {
+      console.log(`  [PDF] Generating CV PDF for ${profileName}...`);
+      try {
+        const md = await readFile(cvMdPath, 'utf8');
+        const html = markdownCvToHtml(md, profileName);
+        const htmlPath = resolve(outputDir, `cv-${profileName}.html`);
+        await writeFile(htmlPath, html, 'utf8');
+
+        await runCommand(process.execPath, [
+          resolve(__dirname, 'generate-pdf.mjs'),
+          htmlPath,
+          cvPdfPath,
+          '--format=letter',
+        ]);
+        console.log(`  [PDF] CV PDF ready: ${cvPdfPath}`);
+        result.cvPdfPath = cvPdfPath;
+      } catch (err) {
+        console.error(`  [PDF] CV PDF generation failed: ${err.message}`);
+      }
+    } else {
+      console.log(`  [PDF] CV PDF exists and is recent: ${cvPdfPath}`);
+      result.cvPdfPath = cvPdfPath;
+    }
+  }
+
+  // --- German CV (Lebenslauf) ---
+  const cvDeMdPath = resolve(profileDir, 'cv-de.md');
+  const cvDePdfPath = resolve(outputDir, `cv-de-${profileName}.pdf`);
+
+  if (existsSync(cvDeMdPath)) {
+    const needsRegen = await needsRegeneration(cvDePdfPath);
+    if (needsRegen) {
+      console.log(`  [PDF] Generating Lebenslauf PDF for ${profileName}...`);
+      try {
+        const md = await readFile(cvDeMdPath, 'utf8');
+        const html = markdownCvToHtml(md, profileName);
+        const htmlPath = resolve(outputDir, `cv-de-${profileName}.html`);
+        await writeFile(htmlPath, html, 'utf8');
+
+        await runCommand(process.execPath, [
+          resolve(__dirname, 'generate-pdf.mjs'),
+          htmlPath,
+          cvDePdfPath,
+          '--format=a4',
+        ]);
+        console.log(`  [PDF] Lebenslauf PDF ready: ${cvDePdfPath}`);
+        result.cvDePdfPath = cvDePdfPath;
+      } catch (err) {
+        console.error(`  [PDF] Lebenslauf PDF generation failed: ${err.message}`);
+      }
+    } else {
+      console.log(`  [PDF] Lebenslauf PDF exists and is recent: ${cvDePdfPath}`);
+      result.cvDePdfPath = cvDePdfPath;
+    }
+  }
+
+  return result;
+}
+
+/**
+ * Check if a PDF file needs regeneration (doesn't exist or older than 7 days).
+ */
+async function needsRegeneration(pdfPath) {
+  if (!existsSync(pdfPath)) return true;
+  try {
+    const stats = await stat(pdfPath);
+    return (Date.now() - stats.mtimeMs) > SEVEN_DAYS_MS;
+  } catch {
+    return true;
+  }
+}
+
+/**
+ * Build the dynamic attachments section HTML for email templates.
+ * Returns HTML <ul> contents based on which PDFs are actually attached.
+ */
+function buildAttachmentsSection(job) {
+  const items = [];
+
+  if (job.coverLetterPath && existsSync(job.coverLetterPath)) {
+    items.push('<li>Personalized cover letter (attached as PDF)</li>');
+  }
+
+  if (job.cvPdfPath && existsSync(job.cvPdfPath)) {
+    items.push('<li>Your up-to-date CV/resume (attached as PDF)</li>');
+  } else if (job.cvDePdfPath && existsSync(job.cvDePdfPath)) {
+    items.push('<li>Your up-to-date Lebenslauf (attached as PDF)</li>');
+  }
+
+  if (items.length === 0) {
+    items.push('<li>Cover letter and CV will be prepared when you\'re ready to apply</li>');
+  }
+
+  items.push('<li>Key talking points if contacted for a phone screen</li>');
+
+  return items.join('\n      ');
+}
+
+// ============================================================
 // Auto-Apply Consent Gate
 // ============================================================
 
@@ -415,8 +661,26 @@ export async function dispatch(job, careerOpsScore, options = {}) {
   // Merge paths into job
   job.coverLetterPath = options.coverLetterPath || job.coverLetterPath;
   job.cvPdfPath = options.cvPdfPath || job.cvPdfPath;
+  job.cvDePdfPath = options.cvDePdfPath || job.cvDePdfPath;
+  job.cvEnPdfPath = options.cvEnPdfPath || job.cvEnPdfPath;
   job.matchReasons = options.matchReasons || job.matchReasons;
   job.draftCoverLetter = options.draftCoverLetter || job.draftCoverLetter;
+
+  // Ensure CV PDFs exist (idempotent — skips if recent PDF exists)
+  if (!options.dryRun && mode !== MODES.SKIP) {
+    try {
+      const pdfs = await ensureProfilePdfs(profileName);
+      // Merge generated PDF paths into job if not already set
+      if (!job.cvPdfPath && pdfs.cvPdfPath) {
+        job.cvPdfPath = pdfs.cvPdfPath;
+      }
+      if (!job.cvDePdfPath && pdfs.cvDePdfPath) {
+        job.cvDePdfPath = pdfs.cvDePdfPath;
+      }
+    } catch (err) {
+      console.error(`  [PDF] Failed to ensure profile PDFs: ${err.message}`);
+    }
+  }
 
   console.log(`\n  Job Dispatcher — ${profileName}`);
   console.log(`  ${'━'.repeat(50)}`);
@@ -560,7 +824,25 @@ approval:
   }
 
   if (args.includes('--test')) {
-    // Send a test email to the active profile's candidate
+    // Generate CV PDF for the active profile before sending test email
+    const activeYml = await readFile(resolve(__dirname, 'profiles/active.yml'), 'utf8');
+    const testProfileName = activeYml.match(/active:\s*(\w+)/)?.[1] || 'paulina';
+    console.log(`\n  [TEST] Ensuring CV PDFs for profile: ${testProfileName}`);
+
+    let cvPdfPath = null;
+    let cvDePdfPath = null;
+    const isDryRun = args.includes('--dry-run');
+    if (!isDryRun) {
+      try {
+        const pdfs = await ensureProfilePdfs(testProfileName);
+        cvPdfPath = pdfs.cvPdfPath;
+        cvDePdfPath = pdfs.cvDePdfPath;
+      } catch (err) {
+        console.error(`  [TEST] PDF generation failed: ${err.message}`);
+      }
+    }
+
+    // Send a test email to the active profile's candidate (CV only, no cover letter in test mode)
     const result = await dispatch(
       {
         title: 'Test Position — Dispatcher Verification',
@@ -577,7 +859,11 @@ approval:
         ],
       },
       4.2, // Maps to fit 82 → auto-apply mode
-      { dryRun: args.includes('--dry-run') }
+      {
+        dryRun: isDryRun,
+        cvPdfPath,
+        cvDePdfPath,
+      }
     );
     console.log(`\n  Result: ${JSON.stringify(result, null, 2)}\n`);
     return;
