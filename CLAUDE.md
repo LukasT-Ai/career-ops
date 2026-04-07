@@ -87,7 +87,7 @@ profiles/
     reports/          ← evaluation reports
     output/           ← generated PDFs
     cover-letters/    ← generated cover letter PDFs
-    approval-config.yml ← auto-apply approval settings
+    approval-config.yml ← (deprecated, no longer used)
   paulina/
     (same structure)
   {new-profile}/
@@ -257,7 +257,7 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 | Asks about application status | `tracker` |
 | Fills out application form | `apply` |
 | Wants a cover letter | `cover-letter` |
-| Wants to auto-apply | `auto-apply` |
+| Wants to apply (assisted) | `apply` |
 | Asks for application report | `report` |
 | Wants job notification sent | `dispatch` (via job-dispatcher.mjs) |
 | Needs document localization | `localize` (via localize-detect.mjs) |
@@ -306,19 +306,6 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 - **RULE: After each batch of evaluations, run `node merge-tracker.mjs`** to merge tracker additions and avoid duplications.
 - **RULE: NEVER create new entries in applications.md if company+role already exists.** Update the existing entry.
 
-### Auto-Apply System
-
-The auto-apply system chains: scan → evaluate → cover letter → apply → track.
-
-**Supported ATS platforms:** Greenhouse (full), Lever (full), Ashby (full), Workday (assisted), iCIMS (assisted).
-
-**Approval modes** (configured in `profiles/{name}/approval-config.yml`):
-- `manual` (default): Prepare form, show summary, wait for user confirmation
-- `threshold`: Auto-approve above configured score, manual below
-- `auto`: Submit automatically (requires explicit user opt-in)
-
-**RULE: Default approval mode is ALWAYS manual.** The ethical guidelines in this document require user review before submission. Auto/threshold modes are power-user opt-ins.
-
 ### Job Board Integration
 
 `templates/job-boards.yml` catalogs 130+ job boards across 4 automation tiers:
@@ -331,30 +318,21 @@ Each profile's `portals.yml` has `Board —` prefixed search queries for automat
 
 ### Job Notification Dispatcher
 
-`job-dispatcher.mjs` sends email notifications to candidates after job evaluation. Uses Gmail SMTP via `Lukas.T@withlukas.com` (nodemailer from Spectrum workspace).
+`job-dispatcher.mjs` sends email notifications to candidates after job evaluation. Uses Gmail SMTP via `Lukas.T@withlukas.com`. **No auto-apply — emails are for human review only.**
 
-**3-mode routing based on fit score (0-100, mapped from career-ops 0-5 evaluation):**
+**2-tier routing based on fit score (0-100, mapped from career-ops 0-5 evaluation):**
 
-| career-ops Score | Fit Score | Mode | Action | Email Template |
-|-----------------|-----------|------|--------|----------------|
-| 4.0-5.0 | 80-100 | Auto-Apply | Submit + confirm | `email-auto-applied.html` |
-| 3.0-3.9 | 60-79 | Manual Review | Email + CL PDF attached | `email-manual-review.html` |
-| 2.0-2.9 | 40-59 | Approval | Email asking YES/NO + draft CL | `email-approval-request.html` |
-| <2.0 | <40 | Skip | Log only | None |
+| career-ops Score | Fit Score | Mode | Subject | Template |
+|-----------------|-----------|------|---------|----------|
+| 4.0-5.0 | 80-100 | High Fit | `🟢 HIGH FIT (85/100): Title — Company` | `email-job-found.html` |
+| 3.0-3.9 | 60-79 | Good Fit | `🟡 Good Fit (65/100): Title — Company` | `email-job-found.html` |
+| <3.0 | <60 | Skip | — | None (logged only) |
 
 **Fit score dimensions (when full data available):** Industry (20), Role (20), Location (15), Company (15), Compensation (15), Benefits (5), Remote (5), Visa (5) = 100 total.
 
-**Reply handling:** Candidate replies APPLIED, SKIP, AUTO, YES, NO, MAYBE LATER. Claude parses replies during session and updates tracker.
+**Reply handling:** Candidate replies APPLIED or SKIP. Claude parses replies during session and updates tracker.
 
-**RULE: Auto-apply requires explicit opt-in consent.** By default, `auto_apply_consent: false` in every profile. Jobs scoring 80+ are downgraded to Manual Review (email with cover letter attached, candidate applies manually). To enable auto-apply:
-
-```bash
-node job-dispatcher.mjs --enable-auto-apply --profile={name}         # shows terms
-node job-dispatcher.mjs --enable-auto-apply --profile={name} --confirm  # writes consent
-node job-dispatcher.mjs --disable-auto-apply --profile={name}        # revokes consent
-```
-
-**RULE: Claude must NEVER enable auto-apply consent on behalf of the user.** The user must run the consent command themselves. Even when auto-apply consent is enabled, the `mode` setting in approval-config.yml still controls the form-filling behavior (manual/threshold/auto).
+**RULE: NO auto-apply. NO auto-submit. The system finds, scores, and emails — humans review and apply.**
 
 **Cover letters** are generated per-application using the adaptive framing from `_profile.md` and proof points from `cv.md`. Output to `profiles/{name}/cover-letters/`.
 
@@ -373,7 +351,7 @@ node job-dispatcher.mjs --disable-auto-apply --profile={name}        # revokes c
 - If cv-de.md is missing, auto-generate from cv.md
 - **ALWAYS attach the English CV (cv.md) as secondary for German jobs** where the application allows
 
-**Email attachment rule:** If Resume and/or Lebenslauf are auto-generated for a job posting, attach them to the notification email regardless of mode (Auto-Apply, Manual Review, or Approval). The dispatcher accepts `cvPdfPath`, `cvDePdfPath`, `cvEnPdfPath`, and `coverLetterPath`.
+**Email attachment rule:** If Resume and/or Lebenslauf are auto-generated for a job posting, attach them to the notification email. The dispatcher accepts `cvPdfPath`, `cvDePdfPath`, `cvEnPdfPath`, and `coverLetterPath`.
 
 **RULE: Run localization BEFORE cover letter generation.** It determines language, format, and page size. See `modes/localize.md` and `auto-pipeline.md` Paso 4.5.
 

@@ -1,25 +1,22 @@
 #!/usr/bin/env node
 
 /**
- * job-dispatcher.mjs — Job Notification & Auto-Apply Dispatcher
+ * job-dispatcher.mjs — Job Notification Dispatcher
  *
- * 3-mode intelligent job routing based on fit score:
- *   Mode 1 (80-100): Auto-Apply  → submit + send confirmation email
- *   Mode 2 (60-79):  Manual      → send email with cover letter PDF attached
- *   Mode 3 (40-59):  Approval    → send email asking YES/NO with draft CL inline
- *   Below 40:        Skip        → log only, no notification
+ * Finds, scores, and emails job matches. No auto-apply — humans review and apply.
  *
- * Scoring: Maps existing career-ops 0-5 scale → 0-100 fit score,
- * then applies the 8-dimension rubric for fine-grained routing.
+ *   🟢 High Fit (80-100):  Email with score prominently shown
+ *   🟡 Good Fit (60-79):   Email with score shown
+ *   Below 60:              Skip — logged only, no email
  *
+ * Scoring: Maps career-ops 0-5 scale → 0-100 fit score.
  * Email: Uses nodemailer via Gmail SMTP (Lukas.T@withlukas.com)
  *
  * Usage:
- *   node job-dispatcher.mjs --job='{"title":"..","company":"..","score":4.2,...}'
- *   node job-dispatcher.mjs --test          (send test email to active profile)
- *   node job-dispatcher.mjs --dry-run       (compute score + mode, no email)
- *
- * Typically called by Claude after evaluation, not manually.
+ *   node job-dispatcher.mjs --test [--dry-run]
+ *   node job-dispatcher.mjs --job='{"title":"..","company":".."}' --score=4.2 [--dry-run]
+ *   node job-dispatcher.mjs --retry [--dry-run]
+ *   node job-dispatcher.mjs --backfill-retry
  */
 
 import { readFile, writeFile, appendFile, mkdir, stat } from 'fs/promises';
@@ -176,19 +173,17 @@ function computeFitScore(job, profile) {
 // Mode Routing
 // ============================================================
 
+// Two modes only: email the candidate, or skip.
+// No auto-apply, no approval flows — just find, score, and notify.
 const MODES = {
-  // Full-auto: only Top Match and Good Match get emailed.
-  // Worth a Look (40-59) is logged but NOT emailed — too much noise for out-of-area jobs.
-  TOP_MATCH:   { min: 80, max: 100, label: 'Top Match',     status: 'NOTIFIED',       template: 'email-manual-review.html' },
-  GOOD_MATCH:  { min: 60, max: 79,  label: 'Good Match',    status: 'NOTIFIED',       template: 'email-manual-review.html' },
-  WORTH_A_LOOK:{ min: 40, max: 59,  label: 'Worth a Look',  status: 'LOGGED_NO_EMAIL', template: null },
-  SKIP:        { min: 0,  max: 39,  label: 'Skip',          status: 'SKIPPED_LOW_FIT', template: null },
+  HIGH_FIT:  { min: 80, max: 100, label: 'High Fit',  status: 'NOTIFIED', template: 'email-job-found.html' },
+  GOOD_FIT:  { min: 60, max: 79,  label: 'Good Fit',  status: 'NOTIFIED', template: 'email-job-found.html' },
+  SKIP:      { min: 0,  max: 59,  label: 'Skip',      status: 'SKIPPED',  template: null },
 };
 
 function determineMode(fitScore) {
-  if (fitScore >= 80) return MODES.TOP_MATCH;
-  if (fitScore >= 60) return MODES.GOOD_MATCH;
-  if (fitScore >= 40) return MODES.WORTH_A_LOOK;
+  if (fitScore >= 80) return MODES.HIGH_FIT;
+  if (fitScore >= 60) return MODES.GOOD_FIT;
   return MODES.SKIP;
 }
 
@@ -315,17 +310,11 @@ function buildMatchReasons(job) {
     '</ul>';
 }
 
-function subjectForMode(mode, job) {
-  switch (mode) {
-    case MODES.TOP_MATCH:
-      return `⭐ Top Match: ${job.title} at ${job.company}`;
-    case MODES.GOOD_MATCH:
-      return `Job Found: ${job.title} at ${job.company}`;
-    case MODES.WORTH_A_LOOK:
-      return `Worth a Look: ${job.title} at ${job.company}`;
-    default:
-      return `Job Found: ${job.title} at ${job.company}`;
+function subjectForMode(mode, job, fitScore) {
+  if (mode === MODES.HIGH_FIT) {
+    return `🟢 HIGH FIT (${fitScore}/100): ${job.title} — ${job.company}`;
   }
+  return `🟡 Good Fit (${fitScore}/100): ${job.title} — ${job.company}`;
 }
 
 async function sendNotification(mode, job, profile, fitScore, options = {}) {
@@ -340,6 +329,8 @@ async function sendNotification(mode, job, profile, fitScore, options = {}) {
     return { sent: false, reason: 'no_candidate_email' };
   }
 
+  // Score-based styling
+  const isHighFit = fitScore >= 80;
   const vars = {
     FIRST_NAME: firstName,
     JOB_TITLE: job.title || 'Unknown',
@@ -352,14 +343,23 @@ async function sendNotification(mode, job, profile, fitScore, options = {}) {
     TIMESTAMP: new Date().toISOString().replace('T', ' ').slice(0, 19),
     POSTED_DATE: job.postedDate || 'Recent',
     MATCH_REASONS: buildMatchReasons(job),
-    DRAFT_COVER_LETTER: job.draftCoverLetter || '<p><em>Cover letter will be generated upon approval.</em></p>',
     ATTACHMENTS_SECTION: buildAttachmentsSection(job),
     TALKING_POINTS: buildTalkingPoints(job),
     SPONSORSHIP_BANNER: buildSponsorshipBanner(job, profile),
+    // Dynamic fit-level styling
+    HEADER_GRADIENT: isHighFit
+      ? 'linear-gradient(135deg, #0d9488 0%, #065f46 100%)'   // teal-green for high fit
+      : 'linear-gradient(135deg, #e9a820 0%, #d4740a 100%)',  // amber for good fit
+    SCORE_COLOR: isHighFit ? '#0d9488' : '#d4740a',
+    FIT_EMOJI: isHighFit ? '&#11088;' : '&#128313;',  // star vs yellow diamond
+    FIT_LABEL: isHighFit ? 'HIGH FIT' : 'Good Fit',
+    INTRO_LINE: isHighFit
+      ? 'This is a strong match for your profile. Worth a close look.'
+      : 'I found a promising opportunity that could be a good fit.',
   };
 
   const html = fillTemplate(templateHtml, vars);
-  const subject = subjectForMode(mode, job);
+  const subject = subjectForMode(mode, job, fitScore);
 
   // Build email options
   const mailOptions = {
@@ -375,9 +375,7 @@ async function sendNotification(mode, job, profile, fitScore, options = {}) {
     },
   };
 
-  // Attach generated documents to ALL notification emails (not just Manual Review).
-  // If Resume/Lebenslauf/Cover Letter were auto-generated, the candidate needs them
-  // for confirmation (Auto-Apply) or to apply manually (Manual/Approval).
+  // Attach generated documents (CV, Lebenslauf, cover letter) if available.
   const attachments = [];
   const safeName = profile.candidate?.full_name?.replace(/[^a-zA-Z]/g, '-') || 'Candidate';
 
@@ -857,35 +855,14 @@ function buildSponsorshipBanner(job, profile) {
 // Auto-Apply Consent Gate
 // ============================================================
 
-async function loadApprovalConfig(profileName) {
-  const configPath = resolve(__dirname, `profiles/${profileName}/approval-config.yml`);
-  try {
-    const yml = await readFile(configPath, 'utf8');
-    return {
-      autoApplyConsent: /auto_apply_consent:\s*true/i.test(yml),
-      mode: yml.match(/^\s*mode:\s*(\w+)/m)?.[1] || 'manual',
-      threshold: parseFloat(yml.match(/threshold:\s*([\d.]+)/)?.[1] || '4.5'),
-      minimumScore: parseFloat(yml.match(/minimum_score:\s*([\d.]+)/)?.[1] || '3.5'),
-    };
-  } catch {
-    // No config file = defaults (consent OFF, manual mode)
-    return { autoApplyConsent: false, mode: 'manual', threshold: 4.5, minimumScore: 3.5 };
-  }
-}
-
 // ============================================================
 // Main — Dispatch a Job
 // ============================================================
 
 /**
  * Primary API for Claude to call after evaluating a job.
- * Accepts a job object with evaluation data and dispatches
- * to the appropriate notification mode.
- *
- * Auto-apply consent gate: If auto_apply_consent is false in the
- * profile's approval-config.yml, Mode 1 (Auto-Apply) is downgraded
- * to Mode 2 (Manual Review). No applications are ever submitted
- * without explicit opt-in.
+ * Scores the job, checks profile + location eligibility, and sends
+ * an email notification if it meets the threshold. No auto-apply.
  *
  * @param {object} job - Job data with at least: title, company, url
  * @param {number} careerOpsScore - The 0-5 evaluation score from oferta mode
@@ -893,7 +870,6 @@ async function loadApprovalConfig(profileName) {
  */
 export async function dispatch(job, careerOpsScore, options = {}) {
   const { name: profileName, profile } = await loadActiveProfile();
-  const approvalConfig = await loadApprovalConfig(profileName);
 
   // ── Profile Isolation Guard ──────────────────────────────
   // If the job was tagged with a source profile (e.g. from batch/scan),
@@ -989,114 +965,6 @@ export async function dispatch(job, careerOpsScore, options = {}) {
 async function main() {
   const args = process.argv.slice(2);
 
-  // --enable-auto-apply: Interactive consent flow
-  if (args.includes('--enable-auto-apply')) {
-    const profileArg = args.find(a => a.startsWith('--profile='));
-    let profileName;
-    if (profileArg) {
-      profileName = profileArg.split('=')[1];
-    } else {
-      const activeYml = await readFile(resolve(__dirname, 'profiles/active.yml'), 'utf8');
-      profileName = activeYml.match(/active:\s*(\w+)/)?.[1] || 'paulina';
-    }
-
-    const configPath = resolve(__dirname, `profiles/${profileName}/approval-config.yml`);
-    const existing = await loadApprovalConfig(profileName);
-
-    if (existing.autoApplyConsent) {
-      console.log(`\n  Auto-apply is already enabled for ${profileName}.\n`);
-      return;
-    }
-
-    // Display consent notice
-    console.log(`
-  ╔══════════════════════════════════════════════════════════╗
-  ║           AUTO-APPLY CONSENT — ${profileName.toUpperCase().padEnd(20)}       ║
-  ╠══════════════════════════════════════════════════════════╣
-  ║                                                          ║
-  ║  By enabling auto-apply, you consent to the following:   ║
-  ║                                                          ║
-  ║  1. Jobs scoring 80+/100 (4.0+/5) will trigger           ║
-  ║     automatic application submission on supported         ║
-  ║     ATS platforms (Greenhouse, Lever, Ashby).            ║
-  ║                                                          ║
-  ║  2. A confirmation email will be sent to your inbox      ║
-  ║     AFTER the application is submitted.                  ║
-  ║                                                          ║
-  ║  3. Your resume and cover letter will be uploaded        ║
-  ║     to employer systems automatically.                   ║
-  ║                                                          ║
-  ║  4. You can revoke consent at any time by setting        ║
-  ║     auto_apply_consent: false in your config file        ║
-  ║     or running: node job-dispatcher.mjs --disable-auto-apply ║
-  ║                                                          ║
-  ║  Without consent (current state):                        ║
-  ║  - High-scoring jobs send "Action Needed" emails         ║
-  ║  - You manually apply via the link in the email          ║
-  ║  - No applications are ever auto-submitted               ║
-  ║                                                          ║
-  ╚══════════════════════════════════════════════════════════╝
-`);
-
-    // Check for --confirm flag
-    if (!args.includes('--confirm')) {
-      console.log(`  To confirm, re-run with --confirm:`);
-      console.log(`    node job-dispatcher.mjs --enable-auto-apply --profile=${profileName} --confirm\n`);
-      return;
-    }
-
-    // Write consent
-    const configContent = `# Auto-Apply Approval Configuration — ${profileName}
-# Generated: ${new Date().toISOString().split('T')[0]}
-# To revoke: set auto_apply_consent to false
-
-approval:
-  auto_apply_consent: true
-  mode: manual
-  threshold: 4.5
-  minimum_score: 3.5
-  require_cover_letter: true
-  require_cv_pdf: true
-  notify_before_submit: true
-  max_per_session: 10
-  salary_strategy: range
-  platforms:
-    greenhouse: manual
-    lever: manual
-    ashby: manual
-    workday: manual
-    icims: manual
-`;
-    await writeFile(configPath, configContent, 'utf8');
-    console.log(`  Auto-apply ENABLED for ${profileName}.`);
-    console.log(`  Config written to: profiles/${profileName}/approval-config.yml`);
-    console.log(`  To revoke: node job-dispatcher.mjs --disable-auto-apply --profile=${profileName}\n`);
-    return;
-  }
-
-  // --disable-auto-apply: Revoke consent
-  if (args.includes('--disable-auto-apply')) {
-    const profileArg = args.find(a => a.startsWith('--profile='));
-    let profileName;
-    if (profileArg) {
-      profileName = profileArg.split('=')[1];
-    } else {
-      const activeYml = await readFile(resolve(__dirname, 'profiles/active.yml'), 'utf8');
-      profileName = activeYml.match(/active:\s*(\w+)/)?.[1] || 'paulina';
-    }
-
-    const configPath = resolve(__dirname, `profiles/${profileName}/approval-config.yml`);
-    try {
-      let content = await readFile(configPath, 'utf8');
-      content = content.replace(/auto_apply_consent:\s*true/i, 'auto_apply_consent: false');
-      await writeFile(configPath, content, 'utf8');
-      console.log(`\n  Auto-apply DISABLED for ${profileName}. All jobs will route to Manual Review.\n`);
-    } catch {
-      console.log(`\n  No approval config found for ${profileName}. Auto-apply was never enabled.\n`);
-    }
-    return;
-  }
-
   // --retry: Process the retry queue with pacing
   if (args.includes('--retry')) {
     const queue = await loadRetryQueue();
@@ -1183,7 +1051,7 @@ approval:
         };
 
         const html = fillTemplate(templateHtml, vars);
-        const subject = subjectForMode(mode, job);
+        const subject = subjectForMode(mode, job, entry.fitScore);
 
         const mailOptions = {
           from: EMAIL_CONFIG.from,
@@ -1356,11 +1224,10 @@ approval:
     node job-dispatcher.mjs --retry [--dry-run]          Resend rate-limited emails from queue
     node job-dispatcher.mjs --backfill-retry             Parse apply-log for failed sends → queue
 
-  Modes:
-    Fit 80-100 (score 4.0+):  Auto-Apply → confirmation email
-    Fit 60-79  (score 3.0-3.9): Manual → email + cover letter PDF
-    Fit 40-59  (score 2.0-2.9): Approval → email asking YES/NO
-    Fit <40    (score <2.0):    Skip → log only
+  Modes (email only — no auto-apply):
+    🟢 Fit 80-100 (score 4.0+):   HIGH FIT → email for review
+    🟡 Fit 60-79  (score 3.0-3.9): Good Fit → email for review
+    ⬚  Fit <60    (score <3.0):    Skip → logged only, no email
 `);
     return;
   }
