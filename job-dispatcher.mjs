@@ -193,6 +193,90 @@ function determineMode(fitScore) {
 }
 
 // ============================================================
+// Location Eligibility — Per-Profile Rules
+// ============================================================
+// These rules gate what reaches the candidate's inbox.
+// A job must match at least one allowed location pattern.
+
+const LOCATION_RULES = {
+  paulina: {
+    // Office/on-site: Atlanta, GA only
+    // Remote: GA + CA only (licensed in both states)
+    // Germany: anywhere (German citizen, needs Approbation)
+    officeLocations: ['atlanta', 'georgia', 'decatur', 'dekalb'],
+    remoteLocations: ['georgia', 'atlanta', 'california', 'los angeles', 'san francisco',
+                      'san diego', 'bay area', 'sacramento', 'menlo park', 'palo alto'],
+    germanyAllowed: true,
+    remoteUSAllowed: false, // NOT all-US remote — only GA + CA
+  },
+  lamin: {
+    // Office/on-site: Atlanta, GA only
+    // Remote: entire US
+    // Germany: anywhere (German citizen)
+    officeLocations: ['atlanta', 'georgia'],
+    remoteLocations: [], // not used when remoteUSAllowed is true
+    germanyAllowed: true,
+    remoteUSAllowed: true, // all US remote OK
+  },
+  josephina: {
+    // Office/on-site: Atlanta, GA only
+    // Remote: entire US
+    // Germany: anywhere (German citizen)
+    officeLocations: ['atlanta', 'georgia'],
+    remoteLocations: [], // not used when remoteUSAllowed is true
+    germanyAllowed: true,
+    remoteUSAllowed: true, // all US remote OK
+  },
+};
+
+/**
+ * Check if a job's location is eligible for the given profile.
+ * Returns { eligible: boolean, reason: string }
+ */
+function checkLocationEligibility(job, profileName) {
+  const rules = LOCATION_RULES[profileName];
+  if (!rules) return { eligible: true, reason: 'no rules defined' }; // unknown profile = pass
+
+  const loc = (job.location || '').toLowerCase();
+  const remote = job.remote === true || job.remote === 'full' ||
+    /\bremote\b|\btelehealth\b|\btelework\b|\btelepsych/i.test(loc) ||
+    /\bwork from home\b|\bvirtual\b|\banywhere\b/i.test(loc);
+  const isGerman = /germany|deutschland|berlin|munich|münchen|hamburg|frankfurt|heidelberg|freiburg|cologne|köln|stuttgart|düsseldorf|dusseldorf/i.test(loc) ||
+    job.source === 'BA-API' || job.platform === 'Arbeitsagentur';
+
+  // German jobs — always allowed if germanyAllowed
+  if (isGerman) {
+    return rules.germanyAllowed
+      ? { eligible: true, reason: 'Germany — allowed' }
+      : { eligible: false, reason: `Germany jobs not enabled for ${profileName}` };
+  }
+
+  // Remote US jobs
+  if (remote) {
+    if (rules.remoteUSAllowed) return { eligible: true, reason: 'Remote US — allowed' };
+    // Check if remote in an allowed state
+    const matchesRemoteState = rules.remoteLocations.some(k => loc.includes(k));
+    if (matchesRemoteState) return { eligible: true, reason: `Remote in allowed state` };
+    // "Remote" with no location qualifier — check profile rules
+    if (loc === 'remote' || loc === '' || /^remote\s*$/i.test(loc)) {
+      return rules.remoteUSAllowed
+        ? { eligible: true, reason: 'Remote US — allowed' }
+        : { eligible: false, reason: `Unqualified remote not allowed for ${profileName} (must be in GA or CA)` };
+    }
+    return { eligible: false, reason: `Remote in ${loc} not in allowed states for ${profileName}` };
+  }
+
+  // On-site / office jobs
+  const matchesOffice = rules.officeLocations.some(k => loc.includes(k));
+  if (matchesOffice) return { eligible: true, reason: 'Office in allowed location' };
+
+  // Location not specified — let through with warning (will get caught by score)
+  if (!loc || loc === 'not specified') return { eligible: true, reason: 'Location unknown — passing through' };
+
+  return { eligible: false, reason: `On-site in "${job.location}" not allowed for ${profileName} (office = Atlanta/GA only)` };
+}
+
+// ============================================================
 // Email Sending
 // ============================================================
 
@@ -810,6 +894,23 @@ async function loadApprovalConfig(profileName) {
 export async function dispatch(job, careerOpsScore, options = {}) {
   const { name: profileName, profile } = await loadActiveProfile();
   const approvalConfig = await loadApprovalConfig(profileName);
+
+  // ── Profile Isolation Guard ──────────────────────────────
+  // If the job was tagged with a source profile (e.g. from batch/scan),
+  // reject it if it doesn't match the active profile. Prevents cross-profile leaks.
+  if (job.sourceProfile && job.sourceProfile !== profileName) {
+    console.log(`\n  [GUARD] Profile mismatch: job tagged for "${job.sourceProfile}" but active profile is "${profileName}" — BLOCKED`);
+    return { mode: 'BLOCKED', fitScore: 0, status: 'PROFILE_MISMATCH', email: { sent: false, reason: `profile mismatch: ${job.sourceProfile} != ${profileName}` } };
+  }
+
+  // ── Location Eligibility Filter ──────────────────────────
+  // Enforce per-profile location rules BEFORE computing score/sending email.
+  // This prevents out-of-area jobs from reaching inboxes.
+  const locationCheckResult = checkLocationEligibility(job, profileName);
+  if (!locationCheckResult.eligible) {
+    console.log(`\n  [LOCATION] ${job.title} at ${job.company} — REJECTED: ${locationCheckResult.reason}`);
+    return { mode: 'BLOCKED', fitScore: 0, status: 'LOCATION_INELIGIBLE', email: { sent: false, reason: locationCheckResult.reason } };
+  }
 
   // Compute fit score
   let fitScore = job.fitScore || mapScoreToFit(careerOpsScore);

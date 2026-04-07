@@ -74,11 +74,11 @@ search_locations:
     language: "de"
     enabled: true
 
-  - name: "Remote US (from Atlanta)"
+  - name: "Remote US (entire US)"
     region: "US"
-    keywords: ["Remote", "Telework", "Location Negotiable"]
+    keywords: ["Remote", "Telework", "Location Negotiable", "US Remote", "Anywhere"]
     remote_ok: true
-    notes: "Remote roles only — Lamin is based in Atlanta and will NOT relocate within the US"
+    notes: "100% remote anywhere in the US — Lamin is based in Atlanta, will not relocate for on-site"
     enabled: true
 
 location:

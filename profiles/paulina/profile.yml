@@ -63,7 +63,7 @@ compensation:
   currency: "USD"
   minimum: "$250K"
   notes: "Psychiatrist market is extremely competitive for employers. CA DSH pays $300K+. Hospital systems $280K-400K. Telepsychiatry $250K-320K."
-  location_flexibility: "Open to remote anywhere. Atlanta: remote or on-site. Germany: remote or on-site (would relocate). California: remote ONLY."
+  location_flexibility: "Atlanta: on-site or remote. California: remote ONLY. Germany: on-site or remote (would relocate). NOT open to all-US remote — only GA + CA."
 
 # ============================================================
 # SEARCH LOCATIONS
@@ -88,11 +88,12 @@ search_locations:
     language: "de"
     enabled: true
 
-  - name: "Remote / Telepsychiatry (Anywhere)"
+  - name: "Remote / Telepsychiatry (GA + CA only)"
     region: "US"
     keywords: ["Remote", "Telehealth", "Telepsychiatry", "Virtual", "Work from Home"]
     remote_ok: true
-    notes: "Open to remote from anywhere in the US"
+    notes: "Remote ONLY from GA or CA — licensed in both states, NOT all-US remote"
+    states_allowed: ["Georgia", "California"]
     enabled: true
 
 location:

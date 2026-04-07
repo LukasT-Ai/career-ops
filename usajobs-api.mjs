@@ -50,16 +50,18 @@ const SEARCH_CONFIGS = {
       { keyword: 'Staff Psychiatrist', location: 'Georgia', label: 'Staff Psychiatrist GA' },
       { keyword: 'Physician Psychiatry', location: 'Georgia', label: 'Physician Psychiatry GA' },
       { keyword: 'Medical Director Behavioral Health', location: 'Georgia', label: 'Medical Director BH GA' },
-      // California (licensed, remote only — location filter handles on-site rejection)
+      // California (licensed, remote ONLY — on-site CA not accepted)
       { keyword: 'Psychiatrist', location: 'California', label: 'Psychiatrist CA' },
       { keyword: 'Staff Psychiatrist', location: 'California', label: 'Staff Psychiatrist CA' },
       { keyword: 'Physician Psychiatry', location: 'California', label: 'Physician Psychiatry CA' },
-      // National (remote/telepsych only — location filter rejects on-site in other states)
-      { keyword: 'Telepsychiatrist', location: '', label: 'Telepsychiatrist (national)' },
-      { keyword: 'Medical Officer Psychiatry Remote', location: '', label: 'Medical Officer Psych Remote' },
+      { keyword: 'Telepsychiatrist', location: 'California', label: 'Telepsychiatrist CA' },
+      // Georgia telepsych/remote
+      { keyword: 'Telepsychiatrist', location: 'Georgia', label: 'Telepsychiatrist GA' },
+      // NO national remote queries — Paulina is NOT open to all-US remote
     ],
-    // Post-fetch location filter: only keep GA, CA, remote, or negotiable
-    locationFilter: ['georgia', 'atlanta', 'augusta', 'california', 'los angeles', 'san francisco', 'san diego', 'menlo park', 'palo alto', 'sacramento', 'remote', 'location negotiable', 'telework', 'anywhere', 'multiple locations'],
+    // Post-fetch location filter: GA + CA only (on-site or remote). NOT all-US remote.
+    // Remote/telework/anywhere without a GA or CA qualifier will be EXCLUDED.
+    locationFilter: ['georgia', 'atlanta', 'augusta', 'california', 'los angeles', 'san francisco', 'san diego', 'menlo park', 'palo alto', 'sacramento'],
     titlePositive: [
       'psychiatr', 'physician', 'medical officer', 'behavioral health', 'mental health',
       'medical director', 'attending', 'clinical director',
@@ -84,8 +86,8 @@ const SEARCH_CONFIGS = {
       { keyword: 'Sales Manager Federal', location: 'Georgia', label: 'Sales Manager Federal GA' },
       { keyword: 'IT Specialist Customer Support', location: 'Georgia', label: 'IT Specialist GA' },
     ],
-    // Post-fetch location filter: only keep jobs in GA or remote/negotiable
-    locationFilter: ['georgia', 'atlanta', 'remote', 'location negotiable', 'telework', 'anywhere'],
+    // Post-fetch location filter: GA for on-site, all US remote OK
+    locationFilter: ['georgia', 'atlanta', 'remote', 'location negotiable', 'telework', 'anywhere', 'multiple locations'],
     titlePositive: [
       'telecom', 'sales', 'account', 'business development', 'program manager',
       'contract', 'network', 'it specialist', 'customer', 'acquisition',
@@ -110,6 +112,8 @@ const SEARCH_CONFIGS = {
       { keyword: 'Graphic Designer GS-12', location: '', label: 'Graphic Designer GS-12+' },
       { keyword: 'Design Lead Federal', location: '', label: 'Design Lead Federal' },
     ],
+    // Post-fetch location filter: GA for on-site, all US remote OK
+    locationFilter: ['georgia', 'atlanta', 'remote', 'location negotiable', 'telework', 'anywhere', 'multiple locations'],
     titlePositive: [
       'design', 'ux', 'ui', 'user experience', 'visual', 'interaction', 'digital',
       'creative', 'product design', 'web design', 'graphic',
