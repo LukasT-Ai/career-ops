@@ -134,16 +134,18 @@ function computeFitScore(job, profile) {
 // ============================================================
 
 const MODES = {
-  AUTO_APPLY:  { min: 80, max: 100, label: 'Auto-Apply',  status: 'APPLIED',              template: 'email-auto-applied.html' },
-  MANUAL:      { min: 60, max: 79,  label: 'Manual Review', status: 'PENDING_MANUAL',       template: 'email-manual-review.html' },
-  APPROVAL:    { min: 40, max: 59,  label: 'Approval',     status: 'PENDING_APPROVAL',      template: 'email-approval-request.html' },
-  SKIP:        { min: 0,  max: 39,  label: 'Skip',         status: 'SKIPPED_LOW_FIT',       template: null },
+  // Full-auto: all qualifying jobs use the same notification template.
+  // Score tiers only affect subject line and internal labeling, NOT approval gates.
+  TOP_MATCH:   { min: 80, max: 100, label: 'Top Match',     status: 'NOTIFIED',  template: 'email-manual-review.html' },
+  GOOD_MATCH:  { min: 60, max: 79,  label: 'Good Match',    status: 'NOTIFIED',  template: 'email-manual-review.html' },
+  WORTH_A_LOOK:{ min: 40, max: 59,  label: 'Worth a Look',  status: 'NOTIFIED',  template: 'email-manual-review.html' },
+  SKIP:        { min: 0,  max: 39,  label: 'Skip',          status: 'SKIPPED_LOW_FIT', template: null },
 };
 
 function determineMode(fitScore) {
-  if (fitScore >= 80) return MODES.AUTO_APPLY;
-  if (fitScore >= 60) return MODES.MANUAL;
-  if (fitScore >= 40) return MODES.APPROVAL;
+  if (fitScore >= 80) return MODES.TOP_MATCH;
+  if (fitScore >= 60) return MODES.GOOD_MATCH;
+  if (fitScore >= 40) return MODES.WORTH_A_LOOK;
   return MODES.SKIP;
 }
 
@@ -188,12 +190,12 @@ function buildMatchReasons(job) {
 
 function subjectForMode(mode, job) {
   switch (mode) {
-    case MODES.AUTO_APPLY:
-      return `Application Submitted: ${job.title} at ${job.company}`;
-    case MODES.MANUAL:
-      return `Action Needed: ${job.title} at ${job.company}`;
-    case MODES.APPROVAL:
-      return `Should I Apply? ${job.title} at ${job.company}`;
+    case MODES.TOP_MATCH:
+      return `⭐ Top Match: ${job.title} at ${job.company}`;
+    case MODES.GOOD_MATCH:
+      return `Job Found: ${job.title} at ${job.company}`;
+    case MODES.WORTH_A_LOOK:
+      return `Worth a Look: ${job.title} at ${job.company}`;
     default:
       return `Job Found: ${job.title} at ${job.company}`;
   }
@@ -757,16 +759,8 @@ export async function dispatch(job, careerOpsScore, options = {}) {
     console.log(`  [SPONSORSHIP] +${boost} fit score boost (${job.sponsorship.sponsorship_status}: ${job.sponsorship.sponsorship_reason})`);
   }
 
-  // Determine mode
+  // Determine mode — full-auto: all tiers send the same notification email
   let mode = determineMode(fitScore);
-
-  // CONSENT GATE: Downgrade auto-apply to manual if consent not given
-  if (mode === MODES.AUTO_APPLY && !approvalConfig.autoApplyConsent) {
-    mode = MODES.MANUAL;
-    console.log(`  [CONSENT] Auto-apply not enabled for ${profileName} — downgraded to Manual Review`);
-    console.log(`           To enable: create profiles/${profileName}/approval-config.yml with auto_apply_consent: true`);
-    console.log(`           Or run: node job-dispatcher.mjs --enable-auto-apply --profile=${profileName}`);
-  }
 
   // Merge paths into job
   job.coverLetterPath = options.coverLetterPath || job.coverLetterPath;

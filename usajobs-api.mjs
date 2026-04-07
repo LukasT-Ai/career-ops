@@ -68,17 +68,20 @@ const SEARCH_CONFIGS = {
 
   lamin: {
     queries: [
+      // All US queries restricted to Georgia or remote — Lamin will NOT relocate within the US
       { keyword: 'Telecommunications Specialist', location: 'Georgia', label: 'Telecom Specialist GA' },
-      { keyword: 'Telecommunications Manager', location: '', label: 'Telecom Manager' },
+      { keyword: 'Telecommunications Manager', location: 'Georgia', label: 'Telecom Manager GA' },
       { keyword: 'IT Sales', location: 'Georgia', label: 'IT Sales GA' },
-      { keyword: 'Account Manager IT', location: '', label: 'Account Manager IT' },
-      { keyword: 'Contracting Officer Telecommunications', location: '', label: 'Contracting Telecom' },
+      { keyword: 'Account Manager IT', location: 'Georgia', label: 'Account Manager IT GA' },
+      { keyword: 'Contracting Officer Telecommunications', location: 'Georgia', label: 'Contracting Telecom GA' },
       { keyword: 'Business Development Specialist', location: 'Georgia', label: 'BizDev GA' },
-      { keyword: 'Program Manager Telecommunications', location: '', label: 'Program Manager Telecom' },
+      { keyword: 'Program Manager Telecommunications', location: 'Georgia', label: 'Program Manager Telecom GA' },
       { keyword: 'Network Manager', location: 'Georgia', label: 'Network Manager GA' },
-      { keyword: 'Sales Manager Federal', location: '', label: 'Sales Manager Federal' },
+      { keyword: 'Sales Manager Federal', location: 'Georgia', label: 'Sales Manager Federal GA' },
       { keyword: 'IT Specialist Customer Support', location: 'Georgia', label: 'IT Specialist GA' },
     ],
+    // Post-fetch location filter: only keep jobs in GA or remote/negotiable
+    locationFilter: ['georgia', 'atlanta', 'remote', 'location negotiable', 'telework', 'anywhere'],
     titlePositive: [
       'telecom', 'sales', 'account', 'business development', 'program manager',
       'contract', 'network', 'it specialist', 'customer', 'acquisition',
@@ -335,6 +338,17 @@ async function main() {
           totalFiltered++;
           allSkipped.push({ url: job.url, title: job.title, company: job.company, queryLabel: query.label, reason: 'skipped_title' });
           continue;
+        }
+
+        // Location filter: if profile has locationFilter, only keep matching locations
+        if (config.locationFilter && config.locationFilter.length > 0) {
+          const jobLoc = (job.location || '').toLowerCase();
+          const matchesLocation = config.locationFilter.some(loc => jobLoc.includes(loc)) || job.remote;
+          if (!matchesLocation) {
+            totalFiltered++;
+            allSkipped.push({ url: job.url, title: job.title, company: job.company, queryLabel: query.label, reason: 'skipped_location' });
+            continue;
+          }
         }
 
         const displayTitle = job.location ? `${job.title} — ${job.location}` : job.title;
