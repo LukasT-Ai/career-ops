@@ -484,6 +484,49 @@ function runCommand(cmd, args) {
 }
 
 /**
+ * Ensure a CV/Lebenslauf markdown has a contact section.
+ * If not present, inject one from profile.yml data after the H1 title.
+ */
+function ensureContactSection(md, profileData, lang = 'en') {
+  // Check if contact info already exists in the markdown
+  const hasContact = /## Contact|## Kontakt|## Persönliche Daten|## Personliche Daten/i.test(md);
+  if (hasContact) return md;
+
+  // Build contact section from profile data
+  const lines = [];
+  if (lang === 'de') {
+    lines.push('\n## Persönliche Daten\n');
+    if (profileData.full_name) lines.push(`- **Name:** ${profileData.full_name}`);
+    if (profileData.location) lines.push(`- **Anschrift:** ${profileData.location}`);
+    if (profileData.phone) lines.push(`- **Telefon:** ${profileData.phone}`);
+    if (profileData.email) lines.push(`- **E-Mail:** ${profileData.email}`);
+    if (profileData.linkedin) lines.push(`- **LinkedIn:** ${profileData.linkedin}`);
+    if (profileData.portfolio_url) lines.push(`- **Portfolio:** ${profileData.portfolio_url}`);
+  } else {
+    lines.push('\n## Contact\n');
+    if (profileData.phone) lines.push(`- Phone: ${profileData.phone}`);
+    if (profileData.email) lines.push(`- Email: ${profileData.email}`);
+    if (profileData.location) lines.push(`- Location: ${profileData.location}`);
+    if (profileData.linkedin) lines.push(`- LinkedIn: ${profileData.linkedin}`);
+    if (profileData.portfolio_url) lines.push(`- Website: ${profileData.portfolio_url}`);
+  }
+
+  if (lines.length <= 1) return md; // no profile data to inject
+
+  const contactBlock = lines.join('\n') + '\n';
+
+  // Insert after the first H1 line
+  const h1Match = md.match(/^# .+$/m);
+  if (h1Match) {
+    const insertPos = md.indexOf(h1Match[0]) + h1Match[0].length;
+    return md.slice(0, insertPos) + '\n' + contactBlock + md.slice(insertPos);
+  }
+
+  // No H1 — prepend
+  return contactBlock + '\n' + md;
+}
+
+/**
  * Ensure a CV PDF exists for the given profile. Idempotent:
  * if the PDF exists and is less than 7 days old, skip regeneration.
  *
@@ -498,6 +541,22 @@ async function ensureProfilePdfs(profileName) {
   // Ensure output directory exists
   await mkdir(outputDir, { recursive: true });
 
+  // Load profile.yml for contact info injection
+  const profileYmlPath = resolve(profileDir, 'profile.yml');
+  let profileData = {};
+  try {
+    const yml = await readFile(profileYmlPath, 'utf8');
+    const candidateBlock = yml.match(/candidate:\s*\n([\s\S]*?)(?=\n\w|\n$)/)?.[1] || '';
+    profileData = {
+      full_name: candidateBlock.match(/full_name:\s*"(.+?)"/)?.[1] || '',
+      email: candidateBlock.match(/email:\s*"(.+?)"/)?.[1] || '',
+      phone: candidateBlock.match(/phone:\s*"(.+?)"/)?.[1] || '',
+      location: candidateBlock.match(/location:\s*"(.+?)"/)?.[1] || '',
+      linkedin: candidateBlock.match(/linkedin:\s*"(.+?)"/)?.[1] || '',
+      portfolio_url: candidateBlock.match(/portfolio_url:\s*"(.+?)"/)?.[1] || '',
+    };
+  } catch { /* proceed without — cv.md may have it */ }
+
   // --- English CV ---
   const cvMdPath = resolve(profileDir, 'cv.md');
   const cvPdfPath = resolve(outputDir, `cv-${profileName}.pdf`);
@@ -507,7 +566,9 @@ async function ensureProfilePdfs(profileName) {
     if (needsRegen) {
       console.log(`  [PDF] Generating CV PDF for ${profileName}...`);
       try {
-        const md = await readFile(cvMdPath, 'utf8');
+        let md = await readFile(cvMdPath, 'utf8');
+        // Ensure contact info exists — inject from profile.yml if missing
+        md = ensureContactSection(md, profileData, 'en');
         const html = markdownCvToHtml(md, profileName);
         const htmlPath = resolve(outputDir, `cv-${profileName}.html`);
         await writeFile(htmlPath, html, 'utf8');
@@ -538,7 +599,8 @@ async function ensureProfilePdfs(profileName) {
     if (needsRegen) {
       console.log(`  [PDF] Generating Lebenslauf PDF for ${profileName}...`);
       try {
-        const md = await readFile(cvDeMdPath, 'utf8');
+        let md = await readFile(cvDeMdPath, 'utf8');
+        md = ensureContactSection(md, profileData, 'de');
         const html = markdownCvToHtml(md, profileName);
         const htmlPath = resolve(outputDir, `cv-de-${profileName}.html`);
         await writeFile(htmlPath, html, 'utf8');

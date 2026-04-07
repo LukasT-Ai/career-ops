@@ -1,5 +1,12 @@
 # Lamin Traore - CV
 
+## Contact
+
+- Phone: 404-234-0448
+- Email: pt374t@gmail.com
+- Location: Atlanta, GA 30317
+- LinkedIn: linkedin.com/in/lamintraore
+
 ## Professional Summary
 
 Award-winning sales leader and technical consultant with 15+ years driving revenue growth across enterprise connectivity, unified communications, and managed network solutions. Proven record of building high-performing teams, exceeding multimillion-dollar quotas, and executing consultative, solution-based selling strategies. Multilingual professional fluent in English and German.

@@ -13,3 +13,5 @@ Detailed log of all application attempts made through the auto-apply system.
 | 2026-04-07 | 02:17:16 | paulina | Career-Ops Test | Test Position — Dispatcher Verification | Test | Manual Review | 82/100 | Sent | PENDING_MANUAL |  |
 | 2026-04-07 | 02:17:27 | lamin | Career-Ops Test | Test Position — Dispatcher Verification | Test | Manual Review | 82/100 | Sent | PENDING_MANUAL |  |
 | 2026-04-07 | 02:17:51 | josephina | Career-Ops Test | Test Position — Dispatcher Verification | Test | Manual Review | 82/100 | Sent | PENDING_MANUAL |  |
+| 2026-04-07 | 02:49:16 | lamin | Career-Ops Test | Test Position — Dispatcher Verification | Test | Manual Review | 82/100 | Sent | PENDING_MANUAL |  |
+| 2026-04-07 | 02:49:33 | paulina | Career-Ops Test | Test Position — Dispatcher Verification | Test | Manual Review | 82/100 | Sent | PENDING_MANUAL |  |
