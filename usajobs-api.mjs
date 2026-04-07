@@ -45,17 +45,21 @@ const RATE_LIMIT_MS = 600;
 const SEARCH_CONFIGS = {
   paulina: {
     queries: [
+      // Georgia (licensed, home base)
       { keyword: 'Psychiatrist', location: 'Georgia', label: 'Psychiatrist GA' },
-      { keyword: 'Psychiatrist', location: '', label: 'Psychiatrist (national)' },
-      { keyword: 'Staff Psychiatrist', location: '', label: 'Staff Psychiatrist' },
-      { keyword: 'Attending Psychiatrist', location: '', label: 'Attending Psychiatrist' },
-      { keyword: 'Medical Officer Psychiatry', location: '', label: 'Medical Officer Psychiatry' },
-      { keyword: 'Physician Psychiatry', location: '', label: 'Physician Psychiatry' },
-      { keyword: 'Behavioral Health Physician', location: '', label: 'Behavioral Health Physician' },
-      { keyword: 'Telepsychiatrist', location: '', label: 'Telepsychiatrist' },
-      { keyword: 'Psychiatrist VA', location: '', label: 'VA Psychiatrist' },
-      { keyword: 'Medical Director Behavioral Health', location: '', label: 'Medical Director BH' },
+      { keyword: 'Staff Psychiatrist', location: 'Georgia', label: 'Staff Psychiatrist GA' },
+      { keyword: 'Physician Psychiatry', location: 'Georgia', label: 'Physician Psychiatry GA' },
+      { keyword: 'Medical Director Behavioral Health', location: 'Georgia', label: 'Medical Director BH GA' },
+      // California (licensed, remote only — location filter handles on-site rejection)
+      { keyword: 'Psychiatrist', location: 'California', label: 'Psychiatrist CA' },
+      { keyword: 'Staff Psychiatrist', location: 'California', label: 'Staff Psychiatrist CA' },
+      { keyword: 'Physician Psychiatry', location: 'California', label: 'Physician Psychiatry CA' },
+      // National (remote/telepsych only — location filter rejects on-site in other states)
+      { keyword: 'Telepsychiatrist', location: '', label: 'Telepsychiatrist (national)' },
+      { keyword: 'Medical Officer Psychiatry Remote', location: '', label: 'Medical Officer Psych Remote' },
     ],
+    // Post-fetch location filter: only keep GA, CA, remote, or negotiable
+    locationFilter: ['georgia', 'atlanta', 'augusta', 'california', 'los angeles', 'san francisco', 'san diego', 'menlo park', 'palo alto', 'sacramento', 'remote', 'location negotiable', 'telework', 'anywhere', 'multiple locations'],
     titlePositive: [
       'psychiatr', 'physician', 'medical officer', 'behavioral health', 'mental health',
       'medical director', 'attending', 'clinical director',
