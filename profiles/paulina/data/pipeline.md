@@ -32,7 +32,6 @@
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/858420400 | VHA | Chief Psychiatry BH Service — Las Vegas, NV | 2.0/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/859999800 | VHA | Outpatient Psychiatrist — Panama City Beach, FL | 2.0/5 | PDF ❌
 - [x] #005 | https://www.usajobs.gov:443/job/858738600 | VHA | Physician - Psychiatrist (SIGN-ON BONUS) | 2.5/5 | PDF ❌
-- [x] DISPATCHED | https://www.usajobs.gov:443/job/859474300 | VHA | Physician (Psychiatrist) MHICM — Kansas City, MO | 2.0/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/847912200 | VHA | Outpatient Psychiatrist BHIP — Garner, NC | 2.0/5 | PDF ❌
 - [x] #004 | https://www.usajobs.gov:443/job/860755500 | VHA | Physician - Psychiatrist (MHRRTP) | 2.5/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/859134700 | VHA | Chief of Psychiatry — Albany, NY | 2.0/5 | PDF ❌
@@ -52,7 +51,6 @@
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/854885000 | DHA | Physician (Psychiatry) — Groton, CT | 2.0/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/857415700 | VHA | Physician (Psychiatry) — Multiple Locations | 3.0/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/862002100 | VHA | Physician Chief of Psychiatry — Multiple Locations | 3.0/5 | PDF ❌
-- [x] DISPATCHED | https://www.usajobs.gov:443/job/848346900 | VHA | Physician (Psychiatry) SIGN ON BONUS — Kansas City, MO | 2.0/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/857255000 | VHA | Psychiatry Section Chief — Multiple Locations | 3.0/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/855643400 | VHA | Staff Physician Inpatient Psychiatry — Detroit, MI | 2.0/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/859253300 | VHA | Psychiatry Section Chief — Multiple Locations | 3.0/5 | PDF ❌
@@ -62,17 +60,10 @@
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/855800000 | VHA | Supervisory Psychiatrist BHIP — Chesapeake, VA | 2.0/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/860999900 | VHA | Outpatient Psychiatrist — Morehead City, NC | 2.0/5 | PDF ❌
 - [x] DISPATCHED | https://www.usajobs.gov:443/job/846819700 | VHA | Psychiatrist Outpatient BHIP — Pittsburgh, PA | 2.0/5 | PDF ❌
-- [x] https://www.usajobs.gov:443/job/849031400 | Veterans Health Administration | Physician (Psychiatrist) — Madison, Wisconsin | 2.0/5 | PDF ❌
-- [x] https://www.usajobs.gov:443/job/857075100 | Veterans Health Administration | Physician (Psychiatrist) — Boise, Idaho | 2.0/5 | PDF ❌
-- [x] https://www.usajobs.gov:443/job/860482400 | Veterans Health Administration | Physician (Psychiatrist) — Altoona, Pennsylvania | 2.0/5 | PDF ❌
 - [x] SKIP | https://www.usajobs.gov:443/job/853314900 | VHA | Primary Care Pain Provider | 1.0/5 | PDF ❌
-- [x] https://www.usajobs.gov:443/job/850894300 | Veterans Health Administration | Physician (Psychiatrist) — Memphis, Tennessee | 2.0/5 | PDF ❌
-- [x] https://www.usajobs.gov:443/job/857504600 | Veterans Health Administration | SUD Psychiatrist — Johnson City, Tennessee | 2.0/5 | PDF ❌
-- [x] https://www.usajobs.gov:443/job/857784200 | Veterans Health Administration | Psychiatrist (BHIP) — McAllen, Texas | 2.0/5 | PDF ❌
 - [x] https://www.usajobs.gov:443/job/847167500 | Veterans Health Administration | Physician (Psychiatrist) — Multiple Locations | 2.5/5 | PDF ❌
 - [x] SKIP | https://www.usajobs.gov:443/job/852770900 | VHA | Podiatrist - Medical Director MH | 1.0/5 | PDF ❌
 - [x] SKIP | https://www.usajobs.gov:443/job/854735700 | VHA | Geriatrics Transitional Care | 1.0/5 | PDF ❌
-- [x] https://www.usajobs.gov:443/job/863677500 | Veterans Health Administration | Medical Director Substance Abuse — Bronx, New York | 2.0/5 | PDF ❌
 
 - [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4988-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Frankfurt (Oder) | 3.5/5 | PDF ❌
 - [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4987-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Eberswalde | 3.5/5 | PDF ❌

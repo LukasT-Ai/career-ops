@@ -7,11 +7,7 @@
 - [x] #002 | https://www.usajobs.gov:443/job/863167000 | FSIS | IT Specialist (Enterprise Architecture) | 1.5/5 | SKIP
 - [x] #001 | https://www.usajobs.gov:443/job/862835400 | Joint Activities | Telecom Manager (Spectrum Mgmt) | 2.0/5 | PDF ✅
 - [x] #005 | https://www.usajobs.gov:443/job/863720300 | Fleet Forces Command | Telecom Specialist (Souda Bay) | 2.0/5 | PDF ✅
-- [ ] https://www.usajobs.gov:443/job/863693900 | Air National Guard Units | TELECOMMUNICATIONS SPECIALIST — Gulfport, Mississippi | $74,678-$97,087 Per Year | GS-11/11
-- [ ] https://www.usajobs.gov:443/job/863360900 | Air Force Elements, U.S. Central Command | TELECOMMUNICATIONS SPECIALIST — MacDill AFB, Florida | $89,508-$116,362 Per Year | GS-12/12
 - [x] #003 | https://www.usajobs.gov:443/job/862492700 | Fleet Forces Command | Telecom Specialist | 1.5/5 | SKIP
-- [ ] https://www.usajobs.gov:443/job/862833800 | Air National Guard Units | TITLE 5 IT SPECIALIST (INFOSEC) (MI 110th Wing) — Battle Creek, Michigan | $75,278-$97,867 Per Year | GS-11/11
-- [ ] https://www.usajobs.gov:443/job/863909500 | Air National Guard Units | IT SPECIALIST (INFOSEC) — Des Moines, Iowa | $75,278-$97,867 Per Year | GS-11/11
 - [ ] https://www.usajobs.gov:443/job/862387500 | Air National Guard Units | IT SPEC (INFOSEC/NETWORK) - TITLE 32 — Hunter AFB, Georgia | $74,678-$97,087 Per Year | GS-11/11
 - [ ] https://www.usajobs.gov:443/job/847096900 | Air Force Civilian Career Training | IT SPECIALIST — Location Negotiable After Selection | $56,763-$88,225 Per Year | GS-7/9
 - [x] #004 | https://www.usajobs.gov:443/job/858700600 | Treasury | IT Specialist (AI) | 1.0/5 | SKIP
@@ -21,10 +17,6 @@
 - [ ] https://www.usajobs.gov:443/job/863017800 | Office of the Assistant Secretary for Administration and Management | IT Specialist (IT Asset and Configuration Management Specialist) — Location Negotiable After Selection | $133,007-$187,093 Per Year | GS-14/14
 - [ ] https://www.usajobs.gov:443/job/862247900 | Office of the Inspector General for Tax Administration | Supervisory IT Specialist (DATAMGT) — Location Negotiable After Selection | $147,945-$197,200 Per Year | GS-15/15
 - [ ] https://www.usajobs.gov:443/job/862729600 | Air Force Materiel Command | Accountant- DIRECT HIRE AUTHORITY — Multiple Locations | $34,799-$82,938 Per Year | NH-2/2
-- [ ] https://www.usajobs.gov:443/job/863192300 | Office of the Inspector General for Tax Administration | IT Specialist (SYSADMIN/OS)(Workstation Administrator) — Washington, District of Columbia | $85,447-$158,322 Per Year | GS-11/13
-- [ ] https://www.usajobs.gov:443/job/861670900 | Air National Guard Units | IT SPECIALIST (INFOSEC) — McChord AFB, Washington | $99,606-$129,494 Per Year | GS-12/12
-- [ ] https://www.usajobs.gov:443/job/862164400 | Air National Guard Units | IT SPECIALIST (INFOSEC) — Bangor, Maine | $75,278-$97,887 Per Year | GS-11/11
-- [ ] https://www.usajobs.gov:443/job/860289600 | Air National Guard Units | IT SPECIALIST (INFOSEC) — Reno, Nevada | $75,278-$97,867 Per Year | GS-11/11
 - [ ] https://www.usajobs.gov:443/job/860750200 | Air National Guard Units | CONTRACT SPECIALIST - TITLE 32 — Robins AFB, Georgia | $74,678-$97,087 Per Year | GS-11/11
 
 - [x] #006 | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1201958206-S&angebotsart=1 | EDNT IT-Services | Account Manager IT & Telko | 2.5/5 | PDF ✅

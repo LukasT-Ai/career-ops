@@ -17,7 +17,7 @@
  */
 
 import { execFile } from 'child_process';
-import { readFile, copyFile } from 'fs/promises';
+import { readFile, writeFile, copyFile } from 'fs/promises';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { promisify } from 'util';
@@ -94,6 +94,92 @@ async function runScanner(script, profileName, args) {
   }
 }
 
+// ── Post-Scan Location Filter ──────────────────────────────
+// Same rules as job-dispatcher.mjs LOCATION_RULES.
+// Removes pipeline entries that don't match the profile's allowed locations.
+
+const LOCATION_RULES = {
+  paulina: {
+    officeLocations: ['atlanta', 'georgia', 'decatur', 'dekalb'],
+    remoteLocations: ['georgia', 'atlanta', 'california', 'los angeles', 'san francisco',
+                      'san diego', 'bay area', 'sacramento', 'menlo park', 'palo alto'],
+    germanyAllowed: true,
+    remoteUSAllowed: false,
+  },
+  lamin: {
+    officeLocations: ['atlanta', 'georgia'],
+    remoteLocations: [],
+    germanyAllowed: true,
+    remoteUSAllowed: true,
+  },
+  josephina: {
+    officeLocations: ['atlanta', 'georgia'],
+    remoteLocations: [],
+    germanyAllowed: true,
+    remoteUSAllowed: true,
+  },
+};
+
+const GERMAN_KW = ['germany','deutschland','berlin','munich','münchen','hamburg','frankfurt',
+  'heidelberg','freiburg','cologne','köln','stuttgart','düsseldorf','klinik','krankenhaus',
+  'arzt','ärztin','facharzt','oberarzt','chefarzt','gmbh','ggmbh','psychiatrie','psychosomatik'];
+const REMOTE_KW = ['remote','telehealth','telework','telepsych','virtual','work from home','anywhere','location negotiable'];
+const US_STATES = ['alabama','alaska','arizona','arkansas','colorado','connecticut','delaware',
+  'florida','hawaii','idaho','illinois','indiana','iowa','kansas','kentucky','louisiana','maine',
+  'maryland','massachusetts','michigan','minnesota','mississippi','missouri','montana','nebraska',
+  'nevada','new hampshire','new jersey','new mexico','new york','north carolina','north dakota',
+  'ohio','oklahoma','oregon','pennsylvania','rhode island','south carolina','south dakota',
+  'tennessee','texas','utah','vermont','virginia','washington','west virginia','wisconsin',
+  'wyoming','district of columbia','puerto rico'];
+
+function isLocationEligible(line, profileName) {
+  const rules = LOCATION_RULES[profileName];
+  if (!rules) return true;
+  const lower = line.toLowerCase();
+
+  if (GERMAN_KW.some(k => lower.includes(k))) return rules.germanyAllowed;
+  if (REMOTE_KW.some(k => lower.includes(k))) {
+    if (rules.remoteUSAllowed) return true;
+    return rules.remoteLocations.some(k => lower.includes(k));
+  }
+  if (rules.officeLocations.some(k => lower.includes(k))) return true;
+
+  // Check for out-of-area US states
+  const allowedStates = profileName === 'paulina' ? ['georgia','california'] : ['georgia'];
+  const mentioned = US_STATES.find(s => lower.includes(s));
+  if (mentioned && !allowedStates.includes(mentioned)) return false;
+
+  return true; // unclear location = pass through
+}
+
+async function filterPipelineByLocation(profileName) {
+  const pipePath = resolve(__dirname, 'data/pipeline.md');
+  let content;
+  try { content = await readFile(pipePath, 'utf8'); } catch { return 0; }
+
+  const lines = content.split('\n');
+  const kept = [];
+  let removed = 0;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#') || (trimmed.startsWith('|') && (trimmed.includes('URL') || trimmed.includes('---')))) {
+      kept.push(line);
+      continue;
+    }
+    if (isLocationEligible(trimmed, profileName)) {
+      kept.push(line);
+    } else {
+      removed++;
+    }
+  }
+
+  if (removed > 0) {
+    await writeFile(pipePath, kept.join('\n'), 'utf8');
+  }
+  return removed;
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes('--dry-run');
@@ -158,7 +244,16 @@ async function main() {
       afterCount = (pipeline.match(/- \[ \]/g) || []).length;
     } catch { /* no pipeline */ }
 
-    results[profile].newJobs = afterCount - beforeCount;
+    // Post-scan location filter: remove out-of-area entries from pipeline
+    let removedCount = 0;
+    if (!dryRun) {
+      removedCount = await filterPipelineByLocation(profile);
+      if (removedCount > 0) {
+        console.log(`  [LOCATION FILTER] Removed ${removedCount} out-of-area entries from ${profile}'s pipeline`);
+      }
+    }
+
+    results[profile].newJobs = Math.max(0, afterCount - beforeCount - removedCount);
 
     // Sync results back to profile directory
     if (!dryRun) {
