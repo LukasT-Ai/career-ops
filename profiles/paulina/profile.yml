@@ -106,3 +106,12 @@ location:
     - state: "California"
       status: "Active"
   germany_pathway: "German citizen -- NO visa/work permit needed. Approbation still required to practice medicine. Fluent German (B2+ likely C1). Prior Heidelberg research. Berufserlaubnis as fast-track entry strategy."
+
+  # Sponsorship Priority: Boost and highlight jobs that offer sponsorship/support
+  # for medical credential recognition (Approbation/Berufserlaubnis transfer).
+  # Paulina is a dual US/German citizen (NO work permit needed), but she needs
+  # employer support to transfer her US psychiatry board credentials to Germany.
+  # Employers offering this signal they're set up for international medical hires.
+  sponsorship_priority: true
+  sponsorship_boost: 10  # +10 fit score points for sponsorship/credential-support jobs
+  sponsorship_context: "Needs employer support for Approbation/Berufserlaubnis (medical license recognition in Germany), NOT a work permit. German citizen — no visa needed."

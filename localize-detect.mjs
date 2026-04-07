@@ -232,6 +232,31 @@ function selectCoverLetterFormat(language) {
 // Step 4: Sponsorship Detection
 // ============================================================
 
+// Tier 0 (highest): German medical credential recognition / Approbation support
+// Employers who help with Approbation or Berufserlaubnis for foreign-trained doctors
+const APPROBATION_TIER0 = [
+  'approbation', 'berufserlaubnis', 'anerkennung der approbation',
+  'approbationsverfahren', 'berufsanerkennung', 'anerkennung ausländischer abschlüsse',
+  'anerkennung ärztlicher qualifikationen', 'kenntnisprüfung',
+  'gleichwertigkeitsprüfung', 'fachsprachprüfung',
+  'we support approbation', 'approbation support', 'credential recognition',
+  'medical license recognition', 'license transfer', 'medical credential',
+  'unterstützung bei der approbation', 'hilfe bei berufserlaubnis',
+  'ärztliche anerkennung', 'unterstützung im anerkennungsverfahren',
+  'internationale ärzte willkommen', 'international medical graduates',
+  'img welcome', 'img friendly', 'international physicians',
+  'ausländische ärzte', 'ärzte aus dem ausland',
+  'relocation support for physicians', 'onboarding international doctors',
+];
+
+// Known German hospitals/networks that actively recruit internationally and support Approbation
+const APPROBATION_EMPLOYERS = [
+  'charité', 'vivantes', 'helios', 'asklepios', 'sana kliniken', 'rhön-klinikum',
+  'schön klinik', 'ameos', 'median', 'oberberg', 'vitos', 'lwl-klinik',
+  'bezirksklinikum', 'universitätsklinikum', 'uniklinik', 'uniklinikum',
+  'max-planck', 'bezirkskrankenhaus', 'landeskrankenhaus', 'psychiatrische klinik',
+];
+
 const SPONSORSHIP_TIER1 = [
   'visa sponsorship', 'h1b sponsorship', 'h-1b sponsorship',
   'we sponsor visa', 'willing to sponsor visa', 'immigration sponsorship',
@@ -280,7 +305,36 @@ function detectSponsorship(title, description, company) {
     }
   }
 
-  // Tier 1: Explicit sponsorship statements
+  // Tier 0: Approbation / medical credential recognition (German jobs)
+  for (const kw of APPROBATION_TIER0) {
+    if (text.includes(kw)) {
+      return {
+        sponsorship_status: 'APPROBATION',
+        sponsorship_confidence: 100,
+        sponsorship_reason: `Approbation/credential support: "${kw}"`,
+        sponsorship_flag: 'APPROBATION_SUPPORT',
+        approbation: true,
+        contact_recommendation: false,
+      };
+    }
+  }
+
+  // Tier 0b: Known Approbation-supporting employers (German hospital networks)
+  const companyLower = company.toLowerCase();
+  for (const emp of APPROBATION_EMPLOYERS) {
+    if (companyLower.includes(emp)) {
+      return {
+        sponsorship_status: 'APPROBATION_LIKELY',
+        sponsorship_confidence: 85,
+        sponsorship_reason: `${company} is a major German hospital network that typically supports Approbation for international physicians`,
+        sponsorship_flag: 'APPROBATION_LIKELY',
+        approbation: true,
+        contact_recommendation: false,
+      };
+    }
+  }
+
+  // Tier 1: Explicit visa sponsorship statements (US jobs)
   for (const kw of SPONSORSHIP_TIER1) {
     if (text.includes(kw)) {
       return {
@@ -288,13 +342,13 @@ function detectSponsorship(title, description, company) {
         sponsorship_confidence: 100,
         sponsorship_reason: `Explicit statement: "${kw}"`,
         sponsorship_flag: 'SPONSORSHIP_YES',
+        approbation: false,
         contact_recommendation: false,
       };
     }
   }
 
-  // Tier 2: Known sponsor companies
-  const companyLower = company.toLowerCase();
+  // Tier 2: Known US sponsor companies
   for (const comp of SPONSORSHIP_TIER2_COMPANIES) {
     if (companyLower.includes(comp)) {
       return {
@@ -302,6 +356,7 @@ function detectSponsorship(title, description, company) {
         sponsorship_confidence: 78,
         sponsorship_reason: `${company} is a known visa sponsor for medical roles`,
         sponsorship_flag: 'SPONSORSHIP_LIKELY',
+        approbation: false,
         contact_recommendation: false,
       };
     }

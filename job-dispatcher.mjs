@@ -173,7 +173,7 @@ async function loadTemplate(templateName) {
 function fillTemplate(html, vars) {
   let result = html;
   for (const [key, value] of Object.entries(vars)) {
-    result = result.replaceAll(`{{${key}}}`, value || 'N/A');
+    result = result.replaceAll(`{{${key}}}`, value != null ? value : 'N/A');
   }
   return result;
 }
@@ -225,6 +225,7 @@ async function sendNotification(mode, job, profile, fitScore, options = {}) {
     MATCH_REASONS: buildMatchReasons(job),
     DRAFT_COVER_LETTER: job.draftCoverLetter || '<p><em>Cover letter will be generated upon approval.</em></p>',
     ATTACHMENTS_SECTION: buildAttachmentsSection(job),
+    SPONSORSHIP_BANNER: buildSponsorshipBanner(job, profile),
   };
 
   const html = fillTemplate(templateHtml, vars);
@@ -354,6 +355,11 @@ async function loadActiveProfile() {
       target_range: block.match(/target_range:\s*"(.+?)"/)?.[1],
     };
   }
+
+  // Sponsorship priority settings
+  profile.sponsorship_priority = /sponsorship_priority:\s*true/i.test(profileYml);
+  const boostMatch = profileYml.match(/sponsorship_boost:\s*(\d+)/);
+  profile.sponsorship_boost = boostMatch ? parseInt(boostMatch[1]) : 0;
 
   return { name, profile };
 }
@@ -665,6 +671,39 @@ function buildAttachmentsSection(job) {
 }
 
 // ============================================================
+// Sponsorship Banner (Approbation / Credential Transfer)
+// ============================================================
+
+function buildSponsorshipBanner(job, profile) {
+  if (!profile.sponsorship_priority) return '';
+
+  const sp = job.sponsorship;
+  if (!sp) return '';
+
+  const isApprobation = sp.approbation ||
+    ['APPROBATION', 'APPROBATION_LIKELY'].includes(sp.sponsorship_status);
+  const isGeneral = !isApprobation &&
+    ['CONFIRMED', 'LIKELY'].includes(sp.sponsorship_status);
+
+  if (!isApprobation && !isGeneral) return '';
+
+  const title = isApprobation
+    ? 'Approbation / Credential Transfer Support'
+    : 'Sponsorship Opportunity';
+  const detail = isApprobation
+    ? 'This employer signals support for international medical credential recognition (Approbation / Berufserlaubnis). This could fast-track your path to practicing in Germany.'
+    : 'This employer indicates sponsorship support for international candidates.';
+  const reason = sp.sponsorship_reason || '';
+
+  return `
+  <div style="background: #e8f5e9; border: 2px solid #2e7d32; padding: 16px; border-radius: 6px; margin: 16px 0;">
+    <p style="margin: 0 0 8px; font-weight: 700; color: #1b5e20; font-size: 15px;">&#9989; ${title}</p>
+    <p style="margin: 0 0 6px; color: #2e7d32; font-size: 13px;">${detail}</p>
+    ${reason ? `<p style="margin: 0; color: #555; font-size: 12px; font-style: italic;">Signal: ${reason}</p>` : ''}
+  </div>`;
+}
+
+// ============================================================
 // Auto-Apply Consent Gate
 // ============================================================
 
@@ -707,7 +746,16 @@ export async function dispatch(job, careerOpsScore, options = {}) {
   const approvalConfig = await loadApprovalConfig(profileName);
 
   // Compute fit score
-  const fitScore = job.fitScore || mapScoreToFit(careerOpsScore);
+  let fitScore = job.fitScore || mapScoreToFit(careerOpsScore);
+
+  // Sponsorship priority boost: if profile has sponsorship_priority and job has sponsorship data
+  const hasSponsorshipSignal = job.sponsorship?.approbation ||
+    ['APPROBATION', 'APPROBATION_LIKELY', 'CONFIRMED', 'LIKELY'].includes(job.sponsorship?.sponsorship_status);
+  if (profile.sponsorship_priority && hasSponsorshipSignal) {
+    const boost = profile.sponsorship_boost || 10;
+    fitScore = Math.min(100, fitScore + boost);
+    console.log(`  [SPONSORSHIP] +${boost} fit score boost (${job.sponsorship.sponsorship_status}: ${job.sponsorship.sponsorship_reason})`);
+  }
 
   // Determine mode
   let mode = determineMode(fitScore);
