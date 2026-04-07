@@ -2,6 +2,154 @@
 
 ## Pendientes
 
+- [ ] https://www.usajobs.gov:443/job/863167000 | Food Safety and Inspection Service | IT Specialist (Enterprise Architecture) — Location Negotiable After Selection | $106,437-$138,370 Per Year | GS-13/13
+- [ ] https://www.usajobs.gov:443/job/862835400 | Joint Activities | Telecommunications Manager (Spectrum Management) — Fort Bragg, North Carolina | $131,342-$170,750 Per Year | GS-14/14
+- [ ] https://www.usajobs.gov:443/job/863720300 | United States Fleet Forces Command | TELECOMMUNICATIONS SPECIALIST — Souda Bay, Greece | $102,415-$133,142 Per Year | GG-12/12
+- [ ] https://www.usajobs.gov:443/job/863693900 | Air National Guard Units | TELECOMMUNICATIONS SPECIALIST — Gulfport, Mississippi | $74,678-$97,087 Per Year | GS-11/11
+- [ ] https://www.usajobs.gov:443/job/863360900 | Air Force Elements, U.S. Central Command | TELECOMMUNICATIONS SPECIALIST — MacDill AFB, Florida | $89,508-$116,362 Per Year | GS-12/12
+- [ ] https://www.usajobs.gov:443/job/862492700 | United States Fleet Forces Command | TELECOMMUNICATIONS SPECIALIST — Fort Meade, Maryland | $102,415-$158,322 Per Year | GS-12/13
+- [ ] https://www.usajobs.gov:443/job/862833800 | Air National Guard Units | TITLE 5 IT SPECIALIST (INFOSEC) (MI 110th Wing) — Battle Creek, Michigan | $75,278-$97,867 Per Year | GS-11/11
+- [ ] https://www.usajobs.gov:443/job/863909500 | Air National Guard Units | IT SPECIALIST (INFOSEC) — Des Moines, Iowa | $75,278-$97,867 Per Year | GS-11/11
+- [ ] https://www.usajobs.gov:443/job/862387500 | Air National Guard Units | IT SPEC (INFOSEC/NETWORK) - TITLE 32 — Hunter AFB, Georgia | $74,678-$97,087 Per Year | GS-11/11
+- [ ] https://www.usajobs.gov:443/job/847096900 | Air Force Civilian Career Training | IT SPECIALIST — Location Negotiable After Selection | $56,763-$88,225 Per Year | GS-7/9
+- [ ] https://www.usajobs.gov:443/job/858700600 | Treasury, Departmental Offices | IT Specialist (AI) — Location Negotiable After Selection | $89,508-$197,200 Per Year | GS-12/15
+- [ ] https://www.usajobs.gov:443/job/860695000 | Air National Guard Units | IT SPEC (NETWORK) - TITLE 32 — Brunswick, Georgia | $88,120-$114,563 Per Year | GS-11/11
+- [ ] https://www.usajobs.gov:443/job/863080200 | Headquarters, Air Force Reserve Command | IT SPECIALIST (APPSW) — Robins AFB, Georgia | $106,437-$138,370 Per Year | GS-13/13
+- [ ] https://www.usajobs.gov:443/job/863319000 | U.S. Army Training and Doctrine Command | IT SPECIALIST (NETWORK) — Fort Gordon, Georgia | $75,278-$102,067 Per Year | GG-11/11
+- [ ] https://www.usajobs.gov:443/job/863017800 | Office of the Assistant Secretary for Administration and Management | IT Specialist (IT Asset and Configuration Management Specialist) — Location Negotiable After Selection | $133,007-$187,093 Per Year | GS-14/14
+- [ ] https://www.usajobs.gov:443/job/862247900 | Office of the Inspector General for Tax Administration | Supervisory IT Specialist (DATAMGT) — Location Negotiable After Selection | $147,945-$197,200 Per Year | GS-15/15
+- [ ] https://www.usajobs.gov:443/job/862729600 | Air Force Materiel Command | Accountant- DIRECT HIRE AUTHORITY — Multiple Locations | $34,799-$82,938 Per Year | NH-2/2
+- [ ] https://www.usajobs.gov:443/job/863192300 | Office of the Inspector General for Tax Administration | IT Specialist (SYSADMIN/OS)(Workstation Administrator) — Washington, District of Columbia | $85,447-$158,322 Per Year | GS-11/13
+- [ ] https://www.usajobs.gov:443/job/861670900 | Air National Guard Units | IT SPECIALIST (INFOSEC) — McChord AFB, Washington | $99,606-$129,494 Per Year | GS-12/12
+- [ ] https://www.usajobs.gov:443/job/862164400 | Air National Guard Units | IT SPECIALIST (INFOSEC) — Bangor, Maine | $75,278-$97,887 Per Year | GS-11/11
+- [ ] https://www.usajobs.gov:443/job/860289600 | Air National Guard Units | IT SPECIALIST (INFOSEC) — Reno, Nevada | $75,278-$97,867 Per Year | GS-11/11
+- [ ] https://www.usajobs.gov:443/job/860750200 | Air National Guard Units | CONTRACT SPECIALIST - TITLE 32 — Robins AFB, Georgia | $74,678-$97,087 Per Year | GS-11/11
+
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1201958206-S&angebotsart=1 | EDNT IT-Services GmbH | Account Manager IT& Telekommunikation (m/w/d) — Bensheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205481571-S&angebotsart=1 | JKR GmbH | Account Manager/in (m/w/d) B2B mit Berufserfahrung im Bereich Telekommunikation gesucht — Bad Kreuznach
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001904089-S&angebotsart=1 | SUXXEED Sales for your Success GmbH | Vertriebsmitarbeiter (m/w/d) Telekommunikation — Hamburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002535023-S&angebotsart=1 | W+P JobPartner GmbH | Account Manager (m/w/d) — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=11081-4IHM1PZBZJWUOTDR-S&angebotsart=1 | MANPOWER GmbH & Co. KG | Sales Account Manager (m/w/d) — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13410-k13572.15471-S&angebotsart=1 | Guldberg GmbH | (Junior) Account Manager (m/w/d) — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13669-WQS2CALVR1AQHU0U-S&angebotsart=1 | puro Personaldienstleistung GmbH | Account Manager Netzwerklösungen (m/w/d) — Dreieich
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002868239-S&angebotsart=1 | Telefusion GmbH | Inside Sales / Bestandskundenvertrieb (Telekommunikation) m/w/d — Crailsheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205994836-S&angebotsart=1 | Kessler GmbH | Junior Account Manager m/w/d Geschäftskundenvertrieb — Rottweil
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002741330-S&angebotsart=1 | Schollmeier ITK GmbH & Co. KG | Junior Account Manager (m/w/d) — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13319-866636/1_603374LS-S&angebotsart=1 | Hays AG | Key Account Manager Telekommunikation (m/w/d) — Düsseldorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002578570-S&angebotsart=1 | Gamma Communications GmbH | SIP-Customer Account Manager (m/w/d) — Oberkotzau
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=16147-898572649-S&angebotsart=1 | Deutsche Glasfaser Holding GmbH | Wholesale Account Manager (w/m/d) BSA — Düsseldorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002856016-S&angebotsart=1 | TeleSys Kommunikationstechnik GmbH Geschäftsleitung | Vertriebsmitarbeiter Außendienst – Sales Account Manager (m/w/d) — Breitengüßbach
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14418-45448-1762635-0-S&angebotsart=1 | Schmieder GmbH Unternehmensberatung | Account Manager (m/w/d) Cloud und Rechenzentrum
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001267664-S&angebotsart=1 | Kessler GmbH | Junior Account Manager | Großhandel & Distribution — Balingen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002811403-S&angebotsart=1 | IONOS SE | Senior Account Manager (w/m/d) - B2B Domains / 1297 — Karlsruhe, Baden
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13410-k13572.15470-S&angebotsart=1 | Guldberg GmbH | Wirtschaftspsychologe (m/w/d) Vertrieb — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12444-563465371693544-S&angebotsart=1 | Deutsche Telekom AG | Kundenberater Service & Vertrieb Telekommunikation (m/w/d) — Frankfurt (Oder)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002545053-S&angebotsart=1 | MUGLER SE | Vertriebsleiter Telekommunikation (m/w/d) — Oberlungwitz
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205139088-S&angebotsart=1 | faro-com GmbH & Co. KG | Vertriebsinnendienst / Sales Support (m/w/d) – Telekommunikation & indirekter Vertrieb — Kolkwitz, Niederlausitz
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002823689-S&angebotsart=1 | Interstaff HR-Management GmbH | Assistenz (m/w/d) Vertrieb und Marketing (IT/Telekommunikation) in Teilzeit — Neumünster, Holstein
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002486913-S&angebotsart=1 | Interstaff HR-Management GmbH NL Neumünster | Assistenz (m/w/d) Vertrieb und Marketing (IT/Telekommunikation) in Teilzeit — Neumünster, Holstein
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13621-11189-1763910-0-S&angebotsart=1 | wu personal GmbH Berlin | Verkaufsberater Telekommunikation (m/w/d) — Borna bei Leipzig
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1039-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Hürth, Rheinland
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001063649-S&angebotsart=1 | TEMPTON Technik GmbH | Sales Manager (m/w/d) in der Telekommunikation — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1017-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Gladbeck
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1014-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Essen, Ruhr
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1019-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Herten, Westfalen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1018-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Meinerzhagen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1012-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Gelsenkirchen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1006-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Gelsenkirchen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1011-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Hattingen, Ruhr
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1010-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Hagen, Westfalen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20114-k62212.1013-S&angebotsart=1 | helfer-line GmbH | Verkäufer/in (m/w/d) Telekommunikation — Dortmund
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=16481-1422371-S&angebotsart=1 | IAD – Informationsverarbeitung und angewandte Datentechnik GmbH | Key Account Manager/in IT-Training & Consulting — Erfurt
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12811-2014313-S&angebotsart=1 | ACP IT Solutions GmbH (Berlin) | Key Account Manager Commercial (m/w/d), Berlin — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15086-44026253-310-S&angebotsart=1 | Bechtle AG | (Key) Account Manager (w/m/d) — Koblenz am Rhein
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1194236057-S&angebotsart=1 | Computacenter AG & Co. oHG | (Senior) IT Key Account Manager w/m/d — Heilbronn, Neckar
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001707586-S&angebotsart=1 | b_digital GmbH | Key Account Manager (m/w/d) Software — Beckum, Westfalen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12781-16192673-KAL-S&angebotsart=1 | Econocom Products & Solutions GmbH | Key Account Manager (m/w/d) im IT-Handel — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002831235-S&angebotsart=1 | ITventive AG | Key Account Manager (m/w/d) — Ludwigsburg, Württemberg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=11949-17155941-S&angebotsart=1 | ACP IT Solutions GmbH | Key-Account-Manager/in — Graz,05.Bez.:Gries
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1203186589-S&angebotsart=1 | Kelobit IT-Experts GmbH | Key Account Manager (m/w/d) — Halle (Saale)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15086-43964732-211-S&angebotsart=1 | Bechtle AG | Key Account Manager - Bundesbehörden (w/m/d) — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001420131-S&angebotsart=1 | Computacenter AG & Co. oHG | IT Key Account Manager w/m/d - Deutsche Bahn Konzern — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002407405-S&angebotsart=1 | Computacenter AG & Co. oHG | (Senior) IT Key Account Manager (w/m/d) - Deutscher Finanzsektor — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002768640-S&angebotsart=1 | carpediem Personalberatung GmbH | Key Account Manager Tourismusbranche (m/w/d) — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13424-8LWK0HQJ1JAKRZNC-S&angebotsart=1 | AUREA GmbH | Key Account Manager (m/w/d)  — Leverkusen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002170742-S&angebotsart=1 | WBS IT- Service GmbH | Key Account Manager (m/w/d) Healthcare — Leipzig
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001294960-S&angebotsart=1 | SPIE Information & Communi- cation Services GmbH Buchungskreis Leipzig | Key Account Manager (m/w/d) - Süddeutschland — Riemerling
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002807311-S&angebotsart=1 | Constaff GmbH | Key Account Manager (m/w/d) — Heidelberg, Neckar
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002787105-S&angebotsart=1 | VBL Karlsruhe | Key-Account-Manager/in (m/w/d) — Karlsruhe, Baden
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12633-c9dc0243_JB5087086-S&angebotsart=1 | DIS AG Personaldienstleistungen | Key-Account Manager (m/w/d) — Dresden
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002777900-S&angebotsart=1 | COBUS ConCept GmbH | Key Account Manager (m/w/d) — Rheda-Wiedenbrück
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002712764-S&angebotsart=1 | EWERK DIGITAL GmbH     | Account Executive (m/w/d) — Leipzig
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002713210-S&angebotsart=1 | EWERK DIGITAL GmbH     | Account Executive (m/w/d) – Transport & Logistik — Leipzig
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002463089-S&angebotsart=1 | S4G Talent Solutions GmbH | Senior Account Executive DACH (M/W/D)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1201419548-S&angebotsart=1 | DELL Halle GmbH | Inside Sales Account Executive – Dein Einstieg in IT-Sales — Halle (Saale)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1199806919-S&angebotsart=1 | GBS Europa GmbH | Account Executive (AE) für Enterprise Neukunden (m/w/d) — Paderborn
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002640739-S&angebotsart=1 | Noerr Solutions GmbH Co. KG | Account Executive – New Business (m/w/d) — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20199-15606935-S&angebotsart=1 | heylogin GmbH | Account Executive B2B SaaS (m/w/d) — Braunschweig
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002870902-S&angebotsart=1 | Eviden Germany GmbH | *SB* Account Sales Executive (m/w/d)(543915) — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19717-0063240889-S&angebotsart=1 | KOMSA AG | Account Executive / Key Account Manager Enterprise (m/w/d) — Hartmannsdorf bei Chemnitz, Sachsen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002735683-S&angebotsart=1 | Eviden Germany GmbH | *SB* Account Sales Executive (m/w/d) (543363) — Fürth, Bayern
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002780031-S&angebotsart=1 | Eviden Germany GmbH | Account Sales Executive (m/w/d) - Fokus Utilities 544343 — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002780176-S&angebotsart=1 | Eviden Germany GmbH | *SB* Account Sales Executive (m/w/d) - Fokus Telekommunikation 544344 — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000498206-S&angebotsart=1 | L-mobile solutions GmbH & Co. KG | Sales Manager (m/w/d) IT — Sulzbach an der Murr
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002484417-S&angebotsart=1 | Surfgreen.dev GmbH | (Junior) Sales Account Executive (m/w/d) – Individualsoftware & KI-Lösungen — Schweinfurt
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001576620-S&angebotsart=1 | L-mobile solutions GmbH & Co. KG | Junior Sales Manager (m/w/d) IT — Sulzbach an der Murr
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002674915-S&angebotsart=1 | Atos Information Technology GmbH | Client Executive Partner (m/w/d)(543171) — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002732481-S&angebotsart=1 | KGS Software GmbH | Account Executive (w/m/d) - B2B Software Direct Sales Mid-Market DACH — Neu-Isenburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15297-s95chnek-S&angebotsart=1 | BFI Informationssysteme GmbH | Sales Manager (m/w/d) in der Telekommunikation — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1198037859-S&angebotsart=1 | Rohde & Partner | Sales Manager im Bereich Telekommunikation im Home Office (w/m/d) — Augsburg, Bayern
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002670117-S&angebotsart=1 | Randy Nickel & Dennis Nickel GbR | Sales-Manager / Verkaufsberater (m/w/d) Optimal-Store Telekommunikation und Energie — Dillingen, Saar
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002817838-S&angebotsart=1 | b+p Beratung Personal Unternehmensberater | Sales Manager (m/w/d) Kabel Hessen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002817824-S&angebotsart=1 | b+p Beratung Personal Unternehmensberater | Sales Manager (m/w/d) Kabel Thüringen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002499198-S&angebotsart=1 | ELSTA-Mosdorfer Deutschland GmbH | Sales Manager - Bayern (m/w/d) Schwerpunkt Elektrotechnik — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002499206-S&angebotsart=1 | ELSTA-Mosdorfer Deutschland GmbH | Sales Manager - Norddeutschland (m/w/d) Schwerpunkt Elektrotechnik — Bremen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002371497-S&angebotsart=1 | b+p Beratung Personal Unternehmensberater | Sales Manager (m/w/d)   Kabel und Datacenter — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002853232-S&angebotsart=1 | Jobacademy | Sales Manager B2B / Vodafone Außendienst (m/w/d) — Hannover
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002853220-S&angebotsart=1 | Jobacademy | Sales Manager B2B / Vodafone Außendienst (m/w/d) — Oldenburg (Oldb)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002796477-S&angebotsart=1 | CCS Team GmbH | Sales Manager(m/w/d) im Innendienst gesucht — Schwentinental
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002853280-S&angebotsart=1 | Jobacademy | Sales Manager B2B / Vodafone Außendienst (m/w/d) — Hamburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002853185-S&angebotsart=1 | Jobacademy | Sales Manager B2B / Vodafone Außendienst (m/w/d) — Hamburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002499187-S&angebotsart=1 | ELSTA-Mosdorfer Deutschland GmbH | Sales Manager - Rhein-Main-Gebiet (m/w/d) Schwerpunkt Elektrotechnik
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002659281-S&angebotsart=1 | log-q-motion GmbH | Sales Manager (m/w/d) – Outbound / Leadgenerierung — Dortmund
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001975805-S&angebotsart=1 | CCS Team GmbH | Sales Manager(m/w/d) im Innendienst gesucht — Schwentinental
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001975797-S&angebotsart=1 | CCS Team GmbH | Sales Manager(m/w/d) im Innendienst gesucht — Schwentinental
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001573756-S&angebotsart=1 | CCS Team GmbH | Sales Manager(m/w/d) im Innendienst gesucht — Schwentinental
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002574130-S&angebotsart=1 | Comarch AG | Senior Business Development Manager (m/w/d) im Bereich Telekommunikation — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002009624-S&angebotsart=1 | ALTEN GmbH Coburg | Manager Sales and Development (all gender) – Telekommunikation — Köln
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17724-29577981-1754455-0-S&angebotsart=1 | Jobactive GmbH Berlin Lichtenberg | Expert Sales Strategy & Business Development (all genders) — Leverkusen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002529587-S&angebotsart=1 | ALTEN GmbH Coburg | Manager Sales and Development (all gender) – Infrastruktur — Köln
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17811-00071304176001-S&angebotsart=1 | SachsenEnergie AG | Junior Salesforce Entwickler*in — Dresden
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18946-unnpcdbn9y-S&angebotsart=1 | PASS IT-Consulting GmbH & Co KG | Business Development Manager (m/w/d) — Aschaffenburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1204459274-S&angebotsart=1 | PK Office GmbH | Vertriebler Managed Print Services (m/w/d) — Mönchengladbach
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002657337-S&angebotsart=1 | Computacenter AG & Co. oHG | Sales Executive w/m/d - Managed Services
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13319-864448/1_600746LS-S&angebotsart=1 | Hays AG | Account Manager IT-Infrastruktur & Managed Services (m/w/d) — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17102-43852354-23-S&angebotsart=1 | Vodafone GmbH | Marketing Manager für Managed Services (m/w/d) befristet für 3 Jahre als EZ-Vertretung — Düsseldorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002848096-S&angebotsart=1 | integer GmbH | Mitarbeiter im Vertrieb (m/w/d) — Schrobenhausen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002690096-S&angebotsart=1 | LAPP GmbH & Co. KG | Vertriebsmitarbeiter*in (m/w/d) im B2B-Vertrieb — Freiburg im Breisgau
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002379934-S&angebotsart=1 | K+S Pauly GmbH | IT-Vertrieb — Bendorf, Rhein
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001408449-S&angebotsart=1 | Krämer IT Solutions GmbH | Teamleiter Vertrieb (m/w/d) — Eppelborn
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20423-15577875-S&angebotsart=1 | CTL GmbH Erbringung von IT-Dienstleistungen und Handel | Mitarbeiter Vertrieb im Außendienst (m/w/d) — Böhmenkirch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15086-43905281-115-S&angebotsart=1 | Bechtle AG | Teamleiter Vertrieb Public (w/m/d) — Neckarsulm
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17700-0063272984-S&angebotsart=1 | DATAGROUP Rottweil GmbH | Account Manager IT- Vertrieb Ulm — Ulm, Donau
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13778-k20243.1480-S&angebotsart=1 | PAN Personalvermittlung & Beratung | Account Manager IT-Services mit Background in Personaldienstleistung (m/w/d) — Köln
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15158-2026223386-S&angebotsart=1 | Tesla Germany GmbH | Head of Business Sales / Vertriebsleiter Geschäftskunden Deutschland, Germany (m/w/d) — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17486-121507368704844486-S&angebotsart=1 | Google Germany GmbH | AI Sales Lead for Start-Ups — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002593051-S&angebotsart=1 | JAC Recruitment (Germany) GmbH | Sales Account Representative(f/m/d) — Düsseldorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17486-117637606392373958-S&angebotsart=1 | Google Germany GmbH | Field Sales Representative, FSI, ISV, DACH, Google Cloud — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002723766-S&angebotsart=1 | Allied DCI Building Contracting GmbH | Sales & Marketing Manager – Data Center Services (Germany — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002230325-S&angebotsart=1 | Nutanix Germany GmbH | Senior Commercial Account Manager (m/f/d) — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12634-BB-639491-7878-2683-S&angebotsart=1 | Akkodis Germany Tech Experts GmbH | (Senior) Account Manager (m/w/d) SaaS — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19410-2096042-S&angebotsart=1 | secunet Security Networks AG | Senior Project Manager (m/w/d) Delivery & Sales — Hannover
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002230282-S&angebotsart=1 | Nutanix Germany GmbH | Cloud Native Account Manager (m/f/d) — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15158-2026259375-S&angebotsart=1 | Tesla Germany GmbH | Account Manager - Leasing (m/w/d) - Berlin — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15158-2026261663-S&angebotsart=1 | Tesla Germany GmbH | Account Manager - Leasing (m/w/d) - München — Parsdorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=16470-44006523-32-S&angebotsart=1 | Telefónica Germany GmbH & Co. OHG | Category Manager (m/f/d) Global B2B Procurement - 12 months FTC — Ismaning
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002468736-S&angebotsart=1 | Keuerleber GmbH | Technischer Vetrieb / Business Development (m/w/d) — Pforzheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002544054-S&angebotsart=1 | onOffice GmbH | Kundenberater / Junior CR Manager (m/w/d) — Aachen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002383137-S&angebotsart=1 | onOffice GmbH | Vertriebsmitarbeiter Bestandskunden / Customer Relations Manager (m/w/d) — Aachen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001705380-S&angebotsart=1 | Cognizant Technology Solutions GmbH | Account Executive (d/f/m) — Frankfurt am Main
+
 - [ ] https://job-boards.greenhouse.io/auctane/jobs/6090753003 | Auctane | Account Executive - Atlanta, GA
 - [ ] https://job-boards.greenhouse.io/pagerduty/jobs/5634315004 | PagerDuty | Majors Account Executive - Atlanta, GA
 - [ ] https://job-boards.greenhouse.io/gleanwork/jobs/4680477005 | Glean | Enterprise Account Executive, Atlanta

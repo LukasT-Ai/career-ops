@@ -1,127 +1,52 @@
-# Paulina Kaiser, MD - CV
+# Lamin Traore - CV
 
-## Contact
+## Professional Summary
 
-- Phone: 408-515-2102
-- Email: paulinakaiser@gmail.com
-- Website: paulinakaiser.com
+Award-winning sales leader and technical consultant with 15+ years driving revenue growth across enterprise connectivity, unified communications, and managed network solutions. Proven record of building high-performing teams, exceeding multimillion-dollar quotas, and executing consultative, solution-based selling strategies. Multilingual professional fluent in English and German.
+
+## Core Competencies
+
+**Sales & Consulting:** Technical Sales, Sales Leadership, Unified Communications, Solutions Architecture, Strategic Consulting, Account Management, CRM/Pipeline Management
+
+**Technical:** MPLS, VoIP, Ethernet, Network Security, Data/Voice Networking, Cloud Solutions, Managed Network Services
+
+**Software:** Microsoft Office Suite, CRM Systems, AI Tools
+
+**Languages:** English (fluent), German (fluent), French (beginner), Spanish (beginner)
+
+## Professional Experience
+
+### Sales Manager | Spectrum Business Services | Atlanta, GA | Dec 2025 - Present
+
+- Spearhead recruitment, coaching, and development of a team of Enterprise Account Executives and Account Managers targeting mid-market and multi-location business customers
+- Orchestrate consultative, solution-selling methodology across connectivity, managed network, security, cloud, and voice portfolios to accelerate pipeline generation and quota attainment
+- Establish structured prospecting cadences, activity benchmarks, and performance metrics; drive forecast accuracy through weekly deal strategy reviews and one-on-one coaching
+- Partner with Sales Engineering and Technical Sales Consultants to deliver accurate solutions architecture, complete technical discovery, and high-quality proposals
+- Analyze competitive dynamics and market conditions to position Spectrum solutions across in-footprint, out-of-footprint, and underlay-agnostic opportunities
+
+### Technical Sales Consultant - UC | Spectrum Enterprise | Atlanta, GA | Jan 2023 - Dec 2025
+
+- Served as primary subject matter expert on Unified Communications solutions, partnering with account managers and hunters to identify, qualify, and close strategic enterprise opportunities
+- Delivered executive-level technical presentations on IP-based UC services, translating complex solutions architecture into measurable business value for C-suite stakeholders
+- Provided expert technical consulting across voice, collaboration, and cloud communication platforms, accelerating deal velocity and improving proposal win rates
+
+### Technical Sales Consultant III | AT&T | Atlanta, GA | 2016 - 2022
+
+- Served as enterprise subject matter expert on MPLS, VoIP, converged voice and data, managed data centers, and network security solutions across AT&T's full portfolio
+- Partnered with account managers to identify and close strategic opportunities, consistently exceeding annual sales targets across enterprise and government verticals
+
+### Client Solutions Executive | AT&T | Atlanta, GA | 2011 - 2016
+
+- Managed a portfolio of large and mid-sized government, education, and healthcare accounts with $9.5M in total managed billing
+- Earned AT&T Diamond Club Award (2013) — recognized as Top 1% of national sales performance
+- Prospected and closed new business across IPFlex, IPTF, VPN, Ethernet, and mobility solutions, expanding footprint within key public sector accounts
 
 ## Education
 
-- **Emory University Department of Psychiatry** — Psychiatry Residency (June 2023)
-- **Emory University Psychoanalytic Institute** — Psychoanalytic Psychotherapy Program Candidate (June 2024)
-- **Keck School of Medicine of University of Southern California** — Doctor of Medicine (May 2019)
-- **University of California Los Angeles** — Bachelor of Science, Psychobiology, magna cum laude (June 2014)
+Bachelor of Science, Business Administration — Reinhardt University, Waleska, GA (2009)
 
-## Licenses
+## Awards & Affiliations
 
-- Georgia (GA) — Active
-- California (CA) — Active
-
-## Work Experience
-
-### Owner and Private Practice Psychiatrist | Paulina Kaiser, MD LLC | July 2023 - Present
-
-- Possess advanced knowledge and expertise in diagnosing and treating a wide range of psychiatric disorders across different age groups
-- Skillfully integrate psychotherapy and psychopharmacology to create comprehensive treatment plans tailored to individual patient needs
-- Establish and manage all aspects of private practice operations, including strategic planning, budgeting, marketing, and regulatory compliance
-
-### Outpatient Psychiatrist | Dekalb Community Service Board | August 2023 - Present
-
-- Provide psychiatric medication management and psychotherapy to underserved patients, primarily with serious mental illness
-- Demonstrate cultural competence and sensitivity when working with diverse patient populations, adapting interventions to respect individual backgrounds and beliefs
-
-### Emergency and Consultation-Liaison Psychiatrist | Grady Memorial Hospital | July 2023 - Present
-
-- Rapidly assess and manage acute psychiatric crises, including suicidal ideation, severe anxiety, psychosis, and substance-related emergencies
-- Employ evidence-based interventions to de-escalate volatile situations and ensure the safety and stability of patients
-- Consultation-liaison: Providing psychiatric consultations. Proficient in differentiating between primary psychiatric conditions and medical conditions with psychological symptoms
-
-### Outpatient Psychiatry Chief Resident | Emory University Department of Psychiatry | July 2022 - July 2023
-
-- Lead weekly psychotherapy supervision for junior residents, orienting them to psychotherapy and serving as their mentor
-- Arrange outpatient clinic call schedules for junior residents
-- Manage psychotherapy referrals into the resident training clinic, including screening, assigning patients, and referring out
-
-### Psychiatry Resident Physician | Emory University Department of Psychiatry | July 2019 - July 2023
-
-- Work as a psychiatry trainee in numerous settings including emergency department, inpatient psychiatric unit, and outpatient clinics
-- Lead multidisciplinary team of behavioral health professionals on numerous inpatient psychiatric units at Grady Hospital, Emory Wesley Woods Hospital, and Atlanta Veteran Affairs Hospital
-- Manage own patient roster in outpatient psychiatric clinic doing medication management for insured and uninsured/underserved populations
-- Practice 8 hours of psychotherapy per week as part of the resident psychotherapy track
-
-## Research Experience
-
-### Emory University, Department of Psychiatry | PI: Timothy Moore, MD | February 2022 - Present
-
-- Currently editing and preparing manuscript for publication
-- Studying the impact of antipsychotic vs. ECT and benzodiazepines on catatonia
-
-### Keck School of Medicine of USC, Department of Psychiatry | PI: Lon Schneider, MD | October 2018 - May 2019
-
-- Studying how physicians promote alternative treatments for dementia on their websites
-- Developed meta-analytic search strategy for selecting physician websites via google
-
-### Children's Hospital Los Angeles, Department of Psychiatry | PI: Susan Turkel, MD | June 2016 - March 2019
-
-- Studied benefits of mirtazapine in medically ill children with depression and anxiety
-- Extracted retrospective chart data from over 200 patients on improvement of depressive symptoms, adverse effects, lab values, weight changes
-- Conducted statistical analyses on data extracted; created visual representations of analyzed data
-
-### UCLA, Department of Psychiatry and Biobehavioral Sciences | PI: Carrie Bearden, PhD | Sept 2011 - June 2014
-
-- Studied whether specific EEG abnormalities such as Mismatch Negativity could predict transition to psychosis in the prodromal phase of schizophrenia
-- Administered computerized cognitive tests and auditory stimuli to teenagers at high risk for developing schizophrenia to elicit evoked potentials measured on EEG
-
-### University of Heidelberg, Department of Psychiatry | PI: Corinna Reck, PhD | June 2011 - Sept 2011
-
-- Studied effects of postpartum depression and attachment disorders on child development
-- Visited perinatal units in local hospitals to recruit participants; scheduled and conducted telephone interviews and administered psychological assessments such as Strange Situation and Still Face
-
-## Publications and Presentations
-
-### Oral Presentations
-
-- Kaiser, P., Tsai, D., Greenspan, H. Catatonia for Internal Medicine Residents. May 2021
-- Kaiser, P., Greenspan, H. Serotonergic Nootropics and Supplements and Their Risks. March 2021
-
-### Poster Presentations
-
-- Kaiser P., Nguyen D., Turkel S., Hanft A. Benefits of Mirtazapine for Depression in Children and Adolescents with Cystic Fibrosis. *American Psychiatric Association Convention*. 2017 May 20-24, San Diego, CA.
-- Kaiser P., Nguyen D., Turkel S., Hanft A. Benefits of Mirtazapine for Depression in Children and Adolescents with Cystic Fibrosis. *Keck School of Medicine Research Forum and Poster Day*. 2017 April 4, Los Angeles, CA.
-- Hanft A., Kaiser P., Nguyen D., Orellana N.M., Turkel S.B. Mirtazapine for Depression and Anxiety in Medically Ill Pediatric Patients. *Academy of Psychosomatic Medicine*. 2017 November 13-14, Orlando, FL.
-
-## Teaching Experience
-
-- **USMLE Step 1 Coach** — Keck School of Medicine of USC (Mar 2018 - June 2018). One-on-one and group tutoring.
-- **Keck Peer Instruction Program Tutor** — Keck School of Medicine of USC (Aug 2016 - Apr 2017). Developed weekly microanatomy and pathology lectures. Taught 100 first year medical students.
-- **Nutrition and Parenting Educator** — USC CEDD & Children's Hospital LA (July 2016 - Dec 2016). Taught nutrition and parenting skills to 10 young mothers in underserved communities.
-- **Nutrition and Sex Education Teacher** — Healthy Choices, Healthy Lives (Sept 2015 - Dec 2016). Taught sex education and nutrition to classes of 30 seventh grade students.
-- **Mental Health Educator** — Student Welfare Commission (Jan 2011 - Oct 2013). Led sleep hygiene and mental health workshops for first year UCLA students.
-
-## Leadership Experience
-
-- **President** — Psychiatry Student Interest Group, Keck USC (Aug 2016 - Apr 2017). Organized first Mental Health Awareness Month for 700 medical students. Organized monthly luncheons for 200+ students.
-- **President** — Chorda Tympani A Capella Group (Aug 2016 - Apr 2017). Led group of 15 singers. Organized performances for cancer patients at USC hospitals.
-- **Social Chair** — Emory Psychiatry Residency (July 2021 - July 2022)
-- **Recruitment Chair** — Emory Psychiatry Residency (July 2020 - July 2021). Organized recruitment dinners for 100+ applicants.
-
-## Service Experience
-
-- **Student-Run Clinic Volunteer** — Keck School of Medicine (Oct 2015 - July 2019). Led multidisciplinary team treating patients in Skid Row clinics and South LA homeless shelters.
-- **Alumni Mentor** — UCLA (Oct 2017 - Present). Mentoring pre-med UCLA students.
-- **Clinical Volunteer** — Perinatal Psychiatry Inpatient Ward, Heidelberg, Germany (June 2011 - Sept 2011). Translated German to English during social skills classes. Counseled mothers with postpartum depression.
-
-## Honors and Awards
-
-- Resident Recognition Award (July 2022) — Excellence in leadership, teaching, and clinical care
-- Citizen Physicians Honor (Oct 2016) — Registering 30+ students to vote
-- Keck School of Medicine Summer Research Fellowship (May 2016)
-- Phi Beta Kappa (June 2014)
-- Dean's List (Dec 2010 - June 2014)
-
-## Languages
-
-- German (fluent)
-- French (conversational)
-- Spanish (intermediate medical)
+- AT&T Diamond Club Member (2013) — Top 1% Sales Performance
+- International Toastmasters Club
+- Volunteer, American Red Cross
