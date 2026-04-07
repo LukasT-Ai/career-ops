@@ -227,6 +227,7 @@ async function sendNotification(mode, job, profile, fitScore, options = {}) {
     MATCH_REASONS: buildMatchReasons(job),
     DRAFT_COVER_LETTER: job.draftCoverLetter || '<p><em>Cover letter will be generated upon approval.</em></p>',
     ATTACHMENTS_SECTION: buildAttachmentsSection(job),
+    TALKING_POINTS: buildTalkingPoints(job),
     SPONSORSHIP_BANNER: buildSponsorshipBanner(job, profile),
   };
 
@@ -659,17 +660,37 @@ function buildAttachmentsSection(job) {
 
   if (job.cvPdfPath && existsSync(job.cvPdfPath)) {
     items.push('<li>Your up-to-date CV/resume (attached as PDF)</li>');
-  } else if (job.cvDePdfPath && existsSync(job.cvDePdfPath)) {
-    items.push('<li>Your up-to-date Lebenslauf (attached as PDF)</li>');
+  }
+  if (job.cvDePdfPath && existsSync(job.cvDePdfPath)) {
+    items.push('<li>Your Lebenslauf (attached as PDF)</li>');
+  }
+
+  if (job.talkingPoints && job.talkingPoints.length > 0) {
+    items.push('<li>Key talking points for phone screen (see below)</li>');
   }
 
   if (items.length === 0) {
     items.push('<li>Cover letter and CV will be prepared when you\'re ready to apply</li>');
   }
 
-  items.push('<li>Key talking points if contacted for a phone screen</li>');
-
   return items.join('\n      ');
+}
+
+/**
+ * Build talking points HTML for the email body.
+ * Returns a styled section with bullet points, or empty string if none.
+ */
+function buildTalkingPoints(job) {
+  const points = job.talkingPoints || [];
+  if (points.length === 0) return '';
+
+  return `
+  <div style="background: #f0f4ff; border: 1px solid #c5cae9; padding: 16px; border-radius: 6px; margin: 16px 0;">
+    <p style="margin: 0 0 8px; font-weight: 600; color: #283593;">Phone Screen Talking Points</p>
+    <ol style="margin: 0; padding-left: 20px; color: #444;">
+      ${points.map(p => `<li style="margin-bottom: 6px;">${p}</li>`).join('\n      ')}
+    </ol>
+  </div>`;
 }
 
 // ============================================================
