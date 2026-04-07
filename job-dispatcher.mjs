@@ -134,11 +134,11 @@ function computeFitScore(job, profile) {
 // ============================================================
 
 const MODES = {
-  // Full-auto: all qualifying jobs use the same notification template.
-  // Score tiers only affect subject line and internal labeling, NOT approval gates.
-  TOP_MATCH:   { min: 80, max: 100, label: 'Top Match',     status: 'NOTIFIED',  template: 'email-manual-review.html' },
-  GOOD_MATCH:  { min: 60, max: 79,  label: 'Good Match',    status: 'NOTIFIED',  template: 'email-manual-review.html' },
-  WORTH_A_LOOK:{ min: 40, max: 59,  label: 'Worth a Look',  status: 'NOTIFIED',  template: 'email-manual-review.html' },
+  // Full-auto: only Top Match and Good Match get emailed.
+  // Worth a Look (40-59) is logged but NOT emailed — too much noise for out-of-area jobs.
+  TOP_MATCH:   { min: 80, max: 100, label: 'Top Match',     status: 'NOTIFIED',       template: 'email-manual-review.html' },
+  GOOD_MATCH:  { min: 60, max: 79,  label: 'Good Match',    status: 'NOTIFIED',       template: 'email-manual-review.html' },
+  WORTH_A_LOOK:{ min: 40, max: 59,  label: 'Worth a Look',  status: 'LOGGED_NO_EMAIL', template: null },
   SKIP:        { min: 0,  max: 39,  label: 'Skip',          status: 'SKIPPED_LOW_FIT', template: null },
 };
 
