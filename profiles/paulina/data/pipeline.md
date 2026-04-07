@@ -2,152 +2,152 @@
 
 ## Pendientes
 
-- [ ] https://www.usajobs.gov:443/job/850115300 | Veterans Health Administration | Physician- Psychiatrist (BHIP) — Augusta, Georgia | $250,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/848762900 | Veterans Health Administration | Physician (Geriatric Psychiatrist) — Augusta, Georgia | $300,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/850125500 | Veterans Health Administration | Psychiatrist-  Substance Use Disorder (SUD) — Augusta, Georgia | $200,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/851647900 | Veterans Health Administration | ACOS (Psychiatrist) Mental Health — Augusta, Georgia | $165,000-$336,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/848805800 | Veterans Health Administration | Psychiatrist — Cambridge, Maryland | $123,077-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/847477900 | Veterans Health Administration | Physician (Psychiatrist) — Johnson City, Tennessee | $262,480-$300,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/862267700 | Veterans Health Administration | Staff Psychiatrist — Toms River, New Jersey | $124,308-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/858801600 | Veterans Health Administration | Physician (Psychiatrist) — Multiple Locations | $200,000-$300,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/860608800 | Veterans Health Administration | Psychiatrist — Buffalo, New York | $230,000-$300,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/857444100 | Veterans Health Administration | LEAD PSYCHIATRIST — Columbia, Missouri | $275,000-$335,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/848227500 | Veterans Health Administration | PHYSICIAN-PSYCHIATRIST — Lebanon, Pennsylvania | $265,000-$300,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/847231200 | Veterans Health Administration | Psychiatrist — Jacksonville, North Carolina | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/858090600 | Veterans Health Administration | Physician (Psychiatrist) — Decorah, Iowa | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/860189800 | Veterans Health Administration | Physician (Psychiatrist) — Coralville, Iowa | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/863993500 | Veterans Health Administration | Staff Psychiatrist — Dayton, Ohio | $280,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/863519100 | Veterans Health Administration | Physician -Psychiatrist — Omaha, Nebraska | $250,000-$300,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/859040000 | Veterans Health Administration | Physician - Psychiatrist — Saint Cloud, Minnesota | $275,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/847487200 | Veterans Health Administration | Psychiatrist — Fayetteville, North Carolina | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/851711900 | Veterans Health Administration | Psychiatrist — Pembroke, North Carolina | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/854215500 | Veterans Health Administration | Physician (Psychiatrist)- SARRTP/PTSD — Memphis, Tennessee | $250,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/862855300 | Veterans Health Administration | Physician Psychiatrist — Des Moines, Iowa | $250,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/862421700 | Bureau of Prisons/Federal Prison System | Physician (Chief Psychiatrist) — Federal Medical Center Carswell, Texas | $145,000-$335,000 Per Year | GP-15/15
-- [ ] https://www.usajobs.gov:443/job/862501400 | Bureau of Prisons/Federal Prison System | Physician (Chief Psychiatrist) — Rochester, Minnesota | $145,000-$335,000 Per Year | GP-15/15
-- [ ] https://www.usajobs.gov:443/job/850454600 | Veterans Health Administration | Psychiatrist (Fee Basis) — Battle Creek, Michigan | $1,500-$1,625 Fee Basis | VN-15/15
-- [ ] https://www.usajobs.gov:443/job/854302600 | Veterans Health Administration | Physician- Staff Psychiatrist — Butler, Pennsylvania | $260,000-$300,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/860177900 | Veterans Health Administration | Psychiatrist-Outpatient (Greenwood Community Base Outreach Clinic) — Louisville, Kentucky | $245,000-$295,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/863963900 | Veterans Health Administration | Physician - Psychiatrist - Psychiatric Services - Full-time - Recruitment Incentive/ EDRP Authorized — Manchester, New Hampshire | $265,000-$290,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/858420400 | Veterans Health Administration | Physician - Chief Psychiatry Behavioral Health Service — Las Vegas, Nevada | $280,000-$300,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/859999800 | Veterans Health Administration | Physician- Outpatient Psychiatrist — Panama City Beach, Florida | $242,000-$305,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/858738600 | Veterans Health Administration | Physician - Psychiatrist (SIGN-ON BONUS ELIGIBLE) — Multiple Locations | $290,000-$335,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/859474300 | Veterans Health Administration | Physician (Psychiatrist) - Mental Health Intensive Case Management (MHICM) — Kansas City, Missouri | $240,000-$300,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/847912200 | Veterans Health Administration | Outpatient Psychiatrist - Behavioral Health Interdisciplinary Program (BHIP) — Garner, North Carolina | $240,000-$270,000 Per Year | VM-00/00
-- [ ] https://www.usajobs.gov:443/job/860755500 | Veterans Health Administration | Physician - Psychiatrist (Mental Health Residential Rehabilitation Treatment Program) — Menlo Park, California | $301,714-$320,972 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/859134700 | Veterans Health Administration | Physician - Chief of Psychiatry — Albany, New York | $250,000-$335,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/856479000 | Veterans Health Administration | Physician (Psychiatrist) Floater - Outpatient and Inpatient — Wilkes Barre, Pennsylvania | $275,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/854317500 | Veterans Health Administration | Physician (Psychiatry) — Lake City, Florida | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/854320700 | Veterans Health Administration | Physician (Psychiatry) — Gainesville, Florida | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/855364000 | Veterans Health Administration | Physician (Psychiatry) — Ocala, Florida | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/854225300 | Veterans Health Administration | Physician (Psychiatry) — The Villages, Florida | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/861079800 | Military Treatment Facilities under DHA | Supervisory Physician (Psychiatry)/Physician (Psychiatry) — Fort Hood, Texas | $124,000-$350,000 Per Year | GP-14/15
-- [ ] https://www.usajobs.gov:443/job/863109900 | Veterans Health Administration | Physician (Psychiatry) Section Chief — Redlands, California | $305,000-$335,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/847427000 | Military Treatment Facilities under DHA | Physician (Psychiatry) — Naval Medical Center, Portsmouth, Virginia | $145,000-$335,000 Per Year | GP-14/14
-- [ ] https://www.usajobs.gov:443/job/858707700 | Military Treatment Facilities under DHA | Physician (Psychiatry) — Camp Lejeune, North Carolina | $145,000-$335,000 Per Year | GP-14/14
-- [ ] https://www.usajobs.gov:443/job/857375400 | Military Treatment Facilities under DHA | Physician (Psychiatry) — Fort Bragg, North Carolina | $123,077-$300,000 Per Year | GP-14/14
-- [ ] https://www.usajobs.gov:443/job/863392700 | Military Treatment Facilities under DHA | PHYSICIAN (PSYCHIATRY) — Schofield Barracks, Hawaii | $123,077-$315,000 Per Year | GP-14/14
-- [ ] https://www.usajobs.gov:443/job/862909800 | Military Treatment Facilities under DHA | Physician (Psychiatry) — Bethesda, Maryland | $145,000-$335,000 Per Year | GP-14/14
-- [ ] https://www.usajobs.gov:443/job/858707200 | Military Treatment Facilities under DHA | Physician (Psychiatry) — Beaufort, South Carolina | $145,000-$320,000 Per Year | GP-14/14
-- [ ] https://www.usajobs.gov:443/job/854885000 | Military Treatment Facilities under DHA | Physician (Psychiatry) — Groton Submarine Base, Connecticut | $124,308-$315,000 Per Year | GP-14/14
-- [ ] https://www.usajobs.gov:443/job/857415700 | Veterans Health Administration | Physician (Psychiatry) — Multiple Locations | $260,000-$270,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/862002100 | Veterans Health Administration | Physician Chief of Psychiatry — Multiple Locations | $300,000-$335,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/848346900 | Veterans Health Administration | Physician (Psychiatry) -SIGN ON BONUS — Kansas City, Missouri | $240,000-$300,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/857255000 | Veterans Health Administration | Physician (Psychiatry Section Chief) — Multiple Locations | $260,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/855643400 | Veterans Health Administration | Staff Physician- Inpatient Psychiatry — Detroit, Michigan | $250,000-$275,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/859253300 | Veterans Health Administration | Physician - Psychiatry (Section Chief) — Multiple Locations | $267,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/861657700 | Veterans Health Administration | Psychiatrist - Mental Health Residential Rehabilitation Treatment Program (RRPT) Program Manager — Biloxi, Mississippi | $260,000-$335,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/847218800 | Veterans Health Administration | Physician, Psychiatrist (Part-Time) EDRP and Recruitment Incentive Authorized — Amarillo, Texas | $250,000-$295,000 Per Year | AD-15/15
-- [ ] https://www.usajobs.gov:443/job/858337000 | Veterans Health Administration | Physician-Psychiatrist-Recruitment/Relocation Incentive-EDRP Authorized — Amarillo, Texas | $124,308-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/855800000 | Veterans Health Administration | Supervisory Psychiatrist Behavioral Health Interdisciplinary Program /Outpatient Services — Chesapeake County, Virginia | $200,000-$320,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/860999900 | Veterans Health Administration | Outpatient Psychiatrist — Morehead City, North Carolina | $250,000-$265,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/846819700 | Veterans Health Administration | Physician - Psychiatrist Outpatient BHIP — Pittsburgh, Pennsylvania | $240,000-$335,000 Per Year | VM-00/00
-- [ ] https://www.usajobs.gov:443/job/849031400 | Veterans Health Administration | Physician (Psychiatrist) — Madison, Wisconsin | $204,000-$300,000 Per Year | GS-15/15
-- [ ] https://www.usajobs.gov:443/job/857075100 | Veterans Health Administration | Physician (Psychiatrist) — Boise, Idaho | $250,000-$350,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/860482400 | Veterans Health Administration | Physician (Psychiatrist) — Altoona, Pennsylvania | $225,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/853314900 | Veterans Health Administration | Physician-Primary Care Pain Provider — Biloxi, Mississippi | $230,000-$270,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/850894300 | Veterans Health Administration | Physician (Psychiatrist)- Nonconnah Boulevard VA Clinic — Memphis, Tennessee | $250,000-$315,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/857504600 | Veterans Health Administration | Physician (Substance Use Disorder Psychiatrist) — Johnson City, Tennessee | $262,480-$300,000 Per Year | VM-00/00
-- [ ] https://www.usajobs.gov:443/job/857784200 | Veterans Health Administration | Psychiatrist (Behavioral Health Interdisciplinary Program) w/Recruitment/Relocation Incentive-EDRP — McAllen, Texas | $250,000-$290,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/847167500 | Veterans Health Administration | Physician (Psychiatrist) EDRP and Recruitment/Relocation Incentive May be Authorized — Multiple Locations | $200,000-$282,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/852770900 | Veterans Health Administration | Podiatrist - Medical Director, MH — Dallas, Texas | $200,000-$280,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/854735700 | Veterans Health Administration | Physician - Geriatrics Transitional Care Program Medical Director — Richmond, Virginia | $256,000-$335,000 Per Year | VM-15/15
-- [ ] https://www.usajobs.gov:443/job/863677500 | Veterans Health Administration | Medical Director of Substance Abuse Services — Bronx, New York | $145,000-$335,000 Per Year | VM-00/15
+- [x] #001 | https://www.usajobs.gov:443/job/850115300 | VHA | Physician- Psychiatrist (BHIP) | 4.5/5 | PDF ❌
+- [x] #002 | https://www.usajobs.gov:443/job/848762900 | VHA | Physician (Geriatric Psychiatrist) | 3.0/5 | PDF ❌
+- [x] #007 | https://www.usajobs.gov:443/job/850125500 | VHA | Psychiatrist - SUD | 4.0/5 | PDF ❌
+- [x] #003 | https://www.usajobs.gov:443/job/851647900 | VHA | ACOS (Psychiatrist) Mental Health | 2.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/848805800 | VHA | Psychiatrist — Cambridge, MD | 2.0/5 | PDF ❌
+- [x] #009 | https://www.usajobs.gov:443/job/847477900 | VHA | Physician (Psychiatrist) | 2.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/862267700 | VHA | Staff Psychiatrist — Toms River, NJ | 2.0/5 | PDF ❌
+- [x] #006 | https://www.usajobs.gov:443/job/858801600 | VHA | Physician (Psychiatrist) | 2.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/860608800 | VHA | Psychiatrist — Buffalo, NY | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/857444100 | VHA | Lead Psychiatrist — Columbia, MO | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/848227500 | VHA | Physician-Psychiatrist — Lebanon, PA | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/847231200 | VHA | Psychiatrist — Jacksonville, NC | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/858090600 | VHA | Physician (Psychiatrist) — Decorah, IA | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/860189800 | VHA | Physician (Psychiatrist) — Coralville, IA | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/863993500 | VHA | Staff Psychiatrist — Dayton, OH | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/863519100 | VHA | Physician-Psychiatrist — Omaha, NE | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/859040000 | VHA | Physician - Psychiatrist — Saint Cloud, MN | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/847487200 | VHA | Psychiatrist — Fayetteville, NC | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/851711900 | VHA | Psychiatrist — Pembroke, NC | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/854215500 | VHA | Physician (Psychiatrist) SARRTP/PTSD — Memphis, TN | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/862855300 | VHA | Physician Psychiatrist — Des Moines, IA | 2.0/5 | PDF ❌
+- [x] #008 | https://www.usajobs.gov:443/job/862421700 | BOP | Physician (Chief Psychiatrist) | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/862501400 | BOP | Physician (Chief Psychiatrist) — Rochester, MN | 2.0/5 | PDF ❌
+- [x] SKIP | https://www.usajobs.gov:443/job/850454600 | VHA | Psychiatrist (Fee Basis) — Battle Creek, MI | 1.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/854302600 | VHA | Staff Psychiatrist — Butler, PA | 2.0/5 | PDF ❌
+- [x] #010 | https://www.usajobs.gov:443/job/860177900 | VHA | Psychiatrist-Outpatient (Greenwood CBOC) | 2.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/863963900 | VHA | Physician - Psychiatrist — Manchester, NH | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/858420400 | VHA | Chief Psychiatry BH Service — Las Vegas, NV | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/859999800 | VHA | Outpatient Psychiatrist — Panama City Beach, FL | 2.0/5 | PDF ❌
+- [x] #005 | https://www.usajobs.gov:443/job/858738600 | VHA | Physician - Psychiatrist (SIGN-ON BONUS) | 2.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/859474300 | VHA | Physician (Psychiatrist) MHICM — Kansas City, MO | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/847912200 | VHA | Outpatient Psychiatrist BHIP — Garner, NC | 2.0/5 | PDF ❌
+- [x] #004 | https://www.usajobs.gov:443/job/860755500 | VHA | Physician - Psychiatrist (MHRRTP) | 2.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/859134700 | VHA | Chief of Psychiatry — Albany, NY | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/856479000 | VHA | Physician (Psychiatrist) Floater — Wilkes Barre, PA | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/854317500 | VHA | Physician (Psychiatry) — Lake City, FL | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/854320700 | VHA | Physician (Psychiatry) — Gainesville, FL | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/855364000 | VHA | Physician (Psychiatry) — Ocala, FL | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/854225300 | VHA | Physician (Psychiatry) — The Villages, FL | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/861079800 | DHA | Supervisory Physician (Psychiatry) — Fort Hood, TX | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/863109900 | VHA | Psychiatry Section Chief — Redlands, CA | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/847427000 | DHA | Physician (Psychiatry) — Portsmouth, VA | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/858707700 | DHA | Physician (Psychiatry) — Camp Lejeune, NC | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/857375400 | DHA | Physician (Psychiatry) — Fort Bragg, NC | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/863392700 | DHA | Physician (Psychiatry) — Schofield Barracks, HI | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/862909800 | DHA | Physician (Psychiatry) — Bethesda, MD | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/858707200 | DHA | Physician (Psychiatry) — Beaufort, SC | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/854885000 | DHA | Physician (Psychiatry) — Groton, CT | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/857415700 | VHA | Physician (Psychiatry) — Multiple Locations | 3.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/862002100 | VHA | Physician Chief of Psychiatry — Multiple Locations | 3.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/848346900 | VHA | Physician (Psychiatry) SIGN ON BONUS — Kansas City, MO | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/857255000 | VHA | Psychiatry Section Chief — Multiple Locations | 3.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/855643400 | VHA | Staff Physician Inpatient Psychiatry — Detroit, MI | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/859253300 | VHA | Psychiatry Section Chief — Multiple Locations | 3.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/861657700 | VHA | Psychiatrist RRPT Program Manager — Biloxi, MS | 2.0/5 | PDF ❌
+- [x] SKIP | https://www.usajobs.gov:443/job/847218800 | VHA | Psychiatrist (Part-Time) — Amarillo, TX | 1.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/858337000 | VHA | Physician-Psychiatrist — Amarillo, TX | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/855800000 | VHA | Supervisory Psychiatrist BHIP — Chesapeake, VA | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/860999900 | VHA | Outpatient Psychiatrist — Morehead City, NC | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.usajobs.gov:443/job/846819700 | VHA | Psychiatrist Outpatient BHIP — Pittsburgh, PA | 2.0/5 | PDF ❌
+- [x] https://www.usajobs.gov:443/job/849031400 | Veterans Health Administration | Physician (Psychiatrist) — Madison, Wisconsin | 2.0/5 | PDF ❌
+- [x] https://www.usajobs.gov:443/job/857075100 | Veterans Health Administration | Physician (Psychiatrist) — Boise, Idaho | 2.0/5 | PDF ❌
+- [x] https://www.usajobs.gov:443/job/860482400 | Veterans Health Administration | Physician (Psychiatrist) — Altoona, Pennsylvania | 2.0/5 | PDF ❌
+- [x] SKIP | https://www.usajobs.gov:443/job/853314900 | VHA | Primary Care Pain Provider | 1.0/5 | PDF ❌
+- [x] https://www.usajobs.gov:443/job/850894300 | Veterans Health Administration | Physician (Psychiatrist) — Memphis, Tennessee | 2.0/5 | PDF ❌
+- [x] https://www.usajobs.gov:443/job/857504600 | Veterans Health Administration | SUD Psychiatrist — Johnson City, Tennessee | 2.0/5 | PDF ❌
+- [x] https://www.usajobs.gov:443/job/857784200 | Veterans Health Administration | Psychiatrist (BHIP) — McAllen, Texas | 2.0/5 | PDF ❌
+- [x] https://www.usajobs.gov:443/job/847167500 | Veterans Health Administration | Physician (Psychiatrist) — Multiple Locations | 2.5/5 | PDF ❌
+- [x] SKIP | https://www.usajobs.gov:443/job/852770900 | VHA | Podiatrist - Medical Director MH | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.usajobs.gov:443/job/854735700 | VHA | Geriatrics Transitional Care | 1.0/5 | PDF ❌
+- [x] https://www.usajobs.gov:443/job/863677500 | Veterans Health Administration | Medical Director Substance Abuse — Bronx, New York | 2.0/5 | PDF ❌
 
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4988-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Frankfurt (Oder)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4987-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Eberswalde
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4986-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Brandenburg an der Havel
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4985-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Potsdam
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4936-S&angebotsart=1 | Sanovetis GmbH | Psychiater (m/w/d) — Villingen-Schwenningen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4935-S&angebotsart=1 | Sanovetis GmbH | Psychiater (m/w/d) — Kassel, Hessen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4934-S&angebotsart=1 | Sanovetis GmbH | Psychiater (m/w/d) — Kassel, Hessen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4931-S&angebotsart=1 | Sanovetis GmbH | Psychiater (m/w/d) — Essen, Ruhr
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4930-S&angebotsart=1 | Sanovetis GmbH | Psychiater (m/w/d) — Lünen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102023-S&angebotsart=1 | tw.con. GmbH | Facharzt Psychiatrie (m/w/d) — Soltau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13091-19926-1760111-0-S&angebotsart=1 | akut... Medizinische Personallogistik GmbH akut Doc | Facharzt Psychiatrie (m/w/d) — Kiel
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13243-16187347-JB-S&angebotsart=1 | ZithaUnit a.s.b.l. | Facharzt für Psychiatrie (m/w/d)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12618-169320-S&angebotsart=1 | AWO Medizinisches Versorgungszentrum Zerbst | Fachärztin*Facharzt für Psychiatrie — Magdeburg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20022-2w32ls7nyd-S&angebotsart=1 | Berufsgenossenschaftliches Universitäts- klinikum Bergmannsheil gGmbH | Facharzt (m/w/d) für Psychiatrie — Bochum
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-KT42124EPY3LKM32-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt für Psychiatrie und Psychotherapie (m/w/d) — Mosbach, Baden
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-E7V9MOPFV4H15NQB-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt für Psychiatrie und Psychotherapie (m/w/d) — Gundelsheim, Württemberg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-511575A046771C17-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Schwangau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-6YKPN6RNRBC0VPR9-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt für Psychiatrie und Psychotherapie (m/w/d) — Siegen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-503699A046444C15-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Bremen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102379-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Stuttgart
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205573385-S&angebotsart=1 | Kreiskrankenhaus St. Franziskus Saarburg GmbH | Oberarzt (w/m/d) Psychiatrie — Saarburg, Saar
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102154-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Gütersloh
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102414-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Altena, Westfalen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-718771A046443C14-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Bremen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.101856-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Torgau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-70250532-S&angebotsart=1 | HB-Pro | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Hanau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-44999548-S&angebotsart=1 | HB-Pro | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Stuttgart
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-50386402-S&angebotsart=1 | HB-Pro | Leitender Oberarzt Psychiatrie (m/w/d) — Fulda
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-35717491-S&angebotsart=1 | HB-Pro | Oberarzt Psychiatrie und Psychotherapie oder  (m/w/d) — Cuxhaven
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205783282-S&angebotsart=1 | Stadtklinik Frankenthal | Oberarzt/ärztin(m/w/d) — Frankenthal (Pfalz)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13635-bb3aa19b_JB5102822-S&angebotsart=1 | Vitos gGmbH | Oberarzt/Oberärztin für Psychiatrie und Psychotherapie (m/w/d) — Bad Homburg vor der Höhe
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=16938-StuJobEx_JB5108947-S&angebotsart=1 | Klinikum der Landeshauptstadt Stuttgart gKAöR | Oberarzt / Oberärztin (m/w/d)  für Psychiatrie und Psychotherapie — Stuttgart
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13635-04d4be32_JB5092325-S&angebotsart=1 | Bergman Germany HoldCo GmbH | Oberarzt / Oberärztin für Psychiatrie und Psychotherapie (m/w/d) — Büdingen, Hessen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19200-xdjvebs2gb-S&angebotsart=1 | ZfP Südwürttemberg | Oberärztin:arzt mit Facharztanerkennung für Psychiatrie und Psych... — Ravensburg, Württemberg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19200-z59bzwz3yt-S&angebotsart=1 | ZfP Südwürttemberg | Oberärztin:Oberarzt für Psychiatrie und Psychotherapie (w/m/d) — Ravensburg, Württemberg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002131639-S&angebotsart=1 | LOCUMWORK GmbH | Leitende Oberärztin/ Leitender Oberarzt (m/w/d) für Psychiatrie und Psychotherapie — Münster, Westfalen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002131598-S&angebotsart=1 | LOCUMWORK GmbH | Leitende Oberärztin/ Leitender Oberarzt (m/w/d) für Psychiatrie und Psychotherapie — Bielefeld
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002755615-S&angebotsart=1 | PremiumJob AG | Oberarzt Forensik / Oberärztin forensische Psychiatrie (m/w/d) — Basel
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=16223-k15327.6520-S&angebotsart=1 | Siiri Schütz Ärztevermittlung | Facharzt für Psychiatrie für die Allgemeinpsychiatrie als Oberärztin / Oberarzt (w/m/d) — Deggendorf
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000691379-S&angebotsart=1 | Tina Przybylski | Assistenzarzt/-ärztin Psychiatrie und Psychotherapie (w/m/d)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15387-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Assistenzarzt Psychiatrie und Psychotherapie (m/w/d) — Bielefeld
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15188-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Assistenzarzt Psychiatrie u. Psychotherapie (m/w/d) — Wuppertal
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15187-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Assistenzarzt Psychiatrie & Psychotherapie (m/w/d) — Soest, Westfalen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15185-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Assistenzarzt Psychiatrie u. Psychosomatik (m/w/d) — Erfurt
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.5223-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Assistenzarzt Psychiatrie u. Psychotherapie — Dresden
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.7345-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Assistenzarzt Psychiatrie u. Psychotherapie (m/w/d) — Leipzig
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.93081-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie und Psychotherapie (m/w/d) — Warstein
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.16997-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Assistenzarzt Psychiatrie und Psychotherapie (m/w/d) — Gotha, Thüringen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.16996-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Assistenzarzt Psychiatrie und Psychotherapie (m/w/d) — Schweinfurt
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12513-0007633148-S&angebotsart=1 | Vincera Klinik Spreewald GmbH | Chefarzt für Psychiatrie und Psychotherapie (mwd) — Bersteland
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002082820-S&angebotsart=1 | Tina Przybylski | Chefarzt/-ärztin Psychiatrie und Psychotherapie (w/m/d)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851641A36172C23-S&angebotsart=1 | BS Menzel GmbH | Chefarzt (m/w/d) Psychiatrie und Psychotherapie — Cham, Oberpfalz
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-44559265-S&angebotsart=1 | HB-Pro | Chefarzt für die Psychiatrie und Psychotherapie   (m/w/d) — Mannheim
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002629676-S&angebotsart=1 | Healthbridge GmbH Professional Recruiting | Chefarzt für Psychiatrie und Psychotherapie (m/w/d) — Heilbronn, Neckar
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-89241371-S&angebotsart=1 | HB-Pro | Chefarzt Psychiatrie und Psychotherapie Akutklinik (m/w/d) — Bad Hersfeld
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002715088-S&angebotsart=1 | ADVIAS GmbH | Chefarzt Psychiatrie, Psychotherapie und Psychosomatik (m/w/d) — Zwickau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205245421-S&angebotsart=1 | Vincera Klinik Spreewald GmbH | Chefarzt für Psychiatrie und Psychotherapie (m/w/d) — Bersteland
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002592078-S&angebotsart=1 | Healthbridge GmbH Professional Recruiting | Chefarzt der Psychiatrie und Psychotherapie (m/w/d) mit Institutsambulanz — Bad Hersfeld
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15235-k43552.198846-S&angebotsart=1 | rocket match powered by notificAI GmbH | Chefarzt / Leitender Oberarzt (m/w/d) Psychiatrie & Psychotherapie — Gießen, Lahn
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18104-0054948298-S&angebotsart=1 | Augsburger Lehmbaugruppe GmbH | Facharzt Psychiatrie & Psychotherapie (m/w/d) — Augsburg, Bayern
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-ABM8QCLIJGEPMI9B-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt für Psychiatrie und Psychotherapie (m/w/d) — Bad Salzungen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18489-j109S11938-42651-S&angebotsart=1 | SRH Waldklinikum Gera GmbH | Oberarzt Psychiatrie/Psychotherapie w/m/d — Gera
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001563722-S&angebotsart=1 | DANUVIUS Klinik GmbH | Facharzt (m/w/d) für Psychiatrie & Psychotherapie — Neuburg an der Donau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002581661-S&angebotsart=1 | Celenus Kliniken GmbH | Assistenzarzt (m/w/d) Psychosomatik -familienfreundliche Rahmenbedingungen- — Bad Bergzabern
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1193124877-S&angebotsart=1 | Leopoldina-Krankenhaus der Stadt Schweinfurt GmbH - Personalabteilung - | Arzt in Weiterbildung (m/w/d) Kinder- und Jugendpsychiatrie, Psychosomatik und Psychotherapie — Schweinfurt
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001704190-S&angebotsart=1 | Celenus Kliniken GmbH | Assistenzarzt (m/w/d) Psychiatrie/Psychosomatik — Gengenbach
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12811-2212219-S&angebotsart=1 | Universitätsklinikum Marburg | Arzt für Kinder- und Jugendpsychiatrie, Psychosomatik und Psychotherapie..., Universitätsklinikum... — Marburg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12916-0002X0333044092-S&angebotsart=1 | Bräse   Hagedorn GmbH | Arzt (m/w/d) — Lübeck
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1204302900-S&angebotsart=1 | Klinik Bad Trissl GmbH | Arzt (m/w/d) — Oberaudorf
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1203167636-S&angebotsart=1 | Kneippsanatorium Bad Clevers e.K. | Arzt (m/w/d) — Bad Grönenbach, Allgäu
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002832685-S&angebotsart=1 | FrauenWerk Stein e. V. | Fachärztin/Facharzt (w/m/d) – Psychosomatik / Allgemeinmedizin / Rehabilitationsmedizin — Oberstdorf
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002103384-S&angebotsart=1 | LOCUMWORK GmbH | Ärztliche Direktorin/ Ärztlicher Direktor (m/w/d)  für Psychiatrie, Psychotherapie und Psychosomatik — Siegen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1197513868-S&angebotsart=1 | Rehabilitationsklinik Göhren | Arzt (m/w/d) für Bereitschaftsdienst — Göhren, Rügen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001977206-S&angebotsart=1 | Dr. med. Markus Riedel | MFA(m/w/d) für Arzt Praxis Dr. Markus Riedel Neurologie, Psychiatrie — Wolfratshausen
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4988-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Frankfurt (Oder) | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4987-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Eberswalde | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4986-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Brandenburg a.d. Havel | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4985-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Potsdam | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4936-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Villingen-Schwenningen | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4935-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Kassel | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4934-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Kassel | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4931-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Essen | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4930-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Lunen | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102023-S&angebotsart=1 | tw.con. GmbH | Facharzt Psychiatrie — Soltau | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=13091-19926-1760111-0-S&angebotsart=1 | akut Doc | Facharzt Psychiatrie — Kiel | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=13243-16187347-JB-S&angebotsart=1 | ZithaUnit a.s.b.l. | Facharzt Psychiatrie | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=12618-169320-S&angebotsart=1 | AWO MVZ Zerbst | Facharzt Psychiatrie — Magdeburg | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=20022-2w32ls7nyd-S&angebotsart=1 | BG Uni-Klinikum Bergmannsheil | Facharzt Psychiatrie — Bochum | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-KT42124EPY3LKM32-S&angebotsart=1 | EMA Vermittlung | Facharzt Psychiatrie — Mosbach | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-E7V9MOPFV4H15NQB-S&angebotsart=1 | EMA Vermittlung | Facharzt Psychiatrie — Gundelsheim | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-511575A046771C17-S&angebotsart=1 | BS Menzel GmbH | Facharzt Psychiatrie — Schwangau | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-6YKPN6RNRBC0VPR9-S&angebotsart=1 | EMA Vermittlung | Facharzt Psychiatrie — Siegen | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-503699A046444C15-S&angebotsart=1 | BS Menzel GmbH | Facharzt Psychiatrie — Bremen | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102379-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie — Stuttgart | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205573385-S&angebotsart=1 | KH St. Franziskus Saarburg | Oberarzt Psychiatrie — Saarburg | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102154-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie — Guetersloh | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102414-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie — Altena | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-718771A046443C14-S&angebotsart=1 | BS Menzel GmbH | Oberarzt Psychiatrie — Bremen | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.101856-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie — Torgau | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-70250532-S&angebotsart=1 | HB-Pro | Oberarzt Psychiatrie — Hanau | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-44999548-S&angebotsart=1 | HB-Pro | Oberarzt Psychiatrie — Stuttgart | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-50386402-S&angebotsart=1 | HB-Pro | Ltd. Oberarzt Psychiatrie — Fulda | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-35717491-S&angebotsart=1 | HB-Pro | Oberarzt Psychiatrie — Cuxhaven | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205783282-S&angebotsart=1 | Stadtklinik Frankenthal | Oberarzt — Frankenthal | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=13635-bb3aa19b_JB5102822-S&angebotsart=1 | Vitos gGmbH | Oberarzt Psychiatrie — Bad Homburg | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=16938-StuJobEx_JB5108947-S&angebotsart=1 | Klinikum Stuttgart | Oberarzt Psychiatrie — Stuttgart | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=13635-04d4be32_JB5092325-S&angebotsart=1 | Bergman Germany | Oberarzt Psychiatrie — Buedingen | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19200-xdjvebs2gb-S&angebotsart=1 | ZfP Suedwuerttemberg | Oberarzt Psychiatrie — Ravensburg | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=19200-z59bzwz3yt-S&angebotsart=1 | ZfP Suedwuerttemberg | Oberarzt Psychiatrie — Ravensburg | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002131639-S&angebotsart=1 | LOCUMWORK GmbH | Ltd. Oberarzt Psychiatrie — Muenster | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002131598-S&angebotsart=1 | LOCUMWORK GmbH | Ltd. Oberarzt Psychiatrie — Bielefeld | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002755615-S&angebotsart=1 | PremiumJob AG | Oberarzt Forensik Psychiatrie — Basel | 3.0/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=16223-k15327.6520-S&angebotsart=1 | Siiri Schuetz Aerztevermittlung | Facharzt/Oberarzt Psychiatrie — Deggendorf | 3.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000691379-S&angebotsart=1 | Tina Przybylski | Assistenzarzt Psychiatrie | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15387-S&angebotsart=1 | FFD | Assistenzarzt Psychiatrie — Bielefeld | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15188-S&angebotsart=1 | FFD | Assistenzarzt Psychiatrie — Wuppertal | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15187-S&angebotsart=1 | FFD | Assistenzarzt Psychiatrie — Soest | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15185-S&angebotsart=1 | FFD | Assistenzarzt Psychosomatik — Erfurt | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.5223-S&angebotsart=1 | FFD | Assistenzarzt Psychiatrie — Dresden | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.7345-S&angebotsart=1 | FFD | Assistenzarzt Psychiatrie — Leipzig | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.93081-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie — Warstein | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.16997-S&angebotsart=1 | FFD | Assistenzarzt Psychiatrie — Gotha | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.16996-S&angebotsart=1 | FFD | Assistenzarzt Psychiatrie — Schweinfurt | 1.0/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=12513-0007633148-S&angebotsart=1 | Vincera Klinik Spreewald | Chefarzt Psychiatrie — Bersteland | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002082820-S&angebotsart=1 | Tina Przybylski | Chefarzt Psychiatrie | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851641A36172C23-S&angebotsart=1 | BS Menzel GmbH | Chefarzt Psychiatrie — Cham | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-44559265-S&angebotsart=1 | HB-Pro | Chefarzt Psychiatrie — Mannheim | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002629676-S&angebotsart=1 | Healthbridge GmbH | Chefarzt Psychiatrie — Heilbronn | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-89241371-S&angebotsart=1 | HB-Pro | Chefarzt Psychiatrie Akutklinik — Bad Hersfeld | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002715088-S&angebotsart=1 | ADVIAS GmbH | Chefarzt Psychiatrie/Psychosomatik — Zwickau | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205245421-S&angebotsart=1 | Vincera Klinik Spreewald | Chefarzt Psychiatrie — Bersteland | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002592078-S&angebotsart=1 | Healthbridge GmbH | Chefarzt Psychiatrie + Ambulanz — Bad Hersfeld | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=15235-k43552.198846-S&angebotsart=1 | rocket match / notificAI | Chefarzt/Ltd. Oberarzt Psychiatrie — Giessen | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=18104-0054948298-S&angebotsart=1 | Augsburger Lehmbaugruppe | Facharzt Psychiatrie — Augsburg | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-ABM8QCLIJGEPMI9B-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt Psychiatrie — Bad Salzungen | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=18489-j109S11938-42651-S&angebotsart=1 | SRH Waldklinikum Gera | Oberarzt Psychiatrie — Gera | 3.5/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001563722-S&angebotsart=1 | DANUVIUS Klinik GmbH | Facharzt Psychiatrie — Neuburg | 3.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002581661-S&angebotsart=1 | Celenus Kliniken | Assistenzarzt Psychosomatik — Bad Bergzabern | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1193124877-S&angebotsart=1 | Leopoldina-Krankenhaus | Arzt i.W. Kinder-Jugendpsychiatrie — Schweinfurt | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001704190-S&angebotsart=1 | Celenus Kliniken | Assistenzarzt Psychosomatik — Gengenbach | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=12811-2212219-S&angebotsart=1 | Uniklinikum Marburg | Arzt Kinder-Jugendpsychiatrie — Marburg | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=12916-0002X0333044092-S&angebotsart=1 | Bräse Hagedorn | Generic Arzt — Lübeck | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1204302900-S&angebotsart=1 | Klinik Bad Trissl | Generic Arzt — Oberaudorf | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1203167636-S&angebotsart=1 | Kneippsanatorium | Generic Arzt — Bad Grönenbach | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002832685-S&angebotsart=1 | FrauenWerk Stein | Fachärztin Psychosomatik/Allgemeinmedizin — Oberstdorf | 1.0/5 | PDF ❌
+- [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002103384-S&angebotsart=1 | LOCUMWORK GmbH | Ärztl. Direktor Psychiatrie — Siegen | 3.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1197513868-S&angebotsart=1 | Reha-Klinik Göhren | Arzt Bereitschaftsdienst — Göhren | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001977206-S&angebotsart=1 | Dr. Riedel | MFA (not physician) — Wolfratshausen | 1.0/5 | PDF ❌
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002666570-S&angebotsart=1 | Bezirkskliniken Schwaben KU Bezirkskrankenhaus Kaufbeuren | Assistenzarzt (m/w/d) / Arzt in Weiterbildung (m/w/d) Neurologie — Günzburg
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002615613-S&angebotsart=1 | Rheinhessen-Fachklinik Alzey Zentrum für Psychiatrie, Psychotherapie und Neurologie | Arzt (m/w/d) i.W. Kinder- und Jugendpsychiatrie — Alzey
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205689287-S&angebotsart=1 | MEDBO KU medbo KU | Assistenzartz / Arzt in Weiterbildung (w/m/d) Psychiatrie — Regensburg
@@ -163,110 +163,110 @@
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4996-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Bad Freienwalde (Oder)
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4995-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Fürstenwalde/Spree
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4994-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Luckenwalde
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4993-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Templin
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4992-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Neuruppin
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4991-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Senftenberg, Niederlausitz
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4990-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Rüdersdorf bei Berlin
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4989-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Oranienburg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-792ROXWZ011GKHVG-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt Psychiatrie (m/w/d)  — Gotha, Thüringen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-VV53SC8R0SDZX07F-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt Psychiatrie  (m/w/d) — Püttlingen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-FAW6XHRB2MCZ6PS5-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt Psychiatrie (m/w/d)  — Plettenberg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-8CVCAUP5GIJJ5000-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt Psychiatrie (m/w/d)  — München
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-B86YPWD6W7WIL7OQ-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt Psychiatrie (m/w/d)  — Mosbach, Baden
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-5JWRA96LP3OUXBBI-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt Psychiatrie (m/w/d)  — Darmstadt
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-ANZGS6SAZ58O3SLK-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt Psychiatrie (m/w/d) — Gotha, Thüringen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-4VXVL05WR5F1KWNQ-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt Psychiatrie (m/w/d) — Olpe, Biggesee
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-056M8VSW39V7OI5P-S&angebotsart=1 | EMA - Vermittlung GmbH | Facharzt Psychiatrie (m/w/d) — Darmstadt
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12951-05827974-1d61-4374--S&angebotsart=1 | Heinrich-Haus gGmbH  | Facharzt Psychiatrie (m/w/d) — Neuwied
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-S4RETALISU3V041D-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt Psychiatrie (m/w/d)  — Gotha, Thüringen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-9FP3BH1IDBG96YHO-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt Psychiatrie (m/w/d) — Gummersbach
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-ENFYJ362LXEYAU50-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt Psychiatrie (m/w/d) — Dortmund
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-E8IRFYJ57JPQNUZA-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt Psychiatrie (m/w/d)  — Olpe, Biggesee
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-IF5VOSZWYJQ1Q8WW-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt Psychiatrie (m/w/d) — Hagen, Westfalen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102153-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie (m/w/d) — Soltau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14752-152684-S&angebotsart=1 | Contilia Gruppe | Oberarzt Psychiatrie m/w/d — Mülheim an der Ruhr
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-M06H6L7OUGHHTYSN-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Herford
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-EQE2FSRHR92HBN4R-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Plettenberg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-OUBRU8EW0LJ8V2GJ-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Lüdenscheid
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002812666-S&angebotsart=1 | PremiumJob AG | Oberärztin Psychiatrie Abhängigkeitserkrankungen / Oberarzt (m/w/d) — Luzern
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002812363-S&angebotsart=1 | PremiumJob AG | Oberärztin Psychiatrie Abhängigkeitserkrankungen / Oberarzt (m/w/d) — Bollingen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14893-0061350732-S&angebotsart=1 | Agaplesion Elisabethenstift GmbH | Leitende:r Oberarzt:ärztin Psychiatrie und Psychotherapie (w/m/d) — Darmstadt
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18965-0054118205-S&angebotsart=1 | Psychiatrieverbund Oldenburger Land gGmbH Karl-Jaspers Klinik | Oberarzt/-ärztin für Psychiatrie und Psychotherapie (m/w/d) — Bad Zwischenahn
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000691298-S&angebotsart=1 | Tina Przybylski | Ltd. Oberarzt/-ärztin Psychiatrie und Psychotherapie (w/m/d)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001244162-S&angebotsart=1 | Tina Przybylski | Oberarzt/-ärztin (w/m/d) Psychiatrie und Psychotherapie
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15699-1158937-19-S&angebotsart=1 | Landschaftsverband Rheinland | Oberärztin / Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Bedburg-Hau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002134937-S&angebotsart=1 | Krankenhausverwaltung Schloss Werneck | Oberärztin / Oberarzt (m/w/d) für Psychiatrie und Psychotherapie — Werneck
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000672816-S&angebotsart=1 | Krankenhausverwaltung Schloss Werneck | Oberärztin / Oberarzt (m/w/d) für Psychiatrie und Psychotherapie — Werneck
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002721828-S&angebotsart=1 | Tina Przybylski | Assistenzarzt/-ärztin Psychiatrie (w/m/d)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13635-9d2abd86_JB5092309-S&angebotsart=1 | Bergman Germany HoldCo GmbH | Assistenzarzt / Assistenzärztin Psychiatrie (m/w/d) — Büdingen, Hessen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002856018-S&angebotsart=1 | PremiumJob AG | Assistenzarzt Psychiatrie / Assistenzärztin Psychotherapie — Zürich
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002516162-S&angebotsart=1 | Universitätsklinikum Jena | Assistenzarzt für Psychiatrie (m/w/d) — Jena
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102215-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie und Psychotherapie (m/w/d) — Waiblingen, Rems
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102114-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie und Psychotherapie (m/w/d) — Frankfurt (Oder)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-63478828-S&angebotsart=1 | HB-Pro | Assistenzarzt Psychiatrie und Psychotherapie   (m/w/d) — Fulda
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102020-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie und Psychotherapie (m/w/d) — Neustrelitz
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102024-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie und Psychotherapie (m/w/d) — Gießen, Lahn
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.101741-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie und Psychotherapie (m/w/d) — Dortmund
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-Y25FRUC0D7MWA5G9-S&angebotsart=1 | EMA - Vermittlung GmbH | Chefarzt Psychiatrie (m/w/d) — Jever
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-W4MT2MV8IY455AV5-S&angebotsart=1 | EMA - Vermittlung GmbH | Chefarzt Psychiatrie (m/w/d) — Kleve bei Itzehoe
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-Y5QKPIKBEN4ABBHG-S&angebotsart=1 | EMA - Vermittlung GmbH | Chefarzt Psychiatrie (m/w/d) — Auerbach/Vogtland
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-PBJCI9I9Y02SBJUO-S&angebotsart=1 | EMA - Vermittlung GmbH | Chefarzt Psychiatrie (m/w/d) — Oldenburg (Oldb)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-0NKPB6PDBRY6NI89-S&angebotsart=1 | EMA - Vermittlung GmbH | Chefarzt Psychiatrie (m/w/d) — Jever
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001497790-S&angebotsart=1 | Healthbridge GmbH Professional Recruiting | Chefarzt  Psychiatrie m/w/d — Rostock
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002584978-S&angebotsart=1 | Healthbridge GmbH | Chefarzt Psychiatrie und Psychotherapie (m/w/d)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002395858-S&angebotsart=1 | Healthbridge GmbH | Chefarzt Psychiatrie und Psychotherapie (m/w/d) — Kaiserslautern
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-9577781-S&angebotsart=1 | HB-Pro | Chefarzt Psychiatrie und Psychotherapie (m/w/d) — Kaiserslautern
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-78883195-S&angebotsart=1 | HB-Pro | Chefarzt für Psychiatrie und Psychotherapie (m/w/d) — Heilbronn, Neckar
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-HWFW14Y9EY0WGH23-S&angebotsart=1 | EMA - Vermittlung GmbH | Psychiatrie/Psychotherapie Forensik (m/w/d) — Stralsund
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1023-S&angebotsart=1 | Doc-Spezialisten GmbH | Facharzt (m/w/d) Psychiatrie / Psychotherapie — Idstein
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1008-S&angebotsart=1 | Doc-Spezialisten GmbH | Facharzt (m/w/d) Psychiatrie Psychotherapie — Köln
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1092-S&angebotsart=1 | Doc-Spezialisten GmbH | Facharzt (m/w/d) Psychiatrie Psychotherapie — Staßfurt Salzstadt
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1099-S&angebotsart=1 | Doc-Spezialisten GmbH | Facharzt (m/w/d) Psychiatrie Psychotherapie — Arnsberg, Westfalen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1095-S&angebotsart=1 | Doc-Spezialisten GmbH | Facharzt (m/w/d) Psychiatrie Psychotherapie — Lüneburg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1058-S&angebotsart=1 | Doc-Spezialisten GmbH | Facharzt (m/w/d) Psychiatrie Psychotherapie — Steinfurt, Westfalen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1074-S&angebotsart=1 | Doc-Spezialisten GmbH | Facharzt (m/w/d) Psychiatrie Psychotherapie — Paderborn
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14819-P9Q3BDQ1YLY08A7F-S&angebotsart=1 | Approbatio UG | Facharzt (m/w/d) Psychiatrie & Psychotherapie — Zeitz, Elster
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002601234-S&angebotsart=1 | DANUVIUS Klinik GmbH | Facharzt (m/w/d) für Psychiatrie & Psychotherapie — Pfaffenhofen an der Ilm
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-56313194-S&angebotsart=1 | HB-Pro | Leitender Arzt Psychosomatik  Reha (m/w/d) — Hameln
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001371650-S&angebotsart=1 | Klinik Höhenried gGmbH der Dt. Rentenversicherung Bayern Süd/ Reha am Starnberger See | Arzt (m/w/d) Fachbereich: Psychosomatik (Psychotherapie und somatische Versorgung) — Bernried am Starnberger See
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001371738-S&angebotsart=1 | Klinik Höhenried gGmbH der Dt. Rentenversicherung Bayern Süd/ Reha am Starnberger See | Oberarzt (m/w/d) Fachbereich: Psychosomatik — Bernried am Starnberger See
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000093652-S&angebotsart=1 | Klinik St. Irmingard GmbH | Assistenzärzte Psychosomatik (m/w/d) — Prien am Chiemsee
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001663857-S&angebotsart=1 | Schön Klinik Bad Staffelstein SE & Co. KG | Assistenzarzt / Arzt in Weiterbildung (m/w/d) Psychosomatik und Psychotherapie — Bad Staffelstein
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19433-dbe2f519c4d528b45f2-S&angebotsart=1 | Schwarzwaldklinik Bad Krozingen GmbH & Co. KG | Bereitschaftsdienstarzt Psychosomatik (m/w/d) — Bad Krozingen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14177-44050227-320-S&angebotsart=1 | ZiP gGmbH | Arzt (m/w/d) in Weiterbildung Psychiatrie, Psychosomatik, Psychotherapie — Lübeck
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20263-2113232-S&angebotsart=1 | MEDIAN Klinik Schlangenbad GmbH & Co. KG | Assistenzarzt / Arzt  (m/w/d) für Psychosomatik MEDIAN Klinik Schlangenbad — Schlangenbad, Taunus
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1171631457-S&angebotsart=1 | MediClin GmbH & Co. KG | Assistenzarzt (w/m/d) Psychosomatik, Akutpsychosomatik — Bad Münder am Deister
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14893-0063373689-S&angebotsart=1 | Agaplesion Elisabethenstift GmbH | Oberarzt Psychiatrie, Psychosomatik und Psychotherapie (w/m/d) — Darmstadt
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1203713915-S&angebotsart=1 | Oliver Gärtner | Arzt / Ärztin im Fachgebiet Neurologie und/oder Psychiatrie (m/w/d) — Wallenhorst
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15825-0905207200416286-S&angebotsart=1 | IB e.V. Süd Internationaler Bund IB Süd | Dozent * Dozentin für Neurologie und/ oder Psychiatrie — Nürnberg, Mittelfranken
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19418-k61275.1066-S&angebotsart=1 | antonius gemeinsam leben gGmbH | Facharzt für Neurologie / Psychiatrie (m/w/d) — Fulda
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002699526-S&angebotsart=1 | Epilepsiezentrum Kleinwachau gGmbH | Arzt in Weiterbildung / Assistenzarzt - Neurologie / Pädiatrie / Psychiatrie - Epilepsiezentrum mwd — Radeberg, Sachsen
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002801459-S&angebotsart=1 | Klinikum und Seniorenzentrum Itzehoe ZV des Kreises Steinburg und der Stadt IZ | Arzt in Weiterbildung (w/m/d) Neurologie — Itzehoe
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002617735-S&angebotsart=1 | Klinikum Fulda gAG | Arzt in Weiterbildung (m/w/d) für Neurologie — Fulda
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15718-k43631.9133-S&angebotsart=1 | Michels Brandenburgklinik SE | Arzt in Weiterbildung (m/w/d) Neurologie — Bernau bei Berlin
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1195052175-S&angebotsart=1 | Krankenhausverwaltung Schloss Werneck | Arzt (m/w/d) in Weiterbildung Psychiatrie — Werneck
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18256-k59791.1218-S&angebotsart=1 | Marienborn gGmbH | Facharzt Neurologie Funktionsdiagnostik (w/m/d) 10-15 Stunden/Woche für Psychiatrie — Zülpich
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1202080399-S&angebotsart=1 | medbo Zentrum für Psychiatrie Cham | Arzt (w/m/d) oder Arzt (w/m/d) in Weiterbildung — Cham, Oberpfalz
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4993-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Templin | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4992-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Neuruppin | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4991-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Senftenberg | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4990-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Rüdersdorf | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4989-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Oranienburg | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-792ROXWZ011GKHVG-S&angebotsart=1 | EMA | Facharzt Psychiatrie — Gotha | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-VV53SC8R0SDZX07F-S&angebotsart=1 | EMA | Facharzt Psychiatrie — Püttlingen | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-FAW6XHRB2MCZ6PS5-S&angebotsart=1 | EMA | Facharzt Psychiatrie — Plettenberg | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-8CVCAUP5GIJJ5000-S&angebotsart=1 | EMA | Facharzt Psychiatrie — München | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-B86YPWD6W7WIL7OQ-S&angebotsart=1 | EMA | Facharzt Psychiatrie — Mosbach | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-5JWRA96LP3OUXBBI-S&angebotsart=1 | EMA | Facharzt Psychiatrie — Darmstadt | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-ANZGS6SAZ58O3SLK-S&angebotsart=1 | EMA | Facharzt Psychiatrie — Gotha | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-4VXVL05WR5F1KWNQ-S&angebotsart=1 | EMA | Facharzt Psychiatrie — Olpe | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-056M8VSW39V7OI5P-S&angebotsart=1 | EMA | Facharzt Psychiatrie — Darmstadt | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=12951-05827974-1d61-4374--S&angebotsart=1 | Heinrich-Haus | Facharzt Psychiatrie — Neuwied | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-S4RETALISU3V041D-S&angebotsart=1 | EMA | Oberarzt Psychiatrie — Gotha | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-9FP3BH1IDBG96YHO-S&angebotsart=1 | EMA | Oberarzt Psychiatrie — Gummersbach | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-ENFYJ362LXEYAU50-S&angebotsart=1 | EMA | Oberarzt Psychiatrie — Dortmund | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-E8IRFYJ57JPQNUZA-S&angebotsart=1 | EMA | Oberarzt Psychiatrie — Olpe | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-IF5VOSZWYJQ1Q8WW-S&angebotsart=1 | EMA | Oberarzt Psychiatrie — Hagen | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102153-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie — Soltau | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14752-152684-S&angebotsart=1 | Contilia Gruppe | Oberarzt Psychiatrie — Mülheim | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-M06H6L7OUGHHTYSN-S&angebotsart=1 | EMA | Oberarzt Psychiatrie — Herford | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-EQE2FSRHR92HBN4R-S&angebotsart=1 | EMA | Oberarzt Psychiatrie — Plettenberg | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-OUBRU8EW0LJ8V2GJ-S&angebotsart=1 | EMA | Oberarzt Psychiatrie — Lüdenscheid | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002812666-S&angebotsart=1 | PremiumJob AG | Oberarzt Psychiatrie — Luzern (CH) | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002812363-S&angebotsart=1 | PremiumJob AG | Oberarzt Psychiatrie — Bollingen (CH) | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14893-0061350732-S&angebotsart=1 | Agaplesion Elisabethenstift | Ltd. Oberarzt Psychiatrie — Darmstadt | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18965-0054118205-S&angebotsart=1 | Psychiatrieverbund OL | Oberarzt Psychiatrie — Bad Zwischenahn | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000691298-S&angebotsart=1 | Tina Przybylski | Ltd. Oberarzt Psychiatrie | 3.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001244162-S&angebotsart=1 | Tina Przybylski | Oberarzt Psychiatrie | 3.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=15699-1158937-19-S&angebotsart=1 | LVR | Oberarzt Psychiatrie — Bedburg-Hau | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002134937-S&angebotsart=1 | KH Schloss Werneck | Oberarzt Psychiatrie — Werneck | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000672816-S&angebotsart=1 | KH Schloss Werneck | Oberarzt Psychiatrie — Werneck | 3.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002721828-S&angebotsart=1 | Tina Przybylski | Assistenzarzt Psychiatrie | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=13635-9d2abd86_JB5092309-S&angebotsart=1 | Bergman Germany | Assistenzarzt Psychiatrie — Büdingen | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002856018-S&angebotsart=1 | PremiumJob AG | Assistenzarzt Psychiatrie — Zürich | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002516162-S&angebotsart=1 | Uni Jena | Assistenzarzt Psychiatrie — Jena | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102215-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie — Waiblingen | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102114-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie — Frankfurt (Oder) | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=14922-63478828-S&angebotsart=1 | HB-Pro | Assistenzarzt Psychiatrie — Fulda | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102020-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie — Neustrelitz | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102024-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie — Gießen | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.101741-S&angebotsart=1 | tw.con. GmbH | Assistenzarzt Psychiatrie — Dortmund | 1.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-Y25FRUC0D7MWA5G9-S&angebotsart=1 | EMA | Chefarzt Psychiatrie — Jever | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-W4MT2MV8IY455AV5-S&angebotsart=1 | EMA | Chefarzt Psychiatrie — Kleve bei Itzehoe | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-Y5QKPIKBEN4ABBHG-S&angebotsart=1 | EMA | Chefarzt Psychiatrie — Auerbach/Vogtland | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-PBJCI9I9Y02SBJUO-S&angebotsart=1 | EMA | Chefarzt Psychiatrie — Oldenburg | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-0NKPB6PDBRY6NI89-S&angebotsart=1 | EMA | Chefarzt Psychiatrie — Jever | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001497790-S&angebotsart=1 | Healthbridge | Chefarzt Psychiatrie — Rostock | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002584978-S&angebotsart=1 | Healthbridge | Chefarzt Psychiatrie | 3.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002395858-S&angebotsart=1 | Healthbridge GmbH | Chefarzt Psychiatrie — Kaiserslautern | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14922-9577781-S&angebotsart=1 | HB-Pro | Chefarzt Psychiatrie — Kaiserslautern | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14922-78883195-S&angebotsart=1 | HB-Pro | Chefarzt Psychiatrie — Heilbronn | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=18873-HWFW14Y9EY0WGH23-S&angebotsart=1 | EMA | Psychiatrie Forensik — Stralsund | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1023-S&angebotsart=1 | Doc-Spezialisten | Facharzt Psychiatrie — Idstein | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1008-S&angebotsart=1 | Doc-Spezialisten | Facharzt Psychiatrie — Köln | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1092-S&angebotsart=1 | Doc-Spezialisten | Facharzt Psychiatrie — Staßfurt | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1099-S&angebotsart=1 | Doc-Spezialisten | Facharzt Psychiatrie — Arnsberg | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1095-S&angebotsart=1 | Doc-Spezialisten | Facharzt Psychiatrie — Lüneburg | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1058-S&angebotsart=1 | Doc-Spezialisten | Facharzt Psychiatrie — Steinfurt | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14977-k62635.1074-S&angebotsart=1 | Doc-Spezialisten | Facharzt Psychiatrie — Paderborn | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14819-P9Q3BDQ1YLY08A7F-S&angebotsart=1 | Approbatio UG | Facharzt Psychiatrie — Zeitz | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002601234-S&angebotsart=1 | DANUVIUS Klinik | Facharzt Psychiatrie — Pfaffenhofen | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14922-56313194-S&angebotsart=1 | HB-Pro | Leitender Arzt Psychosomatik — Hameln | 2.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001371650-S&angebotsart=1 | Klinik Höhenried | Arzt Psychosomatik — Bernried | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001371738-S&angebotsart=1 | Klinik Höhenried | Oberarzt Psychosomatik — Bernried | 2.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000093652-S&angebotsart=1 | Klinik St. Irmingard | Assistenzärzte Psychosomatik — Prien | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001663857-S&angebotsart=1 | Schön Klinik | Assistenzarzt Psychosomatik — Bad Staffelstein | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19433-dbe2f519c4d528b45f2-S&angebotsart=1 | Schwarzwaldklinik | Bereitschaftsdienstarzt Psychosomatik — Bad Krozingen | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14177-44050227-320-S&angebotsart=1 | ZiP gGmbH | Arzt WB Psychiatrie/Psychosomatik — Lübeck | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=20263-2113232-S&angebotsart=1 | MEDIAN Klinik | Assistenzarzt Psychosomatik — Schlangenbad | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1171631457-S&angebotsart=1 | MediClin | Assistenzarzt Psychosomatik — Bad Münder | 2.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=14893-0063373689-S&angebotsart=1 | Agaplesion | Oberarzt Psychiatrie/Psychosomatik — Darmstadt | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1203713915-S&angebotsart=1 | Oliver Gärtner | Arzt Neurologie/Psychiatrie — Wallenhorst | 2.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15825-0905207200416286-S&angebotsart=1 | IB e.V. | Dozent Neurologie/Psychiatrie — Nürnberg | 1.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19418-k61275.1066-S&angebotsart=1 | antonius gGmbH | Facharzt Neurologie/Psychiatrie — Fulda | 2.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002699526-S&angebotsart=1 | Epilepsiezentrum | Assistenzarzt Neurologie — Radeberg | 1.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002801459-S&angebotsart=1 | Klinikum Itzehoe | Arzt WB Neurologie — Itzehoe | 1.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002617735-S&angebotsart=1 | Klinikum Fulda | Arzt WB Neurologie — Fulda | 1.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=15718-k43631.9133-S&angebotsart=1 | Brandenburgklinik | Arzt WB Neurologie — Bernau | 1.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1195052175-S&angebotsart=1 | Schloss Werneck | Arzt WB Psychiatrie — Werneck | 2.5/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=18256-k59791.1218-S&angebotsart=1 | Marienborn | Facharzt Neurologie 10-15h/Woche — Zülpich | 1.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1202080399-S&angebotsart=1 | medbo Psychiatrie Cham | Arzt WB Psychiatrie — Cham | 2.5/5 | PDF ❌
 
-- [ ] https://job-boards.greenhouse.io/auctane/jobs/6090753003 | Auctane | Account Executive - Atlanta, GA
-- [ ] https://job-boards.greenhouse.io/pagerduty/jobs/5634315004 | PagerDuty | Majors Account Executive - Atlanta, GA
-- [ ] https://job-boards.greenhouse.io/gleanwork/jobs/4680477005 | Glean | Enterprise Account Executive, Atlanta
-- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4986103008 | Anthropic | Manager, Account Executive - Enterprise Sales
-- [ ] https://job-boards.greenhouse.io/missiontelecom/jobs/5146589008 | Mission Telecom | Strategic Partnerships Executive I (Account Executive I)
-- [ ] https://job-boards.greenhouse.io/instabase/jobs/8385243002 | Instabase | Account Executive, Atlanta
-- [ ] https://job-boards.greenhouse.io/myriad360/jobs/8365251002 | Myriad360 | Account Executive - Atlanta, GA (Remote)
-- [ ] https://job-boards.greenhouse.io/eolapower/jobs/5124790008 | EOLA Power | Sales Account Executive Atlanta
-- [ ] https://job-boards.greenhouse.io/similarweb/jobs/6596261 | Similarweb | Account Executive, Inside Accounts - LATAM
-- [ ] https://jobs.ashbyhq.com/unify/7891a43e-53d5-4859-be61-2528ca3db0e7 | Unify | Account Executive
-- [ ] https://jobs.lever.co/deft/373051c7-3337-4064-93a2-b9e4a69ce44c | Summit/Deft | Sales Director
-- [ ] https://jobs.lever.co/smarsh/b8d98a3f-d5bf-4ba2-8168-867f902feafb | Smarsh | Sr. Channel Account Manager (Voice Compliance & SaaS Solutions)
-- [ ] https://jobs.lever.co/aircall/2999a6aa-3260-41c1-b9b4-b14ec2c0ff2e | Aircall | Sales Director, North America East Coast
-- [ ] https://jobs.lever.co/redoxengine/c8142562-aa49-4151-8920-ffe0006aa2be | Redox | National Sales Director, Providers
-- [ ] https://jobs.lever.co/miteksystems-2/56b00ff5-bf91-4a1c-aa2a-eb987cfa2790 | Mitek Systems | Channel Sales Manager
-- [ ] https://www.stepstone.de/stellenangebote--Vertriebsleiter-Head-of-Sales-Manager-m-w-d-Direktvertrieb-D2D-Energie-Telekommunikation-B2C-Berlin-primaholding-GmbH--13677385-inline.html | primaholding GmbH | Vertriebsleiter/Head of Sales/Manager (m/w/d) Direktvertrieb D2D - Energie/Telekommunikation
-- [ ] https://www.stepstone.de/stellenangebote-beta--Head-of-Sales-D2D-m-w-d-Aufbau-Direktvertrieb-Energie-Telekommunikation-Glasfaser-Highspeed-Internet-Onlinebanking-Photovoltaik-Vertriebsleiter-Direct-Sales-Berlin-primasales-GmbH--10838449-inline.html | primasales GmbH | Head of Sales D2D - Direktvertrieb Energie, Telekommunikation
-- [ ] https://www.stepstone.de/stellenangebote--Manager-Vertriebsleiter-Head-of-Sales-m-w-d-Telesales-Online-Marketing-Top-Verguetung-Berlin-primaholding-GmbH--12695366-inline.html | primaholding GmbH | Manager/Vertriebsleiter/Head of Sales (m/w/d) - Telesales & Online-Marketing
-- [ ] https://www.stepstone.de/stellenangebote--SALES-CONSULTANT-M-W-D-TELEKOMMUNIKATION-Langenfeld-Rheinland-Radio-City-KG--12444139-inline.html | Radio City KG | Sales Consultant (m/w/d) Telekommunikation
+- [x] SKIP | https://job-boards.greenhouse.io/auctane/jobs/6090753003 | Auctane | Account Executive — Atlanta | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://job-boards.greenhouse.io/pagerduty/jobs/5634315004 | PagerDuty | Account Executive — Atlanta | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://job-boards.greenhouse.io/gleanwork/jobs/4680477005 | Glean | Account Executive — Atlanta | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://job-boards.greenhouse.io/anthropic/jobs/4986103008 | Anthropic | Account Executive — Enterprise Sales | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://job-boards.greenhouse.io/missiontelecom/jobs/5146589008 | Mission Telecom | Strategic Partnerships Executive | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://job-boards.greenhouse.io/instabase/jobs/8385243002 | Instabase | Account Executive — Atlanta | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://job-boards.greenhouse.io/myriad360/jobs/8365251002 | Myriad360 | Account Executive — Atlanta | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://job-boards.greenhouse.io/eolapower/jobs/5124790008 | EOLA Power | Sales Account Executive — Atlanta | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://job-boards.greenhouse.io/similarweb/jobs/6596261 | Similarweb | Account Executive — LATAM | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://jobs.ashbyhq.com/unify/7891a43e-53d5-4859-be61-2528ca3db0e7 | Unify | Account Executive | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://jobs.lever.co/deft/373051c7-3337-4064-93a2-b9e4a69ce44c | Summit/Deft | Sales Director | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://jobs.lever.co/smarsh/b8d98a3f-d5bf-4ba2-8168-867f902feafb | Smarsh | Sr. Channel Account Manager | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://jobs.lever.co/aircall/2999a6aa-3260-41c1-b9b4-b14ec2c0ff2e | Aircall | Sales Director — East Coast | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://jobs.lever.co/redoxengine/c8142562-aa49-4151-8920-ffe0006aa2be | Redox | National Sales Director | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://jobs.lever.co/miteksystems-2/56b00ff5-bf91-4a1c-aa2a-eb987cfa2790 | Mitek Systems | Channel Sales Manager | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://www.stepstone.de/stellenangebote--Vertriebsleiter-Head-of-Sales-Manager-m-w-d-Direktvertrieb-D2D-Energie-Telekommunikation-B2C-Berlin-primaholding-GmbH--13677385-inline.html | primaholding | Vertriebsleiter Telekommunikation | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://www.stepstone.de/stellenangebote-beta--Head-of-Sales-D2D-m-w-d-Aufbau-Direktvertrieb-Energie-Telekommunikation-Glasfaser-Highspeed-Internet-Onlinebanking-Photovoltaik-Vertriebsleiter-Direct-Sales-Berlin-primasales-GmbH--10838449-inline.html | primasales | Head of Sales Telekommunikation | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://www.stepstone.de/stellenangebote--Manager-Vertriebsleiter-Head-of-Sales-m-w-d-Telesales-Online-Marketing-Top-Verguetung-Berlin-primaholding-GmbH--12695366-inline.html | primaholding | Vertriebsleiter Telesales | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
+- [x] SKIP | https://www.stepstone.de/stellenangebote--SALES-CONSULTANT-M-W-D-TELEKOMMUNIKATION-Langenfeld-Rheinland-Radio-City-KG--12444139-inline.html | Radio City KG | Sales Consultant Telekommunikation | 1.0/5 | PDF ❌ | NON-PSYCHIATRY
 
 ## Procesadas
 

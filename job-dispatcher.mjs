@@ -31,6 +31,49 @@ import { execFile } from 'child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// ============================================================
+// Retry Queue — persists failed emails for later resend
+// ============================================================
+
+const RETRY_QUEUE_PATH = resolve(__dirname, 'data/retry-queue.json');
+
+async function loadRetryQueue() {
+  try {
+    return JSON.parse(await readFile(RETRY_QUEUE_PATH, 'utf8'));
+  } catch {
+    return [];
+  }
+}
+
+async function saveRetryQueue(queue) {
+  await writeFile(RETRY_QUEUE_PATH, JSON.stringify(queue, null, 2), 'utf8');
+}
+
+async function enqueueFailedEmail(job, careerOpsScore, fitScore, mode, profileName, errorMsg) {
+  const queue = await loadRetryQueue();
+  // Deduplicate by company+title+profile
+  const key = `${job.company}|${job.title}|${profileName}`;
+  if (queue.some(e => `${e.job.company}|${e.job.title}|${e.profileName}` === key)) return;
+  queue.push({
+    job: { title: job.title, company: job.company, url: job.url, location: job.location,
+           salary: job.salary, platform: job.platform, source: job.source,
+           matchReasons: job.matchReasons, draftCoverLetter: job.draftCoverLetter,
+           coverLetterPath: job.coverLetterPath, cvPdfPath: job.cvPdfPath,
+           cvDePdfPath: job.cvDePdfPath, cvEnPdfPath: job.cvEnPdfPath,
+           postedDate: job.postedDate, sponsorship: job.sponsorship },
+    careerOpsScore,
+    fitScore,
+    modeLabel: mode.label,
+    profileName,
+    error: errorMsg,
+    failedAt: new Date().toISOString(),
+    retries: 0,
+  });
+  await saveRetryQueue(queue);
+}
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
 // Use nodemailer from Spectrum workspace
 const require = createRequire(import.meta.url);
 const nodemailer = require('C:/Users/Lukas/.openclaw/workspace/node_modules/nodemailer');
@@ -302,7 +345,7 @@ async function sendNotification(mode, job, profile, fitScore, options = {}) {
       subject,
     };
   } catch (err) {
-    return { sent: false, reason: err.message, mode: mode.label, fitScore };
+    return { sent: false, reason: err.message, mode: mode.label, fitScore, rateLimited: /too many login|454.*4\.7\.0/i.test(err.message) };
   }
 }
 
@@ -822,6 +865,11 @@ export async function dispatch(job, careerOpsScore, options = {}) {
     console.log(`  Subject:   ${emailResult.subject}`);
   } else {
     console.log(`  Email:     ${emailResult.reason}`);
+    // Queue for retry if it was a rate limit or transient error
+    if (!options.dryRun && emailResult.rateLimited) {
+      await enqueueFailedEmail(job, careerOpsScore, fitScore, mode, profileName, emailResult.reason);
+      console.log(`  Queued:    data/retry-queue.json (will retry later)`);
+    }
   }
 
   // Log
@@ -948,6 +996,203 @@ approval:
     return;
   }
 
+  // --retry: Process the retry queue with pacing
+  if (args.includes('--retry')) {
+    const queue = await loadRetryQueue();
+    if (queue.length === 0) {
+      console.log('\n  Retry queue is empty. Nothing to send.\n');
+      return;
+    }
+
+    const dryRun = args.includes('--dry-run');
+    const delayMs = 3000; // 3 seconds between emails to avoid rate limits
+    const succeeded = [];
+    const stillFailed = [];
+
+    console.log(`\n  Retry Queue — ${queue.length} emails to process`);
+    console.log(`  Pacing: ${delayMs / 1000}s between sends${dryRun ? ' (DRY RUN)' : ''}`);
+    console.log(`  ${'━'.repeat(50)}\n`);
+
+    // Create one transporter for the entire retry run
+    let transport;
+    try {
+      transport = nodemailer.createTransport({
+        service: EMAIL_CONFIG.service,
+        auth: EMAIL_CONFIG.auth,
+        pool: true,
+        maxConnections: 1,
+        rateDelta: delayMs,
+        rateLimit: 1,
+      });
+      await transport.verify();
+    } catch (err) {
+      console.error(`  Failed to connect to Gmail: ${err.message}`);
+      console.log('  Tip: Wait a few minutes and try again if rate-limited.\n');
+      return;
+    }
+
+    for (let i = 0; i < queue.length; i++) {
+      const entry = queue[i];
+      console.log(`  [${i + 1}/${queue.length}] ${entry.job.title} at ${entry.job.company} (fit ${entry.fitScore})`);
+
+      if (dryRun) {
+        console.log(`    → DRY RUN — would send to ${entry.profileName}`);
+        succeeded.push(entry);
+        continue;
+      }
+
+      // Reload profile for email address
+      const profileYml = await readFile(resolve(__dirname, `profiles/${entry.profileName}/profile.yml`), 'utf8');
+      const candidateEmail = profileYml.match(/email:\s*"(.+?)"/)?.[1];
+      if (!candidateEmail) {
+        console.log(`    → SKIP — no email for profile ${entry.profileName}`);
+        stillFailed.push({ ...entry, error: 'no_candidate_email' });
+        continue;
+      }
+
+      // Determine mode from fitScore
+      const mode = determineMode(entry.fitScore);
+      if (!mode.template) {
+        console.log(`    → SKIP — mode ${mode.label} has no template`);
+        succeeded.push(entry); // remove from queue, shouldn't have been queued
+        continue;
+      }
+
+      // Build and send
+      try {
+        const templateHtml = await loadTemplate(mode.template);
+        const firstName = candidateEmail.split('@')[0]; // fallback
+        const job = entry.job;
+        const vars = {
+          FIRST_NAME: firstName,
+          JOB_TITLE: job.title || 'Unknown',
+          COMPANY_NAME: job.company || 'Unknown',
+          LOCATION: job.location || 'Not specified',
+          SALARY_RANGE: job.salary || 'Not disclosed',
+          FIT_SCORE: String(entry.fitScore),
+          APPLICATION_URL: job.url || '#',
+          PORTAL_NAME: job.platform || job.source || 'Job Board',
+          TIMESTAMP: new Date().toISOString().replace('T', ' ').slice(0, 19),
+          POSTED_DATE: job.postedDate || 'Recent',
+          MATCH_REASONS: buildMatchReasons(job),
+          DRAFT_COVER_LETTER: job.draftCoverLetter || '<p><em>Cover letter will be generated upon approval.</em></p>',
+          ATTACHMENTS_SECTION: buildAttachmentsSection(job),
+          TALKING_POINTS: buildTalkingPoints(job),
+          SPONSORSHIP_BANNER: buildSponsorshipBanner(job, { sponsorship_priority: false }),
+        };
+
+        const html = fillTemplate(templateHtml, vars);
+        const subject = subjectForMode(mode, job);
+
+        const mailOptions = {
+          from: EMAIL_CONFIG.from,
+          to: candidateEmail,
+          subject,
+          html,
+          headers: {
+            'X-Career-Ops-Mode': mode.label,
+            'X-Career-Ops-Score': String(entry.fitScore),
+            'X-Career-Ops-Company': job.company || '',
+            'X-Career-Ops-Profile': entry.profileName,
+            'X-Career-Ops-Retry': String(entry.retries + 1),
+          },
+        };
+
+        // Attach PDFs if they still exist
+        const attachments = [];
+        if (job.coverLetterPath && existsSync(job.coverLetterPath)) {
+          attachments.push({ filename: `CoverLetter.pdf`, path: job.coverLetterPath });
+        }
+        if (job.cvPdfPath && existsSync(job.cvPdfPath)) {
+          attachments.push({ filename: `CV.pdf`, path: job.cvPdfPath });
+        }
+        if (job.cvDePdfPath && existsSync(job.cvDePdfPath)) {
+          attachments.push({ filename: `Lebenslauf.pdf`, path: job.cvDePdfPath });
+        }
+        if (attachments.length > 0) mailOptions.attachments = attachments;
+
+        const info = await transport.sendMail(mailOptions);
+        console.log(`    → SENT (${info.messageId})`);
+        succeeded.push(entry);
+
+        // Log the retry success
+        await logDispatch(job, mode, entry.fitScore, { sent: true, messageId: info.messageId }, entry.profileName);
+
+      } catch (err) {
+        entry.retries++;
+        entry.error = err.message;
+        entry.lastRetryAt = new Date().toISOString();
+        stillFailed.push(entry);
+        console.log(`    → FAILED: ${err.message.split('\n')[0]}`);
+
+        // If rate-limited again, stop processing — no point hammering
+        if (/too many login|454.*4\.7\.0/i.test(err.message)) {
+          console.log(`\n  Rate-limited again. Stopping. Remaining ${queue.length - i - 1} emails stay in queue.`);
+          stillFailed.push(...queue.slice(i + 1));
+          break;
+        }
+      }
+
+      // Pace between sends
+      if (i < queue.length - 1) await sleep(delayMs);
+    }
+
+    // Save remaining failures back to queue
+    await saveRetryQueue(stillFailed);
+    transport.close();
+
+    console.log(`\n  Results: ${succeeded.length} sent, ${stillFailed.length} still queued`);
+    if (stillFailed.length > 0) {
+      console.log(`  Run again later: node job-dispatcher.mjs --retry\n`);
+    } else {
+      console.log(`  Queue cleared!\n`);
+    }
+    return;
+  }
+
+  // --backfill-retry: Parse apply-log for rate-limited entries and add to retry queue
+  if (args.includes('--backfill-retry')) {
+    const logPath = resolve(__dirname, 'data/apply-log.md');
+    const logContent = await readFile(logPath, 'utf8');
+    const lines = logContent.split('\n').filter(l => l.startsWith('|') && /454.*4\.7\.0|Too many login/i.test(l));
+
+    if (lines.length === 0) {
+      console.log('\n  No rate-limited entries found in apply-log.\n');
+      return;
+    }
+
+    const queue = await loadRetryQueue();
+    let added = 0;
+
+    for (const line of lines) {
+      const cols = line.split('|').map(c => c.trim()).filter(Boolean);
+      if (cols.length < 8) continue;
+
+      const [date, time, profileName, company, title, platform, modeLabel, scoreStr] = cols;
+      const fitScore = parseInt(scoreStr) || 60;
+
+      const key = `${company}|${title}|${profileName}`;
+      if (queue.some(e => `${e.job.company}|${e.job.title}|${e.profileName}` === key)) continue;
+
+      queue.push({
+        job: { title, company, url: null, location: null, salary: null, platform, source: platform },
+        careerOpsScore: fitScore >= 80 ? 4.2 : fitScore >= 60 ? 3.5 : 2.5,
+        fitScore,
+        modeLabel,
+        profileName,
+        error: 'backfilled from apply-log',
+        failedAt: `${date}T${time}`,
+        retries: 0,
+      });
+      added++;
+    }
+
+    await saveRetryQueue(queue);
+    console.log(`\n  Backfilled ${added} entries (${queue.length} total in retry queue)`);
+    console.log(`  Run: node job-dispatcher.mjs --retry\n`);
+    return;
+  }
+
   if (args.includes('--test')) {
     // Generate CV PDF for the active profile before sending test email
     const activeYml = await readFile(resolve(__dirname, 'profiles/active.yml'), 'utf8');
@@ -1003,6 +1248,8 @@ approval:
   Usage:
     node job-dispatcher.mjs --test [--dry-run]
     node job-dispatcher.mjs --job='{"title":"...","company":"..."}' --score=4.2 [--dry-run]
+    node job-dispatcher.mjs --retry [--dry-run]          Resend rate-limited emails from queue
+    node job-dispatcher.mjs --backfill-retry             Parse apply-log for failed sends → queue
 
   Modes:
     Fit 80-100 (score 4.0+):  Auto-Apply → confirmation email

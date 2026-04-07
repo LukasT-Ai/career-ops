@@ -4,17 +4,17 @@
 
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15086-43950679-25-S&angebotsart=1 | Bechtle AG | Inside Sales Financial Services (w/m/d) — Neckarsulm
 
-- [ ] https://www.usajobs.gov:443/job/863167000 | Food Safety and Inspection Service | IT Specialist (Enterprise Architecture) — Location Negotiable After Selection | $106,437-$138,370 Per Year | GS-13/13
-- [ ] https://www.usajobs.gov:443/job/862835400 | Joint Activities | Telecommunications Manager (Spectrum Management) — Fort Bragg, North Carolina | $131,342-$170,750 Per Year | GS-14/14
-- [ ] https://www.usajobs.gov:443/job/863720300 | United States Fleet Forces Command | TELECOMMUNICATIONS SPECIALIST — Souda Bay, Greece | $102,415-$133,142 Per Year | GG-12/12
+- [x] #002 | https://www.usajobs.gov:443/job/863167000 | FSIS | IT Specialist (Enterprise Architecture) | 1.5/5 | SKIP
+- [x] #001 | https://www.usajobs.gov:443/job/862835400 | Joint Activities | Telecom Manager (Spectrum Mgmt) | 2.0/5 | PDF ✅
+- [x] #005 | https://www.usajobs.gov:443/job/863720300 | Fleet Forces Command | Telecom Specialist (Souda Bay) | 2.0/5 | PDF ✅
 - [ ] https://www.usajobs.gov:443/job/863693900 | Air National Guard Units | TELECOMMUNICATIONS SPECIALIST — Gulfport, Mississippi | $74,678-$97,087 Per Year | GS-11/11
 - [ ] https://www.usajobs.gov:443/job/863360900 | Air Force Elements, U.S. Central Command | TELECOMMUNICATIONS SPECIALIST — MacDill AFB, Florida | $89,508-$116,362 Per Year | GS-12/12
-- [ ] https://www.usajobs.gov:443/job/862492700 | United States Fleet Forces Command | TELECOMMUNICATIONS SPECIALIST — Fort Meade, Maryland | $102,415-$158,322 Per Year | GS-12/13
+- [x] #003 | https://www.usajobs.gov:443/job/862492700 | Fleet Forces Command | Telecom Specialist | 1.5/5 | SKIP
 - [ ] https://www.usajobs.gov:443/job/862833800 | Air National Guard Units | TITLE 5 IT SPECIALIST (INFOSEC) (MI 110th Wing) — Battle Creek, Michigan | $75,278-$97,867 Per Year | GS-11/11
 - [ ] https://www.usajobs.gov:443/job/863909500 | Air National Guard Units | IT SPECIALIST (INFOSEC) — Des Moines, Iowa | $75,278-$97,867 Per Year | GS-11/11
 - [ ] https://www.usajobs.gov:443/job/862387500 | Air National Guard Units | IT SPEC (INFOSEC/NETWORK) - TITLE 32 — Hunter AFB, Georgia | $74,678-$97,087 Per Year | GS-11/11
 - [ ] https://www.usajobs.gov:443/job/847096900 | Air Force Civilian Career Training | IT SPECIALIST — Location Negotiable After Selection | $56,763-$88,225 Per Year | GS-7/9
-- [ ] https://www.usajobs.gov:443/job/858700600 | Treasury, Departmental Offices | IT Specialist (AI) — Location Negotiable After Selection | $89,508-$197,200 Per Year | GS-12/15
+- [x] #004 | https://www.usajobs.gov:443/job/858700600 | Treasury | IT Specialist (AI) | 1.0/5 | SKIP
 - [ ] https://www.usajobs.gov:443/job/860695000 | Air National Guard Units | IT SPEC (NETWORK) - TITLE 32 — Brunswick, Georgia | $88,120-$114,563 Per Year | GS-11/11
 - [ ] https://www.usajobs.gov:443/job/863080200 | Headquarters, Air Force Reserve Command | IT SPECIALIST (APPSW) — Robins AFB, Georgia | $106,437-$138,370 Per Year | GS-13/13
 - [ ] https://www.usajobs.gov:443/job/863319000 | U.S. Army Training and Doctrine Command | IT SPECIALIST (NETWORK) — Fort Gordon, Georgia | $75,278-$102,067 Per Year | GG-11/11
@@ -27,19 +27,19 @@
 - [ ] https://www.usajobs.gov:443/job/860289600 | Air National Guard Units | IT SPECIALIST (INFOSEC) — Reno, Nevada | $75,278-$97,867 Per Year | GS-11/11
 - [ ] https://www.usajobs.gov:443/job/860750200 | Air National Guard Units | CONTRACT SPECIALIST - TITLE 32 — Robins AFB, Georgia | $74,678-$97,087 Per Year | GS-11/11
 
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1201958206-S&angebotsart=1 | EDNT IT-Services GmbH | Account Manager IT& Telekommunikation (m/w/d) — Bensheim
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205481571-S&angebotsart=1 | JKR GmbH | Account Manager/in (m/w/d) B2B mit Berufserfahrung im Bereich Telekommunikation gesucht — Bad Kreuznach
+- [x] #006 | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1201958206-S&angebotsart=1 | EDNT IT-Services | Account Manager IT & Telko | 2.5/5 | PDF ✅
+- [x] #007 | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205481571-S&angebotsart=1 | JKR GmbH | Account Manager B2B Telko | 2.5/5 | PDF ✅
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001904089-S&angebotsart=1 | SUXXEED Sales for your Success GmbH | Vertriebsmitarbeiter (m/w/d) Telekommunikation — Hamburg
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002535023-S&angebotsart=1 | W+P JobPartner GmbH | Account Manager (m/w/d) — Frankfurt am Main
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=11081-4IHM1PZBZJWUOTDR-S&angebotsart=1 | MANPOWER GmbH & Co. KG | Sales Account Manager (m/w/d) — München
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13410-k13572.15471-S&angebotsart=1 | Guldberg GmbH | (Junior) Account Manager (m/w/d) — München
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13669-WQS2CALVR1AQHU0U-S&angebotsart=1 | puro Personaldienstleistung GmbH | Account Manager Netzwerklösungen (m/w/d) — Dreieich
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002868239-S&angebotsart=1 | Telefusion GmbH | Inside Sales / Bestandskundenvertrieb (Telekommunikation) m/w/d — Crailsheim
+- [x] #009 | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002868239-S&angebotsart=1 | Telefusion GmbH | Inside Sales Telko | 1.5/5 | SKIP
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205994836-S&angebotsart=1 | Kessler GmbH | Junior Account Manager m/w/d Geschäftskundenvertrieb — Rottweil
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002741330-S&angebotsart=1 | Schollmeier ITK GmbH & Co. KG | Junior Account Manager (m/w/d) — Mannheim
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13319-866636/1_603374LS-S&angebotsart=1 | Hays AG | Key Account Manager Telekommunikation (m/w/d) — Düsseldorf
+- [x] #008 | https://www.arbeitsagentur.de/jobsuche/suche?id=13319-866636/1_603374LS-S&angebotsart=1 | Hays AG | KAM Telekommunikation | 3.0/5 | PDF ✅
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002578570-S&angebotsart=1 | Gamma Communications GmbH | SIP-Customer Account Manager (m/w/d) — Oberkotzau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=16147-898572649-S&angebotsart=1 | Deutsche Glasfaser Holding GmbH | Wholesale Account Manager (w/m/d) BSA — Düsseldorf
+- [x] #010 | https://www.arbeitsagentur.de/jobsuche/suche?id=16147-898572649-S&angebotsart=1 | Deutsche Glasfaser | Wholesale Account Manager BSA | 3.5/5 | PDF ✅
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002856016-S&angebotsart=1 | TeleSys Kommunikationstechnik GmbH Geschäftsleitung | Vertriebsmitarbeiter Außendienst – Sales Account Manager (m/w/d) — Breitengüßbach
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14418-45448-1762635-0-S&angebotsart=1 | Schmieder GmbH Unternehmensberatung | Account Manager (m/w/d) Cloud und Rechenzentrum
 - [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001267664-S&angebotsart=1 | Kessler GmbH | Junior Account Manager | Großhandel & Distribution — Balingen
