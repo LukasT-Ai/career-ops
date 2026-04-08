@@ -4,10 +4,12 @@
  * remotive-api.mjs — Remotive Remote Job Scanner
  *
  * Free API, no auth required. Supports category and search params.
- * Lamin-only scanner (private-sector remote US sales/telecom roles).
+ * Multi-profile scanner (sales/telecom for Lamin, psychiatry/telehealth for Paulina).
  *
  * Usage:
- *   node remotive-api.mjs [--dry-run]
+ *   node remotive-api.mjs [--profile=paulina|lamin] [--dry-run]
+ *
+ * Without --profile, reads profiles/active.yml to determine which profile to scan.
  *
  * API: https://remotive.com/api/remote-jobs
  * Params: category, search, limit
@@ -20,36 +22,10 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // ============================================================
-// Paths — Lamin profile only
-// ============================================================
-
-const PIPELINE_PATH = resolve(__dirname, 'profiles/lamin/data/pipeline.md');
-const HISTORY_PATH = resolve(__dirname, 'profiles/lamin/data/scan-history.tsv');
-const APPLICATIONS_PATH = resolve(__dirname, 'profiles/lamin/data/applications.md');
-
-// ============================================================
 // API Configuration
 // ============================================================
 
 const API_BASE = 'https://remotive.com/api/remote-jobs';
-
-// Search queries — each maps to a Remotive API call
-// category options: software-dev, marketing, sales, customer-support, etc.
-const SEARCH_QUERIES = [
-  { category: 'sales', search: '', label: 'Sales (all)' },
-  { category: 'customer-support', search: '', label: 'Customer Support (all)' },
-  { category: 'sales', search: 'account manager', label: 'Sales: Account Manager' },
-  { category: 'sales', search: 'business development', label: 'Sales: BizDev' },
-  { category: 'sales', search: 'enterprise', label: 'Sales: Enterprise' },
-  { category: 'sales', search: 'telecom', label: 'Sales: Telecom' },
-  { category: 'sales', search: 'channel partner', label: 'Sales: Channel/Partner' },
-  { category: 'customer-support', search: 'customer success', label: 'Customer Success' },
-  { category: 'marketing', search: 'B2B', label: 'Marketing: B2B' },
-  // Broad keyword searches without category restriction
-  { category: '', search: 'account manager', label: 'All: Account Manager' },
-  { category: '', search: 'business development', label: 'All: BizDev' },
-  { category: '', search: 'partner manager', label: 'All: Partner Manager' },
-];
 
 const RESULTS_PER_QUERY = 50;
 
@@ -57,41 +33,102 @@ const RESULTS_PER_QUERY = 50;
 const RATE_LIMIT_MS = 1000;
 
 // ============================================================
-// Filter Configuration — Lamin (sales/telecom/biz dev)
+// Profile Configurations
 // ============================================================
 
-const POSITIVE_KEYWORDS = [
-  'sales', 'account manager', 'telecom', 'business development', 'b2b',
-  'enterprise sales', 'channel', 'partner manager', 'customer success',
-];
+const PROFILE_CONFIGS = {
+  lamin: {
+    searchQueries: [
+      { category: 'sales', search: '', label: 'Sales (all)' },
+      { category: 'customer-support', search: '', label: 'Customer Support (all)' },
+      { category: 'sales', search: 'account manager', label: 'Sales: Account Manager' },
+      { category: 'sales', search: 'business development', label: 'Sales: BizDev' },
+      { category: 'sales', search: 'enterprise', label: 'Sales: Enterprise' },
+      { category: 'sales', search: 'telecom', label: 'Sales: Telecom' },
+      { category: 'sales', search: 'channel partner', label: 'Sales: Channel/Partner' },
+      { category: 'customer-support', search: 'customer success', label: 'Customer Success' },
+      { category: 'marketing', search: 'B2B', label: 'Marketing: B2B' },
+      // Broad keyword searches without category restriction
+      { category: '', search: 'account manager', label: 'All: Account Manager' },
+      { category: '', search: 'business development', label: 'All: BizDev' },
+      { category: '', search: 'partner manager', label: 'All: Partner Manager' },
+    ],
+    positiveKeywords: [
+      'sales', 'account manager', 'telecom', 'business development', 'b2b',
+      'enterprise sales', 'channel', 'partner manager', 'customer success',
+    ],
+    negativeKeywords: [
+      'nurse', 'physician', 'medical', 'intern', 'student',
+      'design', 'frontend', 'backend',
+    ],
+    locationAccept: [
+      'usa', 'us', 'worldwide', 'anywhere', 'atlanta', 'georgia',
+    ],
+  },
+  paulina: {
+    searchQueries: [
+      // Remotive's categories are tech-focused; use broad search for medical roles
+      { category: '', search: 'psychiatrist', label: 'All: Psychiatrist' },
+      { category: '', search: 'behavioral health', label: 'All: Behavioral Health' },
+      { category: '', search: 'mental health', label: 'All: Mental Health' },
+      { category: '', search: 'physician', label: 'All: Physician' },
+      { category: '', search: 'medical director', label: 'All: Medical Director' },
+      { category: '', search: 'telepsychiatry', label: 'All: Telepsychiatry' },
+      { category: '', search: 'telehealth', label: 'All: Telehealth' },
+    ],
+    positiveKeywords: [
+      'psychiatrist', 'behavioral health', 'mental health', 'physician',
+      'medical director', 'telepsychiatry', 'telehealth', 'psychiatric',
+      'attending physician', 'clinical director',
+    ],
+    negativeKeywords: [
+      'nurse', 'nursing', 'social worker', 'psycholog', 'counselor',
+      'technician', 'aide', 'clerk', 'receptionist', 'billing',
+      'cna', 'lpn', 'rn', 'intern', 'student',
+    ],
+    locationAccept: [
+      'usa', 'us', 'worldwide', 'anywhere', 'georgia', 'atlanta',
+      'california', 'remote', 'telehealth',
+    ],
+  },
+};
 
-const NEGATIVE_KEYWORDS = [
-  'nurse', 'physician', 'medical', 'intern', 'student',
-  'design', 'frontend', 'backend',
-];
+// ============================================================
+// Profile Resolution
+// ============================================================
 
-const LOCATION_ACCEPT = [
-  'usa', 'us', 'worldwide', 'anywhere', 'atlanta', 'georgia',
-];
+async function resolveProfile() {
+  const args = process.argv.slice(2);
+  const match = args.join(' ').match(/--profile=(\w+)/);
+  if (match) return match[1];
+
+  // Fall back to profiles/active.yml
+  try {
+    const yml = await readFile(resolve(__dirname, 'profiles/active.yml'), 'utf8');
+    return yml.match(/active:\s*(\w+)/)?.[1] || 'lamin';
+  } catch {
+    return 'lamin';
+  }
+}
 
 // ============================================================
 // Keyword Matching
 // ============================================================
 
-function matchesKeywords(text) {
+function matchesKeywords(text, config) {
   const lower = (text || '').toLowerCase();
-  const hasPositive = POSITIVE_KEYWORDS.some(kw => lower.includes(kw));
+  const hasPositive = config.positiveKeywords.some(kw => lower.includes(kw));
   if (!hasPositive) return false;
-  const hasNegative = NEGATIVE_KEYWORDS.some(kw => lower.includes(kw));
+  const hasNegative = config.negativeKeywords.some(kw => lower.includes(kw));
   if (hasNegative) return false;
   return true;
 }
 
-function matchesLocation(location) {
+function matchesLocation(location, config) {
   // Empty/null location = remote anywhere = accepted
   if (!location || location.trim() === '') return true;
   const lower = location.toLowerCase();
-  return LOCATION_ACCEPT.some(loc => lower.includes(loc));
+  return config.locationAccept.some(loc => lower.includes(loc));
 }
 
 // ============================================================
@@ -109,11 +146,11 @@ function formatSalary(job) {
 // Dedup — load existing URLs + company+title combos
 // ============================================================
 
-async function loadExistingEntries() {
+async function loadExistingEntries(pipelinePath, historyPath, applicationsPath) {
   const urls = new Set();
   const companyTitles = new Set();
 
-  for (const filePath of [PIPELINE_PATH, APPLICATIONS_PATH, HISTORY_PATH]) {
+  for (const filePath of [pipelinePath, applicationsPath, historyPath]) {
     try {
       const content = await readFile(filePath, 'utf8');
       for (const match of content.matchAll(/https?:\/\/[^\s|)\t]+/g)) {
@@ -124,7 +161,7 @@ async function loadExistingEntries() {
 
   // Extract company+title combos from pipeline for secondary dedup
   try {
-    const pipeline = await readFile(PIPELINE_PATH, 'utf8');
+    const pipeline = await readFile(pipelinePath, 'utf8');
     for (const line of pipeline.split('\n')) {
       const parts = line.split('|').map(p => p.trim());
       if (parts.length >= 3) {
@@ -176,7 +213,7 @@ async function fetchJobs(category, search, limit) {
 // Pipeline + History Writers
 // ============================================================
 
-async function appendToPipeline(jobs) {
+async function appendToPipeline(jobs, pipelinePath) {
   if (jobs.length === 0) return;
 
   const lines = jobs.map(j =>
@@ -184,22 +221,22 @@ async function appendToPipeline(jobs) {
   ).join('\n');
 
   try {
-    const existing = await readFile(PIPELINE_PATH, 'utf8');
+    const existing = await readFile(pipelinePath, 'utf8');
     if (existing.includes('## Pendientes')) {
       const updated = existing.replace(
         '## Pendientes\n',
         `## Pendientes\n\n${lines}\n`
       );
-      await writeFile(PIPELINE_PATH, updated, 'utf8');
+      await writeFile(pipelinePath, updated, 'utf8');
     } else {
-      await appendFile(PIPELINE_PATH, `\n${lines}\n`, 'utf8');
+      await appendFile(pipelinePath, `\n${lines}\n`, 'utf8');
     }
   } catch {
-    await writeFile(PIPELINE_PATH, `# Pipeline — Pending URLs\n\n## Pendientes\n\n${lines}\n`, 'utf8');
+    await writeFile(pipelinePath, `# Pipeline — Pending URLs\n\n## Pendientes\n\n${lines}\n`, 'utf8');
   }
 }
 
-async function appendToScanHistory(jobs, skipped) {
+async function appendToScanHistory(jobs, skipped, historyPath) {
   const date = new Date().toISOString().split('T')[0];
 
   const lines = [
@@ -210,10 +247,10 @@ async function appendToScanHistory(jobs, skipped) {
   if (!lines) return;
 
   try {
-    await appendFile(HISTORY_PATH, `\n${lines}`, 'utf8');
+    await appendFile(historyPath, `\n${lines}`, 'utf8');
   } catch {
     const header = 'url\tfirst_seen\tportal\ttitle\tcompany\tstatus';
-    await writeFile(HISTORY_PATH, `${header}\n${lines}\n`, 'utf8');
+    await writeFile(historyPath, `${header}\n${lines}\n`, 'utf8');
   }
 }
 
@@ -224,13 +261,26 @@ async function appendToScanHistory(jobs, skipped) {
 async function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes('--dry-run');
+  const profileName = await resolveProfile();
 
-  console.log(`\n  Remotive API Scanner — Profile: lamin`);
+  const config = PROFILE_CONFIGS[profileName];
+  if (!config) {
+    throw new Error(`Unknown profile: ${profileName}. Available: ${Object.keys(PROFILE_CONFIGS).join(', ')}`);
+  }
+
+  const SEARCH_QUERIES = config.searchQueries;
+
+  // Dynamic paths based on profile
+  const PIPELINE_PATH = resolve(__dirname, `profiles/${profileName}/data/pipeline.md`);
+  const HISTORY_PATH = resolve(__dirname, `profiles/${profileName}/data/scan-history.tsv`);
+  const APPLICATIONS_PATH = resolve(__dirname, `profiles/${profileName}/data/applications.md`);
+
+  console.log(`\n  Remotive API Scanner — Profile: ${profileName}`);
   console.log(`  ${'━'.repeat(50)}`);
   console.log(`  Queries: ${SEARCH_QUERIES.length} | Limit: ${RESULTS_PER_QUERY}/query | Dry run: ${dryRun}\n`);
 
   // Load dedup
-  const { urls: existingUrls, companyTitles: existingCombos } = await loadExistingEntries();
+  const { urls: existingUrls, companyTitles: existingCombos } = await loadExistingEntries(PIPELINE_PATH, HISTORY_PATH, APPLICATIONS_PATH);
   console.log(`  Existing URLs loaded: ${existingUrls.size}`);
   console.log(`  Existing company+title combos: ${existingCombos.size}`);
 
@@ -283,7 +333,7 @@ async function main() {
         }
 
         // Keyword filter
-        if (!matchesKeywords(searchText)) {
+        if (!matchesKeywords(searchText, config)) {
           totalFiltered++;
           allSkipped.push({ url, title, company, queryLabel: label, reason: 'skipped_keywords' });
           continue;
@@ -291,14 +341,14 @@ async function main() {
 
         // Negative keyword check on title
         const titleLower = title.toLowerCase();
-        if (NEGATIVE_KEYWORDS.some(kw => titleLower.includes(kw))) {
+        if (config.negativeKeywords.some(kw => titleLower.includes(kw))) {
           totalFiltered++;
           allSkipped.push({ url, title, company, queryLabel: label, reason: 'skipped_negative' });
           continue;
         }
 
         // Location filter
-        if (!matchesLocation(location)) {
+        if (!matchesLocation(location, config)) {
           totalLocation++;
           allSkipped.push({ url, title, company, queryLabel: label, reason: 'skipped_location' });
           continue;
@@ -337,13 +387,13 @@ async function main() {
 
   // Write results
   if (!dryRun && allJobs.length > 0) {
-    await appendToPipeline(allJobs);
-    console.log(`\n  Written to profiles/lamin/data/pipeline.md`);
+    await appendToPipeline(allJobs, PIPELINE_PATH);
+    console.log(`\n  Written to profiles/${profileName}/data/pipeline.md`);
   }
 
   if (!dryRun) {
-    await appendToScanHistory(allJobs, allSkipped);
-    console.log(`  Written to profiles/lamin/data/scan-history.tsv`);
+    await appendToScanHistory(allJobs, allSkipped, HISTORY_PATH);
+    console.log(`  Written to profiles/${profileName}/data/scan-history.tsv`);
   }
 
   if (dryRun) {

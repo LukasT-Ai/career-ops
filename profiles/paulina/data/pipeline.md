@@ -20,8 +20,6 @@
 - [ ] https://www.indeed.com/viewjob?jk=789abcdef0123456 | Unknown | Psychiatrist | Not disclosed
 - [ ] https://www.indeed.com/viewjob?jk=884f7831a203335c | South Coast Children's Society | PSYCHIATRIST — Hybrid work in Costa Mesa, CA 92626 | $312,000 - $330,000 a year
 - [ ] https://www.indeed.com/viewjob?jk=2bc73fabf6fcd914 | Astrya Global | Psychiatrist - Child & Adolescent — Hybrid work in Sonoma, CA 95476 | Contract +1
-- [ ] https://www.indeed.com/viewjob?jk=c8bd4c81e4ec7be4 | Psychiatric Medical Practitioners, Inc | Outpatient Psychiatrist – Telehealth, Hybrid, or In-Person — Hybrid work in Bakersfield, CA 93301 | $380,000 - $425,000 a year
-- [ ] https://www.indeed.com/viewjob?jk=161c9bcd494f383f | Daybreak Health | Remote Mental Health Clinician- LCSW, LPCC, LMFT (W-2, CA) — Long Beach, CA | $55,000 - $115,000 a year
 - [ ] https://www.indeed.com/viewjob?jk=001eea6d6238578a | Mindpath Health | Outpatient Psychiatrist or PMHNP - Hybrid Work Schedule — Hybrid work in San Marcos, CA 92069 | $174,000 - $353,800 a year
 - [ ] https://www.indeed.com/viewjob?jk=77965647bbde5de6 | Mindpath Health | Outpatient Psychiatrist or PMHNP — Hybrid work in Santa Rosa, CA 95401 | $174,000 - $342,000 a year
 - [ ] https://www.indeed.com/viewjob?jk=fd3c2eb40adb4fd0 | Mindpath Health | Outpatient Psychiatrist (J1 Waiver Eligible!) or PMHNP — Hybrid work in Modesto, CA 95350 | $160,000 - $327,000 a year

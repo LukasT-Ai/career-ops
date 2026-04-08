@@ -55,6 +55,31 @@ const SEARCH_CONFIGS = {
       'junior developer', 'software engineer', 'data scientist',
     ],
   },
+
+  paulina: {
+    // Psychiatrist / physician roles — remote, telehealth, and German medical positions
+    searchPositive: [
+      'psychiatrist', 'psychiatry', 'behavioral health', 'mental health',
+      'physician', 'medical director', 'attending', 'telepsychiatry',
+      'telehealth', 'telemedicine', 'clinical director',
+      'facharzt', 'psychiatrie', 'oberarzt', 'arzt', 'ärztin', 'klinik',
+      'chefarzt', 'assistenzarzt', 'psychosomatik', 'neurologie',
+    ],
+    titlePositive: [
+      'psychiatrist', 'psychiatry', 'behavioral health', 'mental health',
+      'physician', 'medical director', 'attending', 'telepsychiatry',
+      'telehealth', 'telemedicine', 'clinical director',
+      'facharzt', 'psychiatrie', 'oberarzt', 'arzt', 'ärztin', 'klinik',
+      'chefarzt', 'assistenzarzt',
+    ],
+    titleNegative: [
+      'nurse', 'social worker', 'psychologist', 'counselor', 'technician',
+      'aide', 'cna', 'lpn', 'rn', 'therapist', 'pharmacy', 'pharmacist',
+      'intern', 'student', 'trainee', 'praktikum', 'werkstudent',
+      'medical assistant', 'medical coder', 'billing',
+      'software engineer', 'data scientist', 'developer',
+    ],
+  },
 };
 
 // ============================================================
