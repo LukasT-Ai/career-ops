@@ -139,7 +139,12 @@ async function loadBraveUsage() {
   try {
     const raw = await readFile(usagePath, 'utf8');
     const data = JSON.parse(raw);
-    if (data.month === currentMonth) return data;
+    if (data.month === currentMonth) {
+      // Migrate legacy format (count → profiles/total)
+      if (!data.profiles) data.profiles = {};
+      if (data.total == null) data.total = data.count || 0;
+      return data;
+    }
     return { month: currentMonth, profiles: {}, total: 0 };
   } catch { return { month: currentMonth, profiles: {}, total: 0 }; }
 }

@@ -49,11 +49,17 @@ const SCANNERS = [
   // HTTP scrapers — no Playwright needed
   { name: 'StepStone.de', script: 'stepstone-scraper.mjs', cost: 'FREE' },
   { name: 'XING Jobs', script: 'xing-scraper.mjs', cost: 'FREE' },
-  { name: 'Dice.com', script: 'dice-scraper.mjs', cost: 'FREE' },
+  { name: 'Dice.com', script: 'dice-scraper.mjs', cost: 'FREE', skipProfiles: ['paulina'] },
+  // Profile-specific niche scrapers
+  { name: 'Doximity', script: 'doximity-scraper.mjs', cost: 'FREE', skipProfiles: ['lamin'] },
+  { name: 'PraktischArzt.de', script: 'praktischarzt-scraper.mjs', cost: 'FREE', skipProfiles: ['lamin'] },
+  { name: 'Ärztestellen (Ärzteblatt)', script: 'aerztestellen-scraper.mjs', cost: 'FREE', skipProfiles: ['lamin'] },
+  { name: 'Telecom Careers', script: 'telecom-careers-scraper.mjs', cost: 'FREE', skipProfiles: ['paulina'] },
   // Playwright scrapers — headless browser, slower
   { name: 'LinkedIn', script: 'linkedin-scraper.mjs', cost: 'FREE' },
   { name: 'Indeed', script: 'indeed-scraper.mjs', cost: 'FREE' },
-  { name: 'Monster', script: 'monster-scraper.mjs', cost: 'FREE' },
+  // Monster disabled — returns 403 on fetch, blocks Playwright. Anti-scraping.
+  // { name: 'Monster', script: 'monster-scraper.mjs', cost: 'FREE' },
   // Paid — budget-capped
   { name: 'Board Scanner (Brave API + Bing + ATS APIs)', script: 'board-scanner.mjs', cost: 'PAID ($5/1000 Brave queries, budget-capped)' },
 ];
@@ -245,24 +251,30 @@ async function main() {
 
     results[profile] = { scanners: {}, newJobs: 0 };
 
-    // Count pipeline before
+    // Count pipeline before (read from PROFILE dir, where scanners write)
+    const profilePipeline = resolve(__dirname, 'profiles', profile, 'data', 'pipeline.md');
     let beforeCount = 0;
     try {
-      const pipeline = await readFile(resolve(__dirname, 'data/pipeline.md'), 'utf8');
+      const pipeline = await readFile(profilePipeline, 'utf8');
       beforeCount = (pipeline.match(/- \[ \]/g) || []).length;
     } catch { /* no pipeline */ }
 
     // Run each scanner
     for (const scanner of SCANNERS) {
+      if (scanner.skipProfiles && scanner.skipProfiles.includes(profile)) {
+        console.log(`\n  Skipping: ${scanner.name} (not relevant for ${profile})`);
+        results[profile].scanners[scanner.name] = 'SKIPPED';
+        continue;
+      }
       console.log(`\n  Running: ${scanner.name}...`);
       const ok = await runScanner(scanner.script, profile, extraArgs);
       results[profile].scanners[scanner.name] = ok ? 'OK' : 'FAILED';
     }
 
-    // Count pipeline after
+    // Count pipeline after (read from PROFILE dir)
     let afterCount = 0;
     try {
-      const pipeline = await readFile(resolve(__dirname, 'data/pipeline.md'), 'utf8');
+      const pipeline = await readFile(profilePipeline, 'utf8');
       afterCount = (pipeline.match(/- \[ \]/g) || []).length;
     } catch { /* no pipeline */ }
 

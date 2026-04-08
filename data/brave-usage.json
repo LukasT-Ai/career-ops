@@ -1,4 +1,8 @@
 {
   "month": "2026-04",
-  "count": 59
+  "profiles": {
+    "paulina": 30,
+    "lamin": 29
+  },
+  "total": 59
 }

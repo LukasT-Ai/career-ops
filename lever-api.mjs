@@ -86,6 +86,32 @@ function matchesTitle(title, filter) {
   return !hasNeg;
 }
 
+// ── Location Filtering (matches scan-all.mjs LOCATION_RULES) ─
+
+const LOCATION_RULES = {
+  paulina: {
+    allowed: ['atlanta', 'georgia', 'decatur', 'dekalb', 'california', 'los angeles',
+      'san francisco', 'san diego', 'sacramento', 'menlo park', 'palo alto',
+      'remote', 'telehealth', 'telepsych', 'virtual', 'work from home', 'anywhere',
+      'germany', 'deutschland', 'berlin', 'munich', 'münchen', 'hamburg', 'frankfurt',
+      'heidelberg', 'freiburg', 'cologne', 'köln', 'stuttgart', 'düsseldorf'],
+  },
+  lamin: {
+    allowed: ['atlanta', 'georgia', 'remote', 'work from home', 'anywhere', 'virtual',
+      'telecommute', 'united states',
+      'germany', 'deutschland', 'berlin', 'munich', 'münchen', 'hamburg', 'frankfurt',
+      'stuttgart', 'düsseldorf', 'cologne', 'köln'],
+  },
+};
+
+function matchesLocation(location, profileName) {
+  const rules = LOCATION_RULES[profileName];
+  if (!rules) return true;
+  if (!location || location.trim() === '') return true;
+  const lower = location.toLowerCase();
+  return rules.allowed.some(kw => lower.includes(kw));
+}
+
 async function loadExistingUrls(profileName) {
   const urls = new Set();
   const sources = [
@@ -261,6 +287,13 @@ async function main() {
         if (!matchesTitle(job.title, filter)) {
           totalFiltered++;
           allSkipped.push({ ...job, reason: 'skipped_title' });
+          continue;
+        }
+
+        // Location filter
+        if (!matchesLocation(job.location, profileName)) {
+          totalFiltered++;
+          allSkipped.push({ ...job, reason: 'skipped_location' });
           continue;
         }
 
