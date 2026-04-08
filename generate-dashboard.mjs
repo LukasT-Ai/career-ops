@@ -348,7 +348,12 @@ async function main() {
   const outPath = resolve(__dirname, 'output', 'pipeline-dashboard.html');
   await writeFile(outPath, html, 'utf8');
 
+  // Also write to docs/ for GitHub Pages
+  const docsPath = resolve(__dirname, 'docs', 'index.html');
+  await writeFile(docsPath, html, 'utf8');
+
   console.log(`  Dashboard written to: ${outPath}`);
+  console.log(`  GitHub Pages copy:    ${docsPath}`);
 
   if (!noOpen) {
     const cmd = process.platform === 'win32' ? 'start' : process.platform === 'darwin' ? 'open' : 'xdg-open';
