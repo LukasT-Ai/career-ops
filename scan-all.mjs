@@ -45,6 +45,8 @@ const SCANNERS = [
   { name: 'JobSearch15 (LinkedIn)', script: 'jobsearch15-api.mjs', cost: 'FREE (50 req/mo budget-capped)' },
   // HTTP scrapers — no Playwright needed
   { name: 'StepStone.de', script: 'stepstone-scraper.mjs', cost: 'FREE' },
+  { name: 'XING Jobs', script: 'xing-scraper.mjs', cost: 'FREE' },
+  { name: 'Dice.com', script: 'dice-scraper.mjs', cost: 'FREE' },
   // Playwright scrapers — headless browser, slower
   { name: 'LinkedIn', script: 'linkedin-scraper.mjs', cost: 'FREE' },
   { name: 'Indeed', script: 'indeed-scraper.mjs', cost: 'FREE' },

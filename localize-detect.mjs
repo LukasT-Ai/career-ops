@@ -251,10 +251,24 @@ const APPROBATION_TIER0 = [
 
 // Known German hospitals/networks that actively recruit internationally and support Approbation
 const APPROBATION_EMPLOYERS = [
-  'charité', 'vivantes', 'helios', 'asklepios', 'sana kliniken', 'rhön-klinikum',
-  'schön klinik', 'ameos', 'median', 'oberberg', 'vitos', 'lwl-klinik',
-  'bezirksklinikum', 'universitätsklinikum', 'uniklinik', 'uniklinikum',
-  'max-planck', 'bezirkskrankenhaus', 'landeskrankenhaus', 'psychiatrische klinik',
+  // Major university hospitals (Unikliniken) — have international recruitment offices
+  'charité', 'vivantes', 'universitätsklinikum', 'uniklinik', 'uniklinikum',
+  'universitätsmedizin', 'uni-klinik', 'max-planck',
+  // Large private hospital chains — known international recruitment programs
+  'helios', 'asklepios', 'sana kliniken', 'rhön-klinikum', 'schön klinik',
+  'ameos', 'median', 'oberberg', 'mediclin', 'paracelsus-kliniken',
+  // Public psychiatric networks
+  'vitos', 'lwl-klinik', 'bezirksklinikum', 'bezirkskrankenhaus',
+  'landeskrankenhaus', 'psychiatrische klinik', 'zfp ', 'pfalzklinikum',
+];
+
+// Medical staffing agencies that specialize in placing international doctors
+// These agencies typically assist with Approbation/Berufserlaubnis paperwork
+const APPROBATION_AGENCIES = [
+  'sanovetis', 'ema vermittlung', 'ema - vermittlung', 'akut doc', 'akut...doc',
+  'tw.con', 'bs menzel', 'hb-pro', 'locumwork', 'healthbridge',
+  'siiri schuetz', 'approbatio', 'facharztagentur', 'advias',
+  'rocket match', 'notificai', 'premiumjob',
 ];
 
 const SPONSORSHIP_TIER1 = [
@@ -289,8 +303,12 @@ const SPONSORSHIP_NEGATIVE = [
   'will not sponsor', 'unable to sponsor',
 ];
 
+function normalizeAccents(str) {
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 function detectSponsorship(title, description, company) {
-  const text = `${title} ${description} ${company}`.toLowerCase();
+  const text = normalizeAccents(`${title} ${description} ${company}`.toLowerCase());
 
   // Check negative signals first (highest priority)
   for (const neg of SPONSORSHIP_NEGATIVE) {
@@ -307,7 +325,7 @@ function detectSponsorship(title, description, company) {
 
   // Tier 0: Approbation / medical credential recognition (German jobs)
   for (const kw of APPROBATION_TIER0) {
-    if (text.includes(kw)) {
+    if (text.includes(normalizeAccents(kw))) {
       return {
         sponsorship_status: 'APPROBATION',
         sponsorship_confidence: 100,
@@ -320,13 +338,27 @@ function detectSponsorship(title, description, company) {
   }
 
   // Tier 0b: Known Approbation-supporting employers (German hospital networks)
-  const companyLower = company.toLowerCase();
+  const companyLower = normalizeAccents(company.toLowerCase());
   for (const emp of APPROBATION_EMPLOYERS) {
-    if (companyLower.includes(emp)) {
+    if (companyLower.includes(normalizeAccents(emp))) {
       return {
         sponsorship_status: 'APPROBATION_LIKELY',
         sponsorship_confidence: 85,
         sponsorship_reason: `${company} is a major German hospital network that typically supports Approbation for international physicians`,
+        sponsorship_flag: 'APPROBATION_LIKELY',
+        approbation: true,
+        contact_recommendation: false,
+      };
+    }
+  }
+
+  // Tier 0c: Medical staffing agencies specializing in international doctor placement
+  for (const agency of APPROBATION_AGENCIES) {
+    if (companyLower.includes(normalizeAccents(agency))) {
+      return {
+        sponsorship_status: 'APPROBATION_LIKELY',
+        sponsorship_confidence: 75,
+        sponsorship_reason: `${company} is a medical staffing agency that typically assists with Approbation/Berufserlaubnis for international physicians`,
         sponsorship_flag: 'APPROBATION_LIKELY',
         approbation: true,
         contact_recommendation: false,
@@ -497,9 +529,16 @@ export function analyzeJob(title, description = '', company = '', url = '', prof
   // Step 3: Cover letter format
   const coverLetterFormat = selectCoverLetterFormat(language);
 
-  // Step 4: Sponsorship (only for US jobs)
+  // Step 4: Sponsorship / Approbation detection
   let sponsorship = null;
-  if (locationResult.location === 'usa' || locationResult.location === 'unclear') {
+  if (locationResult.location === 'germany') {
+    // For German jobs, check for Approbation/Berufserlaubnis support signals
+    sponsorship = detectSponsorship(title, description, company);
+    // If no US-style sponsorship detected, keep as N/A — but preserve Approbation hits
+    if (!sponsorship.approbation && sponsorship.sponsorship_status !== 'APPROBATION' && sponsorship.sponsorship_status !== 'APPROBATION_LIKELY') {
+      sponsorship = null; // will fall through to N/A default below
+    }
+  } else if (locationResult.location === 'usa' || locationResult.location === 'unclear') {
     sponsorship = detectSponsorship(title, description, company);
   }
 
@@ -526,7 +565,12 @@ export function analyzeJob(title, description = '', company = '', url = '', prof
     language_detected: language,
 
     // Step 4
-    sponsorship: sponsorship || { sponsorship_status: 'N/A', sponsorship_reason: 'German job — no US sponsorship needed' },
+    sponsorship: sponsorship || {
+      sponsorship_status: 'N/A',
+      sponsorship_reason: locationResult.location === 'germany'
+        ? 'German job — no Approbation/credential support signals detected'
+        : 'German job — no US sponsorship needed',
+    },
 
     // Step 5
     military: military,
@@ -673,7 +717,11 @@ async function main() {
   console.log('');
 }
 
-main().catch(err => {
-  console.error(`Fatal: ${err.message}`);
-  process.exit(1);
-});
+// Only run CLI when executed directly, not when imported
+const isDirectRun = process.argv[1]?.replace(/\\/g, '/').endsWith('localize-detect.mjs');
+if (isDirectRun) {
+  main().catch(err => {
+    console.error(`Fatal: ${err.message}`);
+    process.exit(1);
+  });
+}

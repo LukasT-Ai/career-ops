@@ -310,11 +310,86 @@ function buildMatchReasons(job) {
     '</ul>';
 }
 
-function subjectForMode(mode, job, fitScore) {
-  if (mode === MODES.HIGH_FIT) {
-    return `🟢 HIGH FIT (${fitScore}/100): ${job.title} — ${job.company}`;
+// ============================================================
+// Location & Language Flags for Subject Lines
+// ============================================================
+
+const BAVARIA_CITIES = [
+  'münchen', 'munich', 'nürnberg', 'nuremberg', 'augsburg', 'regensburg',
+  'würzburg', 'erlangen', 'fürth', 'bamberg', 'bayreuth', 'passau',
+  'landshut', 'rosenheim', 'ingolstadt', 'kaufbeuren', 'kempten',
+  'schweinfurt', 'deggendorf', 'günzburg', 'bayern', 'bavaria',
+  'oberpfalz', 'oberbayern', 'unterfranken', 'oberfranken', 'mittelfranken',
+  'niederbayern', 'schwaben',
+];
+
+const HEIDELBERG_AREA = [
+  'heidelberg', 'mannheim', 'ludwigshafen', 'weinheim', 'schwetzingen',
+  'wiesloch', 'sinsheim', 'mosbach', 'neckargemünd', 'leimen',
+  'rhein-neckar', 'bad bergzabern', 'frankenthal', 'speyer',
+];
+
+const ENGLISH_SIGNALS = [
+  'english speaking', 'english-speaking', 'english preferred',
+  'english required', 'international team', 'working language english',
+  'englischsprachig', 'englisch vorausgesetzt', 'english is the working language',
+  'fluent english', 'business english', 'english-language',
+];
+
+function detectLocationFlags(job) {
+  const text = `${job.title || ''} ${job.location || ''} ${job.company || ''}`.toLowerCase();
+  const flags = [];
+
+  // Bavaria check
+  if (BAVARIA_CITIES.some(c => text.includes(c))) {
+    flags.push('⭐ Bayern');
   }
-  return `🟡 Good Fit (${fitScore}/100): ${job.title} — ${job.company}`;
+
+  // Heidelberg area check
+  if (HEIDELBERG_AREA.some(c => text.includes(c))) {
+    flags.push('💜 Heidelberg');
+  }
+
+  // Bamberg check
+  if (text.includes('bamberg')) {
+    flags.push('🏰 Bamberg');
+  }
+
+  // Bayreuth check
+  if (text.includes('bayreuth')) {
+    flags.push('🎭 Bayreuth');
+  }
+
+  return flags;
+}
+
+function detectEnglishPreferred(job) {
+  const text = `${job.title || ''} ${job.description || ''} ${job.matchReasons || ''}`.toLowerCase();
+  return ENGLISH_SIGNALS.some(s => text.includes(s));
+}
+
+// Junior position filter for Paulina — she is a board-certified psychiatrist
+const JUNIOR_TITLE_PATTERNS = [
+  'assistenzarzt', 'assistenzärztin', 'assistenzaerzt',
+  'arzt in weiterbildung', 'ärztin in weiterbildung', 'arzt/ärztin in weiterbildung',
+  'weiterbildungsassistent',
+];
+
+function isJuniorPosition(title) {
+  const lower = (title || '').toLowerCase();
+  return JUNIOR_TITLE_PATTERNS.some(p => lower.includes(p));
+}
+
+function subjectForMode(mode, job, fitScore) {
+  const flags = detectLocationFlags(job);
+  const english = detectEnglishPreferred(job) ? ' 🌐EN' : '';
+  const approbation = job.sponsorship?.approbation ? ' 🟢APPR' : '';
+  const flagStr = flags.length > 0 ? ` ${flags.join(' ')}` : '';
+
+  if (mode === MODES.HIGH_FIT) {
+    return `🟢 HIGH FIT (${fitScore}/100): ${job.title} — ${job.company}${flagStr}${approbation}${english}`;
+  }
+  return `🟡 Good Fit (${fitScore}/100): ${job.title} — ${job.company}${flagStr}${approbation}${english}`;
 }
 
 async function sendNotification(mode, job, profile, fitScore, options = {}) {
@@ -879,6 +954,13 @@ export async function dispatch(job, careerOpsScore, options = {}) {
     return { mode: 'BLOCKED', fitScore: 0, status: 'PROFILE_MISMATCH', email: { sent: false, reason: `profile mismatch: ${job.sourceProfile} != ${profileName}` } };
   }
 
+  // ── Junior Position Filter (Paulina only) ───────────────
+  // Paulina is a board-certified psychiatrist — skip Assistenzarzt/Weiterbildung positions
+  if (profileName === 'paulina' && isJuniorPosition(job.title)) {
+    console.log(`\n  [SENIORITY] ${job.title} at ${job.company} — BLOCKED: junior/trainee position`);
+    return { mode: 'BLOCKED', fitScore: 0, status: 'JUNIOR_POSITION', email: { sent: false, reason: 'Junior/Assistenzarzt position — Paulina is board-certified' } };
+  }
+
   // ── Location Eligibility Filter ──────────────────────────
   // Enforce per-profile location rules BEFORE computing score/sending email.
   // This prevents out-of-area jobs from reaching inboxes.
@@ -891,6 +973,31 @@ export async function dispatch(job, careerOpsScore, options = {}) {
   // Compute fit score
   let fitScore = job.fitScore || mapScoreToFit(careerOpsScore);
 
+  // Bavaria / Heidelberg area boost (+5 each)
+  const locFlags = detectLocationFlags(job);
+  if (locFlags.some(f => f.includes('Bayern'))) {
+    fitScore = Math.min(100, fitScore + 5);
+    console.log(`  [LOCATION] +5 Bavaria boost`);
+  }
+  if (locFlags.some(f => f.includes('Heidelberg'))) {
+    fitScore = Math.min(100, fitScore + 5);
+    console.log(`  [LOCATION] +5 Heidelberg area boost`);
+  }
+  if (locFlags.some(f => f.includes('Bamberg'))) {
+    fitScore = Math.min(100, fitScore + 5);
+    console.log(`  [LOCATION] +5 Bamberg boost`);
+  }
+  if (locFlags.some(f => f.includes('Bayreuth'))) {
+    fitScore = Math.min(100, fitScore + 5);
+    console.log(`  [LOCATION] +5 Bayreuth boost`);
+  }
+
+  // English-preferred boost (+5)
+  if (detectEnglishPreferred(job)) {
+    fitScore = Math.min(100, fitScore + 5);
+    console.log(`  [LANGUAGE] +5 English-preferred boost`);
+  }
+
   // Sponsorship priority boost: if profile has sponsorship_priority and job has sponsorship data
   const hasSponsorshipSignal = job.sponsorship?.approbation ||
     ['APPROBATION', 'APPROBATION_LIKELY', 'CONFIRMED', 'LIKELY'].includes(job.sponsorship?.sponsorship_status);
@@ -902,6 +1009,12 @@ export async function dispatch(job, careerOpsScore, options = {}) {
 
   // Determine mode — full-auto: all tiers send the same notification email
   let mode = determineMode(fitScore);
+
+  // Approbation override: ALWAYS send email for Approbation jobs regardless of score
+  if (profile.sponsorship_priority && hasSponsorshipSignal && mode === MODES.SKIP) {
+    mode = MODES.GOOD_FIT;
+    console.log(`  [APPROBATION] Override: sending despite fit score ${fitScore} (Approbation opportunity)`);
+  }
 
   // Merge paths into job
   job.coverLetterPath = options.coverLetterPath || job.coverLetterPath;
@@ -1019,8 +1132,36 @@ async function main() {
         continue;
       }
 
+      // Junior position filter (Paulina)
+      if (entry.profileName === 'paulina' && isJuniorPosition(entry.job.title)) {
+        console.log(`    → SKIP — junior/Assistenzarzt position`);
+        succeeded.push(entry); // remove from queue
+        continue;
+      }
+
+      // Enrich with Approbation detection if missing
+      if (!entry.job.sponsorship && entry.job.platform === 'Arbeitsagentur') {
+        try {
+          const { analyzeJob } = await import('./localize-detect.mjs');
+          const analysis = analyzeJob(entry.job.title || '', '', entry.job.company || '', entry.job.url || '', entry.profileName);
+          if (analysis.sponsorship?.approbation) {
+            entry.job.sponsorship = analysis.sponsorship;
+            console.log(`    🟢 Approbation: ${analysis.sponsorship.sponsorship_status} — ${analysis.sponsorship.sponsorship_reason}`);
+          }
+        } catch { /* non-fatal */ }
+      }
+
       // Determine mode from fitScore
-      const mode = determineMode(entry.fitScore);
+      let mode = determineMode(entry.fitScore);
+
+      // Approbation override for retry: send even if score < 60
+      const hasSponsorRetry = entry.job.sponsorship?.approbation ||
+        ['APPROBATION', 'APPROBATION_LIKELY'].includes(entry.job.sponsorship?.sponsorship_status);
+      if (profileYml.includes('sponsorship_priority: true') && hasSponsorRetry && !mode.template) {
+        mode = MODES.GOOD_FIT;
+        console.log(`    [APPROBATION] Override: sending despite fit score ${entry.fitScore}`);
+      }
+
       if (!mode.template) {
         console.log(`    → SKIP — mode ${mode.label} has no template`);
         succeeded.push(entry); // remove from queue, shouldn't have been queued
@@ -1032,6 +1173,7 @@ async function main() {
         const templateHtml = await loadTemplate(mode.template);
         const firstName = candidateEmail.split('@')[0]; // fallback
         const job = entry.job;
+        const isHighFit = entry.fitScore >= 80;
         const vars = {
           FIRST_NAME: firstName,
           JOB_TITLE: job.title || 'Unknown',
@@ -1047,7 +1189,16 @@ async function main() {
           DRAFT_COVER_LETTER: job.draftCoverLetter || '<p><em>Cover letter will be generated upon approval.</em></p>',
           ATTACHMENTS_SECTION: buildAttachmentsSection(job),
           TALKING_POINTS: buildTalkingPoints(job),
-          SPONSORSHIP_BANNER: buildSponsorshipBanner(job, { sponsorship_priority: false }),
+          SPONSORSHIP_BANNER: buildSponsorshipBanner(job, { sponsorship_priority: profileYml.includes('sponsorship_priority: true') }),
+          HEADER_GRADIENT: isHighFit
+            ? 'linear-gradient(135deg, #0d9488 0%, #065f46 100%)'
+            : 'linear-gradient(135deg, #e9a820 0%, #d4740a 100%)',
+          SCORE_COLOR: isHighFit ? '#0d9488' : '#d4740a',
+          FIT_EMOJI: isHighFit ? '&#11088;' : '&#128313;',
+          FIT_LABEL: isHighFit ? 'HIGH FIT' : 'Good Fit',
+          INTRO_LINE: isHighFit
+            ? 'This is a strong match for your profile. Worth a close look.'
+            : 'I found a promising opportunity that could be a good fit.',
         };
 
         const html = fillTemplate(templateHtml, vars);

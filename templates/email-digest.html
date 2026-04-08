@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; margin: 0; padding: 0; background: #f4f6f8; line-height: 1.6;">
+
+<!-- Outer wrapper for email clients -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background: #f4f6f8;">
+<tr><td align="center" style="padding: 24px 12px;">
+
+<!-- Main container -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width: 650px; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+
+  <!-- Header -->
+  <tr>
+    <td style="background: linear-gradient(135deg, #0d7377 0%, #14919b 50%, #0d7377 100%); padding: 32px 28px;">
+      <h1 style="color: #ffffff; margin: 0 0 6px; font-size: 22px; font-weight: 700; letter-spacing: -0.3px;">Weekly Job Digest</h1>
+      <p style="color: rgba(255,255,255,0.9); margin: 0 0 4px; font-size: 15px;">{{PROFILE_NAME}}</p>
+      <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 13px;">{{DATE_RANGE}}</p>
+    </td>
+  </tr>
+
+  <!-- Stats bar -->
+  <tr>
+    <td style="padding: 0;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-bottom: 1px solid #e8ecf0;">
+        <tr>
+          <td align="center" style="padding: 16px 8px; width: 33%;">
+            <div style="font-size: 26px; font-weight: 800; color: #0d7377;">{{TOTAL_JOBS}}</div>
+            <div style="font-size: 11px; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.5px;">Total Jobs</div>
+          </td>
+          <td align="center" style="padding: 16px 8px; width: 33%; border-left: 1px solid #e8ecf0; border-right: 1px solid #e8ecf0;">
+            <div style="font-size: 26px; font-weight: 800; color: #2e7d32;">{{APPROBATION_COUNT}}</div>
+            <div style="font-size: 11px; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.5px;">Approbation</div>
+          </td>
+          <td align="center" style="padding: 16px 8px; width: 33%;">
+            <div style="font-size: 26px; font-weight: 800; color: #e65100;">{{HIGH_FIT_COUNT}}</div>
+            <div style="font-size: 11px; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.5px;">High Fit</div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- Body -->
+  <tr>
+    <td style="padding: 24px 28px 8px;">
+      <p style="margin: 0 0 20px; color: #4a5568; font-size: 14px;">Hi {{FIRST_NAME}}, here are this week's top opportunities ranked by fit.</p>
+    </td>
+  </tr>
+
+  <!-- Job sections (repeated per region) -->
+  {{JOB_SECTIONS}}
+
+  <!-- No jobs fallback (hidden if jobs exist) -->
+  {{EMPTY_STATE}}
+
+  <!-- Footer -->
+  <tr>
+    <td style="padding: 20px 28px 28px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top: 1px solid #e8ecf0;">
+        <tr>
+          <td style="padding: 20px 0 0;">
+            <p style="margin: 0 0 4px; font-size: 11px; color: #a0aec0;">Powered by Career-Ops &mdash; AI Job Search Pipeline</p>
+            <p style="margin: 0; font-size: 11px; color: #a0aec0;">Reply STOP to unsubscribe from weekly digests.</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+</table>
+
+</td></tr>
+</table>
+
+</body>
+</html>

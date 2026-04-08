@@ -447,3 +447,129 @@ Detailed log of all application attempts made through the auto-apply system.
 | 2026-04-07 | 11:27:56 | paulina | SRH Waldklinikum Gera GmbH | Oberarzt Psychiatrie/Psychotherapie (w/m/d) | Arbeitsagentur | Good Match | 65/100 | Sent | NOTIFIED |  |
 | 2026-04-07 | 11:27:59 | paulina | DANUVIUS Klinik GmbH | Facharzt (m/w/d) für Psychiatrie & Psychotherapie | Arbeitsagentur | Good Match | 65/100 | Sent | NOTIFIED |  |
 | 2026-04-07 | 11:28:03 | paulina | LOCUMWORK GmbH | Ärztliche Direktorin/Ärztlicher Direktor (m/w/d) für Psychiatrie, Psychotherapie und Psychosomatik | Arbeitsagentur | Good Match | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:40:31 | paulina | Vitos gGmbH | Oberarzt/Oberärztin für Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 75/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:40:39 | paulina | Vitos gGmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 75/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:42:32 | paulina | MEDIAN Klinik Schlangenbad | Assistenzarzt (m/w/d) fuer Psychosomatik | Arbeitsagentur | Good Fit | 50/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:45:39 | paulina | DANUVIUS Klinik GmbH | Facharzt (m/w/d) fuer Psychiatrie & Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:45:43 | paulina | Sanovetis GmbH | Psychiater*in (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:45:47 | paulina | Sanovetis GmbH | Psychiater (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:45:51 | paulina | Vincera Klinik Spreewald GmbH | Chefarzt für Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:45:55 | paulina | Tina Przybylski | Chefarzt/-ärztin Psychiatrie und Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:45:59 | paulina | BS Menzel GmbH | Chefarzt (m/w/d) Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:03 | paulina | HB-Pro | Chefarzt für die Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:07 | paulina | Healthbridge GmbH Professional Recruiting | Chefarzt für Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:11 | paulina | tw.con. GmbH | Facharzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:15 | paulina | akut Doc | Facharzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:18 | paulina | DANUVIUS Klinik GmbH | Facharzt (m/w/d) fuer Psychiatrie & Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:19 | paulina | ZithaUnit a.s.b.l. | Facharzt fuer Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:22 | paulina | Sanovetis GmbH | Psychiater*in (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:23 | paulina | AWO MVZ Zerbst | Facharzt fuer Psychiatrie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:26 | paulina | Sanovetis GmbH | Psychiater (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:27 | paulina | BG Universitaetsklinikum Bergmannsheil | Facharzt (m/w/d) fuer Psychiatrie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:31 | paulina | Vincera Klinik Spreewald GmbH | Chefarzt für Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:32 | paulina | EMA Vermittlung GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:34 | paulina | Tina Przybylski | Chefarzt/-ärztin Psychiatrie und Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:36 | paulina | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:39 | paulina | BS Menzel GmbH | Chefarzt (m/w/d) Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:40 | paulina | EMA - Vermittlung GmbH | Oberarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:43 | paulina | HB-Pro | Chefarzt für die Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:44 | paulina | tw.con. GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:47 | paulina | Healthbridge GmbH Professional Recruiting | Chefarzt für Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:48 | paulina | Kreiskrankenhaus St. Franziskus Saarburg | Oberarzt (w/m/d) Psychiatrie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:51 | paulina | tw.con. GmbH | Facharzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:52 | paulina | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:55 | paulina | akut Doc | Facharzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:56 | paulina | HB-Pro | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:46:59 | paulina | ZithaUnit a.s.b.l. | Facharzt fuer Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:00 | paulina | HB-Pro | Leitender Oberarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:02 | paulina | AWO MVZ Zerbst | Facharzt fuer Psychiatrie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:04 | paulina | tw.con. GmbH | Oberarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:06 | paulina | BG Universitaetsklinikum Bergmannsheil | Facharzt (m/w/d) fuer Psychiatrie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:08 | paulina | Contilia Gruppe | Oberarzt Psychiatrie m/w/d | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:10 | paulina | EMA Vermittlung GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:12 | paulina | HB-Pro | Chefarzt Psychiatrie und Psychotherapie Akutklinik (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:15 | paulina | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:15 | paulina | EMA - Vermittlung GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:19 | paulina | EMA - Vermittlung GmbH | Oberarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:19 | paulina | Agaplesion Elisabethenstift GmbH | Oberarzt Psychiatrie, Psychosomatik und Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:23 | paulina | tw.con. GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:23 | paulina | Agaplesion Elisabethenstift GmbH | Leitende:r Oberarzt:aerztin Psychiatrie und Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:27 | paulina | Kreiskrankenhaus St. Franziskus Saarburg | Oberarzt (w/m/d) Psychiatrie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:27 | paulina | Psychiatrieverbund Oldenburger Land gGmbH | Oberarzt/-aerztin fuer Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:31 | paulina | Stadtklinik Frankenthal | Oberarzt/aerztin (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:35 | paulina | Vitos gGmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:39 | paulina | Klinikum Stuttgart | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:42 | paulina | Bergman Germany HoldCo GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:46 | paulina | ADVIAS GmbH | Chefarzt Psychiatrie, Psychotherapie und Psychosomatik (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:50 | paulina | ZfP Suedwuerttemberg | Oberaerztin:arzt Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:55 | paulina | ZfP Suedwuerttemberg | Oberarzt Psychiatrie und Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:47:59 | paulina | LOCUMWORK GmbH | Leitende Oberaerztin / Leitender Oberarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:02 | paulina | Siiri Schuetz Aerztevermittlung | Facharzt Psychiatrie / Oberarzt (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:06 | paulina | Landschaftsverband Rheinland | Oberaerztin / Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:11 | paulina | Krankenhausverwaltung Schloss Werneck | Oberaerztin / Oberarzt (m/w/d) fuer Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:15 | paulina | EMA - Vermittlung GmbH | Chefarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:18 | paulina | Healthbridge GmbH Professional Recruiting | Chefarzt Psychiatrie m/w/d | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:22 | paulina | Healthbridge GmbH Professional Recruiting | Chefarzt der Psychiatrie und Psychotherapie (m/w/d) mit Institutsambulanz | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:26 | paulina | rocket match powered by notificAI GmbH | Chefarzt / Leitender Oberarzt (m/w/d) Psychiatrie & Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:28 | paulina | DANUVIUS Klinik GmbH | Facharzt (m/w/d) fuer Psychiatrie & Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:30 | paulina | Augsburger Lehmbaugruppe GmbH | Facharzt Psychiatrie & Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:32 | paulina | Sanovetis GmbH | Psychiater*in (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:34 | paulina | EMA - Vermittlung GmbH | Oberarzt für Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:36 | paulina | Sanovetis GmbH | Psychiater (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:38 | paulina | SRH Waldklinikum Gera GmbH | Oberarzt Psychiatrie/Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:40 | paulina | Vincera Klinik Spreewald GmbH | Chefarzt für Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:42 | paulina | DANUVIUS Klinik GmbH | Facharzt (m/w/d) für Psychiatrie & Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:44 | paulina | HB-Pro | Leitender Arzt Psychosomatik Reha (m/w/d) | Arbeitsagentur | Good Fit | 48/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:46 | paulina | LOCUMWORK GmbH | Ärztliche Direktorin/Ärztlicher Direktor (m/w/d) für Psychiatrie, Psychotherapie und Psychosomatik | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:48 | paulina | Tina Przybylski | Chefarzt/-ärztin Psychiatrie und Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:52 | paulina | BS Menzel GmbH | Chefarzt (m/w/d) Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:48:56 | paulina | HB-Pro | Chefarzt für die Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:00 | paulina | Healthbridge GmbH Professional Recruiting | Chefarzt für Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:03 | paulina | tw.con. GmbH | Facharzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:07 | paulina | akut Doc | Facharzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:11 | paulina | ZithaUnit a.s.b.l. | Facharzt fuer Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:15 | paulina | AWO MVZ Zerbst | Facharzt fuer Psychiatrie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:19 | paulina | BG Universitaetsklinikum Bergmannsheil | Facharzt (m/w/d) fuer Psychiatrie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:23 | paulina | EMA Vermittlung GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:27 | paulina | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:30 | paulina | EMA - Vermittlung GmbH | Oberarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:34 | paulina | tw.con. GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:38 | paulina | Kreiskrankenhaus St. Franziskus Saarburg | Oberarzt (w/m/d) Psychiatrie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:42 | paulina | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:45 | paulina | HB-Pro | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:50 | paulina | HB-Pro | Leitender Oberarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:53 | paulina | MEDIAN Klinik Schlangenbad | Assistenzarzt (m/w/d) fuer Psychosomatik | Arbeitsagentur | Good Fit | 40/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:49:57 | paulina | tw.con. GmbH | Oberarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:01 | paulina | Contilia Gruppe | Oberarzt Psychiatrie m/w/d | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:04 | paulina | HB-Pro | Chefarzt Psychiatrie und Psychotherapie Akutklinik (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:08 | paulina | EMA - Vermittlung GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:12 | paulina | MediClin GmbH | Assistenzarzt (w/m/d) Psychosomatik, Akutpsychosomatik | Arbeitsagentur | Good Fit | 40/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:15 | paulina | Agaplesion Elisabethenstift GmbH | Oberarzt Psychiatrie, Psychosomatik und Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:19 | paulina | Agaplesion Elisabethenstift GmbH | Leitende:r Oberarzt:aerztin Psychiatrie und Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:23 | paulina | Psychiatrieverbund Oldenburger Land gGmbH | Oberarzt/-aerztin fuer Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:27 | paulina | Stadtklinik Frankenthal | Oberarzt/aerztin (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:31 | paulina | Vitos gGmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:35 | paulina | Klinikum Stuttgart | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:39 | paulina | Bergman Germany HoldCo GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:42 | paulina | ADVIAS GmbH | Chefarzt Psychiatrie, Psychotherapie und Psychosomatik (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:46 | paulina | ZfP Suedwuerttemberg | Oberaerztin:arzt Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:50 | paulina | ZfP Suedwuerttemberg | Oberarzt Psychiatrie und Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:54 | paulina | LOCUMWORK GmbH | Leitende Oberaerztin / Leitender Oberarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:50:58 | paulina | Siiri Schuetz Aerztevermittlung | Facharzt Psychiatrie / Oberarzt (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:01 | paulina | Landschaftsverband Rheinland | Oberaerztin / Oberarzt Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:06 | paulina | Krankenhausverwaltung Schloss Werneck | Oberaerztin / Oberarzt (m/w/d) fuer Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:10 | paulina | EMA - Vermittlung GmbH | Chefarzt Psychiatrie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:14 | paulina | Healthbridge GmbH Professional Recruiting | Chefarzt Psychiatrie m/w/d | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:18 | paulina | Healthbridge GmbH Professional Recruiting | Chefarzt der Psychiatrie und Psychotherapie (m/w/d) mit Institutsambulanz | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:22 | paulina | rocket match powered by notificAI GmbH | Chefarzt / Leitender Oberarzt (m/w/d) Psychiatrie & Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:25 | paulina | Augsburger Lehmbaugruppe GmbH | Facharzt Psychiatrie & Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:29 | paulina | EMA - Vermittlung GmbH | Oberarzt für Psychiatrie und Psychotherapie (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:33 | paulina | SRH Waldklinikum Gera GmbH | Oberarzt Psychiatrie/Psychotherapie (w/m/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:37 | paulina | DANUVIUS Klinik GmbH | Facharzt (m/w/d) für Psychiatrie & Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 00:51:40 | paulina | LOCUMWORK GmbH | Ärztliche Direktorin/Ärztlicher Direktor (m/w/d) für Psychiatrie, Psychotherapie und Psychosomatik | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 01:23:32 | paulina | Krankenhäuser Landkreis Freudenstadt gGmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 01:24:09 | paulina | Sanovetis GmbH | Psychiater (m/w/d) | Arbeitsagentur | Good Fit | 70/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 01:24:10 | paulina | Sanovetis GmbH | Psychiater (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 01:24:12 | paulina | Sanovetis GmbH | Psychiater (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 01:24:14 | paulina | Sanovetis GmbH | Psychiater (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |
+| 2026-04-08 | 01:24:16 | paulina | Sanovetis GmbH | Psychiater (m/w/d) | Arbeitsagentur | Good Fit | 65/100 | Sent | NOTIFIED |  |

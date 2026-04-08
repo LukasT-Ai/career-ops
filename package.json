@@ -21,7 +21,9 @@
     "scan-all": "node scan-all.mjs",
     "scan-all:dry": "node scan-all.mjs --dry-run",
     "dispatch:test": "node job-dispatcher.mjs --test",
-    "dispatch:dry": "node job-dispatcher.mjs --test --dry-run"
+    "dispatch:dry": "node job-dispatcher.mjs --test --dry-run",
+    "digest:dry": "node digest-sender.mjs --dry-run",
+    "digest:send": "node digest-sender.mjs --send"
   },
   "keywords": ["ai", "job-search", "claude-code", "career", "automation"],
   "author": "Santiago Fernández de Valderrama <hi@santifer.io> (https://santifer.io)",

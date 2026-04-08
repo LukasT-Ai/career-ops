@@ -209,9 +209,18 @@ function matchesTitle(title, config) {
 // Pipeline Integration (same pattern as arbeitsagentur-api.mjs)
 // ============================================================
 
-async function loadExistingUrls() {
+async function loadExistingUrls(profileName) {
   const urls = new Set();
 
+  // Profile-specific pipeline
+  try {
+    const pipeline = await readFile(resolve(__dirname, 'profiles', profileName, 'data', 'pipeline.md'), 'utf8');
+    for (const match of pipeline.matchAll(/https?:\/\/[^\s|)]+/g)) {
+      urls.add(match[0]);
+    }
+  } catch { /* no pipeline yet */ }
+
+  // Root pipeline as dedup source
   try {
     const pipeline = await readFile(resolve(__dirname, 'data/pipeline.md'), 'utf8');
     for (const match of pipeline.matchAll(/https?:\/\/[^\s|)]+/g)) {
@@ -220,14 +229,14 @@ async function loadExistingUrls() {
   } catch { /* no pipeline yet */ }
 
   try {
-    const apps = await readFile(resolve(__dirname, 'data/applications.md'), 'utf8');
+    const apps = await readFile(resolve(__dirname, 'profiles', profileName, 'data', 'applications.md'), 'utf8');
     for (const match of apps.matchAll(/https?:\/\/[^\s|)]+/g)) {
       urls.add(match[0]);
     }
   } catch { /* no tracker yet */ }
 
   try {
-    const history = await readFile(resolve(__dirname, 'data/scan-history.tsv'), 'utf8');
+    const history = await readFile(resolve(__dirname, 'profiles', profileName, 'data', 'scan-history.tsv'), 'utf8');
     for (const match of history.matchAll(/https?:\/\/[^\s\t]+/g)) {
       urls.add(match[0]);
     }
@@ -236,14 +245,14 @@ async function loadExistingUrls() {
   return urls;
 }
 
-async function appendToPipeline(jobs) {
+async function appendToPipeline(jobs, profileName) {
   if (jobs.length === 0) return;
 
   const lines = jobs.map(j =>
     `- [ ] ${j.url} | ${j.company} | ${j.title} | ${j.salary} | ${j.grade}`
   ).join('\n');
 
-  const pipelinePath = resolve(__dirname, 'data/pipeline.md');
+  const pipelinePath = resolve(__dirname, 'profiles', profileName, 'data', 'pipeline.md');
 
   try {
     const existing = await readFile(pipelinePath, 'utf8');
@@ -257,12 +266,14 @@ async function appendToPipeline(jobs) {
       await appendFile(pipelinePath, `\n${lines}\n`, 'utf8');
     }
   } catch {
+    const { mkdir: mkdirFs } = await import('fs/promises');
+    await mkdirFs(resolve(__dirname, 'profiles', profileName, 'data'), { recursive: true });
     await writeFile(pipelinePath, `# Pipeline — Pending URLs\n\n## Pendientes\n\n${lines}\n`, 'utf8');
   }
 }
 
-async function appendToScanHistory(jobs, skipped) {
-  const historyPath = resolve(__dirname, 'data/scan-history.tsv');
+async function appendToScanHistory(jobs, skipped, profileName) {
+  const historyPath = resolve(__dirname, 'profiles', profileName, 'data', 'scan-history.tsv');
   const date = new Date().toISOString().split('T')[0];
 
   const lines = [
@@ -311,7 +322,7 @@ async function main() {
   console.log(`  ${'━'.repeat(50)}`);
   console.log(`  Queries: ${config.queries.length} | Limit: ${limit}/query | Dry run: ${dryRun}\n`);
 
-  const existingUrls = await loadExistingUrls();
+  const existingUrls = await loadExistingUrls(profileName);
   console.log(`  Existing URLs loaded: ${existingUrls.size}`);
 
   const allJobs = [];
@@ -398,13 +409,13 @@ async function main() {
 
   // Write results
   if (!dryRun && allJobs.length > 0) {
-    await appendToPipeline(allJobs);
-    console.log(`\n  Written to data/pipeline.md`);
+    await appendToPipeline(allJobs, profileName);
+    console.log(`\n  Written to profiles/${profileName}/data/pipeline.md`);
   }
 
   if (!dryRun) {
-    await appendToScanHistory(allJobs, allSkipped);
-    console.log(`  Written to data/scan-history.tsv`);
+    await appendToScanHistory(allJobs, allSkipped, profileName);
+    console.log(`  Written to profiles/${profileName}/data/scan-history.tsv`);
   }
 
   if (dryRun) {

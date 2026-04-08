@@ -2,6 +2,212 @@
 
 ## Pendientes
 
+- [ ] https://www.indeed.com/viewjob?jk=4da92a987c1d71ae | Serenity Behavioral Health Systems | Psychiatrist — Augusta, GA 30906 (Southside area) | $250,000 - $280,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=680f79ce1683b3be | Geode Health | Outpatient Psychiatrist - Savannah, GA — Hybrid work in Savannah, GA | Full-time
+- [ ] https://www.indeed.com/viewjob?jk=fc777fe7b5d88b0c | SouthlandMD | Psychiatrist - J1 Waiver Eligible! — Savannah, GA 31421 | $318,000 - $461,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=c90156c19d2b0f0d | Geode Health | Outpatient Psychiatrist - Peachtree City — Hybrid work in Peachtree City, GA | $385,000 - $410,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=480789765b2d6722 | Unknown | Psychiatrist - J1 Waiver Eligible! | Not disclosed
+- [ ] https://www.indeed.com/viewjob?jk=b806417ac145f6b9 | Sandy Plains Healthcare, PC | Psychiatric Advanced Practice Provider — Remote in Georgia | $110,000 - $130,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=b0d14adaa3da7158 | Geode Health | Mental Health Provider (Psychiatric PA or NP) - Columbus, GA — Hybrid work in Columbus, GA | $135,000 - $150,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=456789abcdef0123 | Unknown | Mental Health Provider (Psychiatric PA or NP) - Columbus, GA | Not disclosed
+- [ ] https://www.indeed.com/viewjob?jk=251d99d503a62923 | Geode Health | Mental Health Provider (Psychiatric PA or NP) - Canton, GA — Canton, GA | $140,000 - $150,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=ade656beb6b897d7 | Vitruvian Health | Psychiatry Opportunity with Hamilton Medical Center in Georgia — Dalton, GA | Full-time
+- [ ] https://www.indeed.com/viewjob?jk=d1d406b078d4b8cb | Confidential | Psychiatric Medical Director — Kingston, GA 30145 | Full-time
+- [ ] https://www.indeed.com/viewjob?jk=5017672c6c5c2fa1 | SouthlandMD | Child and Adolescent Psychiatrist — Atlanta, GA 30332 (Downtown area) | $210,000 - $225,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=cdef0123456789ab | Unknown | Child and Adolescent Psychiatrist | Not disclosed
+- [ ] https://www.indeed.com/viewjob?jk=946dab5fd40eb926 | Tri-City Mental Health Authority | Psychiatrist I/II (20693705) — Los Angeles, CA | $234,898.25 - $330,919.11 a year
+- [ ] https://www.indeed.com/viewjob?jk=25b57dbed9db789c | Southern Indian Health Council, Inc | Psychiatrist — Alpine, CA 91901 | $232,332.06 - $447,210.00 a year
+- [ ] https://www.indeed.com/viewjob?jk=789abcdef0123456 | Unknown | Psychiatrist | Not disclosed
+- [ ] https://www.indeed.com/viewjob?jk=884f7831a203335c | South Coast Children's Society | PSYCHIATRIST — Hybrid work in Costa Mesa, CA 92626 | $312,000 - $330,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=2bc73fabf6fcd914 | Astrya Global | Psychiatrist - Child & Adolescent — Hybrid work in Sonoma, CA 95476 | Contract +1
+- [ ] https://www.indeed.com/viewjob?jk=c8bd4c81e4ec7be4 | Psychiatric Medical Practitioners, Inc | Outpatient Psychiatrist – Telehealth, Hybrid, or In-Person — Hybrid work in Bakersfield, CA 93301 | $380,000 - $425,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=161c9bcd494f383f | Daybreak Health | Remote Mental Health Clinician- LCSW, LPCC, LMFT (W-2, CA) — Long Beach, CA | $55,000 - $115,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=001eea6d6238578a | Mindpath Health | Outpatient Psychiatrist or PMHNP - Hybrid Work Schedule — Hybrid work in San Marcos, CA 92069 | $174,000 - $353,800 a year
+- [ ] https://www.indeed.com/viewjob?jk=77965647bbde5de6 | Mindpath Health | Outpatient Psychiatrist or PMHNP — Hybrid work in Santa Rosa, CA 95401 | $174,000 - $342,000 a year
+- [ ] https://www.indeed.com/viewjob?jk=fd3c2eb40adb4fd0 | Mindpath Health | Outpatient Psychiatrist (J1 Waiver Eligible!) or PMHNP — Hybrid work in Modesto, CA 95350 | $160,000 - $327,000 a year
+- [ ] https://de.indeed.com/viewjob?jk=fb11595f46ea1dbf | Mantra Care | Psychiatrist Job in Germany — Home Office | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=7d7aa3773dcea8a7 | Bezirkskliniken Schwaben | Assistenzarzt / Arzt (m/w/d) in Weiterbildung Psychiatrie / Psychotherapie — Augsburg | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=c93ba2b08e3d6a12 | Stadt Dortmund | Fachärztin*Facharzt für Psychiatrie und Psychotherapie (m/w/d) oder Fachärztin*Facharzt für Neurologie (m/w/d) — Dortmund | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=9a1c334fe2da57f6 | Theodor-Wenzel-Werk e. V. | Stationsarzt (m/w/d) - Psychosomatik und Psychotherapie — Berlin | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=606769ece268bd99 | Karl-Jaspers-Klinik Psychiatrieverbund Oldenburger... | Facharzt/-ärztin (m/w/d) für Psychiatrie und Psychotherapie für unsere Tagesklinik — Bad Zwischenahn | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=a9652af5d4769a3e | Uniklinik RWTH Aachen | Geschäftsführende/-r Oberärztin/-arzt (w/m/d) — 52074 Aachen | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=45f3dcf0d5cc9ceb | Bürgerhospital und Clementine Kinderhospital... | Oberarzt / Oberärztin Suchtmedizin (m/w/d) — 60318 Frankfurt am Main | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=923014daf5dcd1c6 | Vincera Holding GmbH | leitender Oberarzt für Psychiatrie und Psychotherapie (m/w/d) — 15910 Bersteland | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=dd20167b3ede83ac | Vincera Holding GmbH | Facharzt für Psychiatrie und Psychotherapie (mwd) — 15910 Bersteland | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=b0ae745541770740 | Dr. Ebel Fachkliniken GmbH & Co. Vogelsbergklinik... | Oberarzt (m/w/d) - Psychiatrie / Psychotherapie — 36355 Grebenhain | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=8111b9dcae73cc48 | Klinik am Park Bad Steben GmbH | Oberarzt (m/w/d) für die Rehabilitation — 95138 Bad Steben | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=9c65558baf132348 | Dr. Ebel Fachkliniken GmbH & Co. Vogelsbergklinik... | Oberarzt (m/w/d) Psychosomatische Med. / Psychotherapie — 36355 Grebenhain | Not disclosed
+- [ ] https://de.indeed.com/viewjob?jk=6ccd0883060dbade | Dr. Ebel Fachkliniken GmbH & Co. Klinik Bergfried... | Oberarzt (m/w/d) Innere Medizin — 07318 Saalfeld | Not disclosed
+
+- [ ] https://www.linkedin.com/jobs/view/outpatient-child-adolescent-psychiatrist-1099-remote-at-brave-health-4361256980 | Brave Health | Outpatient Child/Adolescent Psychiatrist (1099, Remote) — Georgia, United States | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/supervising-psychiatrist-outpatient-pmhnp-supervision-%E2%80%93-augusta-ga-at-integrated-psych-solutions-4213233562 | Integrated Psych Solutions | Supervising Psychiatrist (Outpatient PMHNP Supervision – Augusta, GA) — Atlanta, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/psychiatrist-board-certified-board-eligible-at-greenberg-larraby-inc-4377847522 | Greenberg & Larraby, Inc. | Psychiatrist, Board Certified & Board Eligible — Atlanta, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/psychiatrist-md-do-at-blossom-4394995104 | Blossom | Psychiatrist (MD / DO) — Atlanta, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/general-psychiatrist-md-do-at-nana-healthcare-management-llc-4398322510 | NANA Healthcare Management, LLC | General Psychiatrist (MD/DO) — Dunwoody, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/psychiatrist-at-claratel-behavioral-health-4392501166 | Claratel Behavioral Health | Psychiatrist — Atlanta, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/psychiatrist-j1-waiver-eligible%21-at-vetted-solutions-4398364196 | Vetted Solutions | Psychiatrist - J1 Waiver Eligible! — Augusta, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/remote-psychiatrist-md-do-georgia-at-talkiatry-4388461591 | Talkiatry | Remote Psychiatrist (MD/DO) - Georgia — Georgia, United States | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/psychiatrist-full-time-at-serenity-healthcare-4376912777 | Serenity Healthcare | Psychiatrist Full Time — Atlanta, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/physician-m-d-behavioral-health-addiction-medicine-at-jobot-4396155895 | Jobot | Physician (M.D.) - Behavioral Health / Addiction Medicine — Dublin, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/physician-at-the-geo-group-inc-4325958292 | The GEO Group, Inc. | Physician — Folkston, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/medical-director-of-outpatient-psychiatry-at-wellstar-health-system-4343492542 | Wellstar Health System | Medical Director of Outpatient Psychiatry — Marietta, GA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/psychiatrist-at-one-community-health-sacramento-4393941082 | One Community Health Sacramento | Psychiatrist — Sacramento, CA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/psychiatrist-at-crestwood-behavioral-health-inc-4393951242 | Crestwood Behavioral Health, Inc. | Psychiatrist — San Luis Obispo, CA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/psychiatrist-at-management-solution-llc-4393536028 | Management Solution, LLC. | Psychiatrist — Delano, CA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/psychiatrist-inpatient-at-pacific-grove-hospital-4392107164 | Pacific Grove Hospital | Psychiatrist - Inpatient — Riverside, CA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/outpatient-psychiatrist-or-pmhnp-at-mindpath-health-4396165235 | Mindpath Health | Outpatient Psychiatrist or PMHNP — Greater Sacramento | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/contract-physician-clinic-services-and-behavioral-health-at-county-of-monterey-4373798203 | County of Monterey | Contract Physician-Clinic Services and Behavioral Health — Salinas, CA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/physician-assistant-medical-pediatric-hub-clinics-north-county-at-county-of-los-angeles-4263843248 | County of Los Angeles | PHYSICIAN ASSISTANT- MEDICAL PEDIATRIC HUB CLINICS/NORTH COUNTY — Los Angeles, CA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/family-physician-300-1110-at-medical-staff-of-island-health-4398545156 | Medical Staff of Island Health | Family Physician (300-1110) — Gold River, CA | Not disclosed
+- [ ] https://www.linkedin.com/jobs/view/lic-masters-mental-health-prof-adult-team-at-kaiser-permanente-4393458472 | Kaiser Permanente | Lic. Masters Mental Health Prof. Adult Team — Richmond, CA | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/psychiatrist-at-mediclinic-group-4257574984 | Mediclinic Group | Psychiatrist — Lohr, Bavaria, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/assistenzarzt-arzt-m-w-d-in-weiterbildung-psychiatrie-psychotherapie-at-bezirkskliniken-schwaben-4388854032 | Bezirkskliniken Schwaben | Assistenzarzt / Arzt (m/w/d) in Weiterbildung Psychiatrie / Psychotherapie — Augsburg, Bavaria, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/facharzt-der-psychiatrie-psychotherapie-m-w-d-at-ercas-med-4393092486 | ercas. med | Facharzt der Psychiatrie & Psychotherapie (m/w/d) — Berlin, Berlin, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/facharzt-f%C3%BCr-psychiatrie-und-psychotherapie-m-w-d-at-bildungswerk-der-bayerischen-wirtschaft-bbw-gruppe-4398907776 | Bildungswerk der Bayerischen Wirtschaft (bbw-Gruppe) | Facharzt für Psychiatrie und Psychotherapie (m/w/d) — Hof, Bavaria, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/facharzt-f%C3%BCr-psychiatrie-und-psychotherapie-nervenheilkunde-m-w-d-at-krankenhaus-st-camillus-ursberg-4397943210 | Krankenhaus St. Camillus Ursberg | Facharzt für Psychiatrie und Psychotherapie / Nervenheilkunde (m/w/d) — Ursberg, Bavaria, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/assistenzarzt-oder-facharzt-m-w-d-f%C3%BCr-psychiatrie-psychosomatik-und-psychotherapie-at-schwarzwald-baar-klinikum-4398431600 | Schwarzwald-Baar Klinikum | Assistenzarzt oder Facharzt (m/w/d) für Psychiatrie/Psychosomatik und Psychotherapie — Donaueschingen, Baden-Württemberg, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/facharzt-f%C3%BCr-psychiatrie-und-psychotherapie-m-w-d-at-neuropsychiatrisches-zentrum-hamburg-4264448313 | Neuropsychiatrisches Zentrum Hamburg | Facharzt für Psychiatrie und Psychotherapie (m/w/d) — Hamburg, Hamburg, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/facharzt-f%C3%BCr-psychiatrie-und-psychotherapie-m-w-d-at-diakonissenhaus-teltow-4396766927 | Diakonissenhaus Teltow | Facharzt für Psychiatrie und Psychotherapie (m/w/d) — Halle, Saxony-Anhalt, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/facharzt-f%C3%BCr-psychiatrie-m-w-d-in-voll-oder-teilzeit-at-valeara-4265422284 | VALEARA | Facharzt für Psychiatrie (m/w/d) in Voll- oder Teilzeit — Bochum, North Rhine-Westphalia, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/facharzt-m-w-d-f%C3%BCr-psychiatrie-und-psychotherapie-at-caritas-rheine-4378510094 | Caritas Rheine | Facharzt (m/w/d) für Psychiatrie und Psychotherapie — Hörstel, North Rhine-Westphalia, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/facharzt-f%C3%BCr-psychiatrie-und-psychotherapie-at-novarea-rpk-d%C3%BCsseldorf-4394676079 | novarea RPK Düsseldorf | Facharzt für Psychiatrie und Psychotherapie — Düsseldorf, North Rhine-Westphalia, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/oberarzt-m-w-d-psychiatrie-psychotherapie-oder-psychosomatische-medizin-at-hephata-diakonie-4393908818 | Hephata Diakonie | Oberarzt (m/w/d) Psychiatrie, Psychotherapie oder psychosomatische Medizin — Calden, Hesse, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/oberarzt-ober%C3%A4rztin-m-w-d-psychiatrie-und-psychotherapie-at-artec-management-consultants-part-of-transearch-international-4386674076 | artec management consultants - part of TRANSEARCH International | Oberarzt / Oberärztin (m/w/d) Psychiatrie und Psychotherapie — Cologne, North Rhine-Westphalia, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/oberarzt-m-w-d-f%C3%BCr-psychiatrie-und-psychotherapie-at-klinikum-bad-salzungen-gmbh-4151486412 | Klinikum Bad Salzungen GmbH | Oberarzt (m/w/d) für Psychiatrie und Psychotherapie — Bad Salzungen, Thuringia, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/oberarzt-m-w-d-akut-psychiatrie-psychotherapie-klinik-f%C3%BCr-seelische-gesundheit-at-medizinisches-zentrum-f%C3%BCr-gesundheit-bad-lippspringe-gmbh-4388583801 | Medizinisches Zentrum für Gesundheit Bad Lippspringe GmbH | Oberarzt (m/w/d) Akut-Psychiatrie & Psychotherapie - Klinik für Seelische Gesundheit — Bad Lippspringe, North Rhine-Westphalia, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/ober%C3%A4rztin-oberarzt-m-w-d-psychiatrie-psychosomatik-at-calm-tageskliniken-gmbh-4392610819 | calm Tageskliniken GmbH | Oberärztin/Oberarzt (m/w/d) Psychiatrie/ Psychosomatik — Hamburg, Hamburg, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/oberarzt-psychiatrie-und-psychotherapie-m-w-div-at-theodor-fliedner-stiftung-4263293712 | Theodor Fliedner Stiftung | Oberarzt Psychiatrie und Psychotherapie (m/w/div) — Ratingen, North Rhine-Westphalia, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/oberarzt-m-w-d-f%C3%BCr-psychiatrie-und-psychotherapie-at-ameos-gruppe-4383346549 | AMEOS Gruppe | Oberarzt (m/w/d) für Psychiatrie und Psychotherapie — Preetz, Schleswig-Holstein, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/oberarzt-m-w-d-at-valeara-4256174006 | VALEARA | Oberarzt (m/w/d) — Bottrop, North Rhine-Westphalia, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/oberarzt-psychiatrie-und-psychotherapie-m-w-d-schwerpunkt-junge-erwachsene-at-contilia-4363096388 | Contilia | Oberarzt Psychiatrie und Psychotherapie (m/w/d) - Schwerpunkt junge Erwachsene — Hattingen, North Rhine-Westphalia, Germany | Not disclosed
+- [ ] https://de.linkedin.com/jobs/view/oberarzt-m-w-d-klinik-f%C3%BCr-forensische-psychiatrie-at-kbo-inn-salzach-klinikum-4382570432 | kbo-Inn-Salzach-Klinikum | Oberarzt (m/w/d), Klinik für Forensische Psychiatrie — Wasserburg am Inn, Bavaria, Germany | Not disclosed
+
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-137063A046365C12-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie  — Mainz am Rhein | 🟢 APPROBATION
+
+- [ ] https://www.adzuna.com/details/5680049246?utm_medium=api&utm_source=328e55da | Michelle Zeanah MD | Physician Assistant — Statesboro, Bulloch County | $114,400-$124,800
+- [ ] https://www.adzuna.com/land/ad/5692176934?se=IB-ZLgAz8RGWc-vrjwlkWw&utm_medium=api&utm_source=328e55da&v=689DA6D9061A79F4E80037300458905FC49A20DA | LifeSource, Inc. | $5,000 Signing Bonus PMHNP Psychiatric Mental Health NP — Fort Oglethorpe, Catoosa County | $179,084-$179,084
+- [ ] https://www.adzuna.com/land/ad/5691737858?se=IB-ZLgAz8RGWc-vrjwlkWw&utm_medium=api&utm_source=328e55da&v=85BCAC5609A0009F1ABBA6D40C35D421F9C4E668 | LifeSource, Inc. | $4,000 Signing Bonus - Psychiatric Mental Health NP PMHNP — Millen, Jenkins County | $159,831-$159,831
+- [ ] https://www.adzuna.com/details/5495434399?utm_medium=api&utm_source=328e55da | CompHealth | Physician (MD/DO) - Psychiatry - General/Other in Dalton, GA — Dalton, Whitfield County | $153,333-$153,333
+- [ ] https://www.adzuna.com/details/5666023627?utm_medium=api&utm_source=328e55da | Prime Therapeutics | Physician Clinical Reviewer - Psychiatry- REMOTE — Atlanta, Fulton County | $165,913-$165,913
+- [ ] https://www.adzuna.com/details/5671453056?utm_medium=api&utm_source=328e55da | Ascension Health | Telepsychiatry Medical Director — Atlanta, Fulton County | $156,222-$156,222
+- [ ] https://www.adzuna.com/details/5419182182?utm_medium=api&utm_source=328e55da | Array Behavioral Care | 100% Remote Bilingual Telepsychiatrist — California, US | $108,418-$108,418
+- [ ] https://www.adzuna.com/details/5661217205?utm_medium=api&utm_source=328e55da | Total Life, Inc. | Mental Health Physician Assistant or NP — California, US | $110,753-$110,753
+- [ ] https://www.adzuna.com/land/ad/5683441826?se=rhrwNAAz8RGWc-vrjwlkWw&utm_medium=api&utm_source=328e55da&v=C7EC7708F31F965411609CB7564F288567BBDBF3 | AMN Healthcare | Student Health Psychiatrist — Davis, Yolo County | $84,195-$84,195
+- [ ] https://www.adzuna.com/land/ad/5683441481?se=rhrwNAAz8RGWc-vrjwlkWw&utm_medium=api&utm_source=328e55da&v=C7912912BF29919D9F1894BDE1587C42BAD1C1F1 | AMN Healthcare | Student Health Psychiatrist (Part Time or Full Time) — Canyon Crest, Riverside County | $70,454-$70,454
+- [ ] https://www.adzuna.com/details/5651330285?utm_medium=api&utm_source=328e55da | Protouch Staffing | Psychiatrist - Los Angeles, CA — Textile Finance, Los Angeles County | $174,502-$174,502
+- [ ] https://www.adzuna.com/details/5606836845?utm_medium=api&utm_source=328e55da | UCLA Health | Geriatric Psychiatrist, West LA — Pico Heights, Los Angeles County | $134,013-$134,013
+
+- [ ] https://jooble.org/jdp/8932245593927669675 | Headway | Licensed Psychiatrist — Atlanta, GA
+- [ ] https://jooble.org/jdp/5993444437145263997 | Talkiatry | Psychiatrist (MD/DO) — Savannah, GA | $300k - $350k
+- [ ] https://jooble.org/jdp/2794447650173041624 | TherapyLink Careers | Psychiatrist — Centerville, GA | $260,000 per week
+- [ ] https://jooble.org/jdp/-667491683841585958 | SpringHealth | Psychiatrist — Atlanta, GA
+- [ ] https://jooble.org/jdp/-7801704647944299751 | TherapyLink Careers | Licensed Psychiatrist — Worth County, GA | $230,000 per week
+- [ ] https://jooble.org/jdp/-1619449859914241772 | LocumTenens.com | Psychiatrist Needed for Locum Tenens Coverage at Clinic in Georgia — Irwinton, GA
+- [ ] https://jooble.org/jdp/-1297520612693879454 | Fcs Co | GA573f - Adult Psychiatrist — Athens, GA
+- [ ] https://jooble.org/jdp/8745219070971631519 | Fcs Co | GA301La - Adult Psychiatrist — Augusta, GA
+- [ ] https://jooble.org/jdp/5309377561945623771 | Fcs Co | GA570a - Adult Psychiatrist — Augusta, GA
+- [ ] https://jooble.org/jdp/2602815780791817693 | CompHealth | Adult Psychiatrist Position in Atlanta, Georgia; Outstanding Income Potential — Atlanta, GA
+- [ ] https://jooble.org/jdp/-2420572445020430423 | Fcs Co | GA562b - Adult Psychiatrist — Albany, GA
+- [ ] https://jooble.org/jdp/-4938677415051004025 | Fcs Co | GA573h - Adult Psychiatrist — Augusta, GA
+- [ ] https://jooble.org/jdp/-2838977153351814900 | Fcs Co | GA434 - Adult Psychiatrist — Columbus, GA
+- [ ] https://jooble.org/jdp/1739837800414088942 | Fcs Co | Adult Psychiatrist — Savannah, GA
+- [ ] https://jooble.org/jdp/8598635637586097850 | Fcs Co | GA406La - Adult Psychiatrist — Columbus, GA
+- [ ] https://jooble.org/jdp/-7909398991284047256 | Fcs Co | GA433 - Adult Psychiatrist — Atlanta, GA
+- [ ] https://jooble.org/jdp/5681857005803885923 | Fcs Co | GA558 - Adult Psychiatrist — Pooler, GA
+- [ ] https://jooble.org/jdp/4085371217269042876 | Geode Health | Outpatient Psychiatrist - Savannah, GA — Savannah, GA
+- [ ] https://jooble.org/jdp/3485574947876956057 | Fcs Co | GA573e - Adult Psychiatrist — Waynesboro, GA
+- [ ] https://jooble.org/jdp/6076411764494806742 | Fcs Co | GA563f - Adult Psychiatrist — Augusta, GA
+- [ ] https://jooble.org/jdp/-4052320782387761297 | NANA Healthcare Management, LLC | Adult & Adolescent Psychiatrist - (Eating Disorder) — Atlanta, GA
+- [ ] https://jooble.org/jdp/6209786436677125027 | Fcs Co | GA423 - Adult Psychiatrist — Waycross, GA
+- [ ] https://jooble.org/jdp/786759163034919201 | Britt Medical Search LLC Defunct | Inpatient Psychiatrist opening in Augusta, GA — Upatoi, GA
+- [ ] https://jooble.org/jdp/-3926632923941370327 | CoreCivic | PSYCHIATRIST — Nicholls, GA | $325k - $385k
+- [ ] https://jooble.org/jdp/6922712156444037018 | National Coalition of Healthcare Recruiters | General or Addiction Psychiatrist (Moultrie, GA) — Moultrie, GA
+- [ ] https://jooble.org/jdp/-1474902311464819395 | Fcs Co | Psychiatrist — Columbus, GA
+- [ ] https://jooble.org/jdp/-8693000138692684987 | Fcs Co | GA411Ga - General Psychiatrist — Athens, GA
+- [ ] https://jooble.org/jdp/-3752132999672553573 | Banfield Pet Hospitals | Doctor of Veterinary Medicine — Duluth, GA | $33k - $102k
+- [ ] https://jooble.org/jdp/7265920493613364019 | One Medical | Family Medicine Physician — Atlanta, GA
+- [ ] https://jooble.org/jdp/4670946795673257089 | One Medical | Per Diem Family Medicine Physician (Casual Employee) — Atlanta, GA | $130 per hour
+- [ ] https://jooble.org/jdp/-2298184839699198157 | VETERANS HEALTH ADMINISTRATION | Physician (Gastroenterologist P/T) — Augusta, GA | $200k
+- [ ] https://jooble.org/jdp/-6487317775123070319 | Veterans Affairs, Veterans Health Administration | Physician - Psychiatrist — Augusta, GA | $200k
+- [ ] https://jooble.org/jdp/-4920676133656335221 | VETERANS HEALTH ADMINISTRATION | Physician (Rheumatologist) — Augusta, GA | $200k
+- [ ] https://jooble.org/jdp/716327162788043527 | Travelers Insurance | Chief Medical Officer — Alpharetta, GA | $262.9k - $404.2k
+- [ ] https://jooble.org/jdp/-6409618579496557544 | VETERANS HEALTH ADMINISTRATION | Physician - Diagnostic and/or Interventional Radiologist — Savannah, GA | $200k
+- [ ] https://jooble.org/jdp/611694016110715029 | Memorial Health University Medical Center | Gastroenterologist Physician — Waycross, GA
+- [ ] https://jooble.org/jdp/3151464202946457979 | VETERANS HEALTH ADMINISTRATION | Physician (Geriatric Psychiatrist) — Augusta, GA
+- [ ] https://jooble.org/jdp/-8838319537665012633 | Advocate Health | Pediatric Developmental and Behavioral Health Physician — Macon, GA
+- [ ] https://jooble.org/jdp/6112600437669652814 | Jobot | Physician (M.D.) - Behavioral Health / Addiction Medicine — Dublin, GA | $200k - $220k
+- [ ] https://jooble.org/jdp/5606399120974230406 | ChenMed | Primary Care Physician — East Point, GA | $221.14k - $315.92k
+- [ ] https://jooble.org/jdp/-5446657225288741001 | Piedmont Healthcare Inc. | Physician Outreach - Behavioral Health — Macon, GA
+- [ ] https://jooble.org/jdp/8270531492879462120 | One Medical | Primary Care Physician — Atlanta, GA
+- [ ] https://jooble.org/jdp/7072330317660731560 | One Medical | Primary Care Physician (Senior Health) — Atlanta, GA
+- [ ] https://jooble.org/jdp/988183328925081662 | International Medical Placement, Ltd. | Physician / Psychiatry / Georgia / Permanent / 1 hour from Atlanta — Georgia | $300k
+- [ ] https://jooble.org/jdp/6955117695615524113 | One Medical | Per Diem Primary Care Physician (Casual Employee) — Atlanta, GA | $130 per hour
+- [ ] https://jooble.org/jdp/-6578820769727925743 | State of Georgia | Physician (Board Certified) - Full-Time - GRHS — Savannah, GA
+- [ ] https://jooble.org/jdp/-3947996632491103750 | State of Georgia | Physician - Milledgeville, GA — Baldwin, GA
+- [ ] https://jooble.org/jdp/2518925920674950698 | VETERANS HEALTH ADMINISTRATION | Physician (Outpatient Spinal Cord) — Augusta, GA
+- [ ] https://jooble.org/jdp/-2677774308902150704 | State of Georgia | Physician (Board Certified) - ECRH — Richmond Hill, GA
+- [ ] https://jooble.org/jdp/-4417849645095868641 | Titan Placement Group | Primary Care Physician (PCP) — Albany, GA | $250k
+- [ ] https://jooble.org/jdp/5758791796251286210 | Premise Health | Primary Care Physician — Baldwin, GA
+- [ ] https://jooble.org/jdp/2707567895467502528 | CenterWell Primary Care | Primary Care Physician — Savannah, GA | $300k
+- [ ] https://jooble.org/jdp/5119726002082687690 | Form Health | Obesity Medicine Physician - Dedicated Collaborator W2 Telemedicine — Atlanta, GA | $210k - $225k
+- [ ] https://jooble.org/jdp/8897516590718392637 | Cherokee Federal | Physician, MD, DO — Atlanta, GA
+- [ ] https://jooble.org/jdp/6471677440797046135 | University of Georgia | Primary Care Physician — Athens, GA
+- [ ] https://jooble.org/jdp/1294837204511844320 | ChenMed Careers | Primary Care Physician — Decatur, GA | $250,000 per week
+- [ ] https://jooble.org/jdp/-3753828883134623893 | Centerwell | Primary Care Physician — Atlanta, GA | $219.4k - $306.9k
+- [ ] https://jooble.org/jdp/6235975446638615219 | MedNinjas | Locum - Physician - Primary Care Atlanta, GA — Atlanta, GA | $50 per day
+- [ ] https://jooble.org/jdp/7746779118095158984 | Hire Talent | Primary Care Physician — Decatur, GA
+- [ ] https://jooble.org/jdp/1645318439737438402 | Behavioral Health Partners | Outpatient Psychiatrist — Bakersfield, CA | $310,000 per week
+- [ ] https://jooble.org/jdp/-3357781984695518267 | Behavioral Health Partners | Outpatient Child&Adolescent Psychiatrist — El Segundo, CA | $350,000 per week
+- [ ] https://jooble.org/jdp/-4401986107218735483 | Weatherby Healthcare | A Psychiatrist Is Needed for Locum Tenens Help in CA — Pleasanton, CA | $185 per hour
+- [ ] https://jooble.org/jdp/3944412722126743487 | CompHealth | A Locum Tenens Psychiatrist Is Needed in California — Madera, CA | $185 per hour
+- [ ] https://jooble.org/jdp/5899745652866139359 | CompHealth | A CA Facility Needs a Locum Tenens Psychiatrist — San Leandro, CA | $185 per hour
+- [ ] https://jooble.org/jdp/2276273904753823695 | Weatherby Healthcare | California Facility Seeks a Locum Tenens Psychiatrist — Madera, CA | $185 per hour
+- [ ] https://jooble.org/jdp/7052473838641126461 | CompHealth | A Psychiatrist Is Needed for Locum Tenens Coverage in California — Roseville, CA | $185 per hour
+- [ ] https://jooble.org/jdp/707927967981647156 | CompHealth | A Locums Psychiatrist Is Needed in California — Union City, CA | $185 per hour
+- [ ] https://jooble.org/jdp/-3475486901824825318 | Mindpath Health | Outpatient Psychiatrist - J1 Waiver Eligible! — Fresno, CA | $327k
+- [ ] https://jooble.org/jdp/6356075006647706021 | LocumTenens.com | Psychiatrist Needed for Locum Coverage at Inpatient Facility in California — Friant, CA
+- [ ] https://jooble.org/jdp/2426073623126315155 | LocumTenens.com | Psychiatrist Needed for Locum Tenens Coverage at Facility in Near Carson,California — Friant, CA
+- [ ] https://jooble.org/jdp/-7986481951003667489 | LocumTenens.com | Psychiatrist Needed for Locum Coverage at Outpatient Facility in Chico,California — Friant, CA
+- [ ] https://jooble.org/jdp/-6745034948401362607 | LocumTenens.com | Addiction Psychiatrist Needed for Locum Coverage at Clinic in California — Friant, CA
+- [ ] https://jooble.org/jdp/1287494080965067357 | LocumTenens.com | Psychiatrist Needed for Locum Tenens Coverage at Facility in California — Friant, CA
+- [ ] https://jooble.org/jdp/-1115131864358974606 | LocumTenens.com | Psychiatrist Needed for Locum Tenens Coverage at Facility in Southern California — Friant, CA
+- [ ] https://jooble.org/jdp/-2216786748482386242 | LocumTenens.com | Psychiatrist Needed for Locum Tenens Coverage at Facility in Los Angeles,California — Friant, CA
+- [ ] https://jooble.org/jdp/-7140180489547719048 | LocumTenens.com | Psychiatrist Needed for Locum Tenens Coverage at Outpatient Facility inCalifornia — Friant, CA
+- [ ] https://jooble.org/jdp/-1634157427869421017 | LocumTenens.com | Psychiatrist Needed for Locum Coverage at Outpatient Facility in California — Friant, CA
+- [ ] https://jooble.org/jdp/971962529792686358 | LocumTenens.com | Psychiatrist Needed for Locum Tenens Coverage at Outpatient Facility in California — Friant, CA
+- [ ] https://jooble.org/jdp/-3431246576917617193 | LocumTenens.com | Child/Adolescent Psychiatrist Needed for Locum Tenens Coverage at OutpatientFacility in California — Friant, CA
+- [ ] https://jooble.org/jdp/5569487651453866290 | LocumTenens.com | Child/Adolescent Psychiatrist Needed for Locum Tenens Coverage at Clinic inCalifornia — Friant, CA
+- [ ] https://jooble.org/jdp/5604987338115272442 | LocumTenens.com | Child/Adolescent Psychiatrist Needed for Locum Tenens Coverage at Clinic inNorthern California — Friant, CA
+- [ ] https://jooble.org/jdp/9043038201609138068 | Banfield Pet Hospitals | Doctor — Danville, CA | $141.58k - $204.5k
+- [ ] https://jooble.org/jdp/6062316005003035408 | One Medical | Early Career - Family Medicine Physician - Sign - On Bonus Available — San Rafael, CA | $308.7k
+- [ ] https://jooble.org/jdp/8249624931836691682 | Vituity | Physician - Psychiatry (Behavioral Health) - Victorville Center — Victorville, CA
+- [ ] https://jooble.org/jdp/8851482382361634035 | Vituity | Physician - Psychiatry (Behavioral Health) - Phoenix Community Counseling Center — San Bernardino, CA
+- [ ] https://jooble.org/jdp/8252054602329840782 | Vituity | Physician - Psychiatry (Behavioral Health) - Mesa Counseling Services — Rialto, CA
+- [ ] https://jooble.org/jdp/-5503852432773319341 | Vituity | Physician - Inpatient Psychiatry - Coachella Valley Behavioral Health — Indio, CA
+- [ ] https://jooble.org/jdp/8248042841760462461 | Vituity | Physician - Psychiatry (Behavioral Health) - Barstow Behavioral Health — Barstow, CA
+- [ ] https://jooble.org/jdp/8985312135312058598 | County of San Bernardino, CA | Field-Based Behavioral Health Physician II* — San Bernardino, CA | $321.51k - $382.39k
+- [ ] https://jooble.org/jdp/-6140148472347670840 | University of California | Medical Behavioral Unit Physician — San Diego, CA
+- [ ] https://jooble.org/jdp/6409561428853989780 | UC San Diego | Medical Behavioral Unit Physician — San Diego, CA
+- [ ] https://jooble.org/jdp/4919704585369496864 | County of Monterey, CA | Contract Physician-Clinic Services and Behavioral Health — Salinas, CA
+- [ ] https://jooble.org/jdp/5612565946270601194 | County of San Bernardino California | Behavioral Health Physician III (formerly Psychiatrist III) — San Bernardino, CA
+- [ ] https://jooble.org/jdp/-8006197507308458107 | County of San Bernardino, CA | Behavioral Health Physician IV (formerly Psychiatrist IV) — San Bernardino, CA | $393.85k
+- [ ] https://jooble.org/jdp/-8139425213195052316 | Sutter Health | Physician, Behavioral Health - Child and Adolescent — San Francisco, CA
+- [ ] https://jooble.org/jdp/-3141863033328575338 | County of San Mateo, CA | Adult Psychiatrist - Behavioral Health and Recovery Services (Open) — Redwood City, CA | $304.12k - $380.18k
+- [ ] https://jooble.org/jdp/-2451939162388822693 | Compass Group, North America | Behavioral Health Dietitian — Palmdale, CA | $75k - $90k
+- [ ] https://jooble.org/jdp/-8239464927718695470 | NKSP - North Kern State Prison -Mental Health OT-10H | Behavioral Health - Psychiatrist — Delano, CA | $1,076.5 per month
+- [ ] https://jooble.org/jdp/-3552336633788992629 | County of San Mateo, CA | Supervising Adult Psychiatrist-Behavioral Health and Recovery Services (Open & Promotional) — Redwood City, CA | $327.97k - $409.91k
+- [ ] https://jooble.org/jdp/-4436467718631532855 | HCA HealthONE Sky Ridge CO | Behavioral Health - Psychiatrist — Corcoran, CA | $1,081.5 per month
+- [ ] https://jooble.org/jdp/-4483210152437818348 | River Vista Behavioral Health Hospital | Adult Inpatient Psychiatrist - River Vista Behavioral Health - Madera, CA — Fresno, CA
+- [ ] https://jooble.org/jdp/-8281425738653325592 | New Vista Behavioral Health | Psychiatrist, Behavioral Health Hospital — Vista, CA
+- [ ] https://jooble.org/jdp/7721035161688117996 | Palo Alto Foundation Medical Group | Pediatric Behavior and Development Physician BC/BE — Fremont, CA
+- [ ] https://jooble.org/jdp/-9167821076636208697 | One Medical | Primary Care Physician (Cow Hollow) - Sign-On Bonus Available — San Francisco, CA | $308.7k - $328k
+- [ ] https://jooble.org/jdp/-7755726916492547221 | One Medical | Early career-Primary Care Physician - Adult medicine — San Francisco, CA | $308.7k
+- [ ] https://jooble.org/jdp/-5590493873860532916 | One Medical | Primary Care Physician, HIV Medicine (Castro) - Sign-On Bonus Available — San Francisco, CA | $308.7k - $328k
+- [ ] https://jooble.org/jdp/-7937169396011327652 | One Medical | Primary Care Physician (Castro) - Sign-On Bonus Available — San Francisco, CA | $308.7k - $328k
+- [ ] https://jooble.org/jdp/-8738562216201836466 | CommonSpirit Health | Primary Care Physician - Rural Health Clinic — Red Bluff, CA | $250k - $296k
+- [ ] https://jooble.org/jdp/7296052345489502417 | QuickMD | Telemedicine Physician — Germany | $35 per hour
+- [ ] https://jooble.org/jdp/-4286859223447081944 | Agaplesion Wup Drn | Oberarzt Neurologie - Moderne Klinik, Benefits — Germany | $80 - $100 per hour
+
 - [x] #001 | https://www.usajobs.gov:443/job/850115300 | VHA | Physician- Psychiatrist (BHIP) | 4.5/5 | PDF ❌
 - [x] #002 | https://www.usajobs.gov:443/job/848762900 | VHA | Physician (Geriatric Psychiatrist) | 3.0/5 | PDF ❌
 - [x] #007 | https://www.usajobs.gov:443/job/850125500 | VHA | Psychiatrist - SUD | 4.0/5 | PDF ❌
@@ -139,21 +345,20 @@
 - [x] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002103384-S&angebotsart=1 | LOCUMWORK GmbH | Ärztl. Direktor Psychiatrie — Siegen | 3.5/5 | PDF ❌
 - [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1197513868-S&angebotsart=1 | Reha-Klinik Göhren | Arzt Bereitschaftsdienst — Göhren | 1.0/5 | PDF ❌
 - [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001977206-S&angebotsart=1 | Dr. Riedel | MFA (not physician) — Wolfratshausen | 1.0/5 | PDF ❌
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002666570-S&angebotsart=1 | Bezirkskliniken Schwaben KU Bezirkskrankenhaus Kaufbeuren | Assistenzarzt (m/w/d) / Arzt in Weiterbildung (m/w/d) Neurologie — Günzburg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002615613-S&angebotsart=1 | Rheinhessen-Fachklinik Alzey Zentrum für Psychiatrie, Psychotherapie und Neurologie | Arzt (m/w/d) i.W. Kinder- und Jugendpsychiatrie — Alzey
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205689287-S&angebotsart=1 | MEDBO KU medbo KU | Assistenzartz / Arzt in Weiterbildung (w/m/d) Psychiatrie — Regensburg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001261326-S&angebotsart=1 | Rhein-Mosel-Fachklinik | Arzt in Weiterbildung Psychiatrie & Psychotherapie (m/w/d) — Andernach
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1200038305-S&angebotsart=1 | Klinik am Schlossgarten Dülmen GmbH | Fachärztin/Facharzt (w/m/d) oder Ärztin/Arzt (w/m/d) in Weiterbildung Psychiatrie und Psychotherapie — Nottuln
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002722172-S&angebotsart=1 | Tina Przybylski | Assistenzarzt/-ärztin Neurologie (w/m/d)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002011387-S&angebotsart=1 | Johanniter  GmbH | Assistenzarzt Neurologie (m/w/d) — Dortmund
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205715055-S&angebotsart=1 | MEDBO KU medbo KU | Arzt in Weiterbildung (w/m/d) für die Klinik für Neurologie der Universität Regensburg — Regensburg
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000574543-S&angebotsart=1 | Krankenhäuser Landkreis Freudenstadt gGmbH | Oberarzt (m/w/d) mit der Gebietsbezeichnung Arzt für Psychiatrie und Psychotherapie — Freudenstadt
-
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5139-S&angebotsart=1 | Sanovetis GmbH | Psychiater (m/w/d) — Passau
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4997-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Beelitz, Mark
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4996-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Bad Freienwalde (Oder)
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4995-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Fürstenwalde/Spree
-- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4994-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in (m/w/d) — Luckenwalde
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002666570-S&angebotsart=1 | Bezirkskliniken Schwaben | Assistenzarzt Neurologie — Günzburg | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002615613-S&angebotsart=1 | Rheinhessen-Fachklinik Alzey | Arzt i.W. Kinder-Jugendpsychiatrie — Alzey | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205689287-S&angebotsart=1 | MEDBO KU | Assistenzarzt Psychiatrie — Regensburg | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001261326-S&angebotsart=1 | Rhein-Mosel-Fachklinik | Arzt i.W. Psychiatrie — Andernach | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1200038305-S&angebotsart=1 | Klinik am Schlossgarten | Arzt i.W. Psychiatrie — Nottuln | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002722172-S&angebotsart=1 | Tina Przybylski | Assistenzarzt Neurologie | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002011387-S&angebotsart=1 | Johanniter GmbH | Assistenzarzt Neurologie — Dortmund | 1.0/5 | PDF ❌
+- [x] SKIP | https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205715055-S&angebotsart=1 | MEDBO KU | Arzt i.W. Neurologie — Regensburg | 1.0/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000574543-S&angebotsart=1 | Krankenhäuser Landkreis Freudenstadt | Oberarzt Psychiatrie — Freudenstadt | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5139-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Passau ⭐Bayern | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4997-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Beelitz | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4996-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Bad Freienwalde | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4995-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Fürstenwalde | 3.5/5 | PDF ❌
+- [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4994-S&angebotsart=1 | Sanovetis GmbH | Psychiater — Luckenwalde | 3.5/5 | PDF ❌
 - [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4993-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Templin | 3.5/5 | PDF ❌
 - [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4992-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Neuruppin | 3.5/5 | PDF ❌
 - [x] DISPATCHED | https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4991-S&angebotsart=1 | Sanovetis GmbH | Psychiater*in — Senftenberg | 3.5/5 | PDF ❌
@@ -261,3 +466,393 @@
 
 ## Procesadas
 
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002752769-S&angebotsart=1 | Evangelisches Johanneswerk gGmbH Klinik Wittgenstein | Psychiater/in (w/m/d) für Wochenend- und Feiertagsdienste — Bad Berleburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8096-S&angebotsart=1 | Sanovetis GmbH | Psychiater (m/w/d) Bremen ambulant — Bremen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8128-S&angebotsart=1 | Sanovetis GmbH | Psychiater (m/w/d) Münster Teilzeit möglich — Münster, Westfalen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8122-S&angebotsart=1 | Sanovetis GmbH | Psychiater (m/w/d) Dresden moderne Praxis — Dresden | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001918430-S&angebotsart=1 | GOERK & FLIEGNER Personalmanag ement / Arbeitsvermittlung sei t 1994 (keine Zeitarbeit) | Facharzt (m/w/d) für Psychiatrie und Psychotherapie ID 4469 — Uelzen, Lüneburger Heide
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002882203-S&angebotsart=1 | PremiumJob AG | Gutachter Psychiatrie - Facharzt Psychiatrie Schweiz (m/w/d) — Sion | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18651-00003c0d7d9001-S&angebotsart=1 | Universitätsklinikum Aachen | Geschäftsführende/-r Oberärztin/-arzt (w/m/d) — Aachen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002846812-S&angebotsart=1 | PremiumJob AG | Gutachter Psychiatrie - Facharzt Psychiatrie Schweiz (m/w/d) — Basel | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002792294-S&angebotsart=1 | PremiumJob AG | Gutachter Psychiatrie - Facharzt Psychiatrie Schweiz (m/w/d) — Sursee | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000108642-S&angebotsart=1 | Romedico GmbH | Chefarzt (m/w/d) für Gerontopsychiatrie  und Psychotherapie (2299 tt) — Kalbe (Milde)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1201311746-S&angebotsart=1 | Deutsche Rentenversicherung Bund | Ärztin*Arzt (m/w/div) — Stralsund
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1201020165-S&angebotsart=1 | SRH Poliklinik Gera GmbH | FA für Psychiatrie und Psychotherapie für unser Medizinisches Versorgungszentrum am Standort Gera — Gera
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002881713-S&angebotsart=1 | PremiumJob AG | Fachärztin Psychiatrie / Facharzt - Gutachter (m/w/d) — Bern | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13247-43603-15236236811-0-S&angebotsart=1 | Zeitconcept private Arbeitsvermittlung | Facharzt Psychiatrie und Psychotherapie (m/w/d) — Bad Herrenalb
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19146-100011375410-S&angebotsart=1 | tw.con | Facharzt Psychiatrie (m/w/d) – MVZ — Wehr, Baden | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20263-2221730-S&angebotsart=1 | MEDIAN Oberrheinische Kliniken GmbH & Co. KG | Facharzt für Psychiatrie und Psychotherapie (m/w/d) — Ottenhöfen im Schwarzwald | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-314314A046347C12-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie oder — Hamburg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851841A36268C28-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Bonn | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851841A36082C23-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Düsseldorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851841A45016C10-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Olpe, Biggesee | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851841A38355C26-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Wesel am Rhein | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002864393-S&angebotsart=1 | PremiumJob AG | Facharzt Nervenheilkunde / Fachärztin Psychiatrie (m/w/d) — Arbon | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14225-0596be57175a5ad6-S&angebotsart=1 | Lavie Reha gGmbH | Facharzt für Psychiatrie (m/w/d) — Königslutter am Elm
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=11949-17171489-S&angebotsart=1 | NÖ Landesgesundheitsagentur - Landesklinikum Mauer | Facharzt/-ärztin - Psychiatrie und Psychotherapie — Mauer bei Amstetten
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.101744-S&angebotsart=1 | tw.con. GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) — Dortmund | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.101798-S&angebotsart=1 | tw.con. GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) — Frankfurt (Oder) | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15245-2026haypyvmt-000-S&angebotsart=1 | Evang. Diakonissenhaus Berlin Teltow Lehnin Stiftung bürgerlichen Rechts | Facharzt für Psychiatrie und Psychotherapie (m/w/d) — Halle (Saale)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.101825-S&angebotsart=1 | tw.con. GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) — Gießen, Lahn | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.101743-S&angebotsart=1 | tw.con. GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) — Altena, Westfalen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851841A41343C20-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Waren (Müritz) | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002731881-S&angebotsart=1 | PremiumJob AG | Fachärztin Psychiatrie / Facharzt - Gutachter (m/w/d) — Bern | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851841A35640C28-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Hagen, Westfalen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=11949-17167306-S&angebotsart=1 | Land Oberösterreich | Facharzt/-ärztin - Psychiatrie und Psychotherapie — Linz
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851841A43348C17-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Heidelberg, Neckar | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851841A45446C10-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) für Psychiatrie und Psychotherapie​ — Berlin | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-851841A43266C16-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Winterberg, Westfalen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-028266A046349C12-S&angebotsart=1 | BS Menzel GmbH | Facharzt (m/w/d) Psychiatrie und Psychotherapie  — Potsdam | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1206018763-S&angebotsart=1 | Vivantes Netzwerk für Gesundheit GmbH | Facharzt / Fachärztin - Psychiatrie und Psychotherapie (m/w/d) — Berlin | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=11949-17162545-S&angebotsart=1 | Rehabilitationszentrum SKA- RZ Felbring | Facharzt/-ärztin - Psychiatrie und Psychotherapie — Muthmannsdorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=11949-17164313-S&angebotsart=1 | Soziale Dienste Burgenland GmbH | Facharzt/-ärztin - Psychiatrie und Psychotherapie — Oberwart
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=11949-17163508-S&angebotsart=1 | NÖ Landesgesundheitsagentur - Landesklinikum Mauer | Facharzt/-ärztin - Psychiatrie und Psychotherapie — Mauer bei Amstetten
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12618-171000-S&angebotsart=1 | AWO Fachkrankenhaus Jerichow | Oberärztin*Oberarzt Psychiatrie — Jerichow
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002432935-S&angebotsart=1 | Helios Vogtland-Klinikum Plauen GmbH | Leitender Oberarzt Psychiatrie (m/w/d) — Plauen, Vogtland | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002743748-S&angebotsart=1 | Healthbridge GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Hanau | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-78815438-S&angebotsart=1 | HB-Pro | Oberarzt Psychiatrie und Psychotherapie für eine  (m/w/d) — Regensburg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13091-19874-1745754-0-S&angebotsart=1 | akut... Medizinische Personallogistik GmbH akut Doc | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Berlin | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14837-69B3F0CCF5A56932799-S&angebotsart=1 | Ilm-Kreis-Kliniken Arnstadt-Ilmenau gGmbH Klinik Arnstadt | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Arnstadt
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-108656A046372C13-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Köln | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-602135A046696C20-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Frankfurt (Oder) | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-244072A046791C13-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Stuttgart | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-393663A046432C13-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) in der Psychiatrie und Psychotherapie — Trier | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-689610A048450C2-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie oder — Freiburg im Breisgau | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-382372A046601C19-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Kiel | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.17759-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie & Psychotherapie (m/w/d) — Zwickau
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.17758-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Eschwege
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15224-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie & Psychotherapie (m/w/d) — Wolfsburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15223-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie, Psychotherapie (m/w/d) — Münster, Westfalen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15222-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie u. Psychotherapie (m/w/d) — Hamm, Westfalen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15221-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie u. Psychotherapie (m/w/d) — Essen, Ruhr
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15220-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Aalen, Württemberg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.7314-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Wolfsburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.19492-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie und Psychotherapie (w/m/d) — Halle (Saale)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.19491-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Braunschweig
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.17032-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Sonneberg, Thüringen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.14906-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie & Psychotherapie  (m/w/d) — Bleicherode
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.14905-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie & Psychotherapie (m/w/d) — Jena
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-680232A046580C20-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) für Psychiatrie und Psychotherapie​ — Bayreuth | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-763792A048408C2-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) in der Psychiatrie und Psychotherapie — Stuttgart | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.16973-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie u. Psychotherapie (m/w/d) — Friedrichroda
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002879534-S&angebotsart=1 | PremiumJob AG | Oberärztin Forensik / Oberarzt forensische Psychiatrie (m/w/d) — Bern | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1202623076-S&angebotsart=1 | Maßregelvollzugszentrum Niedersachsen | Oberärztin/Oberarzt (m/w/d) — Wunstorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1202792508-S&angebotsart=1 | Maßregelvollzugszentrum Niedersachsen | Oberärztin/Oberarzt (m/w/d) — Zeven
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1201938709-S&angebotsart=1 | Landschaftsverband Westfalen- Lippe - LWL-Maßregelvollzugs- klinik Schloss Haldem | Oberarzt:Oberärztin (m/w/d) — Stemwede
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002866656-S&angebotsart=1 | Bezirkskrankenhaus Landshut | Leitender Oberarzt / Leitende Oberärztin (m/w/d) — Landshut, Isar | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002654969-S&angebotsart=1 | Landesverein für Innere Mission | Oberärztin für Psychiatrie und Psychotherapie (m/w/d) als Leitung des Bereichs EKT — Rickling
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18873-XIWEBNI8A4RSE808-S&angebotsart=1 | EMA - Vermittlung GmbH | Oberärztin/Oberarzt (m/w/d) für unsere Klinik für Psychiatrie, Psychotherapie und Psychosomatik — Emden, Ostfriesland | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-274114A046726C19-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Forensische Psychiatrie — Bayreuth | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855042A45024C13-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) für Psychiatrie und Psychotherapie​ — Berlin | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855042A45509C10-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) für Psychiatrie und Psychotherapie​ — München | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855041A45543C11-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) für Psychiatrie und Psychotherapie​ — Potsdam | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13884-330895-S&angebotsart=1 | Sächsisches Krankenhaus Rodewisch | Oberärztin/Oberarzt (m/w/d) Akutpsychiatrie — Rodewisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-595673A048484C1-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Paderborn | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-466824A048481C1-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) in der Psychiatrie und Psychotherapie — Chemnitz, Sachsen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1204622084-S&angebotsart=1 | 011 Johannesbad Reha-Kliniken GmbH & Co. KG | Oberärzt:in Psychosomatik (m/w/d) — Bad Füssing
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002693268-S&angebotsart=1 | Rhein-Mosel-Fachklinik | Oberarzt / Oberärztin (m/w/d) Gerontopsychiatrie — Andernach
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002425456-S&angebotsart=1 | St.Vincenz-Krankenhaus VCK GmbH | Oberarzt / Oberärztin (m/w/d) als Leitung für das StäB-Team der Psychiatrie — Datteln
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12951-093356f9-16d3-48d0--S&angebotsart=1 | Thüringen-Kliniken Georgius Agricola GmbH | Oberarzt/-ärztin (m/w/d) für die Klinik für Psychiatrie, Psychotherapie und Psychosomatische Medizin — Saalfeld/Saale
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-211331A048447C2-S&angebotsart=1 | BS Menzel GmbH | Leitender Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Fulda | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001869485-S&angebotsart=1 | Krankenhausverwaltung Schloss Werneck | Oberärztin / Oberarzt (m/w/d) für die Psychiatrische Institutsambulanz — Werneck
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12811-2125821-S&angebotsart=1 | KMG Klinikum Güstrow GmbH | Oberarzt/Oberärztin Psychiatrie und Psychotherapie (m/w/d/x), KMG Klinikum Güstrow — Güstrow
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17386-00009104635001-S&angebotsart=1 | Pfalzklinikum f. Psych. u. Neurol. - AdöR | Chefarzt (m/w/d) Klinik für Forensische Psychiatrie — Klingenmünster | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1202566302-S&angebotsart=1 | Schlossklinik BeTak GmbH | Stellvertretender Chefarzt (m/w/d) für Psychiatrie und Psychotherapie — Borken, Westfalen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12811-2206639-S&angebotsart=1 | Alexianer St. Gertrauden GmbH | Chefarzt Psychiatrie und Psychotherapie (mwd), St. Gertrauden Krankenhaus — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002298120-S&angebotsart=1 | Helios Vogtland-Klinikum Plauen GmbH | Chefarzt Klinik für Psychiatrie, Psychotherapie und Psychosomatik (m/w/d) — Plauen, Vogtland | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14322-1A2025072806992-S&angebotsart=1 | 1a-Ärztevermittlung GmbH | Chefarzt  Psychiatrie / Psychotherapie (m/w/d) - SHC-250-72 — Eisenach, Thüringen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17914-k59760.9918-S&angebotsart=1 | Trova Personal und Managementberatung | Stv. Chefarzt Psychiatrie (m/w/d) Bad Säckingen — Bad Säckingen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17914-k59760.9913-S&angebotsart=1 | Trova Personal und Managementberatung | Stv. Chefarzt Psychiatrie (m/w/d) Bad Säckingen — Lörrach
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12288-4769341229-S&angebotsart=1 | TROVA Personal- und Managementberatung | Stv. Chefarzt / Leitender Oberarzt Psychiatrie (m/w/d) Freiburg — Freiburg im Breisgau
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14893-0062432829-S&angebotsart=1 | Agaplesion Elisabethenstift GmbH | Sekretariat  Chefarzt Psychiatrie, Psychosomatik & Psychotherapie (w/m/d) — Darmstadt
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20263-2221887-S&angebotsart=1 | MEDIAN Klinik Berus GmbH & Co. KG | Chefarzt (m/w/d) in der psychosomatischen Rehabilitation — Überherrn | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002777616-S&angebotsart=1 | Romedico GmbH | Chefarzt (m/w/d) für Psychiatrie und Psychotherapie (2657 ro) — Leipzig
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002449177-S&angebotsart=1 | Healthbridge GmbH | Chefarzt für Psychosomatik (w/m/d) — Lippstadt | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000108651-S&angebotsart=1 | Romedico GmbH | Chefarzt (m/w/d) für Psychiatrie für den Maßregelvollzug (2300 tt) — Kalbe (Milde)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-63323870-S&angebotsart=1 | HB-Pro | Chefarzt Psychosomatische Rehabilitation (m/w/d) — Ilmenau, Thüringen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14246-k24007.8075-5-S&angebotsart=1 | ZAR Braunschweig GmbH | Stellv. Chefarzt/ Chefärztin für Psychosomatik oder Psychiatrie und Psychotherapie (m/w/d) — Braunschweig
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002377313-S&angebotsart=1 | Psychiatrische Klinik Uelzen gemeinnützige GmbH | Chefarzt (m/w/d) Psychiatrie & Psychotherapie für die Psychiatrische Klinik in Uelzen — Uelzen, Lüneburger Heide | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17891-k59862.3458-S&angebotsart=1 | ercas Software Solutions GmbH | Chefarzt für Psychosomatische Rehabilitation (m/w/d) — Saalfeld/Saale
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18127-1303-1758600-0-S&angebotsart=1 | multicareer GmbH | Chefarzt Psychiatrie, Psychotherapie und Psychosomatik (m/w/d) - JOB ID 1303 — Zwickau
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15235-k43552.198081-S&angebotsart=1 | rocket match powered by notificAI GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Lüdenscheid | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=11956-2982331774908001-S&angebotsart=1 | Fachkrankenhaus Hubertusburg gGmbH | Klinikum St. Georg gGmbH: Chefärztin / Chefarzt (d/m/w) - Psychiatrie und Psychotherapie und/oder Ps — Wermsdorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13319-864767/1_601024LS-S&angebotsart=1 | Hays AG | Stellv. Chefarzt Pädiatrische Intensivmedizin (m/w/d) — Magdeburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-453194A046389C13-S&angebotsart=1 | BS Menzel GmbH | Chefarzt (m/w/d) für die Psychosomatische Medizin und Psychotherapie — Anklam | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002757228-S&angebotsart=1 | Bezirksklinikum Mainkofen | Chefärztin / Chefarzt (m/w/d) für die Allgemeinpsychiatrie am Bezirksklinikum Mainkofen — Deggendorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001655703-S&angebotsart=1 | Rehaklinik Buching GmbH | Oberarzt (w/m/d) als fachliche Stellvertretung der Chefärztin — Halblech
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002879618-S&angebotsart=1 | Healthbridge GmbH Professional Recruiting | Chefarzt Psychosomatik und Psychotherapie für eine Psychosomatische REHA-Klinik m/w/d — Waldshut-Tiengen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18127-1310-1758636-0-S&angebotsart=1 | multicareer GmbH | Chefarzt Psychosomatik (m/w/d) - JOB ID 1310 — Bielefeld
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002227311-S&angebotsart=1 | Tina Przybylski | Chefarzt/-ärztin ZNA (w/m/d)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.22898-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Chefarzt (m/w/d) Geriatrie — Mainz am Rhein
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=12513-0007633802-S&angebotsart=1 | DEPVA GmbH | Facharzt/Oberarzt (m/w/d) für Psychiatrie und Psychothera... — Bochum
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15030-0060339865-S&angebotsart=1 | Leopoldina-Krankenhaus der Stadt Schweinfurt GmbH - Personalabteilung - | Chefarzt (m/w/d) Klinik für Spezielle Schmerztherapie — Schweinfurt
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002547782-S&angebotsart=1 | Healthbridge GmbH | Chefarzt Psychosomatische Rehabilitation (m/w/d) — Ilmenau, Thüringen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.14818-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt Psychiatrie & Psychotherapie  (m/w/d) — Würzburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.12282-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt Psychiatrie & Psychotherapie (m/w/d) — Eisenach, Thüringen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855041A40714C21-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) in der Psychiatrie und Psychotherapie — Sankt Peter-Ording | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855041A36824C28-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) in der Psychiatrie und Psychotherapie — Hannover | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855041A41989C14-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Stuttgart | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855041A35665C27-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) in der Psychiatrie und Psychotherapie — Wittenberge, Prignitz | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855041A44117C16-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Fulda | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17891-k59862.3468-S&angebotsart=1 | ercas Software Solutions GmbH | Oberarzt für Psychiatrie und Psychotherapie (m/w/d) — Riesa
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=17891-k59862.3461-S&angebotsart=1 | ercas Software Solutions GmbH | Oberarzt für Psychiatrie und Psychotherapie  (m/w/d) — Erfurt
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855041A36716C24-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Heidelberg, Neckar | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855041A36778C28-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) in der Psychiatrie und Psychotherapie — Duisburg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002757327-S&angebotsart=1 | Das Alpreflect GmbH | Arzt für den Bereitschaftsdienst (m/w/d) in Nebentätigkeit — Füssen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002593778-S&angebotsart=1 | Universitätsklinikum Jena | Arzt in der Kinder- und Jugendpsychiatrie (m/w/d) — Jena | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20263-2113241-S&angebotsart=1 | MEDIAN Klinik Schlangenbad GmbH & Co. KG | Arzt(m/w/d) für Bereitschaftsdienste in Festanstellung — Schlangenbad, Taunus | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20263-2179989-S&angebotsart=1 | MEDIAN Klinik für Psychosomatik Bad Dürkheim GmbH | Ltd. Oberarzt mit Chefarztvertretung (m/w/d) — Bad Dürkheim | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19433-75cb6364cd7b78b7820-S&angebotsart=1 | Schwarzwaldklinik Bad Krozingen GmbH & Co. KG | Bereitschaftsdienst-Arzt für Nacht-, Wochenend- und Feiertagsdienst (m/w/d) — Bad Krozingen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002524395-S&angebotsart=1 | Klinik Werraland Zentrale für Familiengesundheit Stiftung | engagierte Ärztin / engagierter Arzt (m/w/d) mit Erfahrung in der Allgemeinmedizin — Bad Sooden-Allendorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1204287469-S&angebotsart=1 | Deutscher Arbeitskreis für Familienhilfe e.V. | Facharzt/ärztin (m/w/d) als stellv. leitendende/n Arzt/Ärztin — Lenzkirch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001596616-S&angebotsart=1 | Berolina Klinik GmbH & Co. KG | 1 OBERARZT/-ÄRZTIN (Studienberuf) — Löhne
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002730374-S&angebotsart=1 | Bezirkskrankenhaus Landshut | Arzt/Ärztin (m/w/d) in Weiterbildung ODER Facharzt/Fachärztin (m/w/d) Kinder- und Jugendpsychiatrie — Passau | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1204951708-S&angebotsart=1 | MEDBO KU medbo KU | Arzt (w/m/d) in Weiterbildung Kinder- und Jugendpsychiatrie - Liaisondienste in Regensburg — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1204278037-S&angebotsart=1 | MEDBO KU medbo KU | Arzt (w/m/d) in Weiterbildung für die Klinik und Poliklinik für Kinder- und Jugendpsychiatrie (KJPP) — Weiden in der Oberpfalz
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14177-43951648-26-S&angebotsart=1 | ZiP gGmbH | Arzt (m/w/d) in Weiterbildung im Bereich Ambulante Frühintervention — Lübeck
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000959202-S&angebotsart=1 | Bezirkskrankenhaus Landshut | Arzt/Ärztin (m/w/d)  in Weiterbildung - Kinder-/Jugendpsychiatrie oder Facharzt/Fachärztin (m/w/d) — Landshut, Isar | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19200-9y2y5nlf5i-S&angebotsart=1 | ZfP Südwürttemberg | Ärztin:arzt in der Forensisch-Psychiatrischen Ambulanz (FPA) (w/m... — Ravensburg, Württemberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1202145935-S&angebotsart=1 | Adolf von Galhau'sche Sophien- stiftung | Facharzt Psychiatrie, Psychotherapie oder Arzt in entsprechender Weiterbildung (m/w/d) — Wallerfangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13916-43817967-123-S&angebotsart=1 | v. Bodelschwinghsche Stiftungen Bethel | Arzt (m/w/d) Psychiatrie / Neurologie | Ärztlicher Dienst | Bielefeld — Bielefeld
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000746539-S&angebotsart=1 | Kliniken Schmieder (Stiftung & Co.) KG | Assistenzärzte (m/w/d) Neurologie — Stuttgart
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1204072892-S&angebotsart=1 | Arztpraxis für Neurologie Dr. med. Martin Delf | Ass. Arzt*in Stelle in Hoppegarten — Hoppegarten (Mark)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14795-63938_114676-S&angebotsart=1 | BA Pankow von Berlin | Fachärztin/Facharzt (m/w/d) für den Sozialpsychiatrischen Dienst — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002670442-S&angebotsart=1 | Landratsamt Hildburghausen | Arzt im Sozialpsychiatrischen Dienst (m/w/d) — Hildburghausen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14795-65865_117553-S&angebotsart=1 | Bezirksamt Mitte von Berlin | Fachärztin/-arzt, bzw. Ärztin/ Arzt im Sozialpsychiatrischen Dienst (m/w/d) — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18256-k59791.1219-S&angebotsart=1 | Marienborn gGmbH | Famulatur im Bereich Psychiatrie und Psychotherapie — Zülpich
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001394223-S&angebotsart=1 | Bürgerhospital Friedberg gGmbH | Stationsarzt (m/w/d) für die Neurologie BGH in Friedberg — Friedberg (Hessen)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002334739-S&angebotsart=1 | Döpfer Schulen Schwandorf GmbH | Arzt / Ärztin oder Medizinpädagogen als Lehrkräfte (m/w/d) für Gesundheitsberufe — Schwandorf, Bayern
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002754675-S&angebotsart=1 | Salus gGmbH | Arzt (m/w/d) in Weiterbildung zum Facharzt für Allgemeinmedizin — Bernburg (Saale)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205183485-S&angebotsart=1 | Bezirkskliniken Mittelfranken | Assistenz- (m/w/d) bzw. Facharzt (m/w/d)arzt — Weißenburg in Bayern
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000729579-S&angebotsart=1 | Frankfurter Verein für soziale Heimstätten e.V. | Leitender Arzt/Leitende Ärztin (m/w/d) Fachkrankenhaus Vielbach — Vielbach
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002700007-S&angebotsart=1 | conQuaesso® JOBS | Leitende*r Ärztin/Arzt für das MZEB (w/m/d) — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1198385126-S&angebotsart=1 | Anna Sieveking Praxis für Neurologie | Facharzt/-ärztin für Psychiatrie — Stuhr
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002344771-S&angebotsart=1 | Havelland Kliniken GmbH | Fachärzt:in der Psychiatrie (m/w/d) — Nauen, Havelland
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15834-k49944.25110-S&angebotsart=1 | TSURU Consulting GmbH | Honorararzt (m/w/d) Psychiatrie und Psychotherapie — Köln
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102353-S&angebotsart=1 | tw.con. GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) – MVZ — Kiel | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15834-k49944.25113-S&angebotsart=1 | TSURU Consulting GmbH | Honorararzt (m/w/d) Psychiatrie und Psychotherapie — Hamburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102417-S&angebotsart=1 | tw.con. GmbH | Facharzt Psychiatrie (m/w/d) – MVZ — Kaarst | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002574027-S&angebotsart=1 | Healthbridge GmbH | Oberarzt für Psychiatrie und Psychotherapie (m/w/d) — Freiburg im Breisgau | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002792001-S&angebotsart=1 | Healthbridge GmbH Professional Recruiting | Oberarzt für die Psychiatrie und Psychotherapie  (m/w/d) — Rostock | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002786774-S&angebotsart=1 | Healthbridge GmbH Professional Recruiting | Oberarzt für die Psychiatrie und Psychotherapie  (m/w/d) — Rostock | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002767959-S&angebotsart=1 | Christiani e.V. | Facharzt/-ärztin für Psychiatrie und Psychotherapie — Albbruck
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002776573-S&angebotsart=1 | Healthbridge GmbH Professional Recruiting | Oberarzt für die Psychiatrie und Psychotherapie  (m/w/d) — Rostock | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002776566-S&angebotsart=1 | Healthbridge GmbH Professional Recruiting | Oberarzt für die Psychiatrie und Psychotherapie  (m/w/d) — Rostock | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000014017-S&angebotsart=1 | Medizinisches Versorgungszentrum Mittweida G | Facharzt/-ärztin - Psychiatrie und Psychotherapie (m/w/d) — Mittweida
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1203003450-S&angebotsart=1 | Schlossklinik BeTak GmbH | Bereitschaftsarzt (m/w/d) Psychiatrie & Psychotherapie — Borken, Westfalen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13319-826920/1_597722LS-S&angebotsart=1 | Hays AG | Oberarzt Psychiatrie und Psychotherapie (m/w/d) — Frankfurt am Main
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102397-S&angebotsart=1 | tw.con. GmbH | Facharzt für Psychiatrie und Psychotherapie (m/w/d) – ambulant mit Telemedizin — Magdeburg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1202955227-S&angebotsart=1 | Vivantes Netzwerk für Gesundheit GmbH | Facharzt/Fachärztin - Psychiatrie und Psychotherapie (m/w/d) — Berlin | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19233-0056870133-S&angebotsart=1 | Kerckhoff-Klinik GmbH | Fachärztin/arzt für Psychiatrie und Psychotherapie (m/w/d) — Bad Nauheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001563622-S&angebotsart=1 | DANUVIUS Klinik GmbH | Facharzt (m/w/d) für Psychiatrie & Psychotherapie für Danuvius Klinik Ingolstadt — Ingolstadt, Donau
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002526700-S&angebotsart=1 | DANUVIUS Klinik GmbH | Facharzt (m/w/d) für Psychiatrie & Psychotherapie für Danuvius MVZ AidA GmbH — Ingolstadt, Donau
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20263-2221750-S&angebotsart=1 | MEDIAN Klinik Brandis GmbH & Co. KG | Oberarzt Psychosomatik (m/w/d) — Brandis bei Wurzen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20263-2152082-S&angebotsart=1 | MEDIAN Klinik Brandis GmbH & Co. KG | Facharzt Psychosomatik (m/w/d) — Brandis bei Wurzen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14795-56043_103136-S&angebotsart=1 | Bezirksamt Marzahn-Hellersdorf Serviceeinheit Personal | Leitende*r Fachärztin/ Facharzt im Kinder- und Jugendpsychiatrischen Dienst (m/w/d) — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205992428-S&angebotsart=1 | Kreis Viersen | Ärztin / Arzt oder Fachärztin / Facharzt (w/m/d) — Viersen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002701480-S&angebotsart=1 | Werbedienste und Arbeitsvermittlung Uwe Bludau | Leitende Ärztin, Leitender Arzt für Psychiatrie und Psychotherapie im Kanton Luzern
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002396863-S&angebotsart=1 | BFW Berlin-Brandenburg e. V. | Facharzt für Psychiatrie (m/w/d)* alternativ (Fach-)Arzt* anderer Fachrichtung mit Erfahrung — Mühlenbeck bei Oranienburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18256-k59791.1211-S&angebotsart=1 | Marienborn gGmbH | Facharzt (w/m/d) für Psychiatrie und Psychotherapie — Zülpich
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18256-k59791.1212-S&angebotsart=1 | Marienborn gGmbH | Oberarzt (w/m/d) für Psychiatrie und Psychotherapie — Zülpich
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18256-k59791.1342-S&angebotsart=1 | Marienborn gGmbH | Facharzt (w/m/d) für Psychiatrie und Psychotherapie für die Tagesklinik — Hürth, Rheinland
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001181058-S&angebotsart=1 | Stadtverwaltung Mönchengladbach Fachbereich Personalmanagement | Facharzt*ärztin Psychiatrie und Psychotherapie  (Flexible Arbeitszeiten, Fachkräftezulage) — Mönchengladbach
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15223-k43467.47155-S&angebotsart=1 | Job refresh GmbH | Facharzt (m/w/d) für Psychiatrie und Psychotherapie in privater Akutklinik — Teterow
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15223-k43467.47153-S&angebotsart=1 | Job refresh GmbH | Oberarzt (m/w/d) für Psychiatrie und Psychotherapie in privater Akutklinik — Teterow
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20145-SRRNQDJBLboloq-S&angebotsart=1 | Deutsche Rentenversicherung Westfalen Verwaltungsabteilung Personalreferat | Facharzt (m/w/d) Psychiatrie, Psychotherapie, Psychosomatische Medizin / ohne Dienste — Hagen, Westfalen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=20145-4PF46MYDEunagw-S&angebotsart=1 | Deutsche Rentenversicherung Westfalen Verwaltungsabteilung Personalreferat | Facharzt (m/w/d) Psychiatrie, Psychotherapie, Psychosomatische Medizin / ohne Dienste — Dortmund
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19468-1057685-S&angebotsart=1 | Apriva GmbH | Leitender Facharzt Psychosomatische Medizin (m/w/d)
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18256-k59791.1217-S&angebotsart=1 | Marienborn gGmbH | Facharzt (w/m/d) für Psychiatrische Institutsambulanz — Zülpich
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102227-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) Schweiz — Ulm, Donau | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102229-S&angebotsart=1 | tw.con. GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) Schweiz — Stuttgart | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002708397-S&angebotsart=1 | Landkreis Börde     | Amtsarzt (m/w/d) — Haldensleben
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.102047-S&angebotsart=1 | tw.con. GmbH | Leitender Oberarzt Psychiatrie und Psychotherapie (m/w/d) Schweiz — Zürich | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14795-65965_117513-S&angebotsart=1 | BA Treptow-Köpenick von Berlin SE Personal und Finanzen | Facharzt/Fachärztin im Sozialpsychiatrischen Dienst (m/w/d) — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14549-k31945.101849-S&angebotsart=1 | tw.con. GmbH | Leitender Oberarzt Gerontopsychiatrie (m/w/d) Schweiz — Zürich | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14795-64020_116904-S&angebotsart=1 | Polizei Berlin Direktion ZS Pers B 55 | Polizeiärztinnen/Polizeiärzte mit Facharztqualifikation (m/w/d) — Berlin
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19791-2ei4rxgdco-S&angebotsart=1 | Stadt Oberhausen | Fachärztin/Facharzt für Psychiatrie und Psychotherapie (m/w/d) od... — Oberhausen, Rheinland
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000793341-S&angebotsart=1 | Stadtverwaltung Mönchengladbach Fachbereich Personalmanagement | Facharzt*ärztin für die Abteilungsleitung Gesundheitshilfe-Flexible Arbeitszeiten, Fachkräftezulage — Mönchengladbach
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15699-1546693-1-S&angebotsart=1 | Landschaftsverband Rheinland | Facharzt / Fachärztin (m/w/d) für Kinder- und Jugendmedizin oder Kinder- und Jugendpsychiatrie... — Bonn
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15699-992809-1-S&angebotsart=1 | Landschaftsverband Rheinland | Facharzt / Fachärztin für Psychiatrie und Psychotherapie (M/W/D) — Köln
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.7336-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt Psychiatrie und Psychotherapie (m/w/d) — Marktheidenfeld
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002740715-S&angebotsart=1 | Bezirkskliniken Schwaben KU Bezirkskrankenhaus Kaufbeuren | Facharzt (m/w/d) für Psychiatrie und Psychotherapie — Kempten (Allgäu) | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25423-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25421-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002706293-S&angebotsart=1 | M&C AG | Facharzt (m/w/d) für Psychiatrie und Psychotherapie — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24977-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24974-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24749-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24747-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt (m/w/d) Psychiatrie und Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1202785510-S&angebotsart=1 | MEDBO KU medbo KU | Facharzt (w/m/d) für Psychiatrie und Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000941059-S&angebotsart=1 | DOCWISE - das Medizinernetzwerk | Facharzt (m/w/d) - Psychiatrie und Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1001479028-S&angebotsart=1 | Krankenhausverwaltung Schloss Werneck | Fachärztin / Facharzt (m/w/d) für Psychiatrie und Psychotherapie — Werneck
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000378985-S&angebotsart=1 | Facharztpraxis für Neurologie Psychiatrie und Psychotherapie Dr. med. Farahnaz | Fachärztin / Facharzt für Psychiatrie und Psychotherapie gesucht — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002509082-S&angebotsart=1 | Algesiologikum MVZ GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) in Teilzeit — München
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7027-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Hösbach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7025-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Karlstein am Main | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7021-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Kahl am Main | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7020-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Aschaffenburg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5579-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Alfeld, Mittelfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5577-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Schwarzenbruck | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5576-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Schwaig bei Nürnberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5575-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Happurg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5574-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Engelthal, Mittelfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5573-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Burgthann | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5572-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Feucht | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5569-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Roth, Mittelfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5568-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Altdorf bei Nürnberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5566-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Herzogenaurach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5565-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Lauf an der Pegnitz | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5564-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Wendelstein, Mittelfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5563-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Oberasbach bei Nürnberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5562-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Zirndorf, Mittelfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5561-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Schwabach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5559-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Erlangen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5558-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) — Fürth, Bayern | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5245-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) — Vilshofen an der Donau | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5244-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) — Passau | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=16223-k15327.6427-S&angebotsart=1 | Siiri Schütz Ärztevermittlung | Facharzt für Psychiatrie und Psychotherapie (w/m/d) zur Festanstellung — Deggendorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1000308589-S&angebotsart=1 | Psorisol Hautklinik GmbH | Facharzt für Psychiatrie und Psychotherapie (w/m/d) als Oberarzt — Hersbruck
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1205123067-S&angebotsart=1 | BEZIRKSKLINIK REHAU | Facharzt für Psychiatrie/Psychotherapie als Oberarzt (m/w/d) — Rehau, Oberfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002698885-S&angebotsart=1 | Tatenwerk gemeinnützige GmbH | Facharzt für Psychiatrie und Psychotherapie als ärztliche Leitung m/w/d — Würzburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=16223-k15327.6426-S&angebotsart=1 | Siiri Schütz Ärztevermittlung | Facharzt für Psychiatrie (w/m/d)  als Oberarzt-Festanstellung in der Forensischen Psychiatrie — Deggendorf
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.16972-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Psychiatrie u. Psychotherapie (m/w/d) — Bad Neustadt an der Saale
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25748-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25747-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25746-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Neustadt an der Aisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25737-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25736-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Neustadt an der Aisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14922-82021651-S&angebotsart=1 | HB-Pro | Oberarzt Psychiatrie für Gerontopsychiatrie (m/w/d) — Straubing | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25652-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25650-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25544-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25542-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25541-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Neustadt an der Aisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25449-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25448-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Neustadt an der Aisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25433-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25432-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25430-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Neustadt an der Aisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.13344-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt für Psychiatrie (m/w/d) — Schweinfurt
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.13343-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) für Psychiatrie — Würzburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25201-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25200-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25199-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Neustadt an der Aisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24992-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24990-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie und Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25129-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25128-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25126-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Neustadt an der Aisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25016-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25015-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25012-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Neustadt an der Aisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24681-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24680-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24679-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24603-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24602-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24601-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Neustadt an der Aisch
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24391-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24385-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24384-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24335-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Regensburg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24334-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Erlangen
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24333-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Nürnberg, Mittelfranken
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002783954-S&angebotsart=1 | Healthbridge GmbH Professional Recruiting | Oberarzt Psychiatrie (m/w/d) für die Abteilung Gerontopsychiatrie — Straubing | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7223-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) MVZ — Bamberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7232-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) Höchstadt an der Aisch — Höchstadt an der Aisch | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7225-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie Psychotherapie (m/w/d) Praxis Forchheim — Forchheim, Oberfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.16949-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Leitender Oberarzt Kinder- u. Jugendpsychiatrie (m/w/d) — Bamberg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4723-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Bamberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5445-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Bamberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7206-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) MVZ — Bamberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6694-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Hallstadt | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6696-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Memmelsdorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002100480-S&angebotsart=1 | LOCUMWORK GmbH | Leitende Oberärztin/ Leitender Oberarzt (m/w/d) für Psychosomatische Medizin und Psychotherapie — Bamberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6734-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Breitengüßbach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6732-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Litzendorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6698-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Strullendorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6695-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Oberhaid, Oberfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6697-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Viereth-Trunstadt | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6731-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Hirschaid | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4725-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Hirschaid | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6789-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Zapfendorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6792-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Altendorf, Kreis Bamberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6791-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Buttenheim | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6733-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Scheßlitz | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6855-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Burgebrach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4357-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Zapfendorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6790-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Rattelsdorf, Oberfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4359-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Buttenheim | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6793-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Hallerndorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4362-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Burgebrach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4358-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Rattelsdorf, Oberfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6858-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Eltmann | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4361-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Hallerndorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5901-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Rentweinsdorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4365-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Eltmann | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4724-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Höchstadt an der Aisch | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6857-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Schlüsselfeld | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6922-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Forchheim, Oberfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4726-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Forchheim, Oberfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4967-S&angebotsart=1 | Sanovetis GmbH | Oberarzt /Facharzt Gynäkologie Geburtshilfe (m/w/d) — Bamberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5879-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Bad Staffelstein | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4364-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Schlüsselfeld | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4368-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Forchheim, Oberfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7208-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) Praxis/MVZ — Forchheim, Oberfranken | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7214-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) MVZ/Praxis — Höchstadt an der Aisch | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18127-1148-1757670-0-S&angebotsart=1 | multicareer GmbH | Chefarzt Spezielle Schmerztherapie (m/w/d) - JOB ID 1148 — Bamberg
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7094-S&angebotsart=1 | Sanovetis GmbH | Facharzt Innere Medizin oder Allgemeinmedizin (m/w/d) Schwerpunkt Gastroenterologie Großraum Bayern — Bad Staffelstein | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5446-S&angebotsart=1 | Sanovetis GmbH | Oberarzt Onkologie/Hämatologie (m/w/d) — Bamberg | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4209-S&angebotsart=1 | Sanovetis GmbH | Leitender Oberarzt Onkologie/Hämatologie (m/w/d) — Hallstadt | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4211-S&angebotsart=1 | Sanovetis GmbH | Leitender Oberarzt Onkologie/Hämatologie (m/w/d) — Memmelsdorf | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4229-S&angebotsart=1 | Sanovetis GmbH | Leitender Oberarzt Onkologie/Hämatologie (m/w/d) — Breitengüßbach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4228-S&angebotsart=1 | Sanovetis GmbH | Leitender Oberarzt Onkologie/Hämatologie (m/w/d) — Breitengüßbach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5114-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Bayreuth | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10000-1204836838-S&angebotsart=1 | GEBO GESUNDHEITSEINRICHTUNGEN BEZIRKS OBERFRANKEN | Oberarzt (m/w/d) resp. bei gegebener Eignung ltd. Oberarzt(m/w/d) — Bayreuth
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5116-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Pegnitz | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7866-S&angebotsart=1 | Sanovetis GmbH | Facharzt für Innere Medizin (m/w/d) Klinik Bayreuth — Bayreuth | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5005-S&angebotsart=1 | Sanovetis GmbH | Oberarzt /Facharzt Gynäkologie Geburtshilfe (m/w/d) — Bayreuth | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5257-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Creußen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5117-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Bad Berneck im Fichtelgebirge | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855042A42294C16-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Psychosomatische Medizin und Psychotherapie — Bayreuth | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5115-S&angebotsart=1 | Sanovetis GmbH | Facharzt Dermatologie (m/w/d) — Kulmbach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=10001-1002359548-S&angebotsart=1 | Höhenklinik | Oberarzt (m/w/d) — Bischofsgrün
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-855024A36625C24-S&angebotsart=1 | BS Menzel GmbH | Oberarzt (m/w/d) Kinder- und Jugendpsychiatrie — Bayreuth | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=13356-854124A34802C28-S&angebotsart=1 | BS Menzel GmbH | Leitender Oberarzt (m/w/d) Kinder- und Jugendpsychiatrie — Bayreuth | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.7029-S&angebotsart=1 | Sanovetis GmbH | Facharzt Innere Medizin oder Allgemeinmedizin (m/w/d) Schwerpunkt Nephrologie — Kulmbach | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.4410-S&angebotsart=1 | Sanovetis GmbH | Oberarzt Innere Medizin Schwerpunkt Onkologie/Hämatologie (m/w/d) — Bayreuth | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8332-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) Heidelberg MVZ — Heidelberg, Neckar | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8132-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) Heidelberg ambulant — Heidelberg, Neckar | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8334-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) MVZ — Weinheim, Bergstraße | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15386-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) für Psychiatrie und Psychotherapie — Heidelberg, Neckar
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8134-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) Raum Schwetzingen — Schwetzingen | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8296-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) Klinik Mannheim — Mannheim | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8130-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) Mannheim ambulant — Mannheim | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8333-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) Leimen kollegiales Team — Leimen, Baden | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8133-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) Baden-Württemberg — Viernheim | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24169-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24045-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.23236-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.23176-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.22803-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25647-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Leitender Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25456-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Leitender Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24573-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Leitender Oberarzt (m/w/d) Psychiatrie u. Psychotherapie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24980-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt (m/w/d) Innere Medizin — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24847-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt (m/w/d) Innere Medizin — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.8131-S&angebotsart=1 | Sanovetis GmbH | Facharzt Psychiatrie und Psychotherapie (m/w/d) Ludwigshafen am Rhein MVZ — Ludwigshafen am Rhein | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25690-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Facharzt Psychosomatische Medizin & Psychotherapie (m/w/d) — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18127-305-1755353-0-S&angebotsart=1 | multicareer GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) - JOB ID 305 — Speyer
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18127-305-1746957-1-S&angebotsart=1 | multicareer GmbH | Oberarzt Psychiatrie und Psychotherapie (m/w/d) - JOB ID 305 — Ludwigshafen am Rhein
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=18127-1486-1764135-0-S&angebotsart=1 | multicareer GmbH | Rheinland-Pfalz - Oberarzt Psychiatrie und Psychotherapie (m/w/d) - JOB ID 1486 — Ludwigshafen am Rhein
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=14322-1A2025072807062-S&angebotsart=1 | 1a-Ärztevermittlung GmbH | ltd. Oberarzt  Psychiatrie / Psychotherapie (m/w/d) - SHC-429-624 — Ludwigshafen am Rhein
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.15211-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt für Psychosomatik und Psychotherapie (m/w/d) — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24985-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Innere Medizin — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24853-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt (m/w/d) Innere Medizin — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.6812-S&angebotsart=1 | Sanovetis GmbH | Leitender Oberarzt Urologie(m/w/d) — Heidelberg, Neckar | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.25438-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Kinder- u. Jugendpsychiatrie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=19009-k61739.5278-S&angebotsart=1 | Sanovetis GmbH | Oberarzt Onkologie/Hämatologie (m/w/d) — Mannheim | 🟢 APPROBATION
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.23925-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Kinder- u. Jugendpsychiatrie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.23686-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Kinder- u. Jugendpsychiatrie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.22778-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Kinder- u. Jugendpsychiatrie — Mannheim
+- [ ] https://www.arbeitsagentur.de/jobsuche/suche?id=15509-k48604.24032-S&angebotsart=1 | FFD Fachkräfte für Deutschland e.V. | Oberarzt Kinder- u. Jugendpsychiatrie — Mannheim

@@ -19,6 +19,7 @@
 import { readFile, writeFile, appendFile } from 'fs/promises';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { analyzeJob } from './localize-detect.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -48,18 +49,41 @@ const SEARCH_CONFIGS = {
       { was: 'Fachärztin Psychiatrie', wo: '', label: 'Fachärztin Psychiatrie' },
       { was: 'Oberarzt Psychiatrie', wo: '', label: 'Oberarzt Psychiatrie' },
       { was: 'Oberärztin Psychiatrie', wo: '', label: 'Oberärztin Psychiatrie' },
-      { was: 'Assistenzarzt Psychiatrie', wo: '', label: 'Assistenzarzt Psychiatrie' },
+      // Assistenzarzt removed — Paulina is board-certified, not a junior doctor
       { was: 'Chefarzt Psychiatrie', wo: '', label: 'Chefarzt Psychiatrie' },
       { was: 'Psychiatrie Psychotherapie', wo: '', label: 'Psychiatrie und Psychotherapie' },
       { was: 'Arzt Psychosomatik', wo: '', label: 'Arzt Psychosomatik' },
       { was: 'Arzt Neurologie Psychiatrie', wo: '', label: 'Neurologie/Psychiatrie' },
+      // Approbation-targeted queries: find employers who actively recruit international doctors
+      { was: 'Approbation Psychiatrie', wo: '', label: 'Approbation Psychiatrie' },
+      { was: 'Berufserlaubnis Psychiatrie', wo: '', label: 'Berufserlaubnis Psychiatrie' },
+      { was: 'internationale Ärzte Psychiatrie', wo: '', label: 'Internationale Ärzte Psychiatrie' },
+      { was: 'Anerkennung Arzt Psychiatrie', wo: '', label: 'Anerkennung Psychiatrie' },
+      // Priority location queries — Bayern, Bamberg, Bayreuth, Heidelberg
+      { was: 'Psychiater', wo: 'Bayern', label: 'Psychiater Bayern' },
+      { was: 'Facharzt Psychiatrie', wo: 'Bayern', label: 'Facharzt Psychiatrie Bayern' },
+      { was: 'Oberarzt Psychiatrie', wo: 'Bayern', label: 'Oberarzt Psychiatrie Bayern' },
+      { was: 'Psychiater', wo: 'Bamberg', label: 'Psychiater Bamberg' },
+      { was: 'Facharzt Psychiatrie', wo: 'Bamberg', label: 'Facharzt Psychiatrie Bamberg' },
+      { was: 'Arzt Psychiatrie', wo: 'Bamberg', label: 'Arzt Psychiatrie Bamberg' },
+      { was: 'Psychiater', wo: 'Bayreuth', label: 'Psychiater Bayreuth' },
+      { was: 'Facharzt Psychiatrie', wo: 'Bayreuth', label: 'Facharzt Psychiatrie Bayreuth' },
+      { was: 'Arzt Psychiatrie', wo: 'Bayreuth', label: 'Arzt Psychiatrie Bayreuth' },
+      { was: 'Psychiater', wo: 'Heidelberg', label: 'Psychiater Heidelberg' },
+      { was: 'Facharzt Psychiatrie', wo: 'Heidelberg', label: 'Facharzt Psychiatrie Heidelberg' },
+      { was: 'Oberarzt Psychiatrie', wo: 'Heidelberg', label: 'Oberarzt Psychiatrie Heidelberg' },
+      { was: 'Psychiater', wo: 'Mannheim', label: 'Psychiater Mannheim' },
     ],
     titlePositive: [
       'psychiater', 'psychiatrie', 'facharzt', 'fachärztin', 'oberarzt', 'oberärztin',
-      'chefarzt', 'chefärztin', 'assistenzarzt', 'assistenzärztin', 'arzt', 'ärztin',
+      'chefarzt', 'chefärztin', 'arzt', 'ärztin',
       'psychosomatik', 'neurologie', 'klinik', 'physician', 'psychiatrist',
     ],
     titleNegative: [
+      // Junior/trainee positions — Paulina is board-certified
+      'assistenzarzt', 'assistenzärztin', 'assistenzaerzt',
+      'arzt in weiterbildung', 'ärztin in weiterbildung', 'weiterbildungsassistent',
+      // Non-physician roles
       'krankenpfleger', 'pflegekraft', 'pflege', 'therapeut', 'psycholog',
       'sozialarbeiter', 'ergotherap', 'heilerziehung',
     ],
@@ -175,10 +199,19 @@ function matchesTitle(title, config) {
 // Pipeline Integration
 // ============================================================
 
-async function loadExistingUrls() {
+async function loadExistingUrls(profileName) {
   const urls = new Set();
 
-  // Load pipeline.md
+  // Load profile-specific pipeline
+  const profilePipeline = resolve(__dirname, 'profiles', profileName, 'data', 'pipeline.md');
+  try {
+    const pipeline = await readFile(profilePipeline, 'utf8');
+    for (const match of pipeline.matchAll(/https?:\/\/[^\s|)]+/g)) {
+      urls.add(match[0]);
+    }
+  } catch { /* no pipeline yet */ }
+
+  // Load root pipeline as fallback dedup source
   try {
     const pipeline = await readFile(resolve(__dirname, 'data/pipeline.md'), 'utf8');
     for (const match of pipeline.matchAll(/https?:\/\/[^\s|)]+/g)) {
@@ -186,17 +219,17 @@ async function loadExistingUrls() {
     }
   } catch { /* no pipeline yet */ }
 
-  // Load applications.md
+  // Load profile-specific applications.md
   try {
-    const apps = await readFile(resolve(__dirname, 'data/applications.md'), 'utf8');
+    const apps = await readFile(resolve(__dirname, 'profiles', profileName, 'data', 'applications.md'), 'utf8');
     for (const match of apps.matchAll(/https?:\/\/[^\s|)]+/g)) {
       urls.add(match[0]);
     }
   } catch { /* no tracker yet */ }
 
-  // Load scan-history.tsv
+  // Load profile-specific scan-history.tsv
   try {
-    const history = await readFile(resolve(__dirname, 'data/scan-history.tsv'), 'utf8');
+    const history = await readFile(resolve(__dirname, 'profiles', profileName, 'data', 'scan-history.tsv'), 'utf8');
     for (const match of history.matchAll(/https?:\/\/[^\s\t]+/g)) {
       urls.add(match[0]);
     }
@@ -209,14 +242,15 @@ function buildJobUrl(refnr) {
   return `https://www.arbeitsagentur.de/jobsuche/suche?id=${refnr}&angebotsart=1`;
 }
 
-async function appendToPipeline(jobs) {
+async function appendToPipeline(jobs, profileName) {
   if (jobs.length === 0) return;
 
-  const lines = jobs.map(j =>
-    `- [ ] ${j.url} | ${j.company} | ${j.title}`
-  ).join('\n');
+  const lines = jobs.map(j => {
+    const tag = j.approbation ? ' | 🟢 APPROBATION' : '';
+    return `- [ ] ${j.url} | ${j.company} | ${j.title}${tag}`;
+  }).join('\n');
 
-  const pipelinePath = resolve(__dirname, 'data/pipeline.md');
+  const pipelinePath = resolve(__dirname, 'profiles', profileName, 'data', 'pipeline.md');
 
   try {
     const existing = await readFile(pipelinePath, 'utf8');
@@ -231,13 +265,14 @@ async function appendToPipeline(jobs) {
       await appendFile(pipelinePath, `\n${lines}\n`, 'utf8');
     }
   } catch {
-    // Create pipeline.md if it doesn't exist
+    const { mkdir: mkdirFs } = await import('fs/promises');
+    await mkdirFs(resolve(__dirname, 'profiles', profileName, 'data'), { recursive: true });
     await writeFile(pipelinePath, `# Pipeline — Pending URLs\n\n## Pendientes\n\n${lines}\n`, 'utf8');
   }
 }
 
-async function appendToScanHistory(jobs, skipped) {
-  const historyPath = resolve(__dirname, 'data/scan-history.tsv');
+async function appendToScanHistory(jobs, skipped, profileName) {
+  const historyPath = resolve(__dirname, 'profiles', profileName, 'data', 'scan-history.tsv');
   const date = new Date().toISOString().split('T')[0];
 
   const lines = [
@@ -287,7 +322,7 @@ async function main() {
   console.log(`  Queries: ${config.queries.length} | Limit: ${limit}/query | Dry run: ${dryRun}\n`);
 
   // Load dedup set
-  const existingUrls = await loadExistingUrls();
+  const existingUrls = await loadExistingUrls(profileName);
   console.log(`  Existing URLs loaded: ${existingUrls.size}`);
 
   const allJobs = [];
@@ -332,7 +367,7 @@ async function main() {
         }
 
         const displayTitle = location ? `${title} — ${location}` : title;
-        allJobs.push({ url, title: displayTitle, company, queryLabel: query.label, refnr });
+        allJobs.push({ url, title: displayTitle, company, queryLabel: query.label, refnr, rawTitle: title });
         existingUrls.add(url); // prevent cross-query dupes
       }
 
@@ -352,22 +387,59 @@ async function main() {
   console.log(`  Duplicates:       ${totalDuped}`);
   console.log(`  NEW to pipeline:  ${allJobs.length}`);
 
+  // Approbation enrichment: fetch job details and check for credential support signals
+  let approbationHits = 0;
+  if (allJobs.length > 0 && profileName === 'paulina') {
+    console.log(`\n  Checking ${allJobs.length} new jobs for Approbation/credential support signals...`);
+    for (const job of allJobs) {
+      try {
+        // Quick company-name check first (no API call needed)
+        const quickCheck = analyzeJob(job.rawTitle || job.title, '', job.company, job.url, profileName);
+        if (quickCheck.sponsorship?.approbation) {
+          job.approbation = true;
+          approbationHits++;
+          console.log(`    🟢 ${job.company} — employer match (${quickCheck.sponsorship.sponsorship_status})`);
+          continue;
+        }
+
+        // Fetch full description from BA API for keyword check
+        if (job.refnr) {
+          const details = await getJobDetails(job.refnr);
+          const desc = details?.stellenbeschreibung || details?.beschreibung || '';
+          if (desc) {
+            const fullCheck = analyzeJob(job.rawTitle || job.title, desc, job.company, job.url, profileName);
+            if (fullCheck.sponsorship?.approbation) {
+              job.approbation = true;
+              approbationHits++;
+              console.log(`    🟢 ${job.company} — description keyword (${fullCheck.sponsorship.sponsorship_reason})`);
+            }
+          }
+          await sleep(RATE_LIMIT_MS);
+        }
+      } catch (err) {
+        // Non-fatal: enrichment failure shouldn't block pipeline
+      }
+    }
+    console.log(`  Approbation hits: ${approbationHits}/${allJobs.length}`);
+  }
+
   if (allJobs.length > 0) {
     console.log(`\n  New jobs:`);
     for (const job of allJobs) {
-      console.log(`    + ${job.company} | ${job.title}`);
+      const tag = job.approbation ? ' 🟢 APPROBATION' : '';
+      console.log(`    + ${job.company} | ${job.title}${tag}`);
     }
   }
 
   // Write results
   if (!dryRun && allJobs.length > 0) {
-    await appendToPipeline(allJobs);
-    console.log(`\n  Written to data/pipeline.md`);
+    await appendToPipeline(allJobs, profileName);
+    console.log(`\n  Written to profiles/${profileName}/data/pipeline.md`);
   }
 
   if (!dryRun) {
-    await appendToScanHistory(allJobs, allSkipped);
-    console.log(`  Written to data/scan-history.tsv`);
+    await appendToScanHistory(allJobs, allSkipped, profileName);
+    console.log(`  Written to profiles/${profileName}/data/scan-history.tsv`);
   }
 
   if (dryRun) {

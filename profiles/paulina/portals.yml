@@ -40,8 +40,7 @@ title_filter:
     - "Psychosomatik"
     - "Oberarzt"
     - "Oberärztin"
-    - "Assistenzarzt"
-    - "Assistenzärztin"
+    # Assistenzarzt/Assistenzärztin removed — Paulina is board-certified
     - "Chefarzt"
     - "Chefärztin"
     - "Stationsarzt"
@@ -142,18 +141,26 @@ search_queries:
 
   - name: DE — Assistenzarzt Psychiatrie
     query: '"Assistenzarzt" OR "Assistenzärztin" "Psychiatrie" Germany OR Deutschland'
-    enabled: true
+    enabled: false  # Disabled — Paulina is board-certified, not a trainee
 
   - name: DE — Ärztestellen Psychiatrie
     query: 'site:aerzteblatt.de "Psychiatrie" OR "Psychiater" OR "Facharzt"'
     enabled: true
 
   - name: DE — PraktischArzt Psychiatrie
-    query: 'site:praktischarzt.de "Psychiatrie" OR "Psychiater"'
+    query: 'site:praktischarzt.de Psychiatrie Facharzt OR Oberarzt OR Chefarzt'
     enabled: true
 
-  - name: DE — Marburger Bund
-    query: 'site:marburger-bund.de "Psychiatrie" OR "Facharzt"'
+  - name: DE — PraktischArzt Psychosomatik
+    query: 'site:praktischarzt.de Psychosomatik Facharzt OR Oberarzt'
+    enabled: true
+
+  - name: DE — PraktischArzt Neurologie
+    query: 'site:praktischarzt.de Neurologie Facharzt OR Oberarzt'
+    enabled: true
+
+  - name: DE — Marburger Bund Stellenbörse
+    query: 'site:marburger-bund.de/stellenboerse "Psychiatrie" OR "Facharzt"'
     enabled: true
 
   - name: DE — StepStone Psychiatrie
@@ -166,6 +173,14 @@ search_queries:
 
   - name: DE — Kliniken.de
     query: 'site:kliniken.de "Psychiatrie" "Arzt" OR "Facharzt" OR "Oberarzt"'
+    enabled: true
+
+  - name: DE — Ärztestellen Psychiatrie
+    query: 'site:aerztestellen.de "Psychiatrie" OR "Psychiater" OR "Facharzt"'
+    enabled: true
+
+  - name: DE — Ärztestellen Psychosomatik
+    query: 'site:aerztestellen.de "Psychosomatik" OR "Oberarzt"'
     enabled: true
 
   - name: DE — Approbation/Sponsorship
@@ -784,7 +799,7 @@ tracked_companies:
   # They have international recruitment offices and experience with foreign-trained doctors.
 
   - name: "Charit\xE9 \u2014 Universit\xE4tsmedizin Berlin"
-    careers_url: https://www.charite.de/karriere
+    careers_url: https://karriere.charite.de
     notes: "Berlin. LARGEST university hospital in Europe. Strong international recruitment. High sponsorship likelihood."
     enabled: true
 
@@ -875,12 +890,12 @@ tracked_companies:
     enabled: true
 
   - name: Asklepios Kliniken
-    careers_url: https://www.asklepios.com/karriere
+    careers_url: https://www.asklepios.com/karriere/
     notes: "2nd-largest private chain. Strong in Hamburg + nationwide. International recruitment program."
     enabled: true
 
   - name: Vivantes
-    careers_url: https://www.vivantes.de/karriere
+    careers_url: https://karriere.vivantes.de
     notes: "Berlin's largest municipal hospital group. 9 hospitals. Multiple psych depts. Berlin = accessible."
     enabled: true
 
@@ -890,12 +905,12 @@ tracked_companies:
     enabled: true
 
   - name: "Sch\xF6n Klinik"
-    careers_url: https://www.schoenklinik.de/karriere
+    careers_url: https://karriere.schoen-klinik.de
     notes: "Specialized in psychosomatic medicine, psychiatry. Premium facilities. Good working conditions."
     enabled: true
 
   - name: AMEOS Gruppe
-    careers_url: https://www.ameos.eu/karriere
+    careers_url: https://karriere.ameos.eu
     notes: "Northern/Eastern Germany psychiatric hospitals. Significant psych focus. Often has openings."
     enabled: true
 
@@ -931,7 +946,7 @@ tracked_companies:
     enabled: true
 
   - name: Vitos Kliniken (Hessen)
-    careers_url: https://www.vitos.de/karriere
+    careers_url: https://karriere.vitos.de
     notes: "Hessen public psychiatric clinics. Kassel, Gie\xDFen, Herborn. Large employer."
     enabled: true
 
