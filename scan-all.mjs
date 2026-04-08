@@ -3,7 +3,7 @@
 /**
  * scan-all.mjs — Master Scanner for All Profiles
  *
- * Runs all API scanners (BA + USAJobs) across all 3 profiles in sequence.
+ * Runs all job scanners (10 sources) across all profiles in sequence.
  * Designed to be called by cron or manually before batch evaluation.
  *
  * Usage:
@@ -29,10 +29,27 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ALL_PROFILES = ['paulina', 'lamin'];
 const PAUSED_PROFILES = ['josephina'];
 
-// Scanners ordered: FREE first (unlimited), then PAID (budget-capped)
+// Scanners ordered: FREE APIs first, then scrapers (slower), then PAID
 const SCANNERS = [
+  // Free APIs — no auth or free keys
   { name: 'Bundesagentur für Arbeit', script: 'arbeitsagentur-api.mjs', cost: 'FREE' },
   { name: 'USAJobs.gov', script: 'usajobs-api.mjs', cost: 'FREE' },
+  { name: 'Adzuna', script: 'adzuna-api.mjs', cost: 'FREE' },
+  { name: 'Jooble', script: 'jooble-api.mjs', cost: 'FREE' },
+  { name: 'RemoteOK', script: 'remoteok-api.mjs', cost: 'FREE' },
+  { name: 'Remotive', script: 'remotive-api.mjs', cost: 'FREE' },
+  { name: 'Arbeitnow', script: 'arbeitnow-api.mjs', cost: 'FREE' },
+  { name: 'The Muse', script: 'themuse-api.mjs', cost: 'FREE' },
+  // Free API with budget cap (200 req/month)
+  { name: 'JSearch (Google Jobs)', script: 'jsearch-api.mjs', cost: 'FREE (200 req/mo budget-capped)' },
+  { name: 'JobSearch15 (LinkedIn)', script: 'jobsearch15-api.mjs', cost: 'FREE (50 req/mo budget-capped)' },
+  // HTTP scrapers — no Playwright needed
+  { name: 'StepStone.de', script: 'stepstone-scraper.mjs', cost: 'FREE' },
+  // Playwright scrapers — headless browser, slower
+  { name: 'LinkedIn', script: 'linkedin-scraper.mjs', cost: 'FREE' },
+  { name: 'Indeed', script: 'indeed-scraper.mjs', cost: 'FREE' },
+  { name: 'Monster', script: 'monster-scraper.mjs', cost: 'FREE' },
+  // Paid — budget-capped
   { name: 'Board Scanner (Brave API + Bing + ATS APIs)', script: 'board-scanner.mjs', cost: 'PAID ($5/1000 Brave queries, budget-capped)' },
 ];
 
@@ -82,7 +99,7 @@ async function runScanner(script, profileName, args) {
   try {
     const { stdout, stderr } = await execFileAsync('node', cmdArgs, {
       cwd: __dirname,
-      timeout: 600000, // 10 min per scanner (board scanner does web searches)
+      timeout: 900000, // 15 min per scanner (Playwright scrapers need more time)
     });
     if (stdout) process.stdout.write(stdout);
     if (stderr) process.stderr.write(stderr);
