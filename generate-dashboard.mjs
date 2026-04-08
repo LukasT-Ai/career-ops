@@ -34,6 +34,7 @@ async function collectProfileData(profileName) {
     pipeline: { total: 0, pending: 0, checked: 0, byGeo: {}, byScanSource: {} },
     applications: { total: 0, byStatus: {}, byMonth: {} },
     scanHistory: { total: 0, lastScanDate: null, bySource: {}, recentDays: {} },
+    approvalQueue: { pending: [], approved: [], submitted: [], failed: [], skipped: [] },
   };
 
   // Parse pipeline.md
@@ -104,6 +105,15 @@ async function collectProfileData(profileName) {
       }
     }
   } catch { /* no scan history */ }
+
+  // Parse approval-queue.json
+  try {
+    const raw = await readFile(resolve(dataDir, 'approval-queue.json'), 'utf8');
+    const queue = JSON.parse(raw);
+    for (const item of queue.items || []) {
+      (data.approvalQueue[item.status] || data.approvalQueue.pending).push(item);
+    }
+  } catch { /* no queue yet */ }
 
   return data;
 }
@@ -265,6 +275,41 @@ function generateHTML(profiles, braveUsage) {
               `).join('')}
             ${p.applications.total === 0 ? '<div class="empty">No applications yet</div>' : ''}
           </div>
+        </div>
+
+        <div class="section">
+          <h3>Auto-Apply Queue</h3>
+          <div class="chart">
+            ${(() => {
+              const q = p.approvalQueue;
+              const counts = [
+                ['Pending', q.pending.length, '#f59e0b'],
+                ['Approved', q.approved.length, '#3b82f6'],
+                ['Submitted', q.submitted.length, '#10b981'],
+                ['Failed', q.failed.length, '#ef4444'],
+                ['Skipped', q.skipped.length, '#6b7280'],
+              ].filter(([, c]) => c > 0);
+              const maxQ = Math.max(...counts.map(([, c]) => c), 1);
+              if (counts.length === 0) return '<div class="empty">No items in queue</div>';
+              return counts.map(([label, count, color]) => `
+                <div class="chart-row">
+                  <span class="chart-label">${label}</span>
+                  <span class="chart-date"></span>
+                  ${bar(count, maxQ, color)}
+                </div>
+              `).join('');
+            })()}
+          </div>
+          ${p.approvalQueue.pending.length > 0 ? `
+          <div style="margin-top:10px;font-size:0.75rem;color:#94a3b8;">
+            Pending review:
+            ${p.approvalQueue.pending.slice(0, 5).map(i => `
+              <div style="margin-top:4px;color:#cbd5e1;">
+                ${i.ats === 'greenhouse' ? '[GH]' : '[LV]'} ${i.company} — ${i.title} (${i.score}/5)
+              </div>
+            `).join('')}
+            ${p.approvalQueue.pending.length > 5 ? `<div style="color:#475569;">+${p.approvalQueue.pending.length - 5} more...</div>` : ''}
+          </div>` : ''}
         </div>
       </div>
     </div>`;
