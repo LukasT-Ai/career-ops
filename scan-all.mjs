@@ -40,6 +40,9 @@ const SCANNERS = [
   { name: 'Remotive', script: 'remotive-api.mjs', cost: 'FREE' },
   { name: 'Arbeitnow', script: 'arbeitnow-api.mjs', cost: 'FREE' },
   { name: 'The Muse', script: 'themuse-api.mjs', cost: 'FREE' },
+  // Free public ATS APIs — no auth needed
+  { name: 'Greenhouse (ATS)', script: 'greenhouse-api.mjs', cost: 'FREE' },
+  { name: 'Lever (ATS)', script: 'lever-api.mjs', cost: 'FREE' },
   // Free API with budget cap (200 req/month)
   { name: 'JSearch (Google Jobs)', script: 'jsearch-api.mjs', cost: 'FREE (200 req/mo budget-capped)' },
   { name: 'JobSearch15 (LinkedIn)', script: 'jobsearch15-api.mjs', cost: 'FREE (50 req/mo budget-capped)' },
