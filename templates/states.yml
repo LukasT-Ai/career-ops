@@ -13,18 +13,6 @@ states:
     description: Offer evaluated with report, pending decision
     dashboard_group: evaluated
 
-  - id: queued
-    label: Queued
-    aliases: [en_cola, pending_approval]
-    description: Application prepared and form filled, awaiting approval to submit
-    dashboard_group: evaluated
-
-  - id: cl_generated
-    label: CL Generated
-    aliases: [cover_letter_ready, cl_ready]
-    description: Cover letter generated and ready, application not yet submitted
-    dashboard_group: evaluated
-
   - id: applied
     label: Applied
     aliases: [aplicado, enviada, aplicada, sent]

@@ -6,7 +6,7 @@ This system was built and used by [santifer](https://santifer.io) to evaluate 74
 
 The portfolio that goes with this system is also open source: [cv-santiago](https://github.com/santifer/cv-santiago).
 
-**It will work out of the box, but it's designed to be made yours.** If the archetypes don't match your career, the modes are in the wrong language, or the scoring doesn't fit your priorities -- just ask. You (Claude) can edit the user's files. The user says "change the archetypes to data engineering roles" and you do it. That's the whole point.
+**It will work out of the box, but it's designed to be made yours.** If the archetypes don't match your career, the modes are in the wrong language, or the scoring doesn't fit your priorities -- just ask. You (AI Agent) can edit the user's files. The user says "change the archetypes to data engineering roles" and you do it. That's the whole point.
 
 ## Data Contract (CRITICAL)
 
@@ -54,89 +54,38 @@ AI-powered job search automation built on Claude Code: pipeline tracking, offer 
 | `data/scan-history.tsv` | Scanner dedup history |
 | `portals.yml` | Query and company config |
 | `templates/cv-template.html` | HTML template for CVs |
-| `generate-pdf.mjs` | Puppeteer: HTML to PDF |
+| `generate-pdf.mjs` | Playwright: HTML to PDF |
 | `article-digest.md` | Compact proof points from portfolio (optional) |
 | `interview-prep/story-bank.md` | Accumulated STAR+R stories across evaluations |
-| `data/apply-log.md` | Application submission log |
-| `ats-adapters.mjs` | ATS platform detection & field mapping |
-| `generate-cover-letter.mjs` | Cover letter HTML to PDF |
-| `templates/job-boards.yml` | Central registry of 130+ job boards with automation tiers |
-| `arbeitsagentur-api.mjs` | Bundesagentur für Arbeit API scanner (free, no auth) |
-| `usajobs-api.mjs` | USAJobs.gov federal job scanner (registered API key) |
-| `job-dispatcher.mjs` | 3-mode job notification dispatcher with email |
-| `localize-detect.mjs` | Document localization, sponsorship & military detection |
-| `modes/localize.md` | Localization mode instructions (Lebenslauf routing, CL language) |
+| `interview-prep/{company}-{role}.md` | Company-specific interview intel reports |
 | `reports/` | Evaluation reports (format: `{###}-{company-slug}-{YYYY-MM-DD}.md`) |
 
-## Multi-Profile System
+### OpenCode Commands
 
-This fork supports multiple job-search profiles (different people). Each profile has its own CV, config, portals, archetypes, and data.
+When using [OpenCode](https://opencode.ai), the following slash commands are available (defined in `.opencode/commands/`):
 
-### Profile Structure
+| Command | Claude Code Equivalent | Description |
+|---------|------------------------|-------------|
+| `/career-ops` | `/career-ops` | Show menu or evaluate JD with args |
+| `/career-ops-pipeline` | `/career-ops pipeline` | Process pending URLs from inbox |
+| `/career-ops-evaluate` | `/career-ops oferta` | Evaluate job offer (A-F scoring) |
+| `/career-ops-compare` | `/career-ops ofertas` | Compare and rank multiple offers |
+| `/career-ops-contact` | `/career-ops contacto` | LinkedIn outreach (find contacts + draft) |
+| `/career-ops-deep` | `/career-ops deep` | Deep company research |
+| `/career-ops-pdf` | `/career-ops pdf` | Generate ATS-optimized CV |
+| `/career-ops-training` | `/career-ops training` | Evaluate course/cert against goals |
+| `/career-ops-project` | `/career-ops project` | Evaluate portfolio project idea |
+| `/career-ops-tracker` | `/career-ops tracker` | Application status overview |
+| `/career-ops-apply` | `/career-ops apply` | Live application assistant |
+| `/career-ops-scan` | `/career-ops scan` | Scan portals for new offers |
+| `/career-ops-batch` | `/career-ops batch` | Batch processing with parallel workers |
 
-```
-profiles/
-  active.yml          ← which profile is active (edit this to switch)
-  lamin/
-    profile.yml       ← candidate config
-    _profile.md       ← archetypes, framing, negotiation
-    cv.md             ← English CV
-    cv-de.md          ← German CV (if applicable)
-    portals.yml       ← company list + search queries
-    data/             ← applications.md, pipeline.md, scan-history.tsv
-    reports/          ← evaluation reports
-    output/           ← generated PDFs
-    cover-letters/    ← generated cover letter PDFs
-    approval-config.yml ← (deprecated, no longer used)
-  paulina/
-    (same structure)
-  {new-profile}/
-    (same structure)
-```
-
-### Session Startup — Profile Sync (MANDATORY)
-
-**On EVERY session start, BEFORE any other checks, do this:**
-
-1. Read `profiles/active.yml` to get the active profile name
-2. Sync that profile's files to the root locations career-ops expects:
-   - `profiles/{name}/cv.md` → `cv.md`
-   - `profiles/{name}/profile.yml` → `config/profile.yml`
-   - `profiles/{name}/_profile.md` → `modes/_profile.md`
-   - `profiles/{name}/portals.yml` → `portals.yml`
-   - `profiles/{name}/data/applications.md` → `data/applications.md`
-   - `profiles/{name}/data/pipeline.md` → `data/pipeline.md` (if exists)
-   - `profiles/{name}/data/scan-history.tsv` → `data/scan-history.tsv` (if exists)
-3. Create symlink-like behavior for output: after evaluations/scans, copy new files in `data/`, `reports/`, and `output/` back to `profiles/{name}/`
-4. Tell the user: "Active profile: **{name}**" (silently, no confirmation needed)
-
-### Switching Profiles
-
-When the user says "switch to {name}" or "use {name}'s profile":
-1. **Save back** any new files from `data/`, `reports/`, `output/` to the current profile's directory
-2. Update `profiles/active.yml` to the new name
-3. Run the sync (step 2 above) for the new profile
-4. Confirm: "Switched to **{name}**. CV, portals, and tracker loaded."
-
-### Adding a New Profile
-
-When the user says "add a new profile for {name}":
-1. Create `profiles/{name}/` with subdirectories: `data/`, `reports/`, `output/`
-2. Start onboarding (CV, profile.yml, _profile.md, portals.yml) — same flow as First Run
-3. Set as active if the user wants
-
-### Rules
-
-- **NEVER mix profiles.** Always check active.yml before evaluating, scanning, or generating.
-- **ALWAYS save back** to the profile directory after creating reports, PDFs, or tracker entries.
-- Each profile's `data/applications.md` is SEPARATE. Never merge across profiles.
-- The root-level files (`cv.md`, `config/profile.yml`, etc.) are just working copies — the source of truth is in `profiles/{name}/`.
+**Note:** OpenCode commands invoke the same `.claude/skills/career-ops/SKILL.md` skill used by Claude Code. The `modes/*` files are shared between both platforms.
 
 ### First Run — Onboarding (IMPORTANT)
 
 **Before doing ANYTHING else, check if the system is set up.** Run these checks silently every time a session starts:
 
-0. Read `profiles/active.yml` — if it exists, run Multi-Profile Sync (see above). If not, fall through to single-profile onboarding.
 1. Does `cv.md` exist?
 2. Does `config/profile.yml` exist (not just profile.example.yml)?
 3. Does `modes/_profile.md` exist (not just _profile.template.md)?
@@ -205,7 +154,7 @@ Store any insights the user shares in `config/profile.yml` (under narrative) or 
 Once all files exist, confirm:
 > "You're all set! You can now:
 > - Paste a job URL to evaluate it
-> - Run `/career-ops scan` to search portals
+> - Run `/career-ops scan` (or `/career-ops-scan` if using OpenCode) to search portals
 > - Run `/career-ops` to see all commands
 >
 > Everything is customizable — just ask me to change anything.
@@ -215,11 +164,11 @@ Once all files exist, confirm:
 Then suggest automation:
 > "Want me to scan for new offers automatically? I can set up a recurring scan every few days so you don't miss anything. Just say 'scan every 3 days' and I'll configure it."
 
-If the user accepts, use the `/loop` or `/schedule` skill (if available) to set up a recurring `/career-ops scan`. If those aren't available, suggest adding a cron job or remind them to run `/career-ops scan` periodically.
+If the user accepts, use the `/loop` or `/schedule` skill (if available) to set up a recurring `/career-ops scan` (or `/career-ops-scan` if using OpenCode). If those aren't available, suggest adding a cron job or remind them to run `/career-ops scan` (or `/career-ops-scan` if using OpenCode) periodically.
 
 ### Personalization
 
-This system is designed to be customized by YOU (Claude). When the user asks you to change archetypes, translate modes, adjust scoring, add companies, or modify negotiation scripts -- do it directly. You read the same files you use, so you know exactly what to edit.
+This system is designed to be customized by YOU (AI Agent). When the user asks you to change archetypes, translate modes, adjust scoring, add companies, or modify negotiation scripts -- do it directly. You read the same files you use, so you know exactly what to edit.
 
 **Common customization requests:**
 - "Change the archetypes to [backend/frontend/data/devops] roles" → edit `modes/_shared.md`
@@ -234,13 +183,19 @@ This system is designed to be customized by YOU (Claude). When the user asks you
 Default modes are in `modes/` (English). Additional language-specific modes are available:
 
 - **German (DACH market):** `modes/de/` — native German translations with DACH-specific vocabulary (13. Monatsgehalt, Probezeit, Kündigungsfrist, AGG, Tarifvertrag, etc.). Includes `_shared.md`, `angebot.md` (evaluation), `bewerben.md` (apply), `pipeline.md`.
+- **French (Francophone market):** `modes/fr/` — native French translations with France/Belgium/Switzerland/Luxembourg-specific vocabulary (CDI/CDD, convention collective SYNTEC, RTT, mutuelle, prévoyance, 13e mois, intéressement/participation, titres-restaurant, CSE, portage salarial, etc.). Includes `_shared.md`, `offre.md` (evaluation), `postuler.md` (apply), `pipeline.md`.
 
 **When to use German modes:** If the user is targeting German-language job postings, lives in DACH, or asks for German output. Either:
 1. User says "use German modes" → read from `modes/de/` instead of `modes/`
 2. User sets `language.modes_dir: modes/de` in `config/profile.yml` → always use German modes
 3. You detect a German JD → suggest switching to German modes
 
-**When NOT to:** If the user applies to English-language roles, even at German companies, use the default English modes.
+**When to use French modes:** If the user is targeting French-language job postings, lives in France/Belgium/Switzerland/Luxembourg/Quebec, or asks for French output. Either:
+1. User says "use French modes" → read from `modes/fr/` instead of `modes/`
+2. User sets `language.modes_dir: modes/fr` in `config/profile.yml` → always use French modes
+3. You detect a French JD → suggest switching to French modes
+
+**When NOT to:** If the user applies to English-language roles, even at French or German companies, use the default English modes.
 
 ### Skill Modes
 
@@ -251,16 +206,12 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 | Asks to compare offers | `ofertas` |
 | Wants LinkedIn outreach | `contacto` |
 | Asks for company research | `deep` |
+| Preps for interview at specific company | `interview-prep` |
 | Wants to generate CV/PDF | `pdf` |
 | Evaluates a course/cert | `training` |
 | Evaluates portfolio project | `project` |
 | Asks about application status | `tracker` |
 | Fills out application form | `apply` |
-| Wants a cover letter | `cover-letter` |
-| Wants to apply (assisted) | `apply` |
-| Asks for application report | `report` |
-| Wants job notification sent | `dispatch` (via job-dispatcher.mjs) |
-| Needs document localization | `localize` (via localize-detect.mjs) |
 | Searches for new offers | `scan` |
 | Processes pending URLs | `pipeline` |
 | Batch processes offers | `batch` |
@@ -297,7 +248,7 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 
 ## Stack and Conventions
 
-- Node.js (mjs modules), Playwright (PDF + scraping), YAML (config), HTML/CSS (template), Markdown (data)
+- Node.js (mjs modules), Playwright (PDF + scraping), YAML (config), HTML/CSS (template), Markdown (data), Canva MCP (optional visual CV)
 - Scripts in `.mjs`, configuration in YAML
 - Output in `output/` (gitignored), Reports in `reports/`
 - JDs in `jds/` (referenced as `local:jds/{file}` in pipeline.md)
@@ -305,55 +256,6 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 - Report numbering: sequential 3-digit zero-padded, max existing + 1
 - **RULE: After each batch of evaluations, run `node merge-tracker.mjs`** to merge tracker additions and avoid duplications.
 - **RULE: NEVER create new entries in applications.md if company+role already exists.** Update the existing entry.
-
-### Job Board Integration
-
-`templates/job-boards.yml` catalogs 130+ job boards across 4 automation tiers:
-- **api**: Public/authenticated API (LinkedIn, Indeed, Greenhouse, Lever, Dribbble, USAJobs, Bundesagentur)
-- **scrape**: No API but scrape-friendly (specialty boards, StepStone, Kimeta, PraktischArzt)
-- **assisted**: Heavy JS or bot detection (Workday, XING, Glassdoor). Playwright + human fallback.
-- **manual**: No automation (FlexJobs, Psych Jobs Weekly). RSS/email only.
-
-Each profile's `portals.yml` has `Board —` prefixed search queries for automated discovery via site: filters. German boards are prefixed `Board DE —`. The scanner (modes/scan.md Level 3) executes these queries automatically.
-
-### Job Notification Dispatcher
-
-`job-dispatcher.mjs` sends email notifications to candidates after job evaluation. Uses Gmail SMTP via `Lukas.T@withlukas.com`. **No auto-apply — emails are for human review only.**
-
-**2-tier routing based on fit score (0-100, mapped from career-ops 0-5 evaluation):**
-
-| career-ops Score | Fit Score | Mode | Subject | Template |
-|-----------------|-----------|------|---------|----------|
-| 4.0-5.0 | 80-100 | High Fit | `🟢 HIGH FIT (85/100): Title — Company` | `email-job-found.html` |
-| 3.0-3.9 | 60-79 | Good Fit | `🟡 Good Fit (65/100): Title — Company` | `email-job-found.html` |
-| <3.0 | <60 | Skip | — | None (logged only) |
-
-**Fit score dimensions (when full data available):** Industry (20), Role (20), Location (15), Company (15), Compensation (15), Benefits (5), Remote (5), Visa (5) = 100 total.
-
-**Reply handling:** Candidate replies APPLIED or SKIP. Claude parses replies during session and updates tracker.
-
-**RULE: NO auto-apply. NO auto-submit. The system finds, scores, and emails — humans review and apply.**
-
-**Cover letters** are generated per-application using the adaptive framing from `_profile.md` and proof points from `cv.md`. Output to `profiles/{name}/cover-letters/`.
-
-### Document Localization & Sponsorship Detection
-
-`localize-detect.mjs` runs a 5-step analysis on every job posting before document generation:
-
-1. **Location detection** — Germany vs USA vs unclear (domain, language, currency, city signals)
-2. **Document format** — Lebenslauf (German) vs Resume (US) vs Both
-3. **Cover letter language** — Bewerbungsschreiben (German) vs Business Letter (English)
-4. **Sponsorship detection** — 4-tier keyword matching (informational only, all candidates are dual citizens)
-5. **Military base detection** — Bundeswehr, NATO, US military civilian positions
-
-**Lebenslauf rules:**
-- Use existing `profiles/{name}/cv-de.md` if it exists (Lamin has one, Paulina does not)
-- If cv-de.md is missing, auto-generate from cv.md
-- **ALWAYS attach the English CV (cv.md) as secondary for German jobs** where the application allows
-
-**Email attachment rule:** If Resume and/or Lebenslauf are auto-generated for a job posting, attach them to the notification email. The dispatcher accepts `cvPdfPath`, `cvDePdfPath`, `cvEnPdfPath`, and `coverLetterPath`.
-
-**RULE: Run localization BEFORE cover letter generation.** It determines language, format, and page size. See `modes/localize.md` and `auto-pipeline.md` Paso 4.5.
 
 ### TSV Format for Tracker Additions
 
