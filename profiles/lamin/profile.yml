@@ -2,7 +2,7 @@
 
 candidate:
   full_name: "Lamin Traore"
-  email: "pt374t@gmail.com"
+  email: "lamintraore@withlukas.com"
   phone: "404-234-0448"
   location: "Atlanta, GA 30317"
   linkedin: "linkedin.com/in/lamintraore"
@@ -69,7 +69,14 @@ search_locations:
 
   - name: "Germany"
     region: "DACH"
-    keywords: ["Germany", "Deutschland", "Berlin", "Munich", "Hamburg", "Frankfurt", "Cologne", "Stuttgart", "Dusseldorf"]
+    keywords: ["Germany", "Deutschland", "Berlin", "Munich", "Hamburg", "Frankfurt", "Cologne", "Stuttgart", "Dusseldorf", "Bamberg", "Nürnberg", "Erlangen"]
+    remote_ok: true
+    language: "de"
+    enabled: true
+
+  - name: "Bamberg, Germany"
+    region: "DACH"
+    keywords: ["Bamberg", "Oberfranken", "Franken"]
     remote_ok: true
     language: "de"
     enabled: true
