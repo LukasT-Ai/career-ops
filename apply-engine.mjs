@@ -98,67 +98,138 @@ async function processQueue(profileName, dryRun = false) {
   let failed = 0;
   let skippedCount = 0;
 
+  // Resolve resume — prefer English CV, fall back to what's in queue item
+  const resolveResume = async (item) => {
+    if (item.resumePath) {
+      try { await readFile(item.resumePath); return item.resumePath; } catch {}
+    }
+    // Try English CV first, then German, then any PDF with "cv" in name
+    const outputDir = resolve(__dirname, 'profiles', profileName, 'output');
+    const candidates = [
+      resolve(outputDir, `cv-${profileName}.pdf`),
+      resolve(outputDir, `CV-${candidate.firstName}-${candidate.lastName.replace(/\s/g, '-')}.pdf`),
+      resolve(outputDir, `cv-de-${profileName}.pdf`),
+    ];
+    for (const p of candidates) {
+      try { await readFile(p); return p; } catch {}
+    }
+    // Last resort: any cv*.pdf in output
+    try {
+      const { readdir } = await import('fs/promises');
+      const files = await readdir(outputDir);
+      const pdf = files.find(f => f.toLowerCase().includes('cv') && f.endsWith('.pdf'));
+      if (pdf) return resolve(outputDir, pdf);
+    } catch {}
+    return null;
+  };
+
   for (const item of items) {
-    console.log(`  [${ item.id}] ${item.company} — ${item.title}`);
+    console.log(`  [${item.id}] ${item.company} — ${item.title}`);
     console.log(`    ATS: ${item.ats} | Score: ${item.score}/5`);
 
-    if (item.ats === 'greenhouse') {
-      const parsed = parseGreenhouseUrl(item.url);
-      if (!parsed) {
-        console.log('    Cannot parse Greenhouse URL — skipping');
-        await markSubmitted(profileName, item.id, false, 'invalid_url');
+    try {
+      const resumePath = await resolveResume(item);
+      if (!resumePath) {
+        console.log('    No resume PDF found — skipping');
+        if (!dryRun) await markSubmitted(profileName, item.id, false, 'no_resume');
         failed++;
         continue;
       }
 
-      const result = await applyGreenhouse({
-        boardSlug: parsed.boardSlug,
-        jobId: parsed.jobId,
-        candidate,
-        resumePath: item.resumePath,
-        coverLetterPath: item.coverLetterPath,
-        dryRun,
-      });
-
-      if (result.success) {
-        if (!dryRun) {
-          await markSubmitted(profileName, item.id, true);
-          await updateApplicationStatus(profileName, item.company, item.title, 'Applied');
+      if (item.ats === 'greenhouse') {
+        const parsed = parseGreenhouseUrl(item.url);
+        if (!parsed) {
+          console.log('    Cannot parse Greenhouse URL — skipping');
+          if (!dryRun) await markSubmitted(profileName, item.id, false, 'invalid_url');
+          failed++;
+          continue;
         }
-        submitted++;
-      } else if (result.reason === 'unanswerable_required_questions') {
-        console.log('    Moved to manual — has custom required questions');
-        if (!dryRun) await markSubmitted(profileName, item.id, false, 'needs_manual: ' + result.questions.join(', '));
+
+        // Verify job is still active before submitting
+        try {
+          const checkRes = await fetch(`https://boards-api.greenhouse.io/v1/boards/${parsed.boardSlug}/jobs/${parsed.jobId}`);
+          if (!checkRes.ok) {
+            console.log(`    Job no longer active (HTTP ${checkRes.status}) — skipping`);
+            if (!dryRun) await markSubmitted(profileName, item.id, false, `job_closed_${checkRes.status}`);
+            failed++;
+            continue;
+          }
+        } catch (err) {
+          console.log(`    Cannot reach Greenhouse API: ${err.message} — skipping`);
+          if (!dryRun) await markSubmitted(profileName, item.id, false, 'api_unreachable');
+          failed++;
+          continue;
+        }
+
+        const result = await applyGreenhouse({
+          boardSlug: parsed.boardSlug,
+          jobId: parsed.jobId,
+          candidate,
+          resumePath,
+          coverLetterPath: item.coverLetterPath,
+          dryRun,
+        });
+
+        if (result.success) {
+          if (!dryRun) {
+            await markSubmitted(profileName, item.id, true);
+            await updateApplicationStatus(profileName, item.company, item.title, 'Applied');
+          }
+          submitted++;
+        } else if (result.reason === 'unanswerable_required_questions') {
+          console.log('    Moved to manual — has custom required questions');
+          if (!dryRun) await markSubmitted(profileName, item.id, false, 'needs_manual: ' + result.questions.join(', '));
+          skippedCount++;
+        } else {
+          if (!dryRun) await markSubmitted(profileName, item.id, false, result.error || result.reason);
+          failed++;
+        }
+
+      } else if (item.ats === 'lever') {
+        // Verify Lever posting is still active
+        const parsed = item.url.match(/lever\.co\/([^/]+)\/([a-f0-9-]+)/);
+        if (parsed) {
+          try {
+            const checkRes = await fetch(`https://api.lever.co/v0/postings/${parsed[1]}/${parsed[2]}`);
+            if (!checkRes.ok) {
+              console.log(`    Lever posting no longer active (HTTP ${checkRes.status}) — skipping`);
+              if (!dryRun) await markSubmitted(profileName, item.id, false, `job_closed_${checkRes.status}`);
+              failed++;
+              continue;
+            }
+          } catch (err) {
+            console.log(`    Cannot reach Lever API: ${err.message} — continuing anyway`);
+          }
+        }
+
+        const result = await applyLever({
+          postingUrl: item.url,
+          candidate,
+          resumePath,
+          coverLetterPath: item.coverLetterPath,
+          dryRun,
+          headless: false, // Need visible browser for captcha
+        });
+
+        if (result.success) {
+          if (!dryRun) {
+            await markSubmitted(profileName, item.id, true);
+            await updateApplicationStatus(profileName, item.company, item.title, 'Applied');
+          }
+          submitted++;
+        } else {
+          if (!dryRun) await markSubmitted(profileName, item.id, false, result.reason);
+          failed++;
+        }
+
+      } else {
+        console.log(`    Unknown ATS "${item.ats}" — skipping (manual apply needed)`);
         skippedCount++;
-      } else {
-        if (!dryRun) await markSubmitted(profileName, item.id, false, result.error || result.reason);
-        failed++;
       }
-
-    } else if (item.ats === 'lever') {
-      const result = await applyLever({
-        postingUrl: item.url,
-        candidate,
-        resumePath: item.resumePath,
-        coverLetterPath: item.coverLetterPath,
-        dryRun,
-        headless: false, // Need visible browser for captcha
-      });
-
-      if (result.success) {
-        if (!dryRun) {
-          await markSubmitted(profileName, item.id, true);
-          await updateApplicationStatus(profileName, item.company, item.title, 'Applied');
-        }
-        submitted++;
-      } else {
-        if (!dryRun) await markSubmitted(profileName, item.id, false, result.reason);
-        failed++;
-      }
-
-    } else {
-      console.log(`    Unknown ATS "${item.ats}" — skipping (manual apply needed)`);
-      skippedCount++;
+    } catch (err) {
+      console.error(`    UNEXPECTED ERROR: ${err.message}`);
+      if (!dryRun) await markSubmitted(profileName, item.id, false, `crash: ${err.message.slice(0, 100)}`);
+      failed++;
     }
 
     console.log('');

@@ -208,7 +208,7 @@ if (process.argv.includes('--send')) {
 
   await transport.sendMail({
     from: '"Career-Ops" <Lukas.T@withlukas.com>',
-    to: 'pt374t@gmail.com',
+    to: 'lamintraore@withlukas.com',
     subject: '📋 Interview-Vorbereitung + Lebenslauf — aktualisierte PDFs',
     html: `
     <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -248,7 +248,7 @@ if (process.argv.includes('--send')) {
     attachments,
   });
 
-  console.log('Email sent to pt374t@gmail.com with PDF attachments');
+  console.log('Email sent to lamintraore@withlukas.com with PDF attachments');
   transport.close();
 } else {
   console.log('\nTo send via email: node generate-storybank-pdf.mjs --send');

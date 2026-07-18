@@ -203,9 +203,10 @@ function buildLebenslaufHtml() {
 <div class="data-grid">
   <span class="label">Name:</span><span class="value">Lamin Traor\u00e9</span>
   <span class="label">Anschrift:</span><span class="value">Atlanta, GA 30317, USA</span>
-  <span class="label">Telefon:</span><span class="value">404-234-0448</span>
-  <span class="label">E-Mail:</span><span class="value"><a href="mailto:pt374t@gmail.com">pt374t@gmail.com</a></span>
+  <span class="label">Telefon:</span><span class="value">+1 404-234-0448</span>
+  <span class="label">E-Mail:</span><span class="value"><a href="mailto:lamintraore@withlukas.com">lamintraore@withlukas.com</a></span>
   <span class="label">LinkedIn:</span><span class="value"><a href="https://linkedin.com/in/lamintraore">linkedin.com/in/lamintraore</a></span>
+  <span class="label">Website:</span><span class="value"><a href="https://www.lamintraore.com">www.lamintraore.com</a></span>
   <span class="label">Staatsangeh\u00f6rigkeit:</span><span class="value">Deutsch und US-amerikanisch (Doppelstaatsb\u00fcrger)</span>
   <span class="label">Sprachen:</span><span class="value">Englisch (flie\u00dfend), Deutsch (flie\u00dfend), Franz\u00f6sisch (Grundkenntnisse), Spanisch (Grundkenntnisse)</span>
 </div>
@@ -369,7 +370,7 @@ if (process.argv.includes('--send')) {
 
   await transport.sendMail({
     from: '"Career-Ops" <Lukas.T@withlukas.com>',
-    to: 'pt374t@gmail.com',
+    to: 'lamintraore@withlukas.com',
     subject: 'Lebenslauf zur Durchsicht -- Lamin Traore',
     html: `
     <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -409,7 +410,7 @@ if (process.argv.includes('--send')) {
     }],
   });
 
-  console.log('Email sent to pt374t@gmail.com with PDF attachment');
+  console.log('Email sent to lamintraore@withlukas.com with PDF attachment');
   transport.close();
 } else {
   console.log('\nTo send via email: node generate-lebenslauf-lamin-pdf.mjs --send');

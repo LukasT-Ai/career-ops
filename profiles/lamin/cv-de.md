@@ -9,7 +9,7 @@ Erfahrener Vertriebsleiter und technischer Vertriebskonsultant mit uber 15 Jahre
 - **Name:** Lamin Traore
 - **Anschrift:** Atlanta, GA 30317, USA
 - **Telefon:** 404-234-0448
-- **E-Mail:** pt374t@gmail.com
+- **E-Mail:** lamintraore@withlukas.com
 - **Sprachen:** Englisch (fliessend), Deutsch (fliessend), Franzosisch (Grundkenntnisse), Spanisch (Grundkenntnisse)
 
 ## Berufserfahrung

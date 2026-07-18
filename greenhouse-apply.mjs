@@ -61,7 +61,10 @@ function parseGreenhouseUrl(url) {
 async function fetchJobQuestions(boardSlug, jobId) {
   const url = `https://boards-api.greenhouse.io/v1/boards/${boardSlug}/jobs/${jobId}?questions=true`;
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`Greenhouse API ${res.status}: ${await res.text()}`);
+  if (!res.ok) {
+    const text = await res.text().catch(() => '');
+    return { error: true, status: res.status, message: `Greenhouse API ${res.status}: ${text.slice(0, 200)}` };
+  }
   const data = await res.json();
   return {
     title: data.title,
@@ -210,6 +213,11 @@ async function buildFormData(candidate, resumePath, coverLetterPath, questions) 
 
 export async function applyGreenhouse({ boardSlug, jobId, candidate, resumePath, coverLetterPath, dryRun = false }) {
   const jobData = await fetchJobQuestions(boardSlug, jobId);
+
+  if (jobData.error) {
+    console.log(`    ${jobData.message}`);
+    return { success: false, reason: `api_error_${jobData.status}`, error: jobData.message };
+  }
 
   console.log(`    Job: ${jobData.title} — ${jobData.location}`);
   console.log(`    Questions: ${jobData.questions.length}`);

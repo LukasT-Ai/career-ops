@@ -1,6 +1,18 @@
 {
   "2026-04": {
-    "lamin": 27,
-    "paulina": 8
+    "lamin": 100,
+    "paulina": 72
+  },
+  "2026-05": {
+    "paulina": 83,
+    "lamin": 90
+  },
+  "2026-06": {
+    "paulina": 88,
+    "lamin": 95
+  },
+  "2026-07": {
+    "paulina": 48,
+    "lamin": 54
   }
 }

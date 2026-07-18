@@ -3,9 +3,10 @@
 ## Contact
 
 - Phone: 404-234-0448
-- Email: pt374t@gmail.com
+- Email: lamintraore@withlukas.com
 - Location: Atlanta, GA 30317
 - LinkedIn: linkedin.com/in/lamintraore
+- Website: www.lamintraore.com
 
 ## Professional Summary
 
