@@ -2,6 +2,26 @@
 
 ## Pendientes
 
+- [ ] https://psychiatrie-psychotherapie.meduniwien.ac.at/unsere-abteilungen/klinische-abteilung-fuer-allgemeine-psychiatrie/studium-aus-und-weiterbildung/ausbildung-zumzur-fachaerztin-fuer-psychiatrie-und-psychotherapeutische-medizin/ | psychiatrie-psychotherapie | ausbildung zumzur fachaerztin fuer psychiatrie und psychotherapeutische medizin
+- [ ] https://www.doctari.de/aerzte/fachrichtungen/psychiatrie/gehalt | doctari | gehalt
+- [ ] https://www.alexianer-berlin-hedwigkliniken.de/st-hedwig-krankenhaus/leistungen/kliniken/psychiatrie-und-psychotherapie/team | alexianer-berlin-hedwigkliniken | team
+- [ ] https://www.stepstone.de/jobs/oberarzt-ärztin-psychiatrie?q=Oberarzt/ärztin Psychiatrie | stepstone | oberarzt %C3%A4rztin psychiatrie
+- [ ] https://www.stepstone.de/jobs/psychiater-in/in-berlin?q=Psychiater%2Fin | stepstone | in berlin
+- [ ] https://www.kliniken.de/krankenhaus/psychiatrische-tagesklinik-boeblingen-169974K.html | kliniken | psychiatrische tagesklinik boeblingen 169974K.html
+- [ ] https://www.nejmcareercenter.org/jobs/psychiatry/chicago/ | nejmcareercenter | chicago
+- [ ] https://careers.insidehighered.com/jobs/student-affairs/3/ | careers | 3
+- [ ] https://www.ziprecruiter.com/n/Psychiatrist-Jobs-Near-Me | ziprecruiter | Psychiatrist Jobs Near Me
+- [ ] https://www.careerbuilder.com/job-details/technical-program-manager-data-center-security-engineering-reston-va--ab73d662-9c7f-4f35-a9fd-f89e32a1334e | careerbuilder | technical program manager data center security engineering reston va  ab73d662 9c7f 4f35 a9fd f89e32a1334e
+- [ ] https://www.monster.com/resume/templates/physical-therapist | monster | physical therapist
+- [ ] https://www.monster.com/jobs/q-healthcare-jobs-l-santa-clarita-ca | monster | q healthcare jobs l santa clarita ca
+- [ ] https://www.medi-jobs.de/0/61567/ | medi-jobs | 61567
+- [ ] https://www.medizinerkarriere.de/arzt-jobs/Bundesland/Köln-Psychiatrie und Psychotherapie.html | medizinerkarriere | K%C3%B6ln Psychiatrie%20und%20Psychotherapie.html
+- [ ] https://www.kimeta.de/stellenangebote-psychiatrie-in-hanau | kimeta | stellenangebote psychiatrie in hanau
+- [ ] https://www.kimeta.de/stellenangebote-psychiatrie-in-langenfeld | kimeta | stellenangebote psychiatrie in langenfeld
+- [ ] https://www.stellenanzeigen.de/jobs/ludwigslust/ | stellenanzeigen | ludwigslust
+- [ ] https://psy.charite.de/leistungen/klinische_psychologie_und_psychotherapie | psy | klinische psychologie und psychotherapie
+- [ ] https://psychiatrie.charite.de/en/about_the_clinic/team/ | psychiatrie | team
+
 - [ ] http://athensbehavioral.com/id2.html | athensbehavioral | id2.html
 - [ ] https://www.linkedin.com/jobs/view/clinical-trials-psychiatrist-at-emory-university-4340461854 | emory university | clinical trials psychiatrist
 - [ ] https://www.sutterhealth.org/find-doctor/specialty/psychiatrists-1042267208 | sutterhealth | psychiatrists 1042267208

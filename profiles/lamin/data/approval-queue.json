@@ -3439,6 +3439,22 @@
       "reportPath": null,
       "submittedAt": null,
       "error": null
+    },
+    {
+      "id": "mrt6pc0e2kjr",
+      "addedAt": "2026-07-20T12:11:51.950Z",
+      "status": "pending",
+      "url": "https://jobs.lever.co/jobgether/7130137a-79ce-4240-8786-f367ee576916",
+      "company": "jobgether",
+      "title": "Lever",
+      "location": "Telecom",
+      "score": 0,
+      "ats": "lever",
+      "resumePath": "C:\\Users\\Lukas\\career-ops\\profiles\\lamin\\output\\cv-de-lamin.pdf",
+      "coverLetterPath": null,
+      "reportPath": null,
+      "submittedAt": null,
+      "error": null
     }
   ],
   "lastNotified": null

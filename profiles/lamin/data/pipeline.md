@@ -2,6 +2,26 @@
 
 ## Pendientes
 
+- [ ] https://bandwidthteam.com/ | bandwidthteam | Atlanta — Channel Sales
+- [ ] https://gigtel.com/partners/channel | gigtel | channel
+- [ ] https://careers.insightglobal.com/insightglobal-careers/jobs/6762?lang=en-us | careers | 6762
+- [ ] https://www.indeed.com/q-google-fiber-l-alpharetta,-ga-jobs.html | indeed | q google fiber l alpharetta, ga jobs.html
+- [ ] https://www.xing.com/profile/Reiner_Groenke | xing | Reiner Groenke
+- [ ] https://www.xing.com/jobs/key-account-manager-telekommunikation-(m-w) | xing | key account manager telekommunikation (m w)
+- [ ] https://www.xing.com/jobs/t-key-account-manager-telekommunikation-(m-w) | xing | t key account manager telekommunikation (m w)
+- [ ] https://de.linkedin.com/jobs/account-manager-(m-w-d)-ohne-berufserfahrung-stellen | Unknown | Germany — LinkedIn Telecom
+- [ ] https://de.linkedin.com/jobs/ups-account-manager-stellen | Unknown | Germany — LinkedIn Telecom
+- [ ] https://www.lumen.com/en-us/services/sase.html | lumen | sase.html
+- [ ] https://jobs.lever.co/jobgether/7130137a-79ce-4240-8786-f367ee576916 | jobgether | Lever — Telecom
+- [ ] https://www.comptia.org/en/blog/how-to-change-careers-into-it-at-30-40-or-50/ | comptia | how to change careers into it at 30 40 or 50
+- [ ] https://community.revgenius.com/x/chat-fulltime-jobs/0xgl0ko3ffe5/hiring-senior-enterprise-sales-manager-at-squadsta | community | hiring senior enterprise sales manager at squadsta
+- [ ] https://angel.co/company/c3/jobs/1478042-associate-solutions-leader | angel | 1478042 associate solutions leader
+- [ ] https://rest.arbeitsagentur.de/infosysbub/berufepool-rest/ct/v1/archivpdfs/2811.pdf | rest | 2811.pdf
+- [ ] https://cult.honeypot.io/reads/top-nextjs-performance-benefits/ | cult | top nextjs performance benefits
+- [ ] https://berlinstartupjobs.com/sales/gtm-lead-w-m-d-vrey/ | berlinstartupjobs | gtm lead w m d vrey
+- [ ] https://it-jobs.de/it-prozessmanager-in/berlin/ | it-jobs | berlin
+- [ ] https://jobs.golem.de/it-projektmanagement/jobs/consultant-sap-in-osnabr%C3%BCck | jobs | consultant sap in osnabr%C3%BCck
+
 - [ ] https://www.indeed.com/q-google-fiber-jobs.html | indeed | q google fiber jobs.html
 - [ ] https://www.xing.com/jobs/key-account-manager-telekommunikation-(m-w) | xing | key account manager telekommunikation (m w)
 - [ ] https://karriere.cancom.de/jobs/key-account-manager-m-w-d-de-j10271/ | karriere | key account manager m w d de j10271
