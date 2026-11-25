@@ -2,6 +2,43 @@
 
 ## Pendientes
 
+- [ ] https://pmhnphiring.com/jobs/np-psychiatry-georgia-locum-or-permanent-psychiatry-nurse-7f254d5e-a831-4248-8647-59a3da3465ae | pmhnphiring | np psychiatry georgia locum or permanent psychiatry nurse 7f254d5e a831 4248 8647 59a3da3465ae
+- [ ] https://valorbh.com/our-staff/ | valorbh | our staff
+- [ ] https://jobroll.indeed.com/q-Psychiatrist-l-Atlanta,-GA-jobs.html | jobroll | q Psychiatrist l Atlanta, GA jobs.html
+- [ ] https://www.praktischarzt.de/?country=%5B%27Deutschland%27%5D%2F6&employer_type=%5B%27Klinik%27%2C%27Praxis%27%5D&job_category=neurologie&job_location=&job_type=facharzt&radius=30 | praktischarzt | DE — PraktischArzt Neurologie
+- [ ] https://www.stepstone.de/jobs/oberarzt-ärztin-psychiatrie/in-europa?q=Oberarzt/ärztin Psychiatrie | stepstone | in europa
+- [ ] https://de.indeed.com/viewjob?jk=f59f3de80a29c6e3 | de | viewjob
+- [ ] https://jobs.kliniken.de/jobs/arzt?loc=Pipping | jobs | arzt
+- [ ] https://jobs.kliniken.de/jobs/alle?loc=Loburg | jobs | alle
+- [ ] http://www.aerztestellen.de/download/files/2011/12/down159551.pdf#page=10 | aerztestellen | down159551.pdf
+- [ ] https://library.samhsa.gov/sites/default/files/pep21-06-05-001.pdf | library | pep21 06 05 001.pdf
+- [ ] https://www.nejmcareercenter.org/job/1051906/physician-md-do-psychiatrist-inpatient-psychiatry-opportunity-in-st-louis/?TrackID=1 | nejmcareercenter | physician md do psychiatrist inpatient psychiatry opportunity in st louis
+- [ ] https://www.nejmcareercenter.org/job/1051809/psychiatrist-inpatient/?TrackID=1 | nejmcareercenter | psychiatrist inpatient
+- [ ] https://www.nejmcareercenter.org/job/1051737/physician-psychiatrist/?TrackID=1 | nejmcareercenter | physician psychiatrist
+- [ ] https://www.practicematch.com/physicians/jobs/psychiatry&gsessionid=zGiEcE9vNTRO8c6UIx5tfnJUJawNVCJGC1Lr1-YFdPm7EVL-81JuuA | practicematch | psychiatry&gsessionid=zGiEcE9vNTRO8c6UIx5tfnJUJawNVCJGC1Lr1 YFdPm7EVL 81JuuA
+- [ ] https://careers.insidehighered.com/jobs/health-and-medical/north-america/22/ | careers | 22
+- [ ] https://careers.insidehighered.com/jobs/north-america/ | careers | north america
+- [ ] https://www.ziprecruiter.com/c/Rula-Health/Job/Psychiatrist-(MD-DO)-Remote-(Independent-Contractor)/-in-Atlanta,GA?jid=2f30970dad2caf6a | ziprecruiter |  in Atlanta,GA
+- [ ] https://www.ziprecruiter.com/Jobs/Remote-Telemedicine/--in-Georgia | ziprecruiter |   in Georgia
+- [ ] https://www.careerbuilder.com/jobs-psychiatrist?emp=ALL&pay=0&posted=30&siteid=cbnsv | careerbuilder | jobs psychiatrist
+- [ ] https://www.careerbuilder.com/jobs-child-psychiatrist?emp=ALL&pay=0&posted=30&siteid=cbnsv | careerbuilder | jobs child psychiatrist
+- [ ] https://www.careerbuilder.com/job-details/director-of-the-general-psychiatry-residency-program-stanford-ca--d4495bd9-ac4b-4944-8583-8dbf524baa24 | careerbuilder | director of the general psychiatry residency program stanford ca  d4495bd9 ac4b 4944 8583 8dbf524baa24
+- [ ] https://www.careerbuilder.com/jobs-healthcare-administrator-in-augusta,ga | careerbuilder | jobs healthcare administrator in augusta,ga
+- [ ] https://www.careerbuilder.com/jobs-ups-in-augusta,ga | careerbuilder | jobs ups in augusta,ga
+- [ ] https://www.careerbuilder.com/jobs-ups-in-grovetown,ga | careerbuilder | jobs ups in grovetown,ga
+- [ ] https://www.careerbuilder.com/jobs-vet-in-fort-benning,ga | careerbuilder | jobs vet in fort benning,ga
+- [ ] https://www.careerbuilder.com/jobs-rehabilitation?cat1=JN058&emp=ALL&pay=0&posted=30&siteid=cbnsv | careerbuilder | jobs rehabilitation
+- [ ] https://www.medi-jobs.de/5678/1/ | medi-jobs | 1
+- [ ] https://www.medizinerkarriere.de/stellenangebote/Kinder-und-Jugendpsychiatrie-und-psychotherapie/Hessen/Brachttal | medizinerkarriere | Brachttal
+- [ ] https://www.jobware.de/job/examinierte-gesundheits-und-krankenpflegekraft-m-w-d-064853658 | jobware | examinierte gesundheits und krankenpflegekraft m w d 064853658
+- [ ] https://www.monster.de/stellenangebot/facharzt-psychiatrie-m-w-d-halberstadt-14--e45c33da-2329-43be-858d-62b049d81b55 | monster | facharzt psychiatrie m w d halberstadt 14  e45c33da 2329 43be 858d 62b049d81b55
+- [ ] https://monster.de/jobs/q-facharzt-psychiatrie-jobs-l-neum%C3%BCnster,-schleswig-holstein.aspx | monster | q facharzt psychiatrie jobs l neum%C3%BCnster, schleswig holstein.aspx
+- [ ] https://karriere.asklepios.com/Facharzt-wmd-Psychiatrie-undoder-Psychotherapie-ambulante--de-j24804.html&gsessionid=uv7WRysqBHq1RMHIGAK3LBKJnYrYKUlgQXnWCQmGRcjwSbu8T3SClg | karriere | Facharzt wmd Psychiatrie undoder Psychotherapie ambulante  de j24804.html&gsessionid=uv7WRysqBHq1RMHIGAK3LBKJnYrYKUlgQXnWCQmGRcjwSbu8T3SClg
+- [ ] https://www.asklepios.com/psychiatrie-langen | asklepios | psychiatrie langen
+- [ ] https://karriere.asklepios.com/examinierte-Pflegefachkraft-wmd-in-der-Klinik-fr-Psychiatr-de-j20036.html | karriere | examinierte Pflegefachkraft wmd in der Klinik fr Psychiatr de j20036.html
+- [ ] https://karriere.charite.de/en/job-vacancies/detail?tx_hrpuls_detail%5Baction%5D=show&tx_hrpuls_detail%5Bcontroller%5D=Posting&tx_hrpuls_detail%5BpostUid%5D=49927&cHash=8ab2363cc705605d992ea1e88077ec83 | karriere | detail
+- [ ] https://medwing.com/jobs/en/job/eed072ab-0fb2-45db-a988-fa10c3edbcf3 | medwing | eed072ab 0fb2 45db a988 fa10c3edbcf3
+
 - [ ] https://www.ziprecruiter.com/Jobs/Psychiatric-Pa/-in-Atlanta,GA | ziprecruiter |  in Atlanta,GA
 - [ ] https://shallowfordwellness.com/ | shallowfordwellness | GA — Behavioral Health Physician
 - [ ] https://www.ubhsinc.com/ | ubhsinc | GA — Behavioral Health Physician

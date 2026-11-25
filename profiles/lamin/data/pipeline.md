@@ -2,6 +2,55 @@
 
 ## Pendientes
 
+- [ ] https://www.indeed.com/q-account-manager-l-atlanta,-ga-jobs.html | indeed | q account manager l atlanta, ga jobs.html
+- [ ] https://nejo.com/de/jobs/key-account-manager | nejo | key account manager
+- [ ] https://rocketreach.co/horst-gerold-email_736018623 | rocketreach | horst gerold email 736018623
+- [ ] https://www.xing.com/jobs/key-account-manager-telekommunikation-(m-w) | xing | key account manager telekommunikation (m w)
+- [ ] https://de.jooble.org/rjdp/6799879398808554147/Key-Account-Manager-(m/w/d)-+-Vollzeit-+-unbefristet-+-ab-sofort-M%C3%BCnchen | de | d) + Vollzeit + unbefristet + ab sofort M%C3%BCnchen
+- [ ] https://jobinfrankfurt.com/vacancies/enterprise-sales-executive | jobinfrankfurt | enterprise sales executive
+- [ ] https://de.linkedin.com/jobs/account-manager-software-stellen | Unknown | Germany — LinkedIn Telecom
+- [ ] https://www.virtualvocations.com/job/sales-engineer-cx-solutions-3362804-i.html | virtualvocations | sales engineer cx solutions 3362804 i.html
+- [ ] https://job-boards.greenhouse.io/telnyx54/jobs/7991780003&gsessionid=3-3ruoD5umRYb_jSZPdKjJ9ov_QF9RF0t3LFxJGORMUHtsPCdvGOHQ | telnyx54 | Greenhouse — Telecom
+- [ ] https://job-boards.greenhouse.io/telnyx54/jobs/7991813003&gsessionid=0CFoSfSqcrfH92uTB4ifmAwypy_087CibXAzkgTVjuxaq6wblr-MTA | telnyx54 | Greenhouse — Telecom
+- [ ] https://job-boards.greenhouse.io/telnyx54/jobs/7991780003&gsessionid=-bR2cmKJzhZabG06FNcf66Pbd_KCDRN_FVkswxENa8YpbjpSZbvqDg | telnyx54 | Greenhouse — Telecom
+- [ ] https://jobs.ashbyhq.com/poetic/548f42c7-858c-48e8-8ccc-52197ab8c775 | jobs | 548f42c7 858c 48e8 8ccc 52197ab8c775
+- [ ] https://jobs.ashbyhq.com/airwallex | jobs | airwallex
+- [ ] https://jobs.ashbyhq.com/influxdata/d72400d8-f4ad-4d3f-a9d9-a9b7909f16fb | jobs | d72400d8 f4ad 4d3f a9d9 a9b7909f16fb
+- [ ] https://jobs.ashbyhq.com/elevenlabs | jobs | elevenlabs
+- [ ] https://jobs.ashbyhq.com/Redis | jobs | Redis
+- [ ] https://jobs.ashbyhq.com/temporal/a14600ad-20a5-4403-bb3c-021d1bf6f609 | jobs | a14600ad 20a5 4403 bb3c 021d1bf6f609
+- [ ] https://jobs.ashbyhq.com/omnea | jobs | omnea
+- [ ] https://jobs.lever.co/upguard/08443e2c-5d74-4828-940b-e26750ebdc0d | upguard | Lever — Telecom
+- [ ] https://community.revgenius.com/x/chat-fulltime-jobs/msg_YC64VP1sPCSW/founding-senior-account-executive-at-dedale-intell | community | founding senior account executive at dedale intell
+- [ ] https://bravado.co/blog/what-is-tech-sales/ | bravado | what is tech sales
+- [ ] https://www.ziprecruiter.com/Jobs/Communication-Solutions-Llc | ziprecruiter | Communication Solutions Llc
+- [ ] https://www.monster.com/jobs/q-sales-executive-jobs-l-atlanta-ga | monster | q sales executive jobs l atlanta ga
+- [ ] https://www.monster.com/job-openings/professional-services-sales-executive-iaas-scottsdale-az--bc2d9ce7-f1f4-4764-8f9f-ad7bfa4d834b | monster | professional services sales executive iaas scottsdale az  bc2d9ce7 f1f4 4764 8f9f ad7bfa4d834b
+- [ ] https://builtin.com/company/zoom/jobs | builtin | jobs
+- [ ] https://www.ycombinator.com/jobs/role/sales-manager/israel&gsessionid=7IYBmxidNuE-WDFGs_gpeXv2E5QTjij50m9DARtSGZaCEZWN9Y-E3w | ycombinator | israel&gsessionid=7IYBmxidNuE WDFGs gpeXv2E5QTjij50m9DARtSGZaCEZWN9Y E3w
+- [ ] https://www.ycombinator.com/jobs/location/reno&gsessionid=VyDBvHc-_w742jVPgd7umrJAJMLn9ficE6v3_wgXGTKC3kZIZdELzw | ycombinator | reno&gsessionid=VyDBvHc  w742jVPgd7umrJAJMLn9ficE6v3 wgXGTKC3kZIZdELzw
+- [ ] https://www.ycombinator.com/jobs/role/finance/ely | ycombinator | ely
+- [ ] https://app.welcometothejungle.com/jobs/RsRpdaYK/company | app | company
+- [ ] https://weworkremotely.com/remote-jobs/c4media-inc-enterprise-account-executive | weworkremotely | c4media inc enterprise account executive
+- [ ] https://weworkremotely.com/remote-jobs/launchdarkly-senior-enterprise-account-executive-central | weworkremotely | launchdarkly senior enterprise account executive central
+- [ ] https://weworkremotely.com/remote-jobs/launchdarkly-senior-enterprise-account-executive-east | weworkremotely | launchdarkly senior enterprise account executive east
+- [ ] https://weworkremotely.com/remote-jobs/launchdarkly-senior-enterprise-account-executive-west | weworkremotely | launchdarkly senior enterprise account executive west
+- [ ] https://weworkremotely.com/remote-jobs/bitwarden-mid-market-account-executive-anz | weworkremotely | bitwarden mid market account executive anz
+- [ ] https://weworkremotely.com/remote-jobs/justworks-account-executive-in-territory-chicago | weworkremotely | justworks account executive in territory chicago
+- [ ] https://weworkremotely.com/remote-jobs/justworks-account-executive-in-territory-miami-fl | weworkremotely | justworks account executive in territory miami fl
+- [ ] https://weworkremotely.com/remote-jobs/zscaler-account-executive-enterprise-north-carolina | weworkremotely | zscaler account executive enterprise north carolina
+- [ ] https://www.monster.de/stellenangebot/account-manager-automotive-w-m-div-anteilig-remote-voll-teilzeit-r%C3%BClzheim-08--9e644c9b-9d50-43a8-90ab-36187add58e5 | monster | account manager automotive w m div anteilig remote voll teilzeit r%C3%BClzheim 08  9e644c9b 9d50 43a8 90ab 36187add58e5
+- [ ] https://www.monster.de/stellenangebot/inside-sales-account-manager-m-w-d-berlin-16--c283024f-0efb-497e-bce7-3cb220e8be06 | monster | inside sales account manager m w d berlin 16  c283024f 0efb 497e bce7 3cb220e8be06
+- [ ] https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1001482867-S | arbeitsagentur | 10001 1001482867 S
+- [ ] https://berlinstartupjobs.com/skill-areas/tech-sales/ | berlinstartupjobs | tech sales
+- [ ] https://www.yourfirm.de/stellenangebote/vertriebssteuerung/ | yourfirm | vertriebssteuerung
+- [ ] https://www.salesjob.de/blog/salestipps/was-macht-ein-sales-manager/ | salesjob | was macht ein sales manager
+- [ ] https://techjourney.it-jobs.de/en/it-occupations/it-asset-management-specialist/ | techjourney | it asset management specialist
+- [ ] https://jobs.golem.de/marketing-design/jobs/crm-in-stuttgart | jobs | crm in stuttgart
+- [ ] https://jobs.golem.de/it/jobs/kundenbetreuer | jobs | kundenbetreuer
+- [ ] https://germantechjobs.de/en/jobs/iOS/all | germantechjobs | all
+- [ ] https://germantechjobs.de/en/jobs/Support/all | germantechjobs | all
+
 - [ ] https://teledataselect.com/telecom-expense-management-solutions/ | teledataselect | telecom expense management solutions
 - [ ] https://www.tealhq.com/jobs/location/atlanta-ga/title/account-manager?page=5 | tealhq | account manager
 - [ ] https://freehire.me/jobs/channel-manager-commandlink-zsvuxb4o | freehire | channel manager commandlink zsvuxb4o
