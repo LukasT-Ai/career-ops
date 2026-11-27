@@ -2,6 +2,39 @@
 
 ## Pendientes
 
+- [ ] https://app.beginlyhealth.com/job/01ky2n1pv2wt8kn3c1af3ayesw | app | 01ky2n1pv2wt8kn3c1af3ayesw
+- [ ] https://www.indeed.com/q-director-behavioral-health-l-georgia-jobs.html | indeed | q director behavioral health l georgia jobs.html
+- [ ] https://headway.co/psychiatrists | headway | psychiatrists
+- [ ] https://praxis-ozankan.de/ | praxis-ozankan | DE — Facharzt Psychiatrie
+- [ ] https://aerztestellen.aerzteblatt.de/de/stelle/oberarzt-oberaerztin-m-w-d-fuer-psychiatrie-und-psychotherapie-2024-346 | aerztestellen | oberarzt oberaerztin m w d fuer psychiatrie und psychotherapie 2024 346
+- [ ] https://aerztestellen.aerzteblatt.de/de/stellen/psychiatrie-und-psychotherapie-0 | aerztestellen | psychiatrie und psychotherapie 0
+- [ ] https://aerztestellen.aerzteblatt.de/de/stellen/teilzeit/psychiatrie-und-psychotherapie-uebersicht | aerztestellen | psychiatrie und psychotherapie uebersicht
+- [ ] https://www.stepstone.de/jobs/psychiatry | stepstone | psychiatry
+- [ ] https://www.stepstone.de/jobs/oberarzt-ärztin-psychiatrie/in-europa?q=Oberarzt/ärztin Psychiatrie | stepstone | in europa
+- [ ] https://jobs.kliniken.de/jobs/deutschland?cmpscreen= | jobs | deutschland
+- [ ] https://www.samhsa.gov/about/careers/behavioral-health-workforce/careers-by-state?field_bwc_state_value=North+Dakota | samhsa | careers by state
+- [ ] https://library.samhsa.gov/sites/default/files/sma14-4816.pdf | library | sma14 4816.pdf
+- [ ] https://www.healthcarejobsite.com/ | healthcarejobsite | HealthcareJobsite
+- [ ] https://www.nejmcareercenter.org/job/1049675/physician-md-do-psychiatrist-inpatient-psychiatry-opportunity-in-st-louis/?TrackID=1 | nejmcareercenter | physician md do psychiatrist inpatient psychiatry opportunity in st louis
+- [ ] https://www.nejmcareercenter.org/job/1053946/physician-psychiatrist/?TrackID=1 | nejmcareercenter | physician psychiatrist
+- [ ] https://www.nejmcareercenter.org/job/1053591/psychiatrist/?TrackID=1 | nejmcareercenter | psychiatrist
+- [ ] https://www.healthecareers.com/job/psychiatrist-general-adult-faculty/13623874 | healthecareers | 13623874
+- [ ] https://employer.practicematch.com/employer/wichita-falls-state-hospital/948849/ | employer | 948849
+- [ ] https://jobs.chronicle.com/jobs/academic-affairs/baltimore/13/ | jobs | 13
+- [ ] https://jobs.chronicle.com/jobs/faculty-positions/salt-lake-city/ | jobs | salt lake city
+- [ ] https://jobs.chronicle.com/jobs/medicine/united-states/ | jobs | united states
+- [ ] https://jobs.psychiatry.org/jobs/?keywords=holistic+psychiatry | jobs | jobs
+- [ ] https://www.ziprecruiter.com/c/Rula-Health/Job/Psychiatrist-(MD-DO)-Remote-(Independent-Contractor)/-in-Atlanta,GA?jid=2f30970dad2caf6a | ziprecruiter |  in Atlanta,GA
+- [ ] https://www.careerbuilder.com/jobs-child-psychiatrist | careerbuilder | jobs child psychiatrist
+- [ ] https://www.careerbuilder.com/job-details/psychiatrist-psych-np-gilbert-az--2308748e-8562-497b-b4d2-6391b499f4e6 | careerbuilder | psychiatrist psych np gilbert az  2308748e 8562 497b b4d2 6391b499f4e6
+- [ ] https://www.careerbuilder.com/jobs-support-coordinator-in-harlem,ga | careerbuilder | jobs support coordinator in harlem,ga
+- [ ] https://www.careerbuilder.com/job-details/vice-president-of-nursing-operations-gastonia-nc--edbdf978-0694-45fc-a20c-94e5fd4c1c72 | careerbuilder | vice president of nursing operations gastonia nc  edbdf978 0694 45fc a20c 94e5fd4c1c72
+- [ ] https://www.careerbuilder.com/jobs-mental-health-in-reading,pa | careerbuilder | jobs mental health in reading,pa
+- [ ] https://www.careerbuilder.com/job-details/psychiatrist-per-diem-crisis-response-center-jefferson-einstein-hospital-philadelphia-pa--dc9e4902-c16e-45d1-a27a-b396b79e2ca2 | careerbuilder | psychiatrist per diem crisis response center jefferson einstein hospital philadelphia pa  dc9e4902 c16e 45d1 a27a b396b79e2ca2
+- [ ] https://www.monster.com/job-openings/psychiatrist-ii-iii-iv-multiple-openings-multiple-locations-riverside-ca--ec999a73-45ec-43ac-93cf-7d41a23da46c | monster | psychiatrist ii iii iv multiple openings multiple locations riverside ca  ec999a73 45ec 43ac 93cf 7d41a23da46c
+- [ ] https://www.kimeta.de/stellenangebote-psychiatrie-in-bedburg-hau | kimeta | stellenangebote psychiatrie in bedburg hau
+- [ ] https://www.jobware.de/jobs--fuer-witten | jobware | jobs  fuer witten
+
 - [ ] https://pmhnphiring.com/jobs/np-psychiatry-georgia-locum-or-permanent-psychiatry-nurse-7f254d5e-a831-4248-8647-59a3da3465ae | pmhnphiring | np psychiatry georgia locum or permanent psychiatry nurse 7f254d5e a831 4248 8647 59a3da3465ae
 - [ ] https://valorbh.com/our-staff/ | valorbh | our staff
 - [ ] https://jobroll.indeed.com/q-Psychiatrist-l-Atlanta,-GA-jobs.html | jobroll | q Psychiatrist l Atlanta, GA jobs.html

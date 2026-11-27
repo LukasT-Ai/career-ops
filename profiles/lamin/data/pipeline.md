@@ -2,6 +2,38 @@
 
 ## Pendientes
 
+- [ ] https://www.xing.com/jobs/key-account-manager-telekommunikation-(m-w) | xing | key account manager telekommunikation (m w)
+- [ ] https://www.xing.com/jobs/t-key-account-manager-telekommunikation-(m-w) | xing | t key account manager telekommunikation (m w)
+- [ ] https://jobs.ashbyhq.com/ashby/50edd021-cc90-48aa-916a-aead552e4d4f | jobs | 50edd021 cc90 48aa 916a aead552e4d4f
+- [ ] https://jobs.paloaltonetworks.com/en/job/%E3%83%9B%E3%82%B3%E3%82%BF/account-executive-sase/47263/96174877088 | jobs | 96174877088
+- [ ] https://teleswitch.com/solutions/sd-wan/ | teleswitch | sd wan
+- [ ] https://job-boards.greenhouse.io/telnyx54/jobs/7992080003 | telnyx54 | Greenhouse — Telecom
+- [ ] https://job-boards.greenhouse.io/telnyx54/jobs/7992076003 | telnyx54 | Greenhouse — Telecom
+- [ ] https://job-boards.greenhouse.io/telnyx54/jobs/7992079003 | telnyx54 | Greenhouse — Telecom
+- [ ] https://job-boards.greenhouse.io/telnyx54/jobs/8004722003 | telnyx54 | Greenhouse — Telecom
+- [ ] https://job-boards.greenhouse.io/telnyx54/jobs/7991813003 | telnyx54 | Greenhouse — Telecom
+- [ ] https://jobs.ashbyhq.com/hackerone/cf8bfcaa-be40-4e5b-9d21-131583d8c290 | jobs | cf8bfcaa be40 4e5b 9d21 131583d8c290
+- [ ] https://www.repvue.com/sales-jobs/technology | repvue | technology
+- [ ] https://www.careerbuilder.com/job-details/pcs-account-executive-roswell-ga--bf60b70a-2f47-4948-8741-4c074be40635 | careerbuilder | pcs account executive roswell ga  bf60b70a 2f47 4948 8741 4c074be40635
+- [ ] https://weworkremotely.com/remote-jobs/zscaler-account-executive-sled-highered-pacnw | weworkremotely | zscaler account executive sled highered pacnw
+- [ ] https://weworkremotely.com/remote-jobs/rubrik-job-board-gsi-account-executive-ltm-hcl | weworkremotely | rubrik job board gsi account executive ltm hcl
+- [ ] https://weworkremotely.com/remote-jobs/launchdarkly-strategic-account-executive-west | weworkremotely | launchdarkly strategic account executive west
+- [ ] https://weworkremotely.com/remote-jobs/twilio-account-executive | weworkremotely | twilio account executive
+- [ ] https://weworkremotely.com/remote-jobs/justworks-account-executive-in-territory-san-diego-ca | weworkremotely | justworks account executive in territory san diego ca
+- [ ] https://weworkremotely.com/remote-jobs/justworks-account-executive-in-territory-tampa-miami-orlando-sarasota | weworkremotely | justworks account executive in territory tampa miami orlando sarasota
+- [ ] https://www.kimeta.de/vertriebsmitarbeiter-stellenangebote-witten | kimeta | vertriebsmitarbeiter stellenangebote witten
+- [ ] https://www.kimeta.de/key-account-manager-jobs-ettlingen | kimeta | key account manager jobs ettlingen
+- [ ] https://www.jobware.de/job/kundenberater-aussendienst-m-w-d-deutsche-telekom-063268352 | jobware | kundenberater aussendienst m w d deutsche telekom 063268352
+- [ ] https://cult.honeypot.io/reads/how-to-tell-your-boss-you-are-unhappy | cult | how to tell your boss you are unhappy
+- [ ] https://www.yourfirm.de/stellenangebote/vertrieb/hannover/ | yourfirm | hannover
+- [ ] https://www.salesjob.de/jobs/sales-manager-jobs-frankfurt-am-main/ | salesjob | sales manager jobs frankfurt am main
+- [ ] https://jobs.golem.de/it/jobs/leitung-in-frankfurt-am-main | jobs | leitung in frankfurt am main
+- [ ] https://germantechjobs.de/en/jobs/Cloud/Frankfurt | germantechjobs | Frankfurt
+- [ ] https://germantechjobs.de/jobs/Manager/all | germantechjobs | all
+- [ ] https://germantechjobs.de/jobs/Architect/all | germantechjobs | all
+- [ ] https://germantechjobs.de/jobs/Support/all | germantechjobs | all
+- [ ] https://germantechjobs.de/en/events | germantechjobs | events
+
 - [ ] https://www.indeed.com/q-account-manager-l-atlanta,-ga-jobs.html | indeed | q account manager l atlanta, ga jobs.html
 - [ ] https://nejo.com/de/jobs/key-account-manager | nejo | key account manager
 - [ ] https://rocketreach.co/horst-gerold-email_736018623 | rocketreach | horst gerold email 736018623
